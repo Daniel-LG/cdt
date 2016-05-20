@@ -110,60 +110,112 @@ public class DsfTerminateCommand implements ITerminateHandler {
 			});
     	}
     }
-
-    @Override
-    public boolean execute(final IDebugCommandRequest request) {
+    
+    // added by jwy
+    public boolean myTerminate(final IDebugCommandRequest request) {
         if (request.getElements().length == 0) {
         	request.done();
         	return false;
         }
-
-        final GdbLaunch launch = getLaunch(request);
-        if (launch != null) {
-        	fExecutor.execute(new DsfRunnable() {
-				@Override
-				public void run() {
-		    		IGDBControl gdbControl = fTracker.getService(IGDBControl.class);
-		    		if (gdbControl != null && gdbControl.isActive()) {
-		    			gdbControl.terminate(new RequestMonitor(fExecutor, null) {
-		    				@Override
-							protected void handleCompleted() {
-		    					if (!isSuccess()) {
-		    						request.setStatus(getStatus());
-		        					request.done();
-		    					}
-		    					else {
-		        					waitForTermination(request);        						
-		    					}
-		    				}
-		    			});
-		    		}
-		    		else {
-		    			terminateRemainingProcesses(launch, request);
-		    		}
-				}
-			});
-        }
-        else {
-        	fExecutor.execute(new DsfRunnable() {
-				@Override
-				public void run() {
-		        	IProcessDMContext[] procDmcs = getProcessDMContexts(request.getElements());
-					terminate(procDmcs, new RequestMonitor(fExecutor, null) {
-						@Override
+        
+		fExecutor.execute(new DsfRunnable() {
+			@Override
+			public void run() {
+				IProcessDMContext[] procDmcs = getProcessDMContexts(request.getElements());
+				terminate(procDmcs, new RequestMonitor(fExecutor, null) {
+					@Override
+					protected void handleCompleted() {
+	    				if (!isSuccess()) {
+	    					request.setStatus(getStatus());
+	    					request.done();
+	    				}
+	    				else {
+//	    					System.out.println("wait 2");
+	    					waitForTermination(request);
+	    				}
+					}
+				});
+				
+				IGDBControl gdbControl = fTracker.getService(IGDBControl.class);
+	    		if (gdbControl != null && gdbControl.isActive()) {
+	    			gdbControl.terminate(new RequestMonitor(fExecutor, null) {
+	    				@Override
 						protected void handleCompleted() {
-		    				if (!isSuccess()) {
-		    					request.setStatus(getStatus());
-		    					request.done();
-		    				}
-		    				else {
-		    					waitForTermination(request);
-		    				}
-						}
-					});
-				}
-        	});
-        }        
+	    					if (!isSuccess()) {
+	    						request.setStatus(getStatus());
+	        					request.done();
+	    					}
+	    					else {
+//	    						System.out.println("wait 1");
+	        					waitForTermination(request);        						
+	    					}
+	    				}
+	    			});
+	    		}
+	    		else {
+	    			terminateRemainingProcesses(getLaunch(request), request);
+	    		}
+			}
+		});
+		
+		return false;
+    }
+    // end add
+
+    @Override
+    public boolean execute(final IDebugCommandRequest request) {
+    	// modified by jwy
+    	System.out.println("call terminate!");
+		new GdbDisconnectCommand(fSession).myDisconnect(request);
+		myTerminate(request);
+
+//        final GdbLaunch launch = getLaunch(request);
+//        if (launch != null) {
+//        	fExecutor.execute(new DsfRunnable() {
+//				@Override
+//				public void run() {
+//		    		IGDBControl gdbControl = fTracker.getService(IGDBControl.class);
+//		    		if (gdbControl != null && gdbControl.isActive()) {
+//		    			gdbControl.terminate(new RequestMonitor(fExecutor, null) {
+//		    				@Override
+//							protected void handleCompleted() {
+//		    					if (!isSuccess()) {
+//		    						request.setStatus(getStatus());
+//		        					request.done();
+//		    					}
+//		    					else {
+//		        					waitForTermination(request);        						
+//		    					}
+//		    				}
+//		    			});
+//		    		}
+//		    		else {
+//		    			terminateRemainingProcesses(launch, request);
+//		    		}
+//				}
+//			});
+//        }
+//        else {
+//        	fExecutor.execute(new DsfRunnable() {
+//				@Override
+//				public void run() {
+//		        	IProcessDMContext[] procDmcs = getProcessDMContexts(request.getElements());
+//					terminate(procDmcs, new RequestMonitor(fExecutor, null) {
+//						@Override
+//						protected void handleCompleted() {
+//		    				if (!isSuccess()) {
+//		    					request.setStatus(getStatus());
+//		    					request.done();
+//		    				}
+//		    				else {
+//		    					waitForTermination(request);
+//		    				}
+//						}
+//					});
+//				}
+//        	});
+//        }       
+		// end modify
         return false;
     }
     

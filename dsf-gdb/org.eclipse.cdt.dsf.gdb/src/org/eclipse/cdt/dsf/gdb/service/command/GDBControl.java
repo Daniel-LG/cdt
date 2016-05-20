@@ -340,7 +340,10 @@ public class GDBControl extends AbstractMIControl implements IGDBControl {
             getGDBExitWaitTime(), TimeUnit.SECONDS);
         
         queueCommand(
-       		getCommandFactory().createMIGDBExit(getContext()),
+        		// modified by jwy
+				getCommandFactory().createMIGDBExit(getContext()),
+				// getCommandFactory().createMITargetDisconnect(getContext()),
+        		// end modified
             new DataRequestMonitor<MIInfo>(getExecutor(), rm) { 
                 @Override
                 public void handleCompleted() {

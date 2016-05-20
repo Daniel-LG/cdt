@@ -519,8 +519,11 @@ public class GDBProcesses_7_2 extends GDBProcesses_7_1 implements IMultiTerminat
 			// Remember that this process was detached so we don't show it as an exited process.
 			// We must set this before sending the detach command to gdb to avoid race conditions
 			getDetachedProcesses().add(containerDmc.getGroupId());
-        	fCommandControl.queueCommand(
-        			fCommandFactory.createMITargetDetach(controlDmc, containerDmc.getGroupId()),
+			fCommandControl.queueCommand(
+        			// modified by jwy
+//        			fCommandFactory.createMITargetDetach(controlDmc, containerDmc.getGroupId()),
+        			fCommandFactory.createMITargetDisconnect(controlDmc),
+        			// end modify
     				new DataRequestMonitor<MIInfo>(getExecutor(), rm) {
     					@Override
     					protected void handleCompleted() {
@@ -536,8 +539,11 @@ public class GDBProcesses_7_2 extends GDBProcesses_7_1 implements IMultiTerminat
     							// In case we get here, we assume we are using GDB 7.2 (although we should not) and we work
     							// around it.
     							// Also, with GDB 7.2, removing the inferior does not work because of another bug, so we just don't do it.
-    					       	fCommandControl.queueCommand(
-    				        			fCommandFactory.createMITargetDetach(containerDmc),
+    							fCommandControl.queueCommand(
+    									// modified by jwy
+//    				        			fCommandFactory.createMITargetDetach(containerDmc),
+    				        			fCommandFactory.createMITargetDisconnect(controlDmc),
+    				        			// end modify
     				    				new DataRequestMonitor<MIInfo>(getExecutor(), rm) {
     				        				@Override
     				        				protected void handleFailure() {

@@ -74,7 +74,8 @@ public class StartOrRestartProcessSequence_7_0 extends ReflectionSequence {
 	// but once the new process is started (restarted), it will contain the new
 	// container context.  This new container context has for parent the process
 	// context, which holds the new pid.
-	private IContainerDMContext fContainerDmc;
+	// static is added by jwy
+	private static IContainerDMContext fContainerDmc;
 	
 	// If the user requested a stop_on_main, this variable will hold the breakpoint
 	private MIBreakpoint fUserBreakpoint;
@@ -95,6 +96,10 @@ public class StartOrRestartProcessSequence_7_0 extends ReflectionSequence {
 	// Although we can access this through Sequence.getRequestMonitor(), we would loose the type-checking.
 	// Therefore, doing it like this is more future-proof.
 	private final DataRequestMonitor<IContainerDMContext> fDataRequestMonitor;
+	
+	// added by jwy
+	public static boolean flag = true;
+	// end add
 	
 	protected IContainerDMContext getContainerContext() {
 		return fContainerDmc;
@@ -394,29 +399,44 @@ public class StartOrRestartProcessSequence_7_0 extends ReflectionSequence {
 	 */
 	@Execute
 	public void stepRunProgram(final RequestMonitor rm) {
-		ICommand<MIInfo> command;
-		if (useContinueCommand()) {
-			command = fCommandFactory.createMIExecContinue(fContainerDmc);
-		} else {
-			command = fCommandFactory.createMIExecRun(fContainerDmc);	
-		}
-		fCommandControl.queueCommand(command, new ImmediateDataRequestMonitor<MIInfo>(rm) {
-			@Override
-			protected void handleSuccess() {
-				// Now that the process is started, the pid has been allocated
-				// so we need to fetch the proper container context
-				// We replace our current context which does not have the pid, with one that has the pid.
-				if (fContainerDmc instanceof IMIContainerDMContext) {	
-					fContainerDmc = fProcService.createContainerContextFromGroupId(fCommandControl.getContext(), ((IMIContainerDMContext)fContainerDmc).getGroupId());
-					
-					// This is the container context that this sequence is supposed to return: set the dataRm
-					fDataRequestMonitor.setData(fContainerDmc);					
-				} else {
-					assert false : "Container context was not an IMIContainerDMContext"; //$NON-NLS-1$
-				}
-				rm.done();
+		// modified by jwy, the flag is used to record if it is the first time to debug,
+		// if not, we do not use continue
+		if (flag) {
+			ICommand<MIInfo> command = null;
+			if (useContinueCommand()) {
+				command = fCommandFactory.createMIExecContinue(fContainerDmc);
+			} else {
+				command = fCommandFactory.createMIExecRun(fContainerDmc);
 			}
-		});
+
+			fCommandControl.queueCommand(command, new ImmediateDataRequestMonitor<MIInfo>(rm) {
+				@Override
+				protected void handleSuccess() {
+					// Now that the process is started, the pid has been
+					// allocated
+					// so we need to fetch the proper container context
+					// We replace our current context which does not have the
+					// pid, with one that has the pid.
+
+					if (fContainerDmc instanceof IMIContainerDMContext) {
+						fContainerDmc = fProcService.createContainerContextFromGroupId(fCommandControl.getContext(),
+								((IMIContainerDMContext) fContainerDmc).getGroupId());
+
+						// This is the container context that this sequence is
+						// supposed to return: set the dataRm
+						fDataRequestMonitor.setData(fContainerDmc);
+					} else {
+						assert false : "Container context was not an IMIContainerDMContext"; //$NON-NLS-1$
+					}
+					rm.done();
+					flag = false;
+				}
+			});
+		} else {
+			fDataRequestMonitor.setData(fContainerDmc);
+			rm.done();
+		}
+		// end modify
 	}
 	
 	/**

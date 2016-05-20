@@ -205,6 +205,12 @@ public class LaunchMessages extends NLS {
 	public static String CMainTab2_Core_Selection;
 	public static String CMainTab2_Trace_Selection;
 	public static String CMainTab2_Post_mortem_file_type;
+	
+	// added by jwy, to support smart core
+	public static String CMainTab_SimulatorColon;
+	public static String CMainTab_Simulator_Selection;
+	public static String CMainTab_Choose_simulator_to_constrain_search_for_program;
+	
 	private LaunchMessages() {
 	}
 

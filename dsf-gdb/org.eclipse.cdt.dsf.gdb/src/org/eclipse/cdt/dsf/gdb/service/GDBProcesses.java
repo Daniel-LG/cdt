@@ -406,19 +406,24 @@ public class GDBProcesses extends MIProcesses implements IGDBProcesses {
 									fBackend.interrupt();
 								}
 
+								// modified by jwy, not test in gdb < V7.0
 								final IMIContainerDMContext container = (IMIContainerDMContext)getData();
-								fGdb.queueCommand(
-										fCommandFactory.createMIInterpreterExecConsoleKill(container),
-										new ImmediateDataRequestMonitor<MIInfo>(rm) {
-											@Override
-											protected void handleSuccess() {
-												// Before GDB 7.0, we must send a container exited event ourselves
-									            getSession().dispatchEvent(
-									                       new ContainerExitedDMEvent(container), getProperties());
-
-												rm.done();
-											}
-										});
+//								fGdb.queueCommand(
+//										fCommandFactory.createMIInterpreterExecConsoleKill(container),
+//										new ImmediateDataRequestMonitor<MIInfo>(rm) {
+//											@Override
+//											protected void handleSuccess() {
+//												// Before GDB 7.0, we must send a container exited event ourselves
+//									            getSession().dispatchEvent(
+//									                       new ContainerExitedDMEvent(container), getProperties());
+//
+//												rm.done();
+//											}
+//										});
+								getSession().dispatchEvent(
+					                       new ContainerExitedDMEvent(container), getProperties());
+								rm.done();
+								// end modify
 							} else {
 					            rm.setStatus(new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, INTERNAL_ERROR, "Invalid process context.", null)); //$NON-NLS-1$
 					            rm.done();								

@@ -62,13 +62,23 @@
         <associatedDelegate delegate="org.eclipse.cdt.examples.dsf.gdb.launchDelegate"/>
         <placement after="org.eclipse.debug.ui.sourceLookupTab"/>
       </tab>
-      <!-- Tabs added to Run launch -->
+     <!-- Tabs added to Run launch -->
       <tab
             id="org.eclipse.cdt.examples.dsf.gdb.launch.localApplicationLaunch.extraTab"
             group="org.eclipse.cdt.launch.applicationRunLaunchTabGroup"
             name="Extra"
             class="org.eclipse.cdt.examples.dsf.gdb.ui.ExtendedTab">
         <associatedDelegate delegate="org.eclipse.cdt.cdi.launch.localCLaunch"/>
+        <!-- Place after main tab to check its id -->
+        <placement after="org.eclipse.cdt.cdi.launch.mainTab"/>
+      </tab>
+      <!-- added by jwy -->
+      <tab
+            id="org.eclipse.cdt.examples.dsf.gdb.launch.moduleLaunch.extraTab"
+            group="org.eclipse.cdt.launch.moduleRunLaunchTabGroup"
+            name="Extra"
+            class="org.eclipse.cdt.examples.dsf.gdb.ui.ExtendedTab">
+        <associatedDelegate delegate="org.eclipse.cdt.cdi.launch.moduleLaunch"/>
         <!-- Place after main tab to check its id -->
         <placement after="org.eclipse.cdt.cdi.launch.mainTab"/>
       </tab>

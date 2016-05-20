@@ -35,68 +35,77 @@ public interface ICDTLaunchConfigurationConstants {
 	 * @since 7.1
 	 */
 	public static final String ID_LAUNCH_C_REMOTE_APP = "org.eclipse.cdt.launch.remoteApplicationLaunchType"; //$NON-NLS-1$
-	
-	/**
-     * This is the attach launch type id.
-     *
-     * @since 6.0
-     */
-    public static final String ID_LAUNCH_C_ATTACH = "org.eclipse.cdt.launch.attachLaunchType"; //$NON-NLS-1$
 
-    /**
-     * This is the post-mortem launch type id.
-     *
-     * @since 6.0
-     */
-    public static final String ID_LAUNCH_C_POST_MORTEM = "org.eclipse.cdt.launch.postmortemLaunchType"; //$NON-NLS-1$
-    
-    /**
+	/**
+	 * This is the attach launch type id.
+	 *
+	 * @since 6.0
+	 */
+	public static final String ID_LAUNCH_C_ATTACH = "org.eclipse.cdt.launch.attachLaunchType"; //$NON-NLS-1$
+
+	/**
+	 * This is the post-mortem launch type id.
+	 *
+	 * @since 6.0
+	 */
+	public static final String ID_LAUNCH_C_POST_MORTEM = "org.eclipse.cdt.launch.postmortemLaunchType"; //$NON-NLS-1$
+
+	/**
 	 * Specifies the default launch delegate for a Local Debug session
+	 * 
 	 * @since 7.0
 	 */
-    public static final String PREFERRED_DEBUG_LOCAL_LAUNCH_DELEGATE = "org.eclipse.cdt.dsf.gdb.launch.localCLaunch"; //$NON-NLS-1$
+	public static final String PREFERRED_DEBUG_LOCAL_LAUNCH_DELEGATE = "org.eclipse.cdt.dsf.gdb.launch.localCLaunch"; //$NON-NLS-1$
 
-    /**
-	 * Specifies the default launch delegate for a Remote Debug session.
-	 * This default is part of the optional plugin org.eclipse.cdt.launch.remote.  If that plugin is not installed
-	 * then we won't set a default, which is ok since we only have one other delegate 
-	 * (which is org.eclipse.cdt.dsf.gdb.launch.remoteCLaunch).
+	/**
+	 * Specifies the default launch delegate for a Remote Debug session. This
+	 * default is part of the optional plugin org.eclipse.cdt.launch.remote. If
+	 * that plugin is not installed then we won't set a default, which is ok
+	 * since we only have one other delegate (which is
+	 * org.eclipse.cdt.dsf.gdb.launch.remoteCLaunch).
+	 * 
 	 * @since 7.1
 	 */
-    public static final String PREFERRED_DEBUG_REMOTE_LAUNCH_DELEGATE = "org.eclipse.rse.remotecdt.dsf.debug"; //$NON-NLS-1$
+	public static final String PREFERRED_DEBUG_REMOTE_LAUNCH_DELEGATE = "org.eclipse.rse.remotecdt.dsf.debug"; //$NON-NLS-1$
 
-
-    /**
-	 * Specifies the default launch delegate for an Attach Debug session
-	 * @since 7.0
-	 */
-    public static final String PREFERRED_DEBUG_ATTACH_LAUNCH_DELEGATE = "org.eclipse.cdt.dsf.gdb.launch.attachCLaunch"; //$NON-NLS-1$
-
-    /**
-	 * Specifies the default launch delegate for a Post Mortem Debug session
-	 * @since 7.0
-	 */
-    public static final String PREFERRED_DEBUG_POSTMORTEM_LAUNCH_DELEGATE = "org.eclipse.cdt.dsf.gdb.launch.coreCLaunch"; //$NON-NLS-1$
-
-    /**
-     * Specifies the default launch delegate for a Run mode session
-	 * @since 7.0
-	 */
-    public static final String PREFERRED_RUN_LAUNCH_DELEGATE = "org.eclipse.cdt.cdi.launch.localCLaunch"; //$NON-NLS-1$
-    
 	/**
-	 * Identifier for the C/C++ program process type, which is annotated on processes created
-	 * by the C/C++ application launch delegate.
+	 * Specifies the default launch delegate for an Attach Debug session
+	 * 
+	 * @since 7.0
+	 */
+	public static final String PREFERRED_DEBUG_ATTACH_LAUNCH_DELEGATE = "org.eclipse.cdt.dsf.gdb.launch.attachCLaunch"; //$NON-NLS-1$
+
+	/**
+	 * Specifies the default launch delegate for a Post Mortem Debug session
+	 * 
+	 * @since 7.0
+	 */
+	public static final String PREFERRED_DEBUG_POSTMORTEM_LAUNCH_DELEGATE = "org.eclipse.cdt.dsf.gdb.launch.coreCLaunch"; //$NON-NLS-1$
+
+	/**
+	 * Specifies the default launch delegate for a Run mode session
+	 * 
+	 * @since 7.0
+	 */
+	public static final String PREFERRED_RUN_LAUNCH_DELEGATE = "org.eclipse.cdt.cdi.launch.localCLaunch"; //$NON-NLS-1$
+
+	/**
+	 * Identifier for the C/C++ program process type, which is annotated on
+	 * processes created by the C/C++ application launch delegate.
 	 * 
 	 * (value <code>"C/C++"</code>).
 	 */
-	public static final String ID_PROGRAM_PROCESS_TYPE = "C/C++"; //$NON-NLS-1$ 
+	public static final String ID_PROGRAM_PROCESS_TYPE = "C/C++"; //$NON-NLS-1$
 
 	/**
 	 * Launch configuration attribute key. The value is a name of a C/C++
 	 * project associated with a C/C++ launch configuration.
 	 */
 	public static final String ATTR_PROJECT_NAME = CDT_LAUNCH_ID + ".PROJECT_ATTR"; //$NON-NLS-1$
+
+	// added by jwy. Launch configuration attribute key. The value is a name of
+	// a Simulator project.
+	public static final String ATTR_SIMULATOR_NAME = CDT_LAUNCH_ID + ".SIMULATOR_ATTR"; //$NON-NLS-1$
 
 	/**
 	 * Launch configuration attribute value constants for build before launch.
@@ -111,20 +120,25 @@ public interface ICDTLaunchConfigurationConstants {
 
 	/**
 	 * Launch configuration attribute key. The value is the ID of the project's
-	 * build configuration that should be used when a build is required before launch.
+	 * build configuration that should be used when a build is required before
+	 * launch.
 	 */
 	/** @since 7.0 */
 	public static final String ATTR_BUILD_BEFORE_LAUNCH = CDT_LAUNCH_ID + ".ATTR_BUILD_BEFORE_LAUNCH_ATTR"; //$NON-NLS-1$
 
 	/**
 	 * Launch configuration attribute key. The value is the ID of the project's
-	 * build configuration that should be used when a build is required before launch.
+	 * build configuration that should be used when a build is required before
+	 * launch.
 	 */
 	public static final String ATTR_PROJECT_BUILD_CONFIG_ID = CDT_LAUNCH_ID + ".PROJECT_BUILD_CONFIG_ID_ATTR"; //$NON-NLS-1$
 
 	/**
-	 * Automatically choose build configuration for launch key. The value indicates whether the ID of the build configuration
-	 * to be built before launch should be calculated based on the path to the application being launched.
+	 * Automatically choose build configuration for launch key. The value
+	 * indicates whether the ID of the build configuration to be built before
+	 * launch should be calculated based on the path to the application being
+	 * launched.
+	 * 
 	 * @since 7.1
 	 */
 	public static final String ATTR_PROJECT_BUILD_CONFIG_AUTO = CDT_LAUNCH_ID + ".PROJECT_BUILD_CONFIG_AUTO_ATTR"; //$NON-NLS-1$
@@ -156,6 +170,7 @@ public interface ICDTLaunchConfigurationConstants {
 	 * Launch configuration attribute key. The value is a boolean specifying
 	 * whether the current enviroment should be inherited when the application
 	 * is launched.
+	 * 
 	 * @deprecated - see ILaunchManager.ATTR_APPEND_ENVIRONMENT_VARIABLES
 	 */
 	@Deprecated
@@ -177,8 +192,8 @@ public interface ICDTLaunchConfigurationConstants {
 	public static final String ATTR_PLATFORM = CDT_LAUNCH_ID + ".PLATFFORM"; //$NON-NLS-1$
 
 	/**
-	 * Launch configuration attribute key. The value is a boolean specifying whether
-	 * to connect a terminal to the processed stdin/stdout
+	 * Launch configuration attribute key. The value is a boolean specifying
+	 * whether to connect a terminal to the processed stdin/stdout
 	 */
 	public static final String ATTR_USE_TERMINAL = CDT_LAUNCH_ID + ".use_terminal"; //$NON-NLS-1$
 
@@ -203,14 +218,14 @@ public interface ICDTLaunchConfigurationConstants {
 	public static final String ATTR_DEBUGGER_STOP_AT_MAIN = CDT_LAUNCH_ID + ".DEBUGGER_STOP_AT_MAIN"; //$NON-NLS-1$
 
 	/**
-	 * Launch configuration attribute key. The value is a String specifying 
-	 * the symbol to use for the main breakpoint.
+	 * Launch configuration attribute key. The value is a String specifying the
+	 * symbol to use for the main breakpoint.
 	 */
 	public static final String ATTR_DEBUGGER_STOP_AT_MAIN_SYMBOL = CDT_LAUNCH_ID + ".DEBUGGER_STOP_AT_MAIN_SYMBOL"; //$NON-NLS-1$
 
 	/**
-	 * Launch configuration attribute key. The value is a String specifying 
-	 * the register groups memento.
+	 * Launch configuration attribute key. The value is a String specifying the
+	 * register groups memento.
 	 */
 	public static final String ATTR_DEBUGGER_REGISTER_GROUPS = CDT_LAUNCH_ID + ".DEBUGGER_REGISTER_GROUPS"; //$NON-NLS-1$
 
@@ -236,7 +251,8 @@ public interface ICDTLaunchConfigurationConstants {
 
 	/**
 	 * Launch configuration attribute key. The value is the startup mode for the
-	 * debugger (a ICDTLaunchConfigurationConstants.DEBUGGER_MODE_XXXXX constant)
+	 * debugger (a ICDTLaunchConfigurationConstants.DEBUGGER_MODE_XXXXX
+	 * constant)
 	 */
 	public static final String ATTR_DEBUGGER_START_MODE = CDT_LAUNCH_ID + ".DEBUGGER_START_MODE"; //$NON-NLS-1$
 
@@ -244,17 +260,20 @@ public interface ICDTLaunchConfigurationConstants {
 	 * Launch configuration attribute key. The value is a boolean specifying
 	 * whether to enable variable bookkeeping.
 	 */
-	public static final String ATTR_DEBUGGER_ENABLE_VARIABLE_BOOKKEEPING = CDT_LAUNCH_ID + ".ENABLE_VARIABLE_BOOKKEEPING"; //$NON-NLS-1$
+	public static final String ATTR_DEBUGGER_ENABLE_VARIABLE_BOOKKEEPING = CDT_LAUNCH_ID
+			+ ".ENABLE_VARIABLE_BOOKKEEPING"; //$NON-NLS-1$
 
 	/**
 	 * Launch configuration attribute key. The value is a boolean specifying
 	 * whether to enable register bookkeeping.
 	 */
-	public static final String ATTR_DEBUGGER_ENABLE_REGISTER_BOOKKEEPING = CDT_LAUNCH_ID + ".ENABLE_REGISTER_BOOKKEEPING"; //$NON-NLS-1$
+	public static final String ATTR_DEBUGGER_ENABLE_REGISTER_BOOKKEEPING = CDT_LAUNCH_ID
+			+ ".ENABLE_REGISTER_BOOKKEEPING"; //$NON-NLS-1$
 
 	/**
-	 * launch configuration attribute key.  The value is a string specifying the protocol to
-	 * use.  For now only "mi", "mi1", "m2", "mi3" are supported.
+	 * launch configuration attribute key. The value is a string specifying the
+	 * protocol to use. For now only "mi", "mi1", "m2", "mi3" are supported.
+	 * 
 	 * @deprecated
 	 */
 	@Deprecated
@@ -265,25 +284,26 @@ public interface ICDTLaunchConfigurationConstants {
 	 * memento.
 	 */
 	public static final String ATTR_DEBUGGER_GLOBAL_VARIABLES = CDT_LAUNCH_ID + ".GLOBAL_VARIABLES"; //$NON-NLS-1$
-	
+
 	/**
-	 * Launch configuration attribute key. The value is a format list'
-	 * memento.
+	 * Launch configuration attribute key. The value is a format list' memento.
 	 */
 	public static final String ATTR_DEBUGGER_FORMAT = CDT_LAUNCH_ID + ".FORMAT"; //$NON-NLS-1$
 
 	/**
-	 * Launch configuration attribute key. The value is a memory blocks' memento.
+	 * Launch configuration attribute key. The value is a memory blocks'
+	 * memento.
 	 */
 	public static final String ATTR_DEBUGGER_MEMORY_BLOCKS = CDT_LAUNCH_ID + ".MEMORY_BLOCKS"; //$NON-NLS-1$
 
-	/**         
-	 * Launch configuration attribute key. The value is a String specifying the type of post mortem launch.
-	 * Note that we use the prefix "org.eclipse.cdt.dsf.gdb" for backwards-compatibility.
-	 * See bug 476589.
+	/**
+	 * Launch configuration attribute key. The value is a String specifying the
+	 * type of post mortem launch. Note that we use the prefix
+	 * "org.eclipse.cdt.dsf.gdb" for backwards-compatibility. See bug 476589.
+	 * 
 	 * @since 7.7
-	 */     
-	public static final String ATTR_DEBUGGER_POST_MORTEM_TYPE = "org.eclipse.cdt.dsf.gdb" + ".POST_MORTEM_TYPE"; //$NON-NLS-1$  //$NON-NLS-2$
+	 */
+	public static final String ATTR_DEBUGGER_POST_MORTEM_TYPE = "org.eclipse.cdt.dsf.gdb" + ".POST_MORTEM_TYPE"; //$NON-NLS-1$ //$NON-NLS-2$
 
 	/**
 	 * Launch configuration attribute value. The key is
@@ -315,24 +335,26 @@ public interface ICDTLaunchConfigurationConstants {
 	 */
 	public static String DEBUGGER_MODE_CORE = "core"; //$NON-NLS-1$
 
-	/**  
+	/**
 	 * Possible attribute value for the key is ATTR_DEBUGGER_POST_MORTEM_TYPE.
 	 * Indicates a core file.
-	 *   
+	 * 
 	 * @since 7.7
-	 */                                                 
+	 */
 	public static final String DEBUGGER_POST_MORTEM_CORE_FILE = "CORE_FILE"; //$NON-NLS-1$
 
 	/**
 	 * Possible attribute value for the key is ATTR_DEBUGGER_POST_MORTEM_TYPE.
 	 * Indicates a trace data file.
-	 *      
+	 * 
 	 * @since 7.7
-	 */     
+	 */
 	public static final String DEBUGGER_POST_MORTEM_TRACE_FILE = "TRACE_FILE"; //$NON-NLS-1$
 
-	/**  
-	 * Launch configuration attribute value. The key is ATTR_DEBUGGER_POST_MORTEM_TYPE.
+	/**
+	 * Launch configuration attribute value. The key is
+	 * ATTR_DEBUGGER_POST_MORTEM_TYPE.
+	 * 
 	 * @since 7.7
 	 */
 	public static final String DEBUGGER_POST_MORTEM_TYPE_DEFAULT = DEBUGGER_POST_MORTEM_CORE_FILE;

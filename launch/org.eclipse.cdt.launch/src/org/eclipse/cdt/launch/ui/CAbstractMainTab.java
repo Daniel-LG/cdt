@@ -100,6 +100,11 @@ public abstract class CAbstractMainTab extends CLaunchConfigurationTab {
 	protected Label fProjLabel;
 	protected Text fProjText;
 	protected Button fProjButton;
+	// added by jwy
+	protected Label fSimuLabel;
+	protected Text fSimuText;
+	protected Button fSimuButton;
+	// end added
 	protected Label fProgLabel;
 	protected Text fProgText;
 	protected Button fSearchButton;

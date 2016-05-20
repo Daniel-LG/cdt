@@ -122,6 +122,7 @@
 		<module>lrparser/org.eclipse.cdt.core.lrparser.source.feature</module>
 		<module>lrparser/org.eclipse.cdt.core.lrparser.sdk.feature</module>
 
+		<!-- delete by jwy
 		<module>upc/org.eclipse.cdt.core.parser.upc</module>
 		<module>upc/org.eclipse.cdt.core.parser.upc.feature</module>
 		<module>upc/org.eclipse.cdt.core.parser.upc.source.feature</module>
@@ -129,12 +130,14 @@
 
 		<module>upc/org.eclipse.cdt.managedbuilder.bupc.ui</module>
 		<module>upc/org.eclipse.cdt.bupc-feature</module>
+		-->
 
 		<module>jtag/org.eclipse.cdt.debug.gdbjtag</module>
 		<module>jtag/org.eclipse.cdt.debug.gdbjtag.core</module>
 		<module>jtag/org.eclipse.cdt.debug.gdbjtag.ui</module>
 		<module>jtag/org.eclipse.cdt.debug.gdbjtag-feature</module>
 
+		<!-- delete by jwy
 		<module>xlc/org.eclipse.cdt.core.lrparser.xlc</module>
 		<module>xlc/org.eclipse.cdt.errorparsers.xlc</module>
 		<module>xlc/org.eclipse.cdt.make.xlc.core</module>
@@ -144,6 +147,7 @@
 		<module>xlc/org.eclipse.cdt.xlc.feature</module>
 		<module>xlc/org.eclipse.cdt.xlc.source.feature</module>
 		<module>xlc/org.eclipse.cdt.xlc.sdk-feature</module>
+		-->
 
 		<module>util/org.eclipse.cdt.util</module>
 		<module>util/org.eclipse.cdt.util-feature</module>
@@ -195,9 +199,11 @@
 		<module>build/org.eclipse.cdt.autotools.source-feature</module>
 		<module>build/org.eclipse.linuxtools.cdt.autotools.core</module>
 
+		<!-- delete by jwy
 		<module>launch/org.eclipse.cdt.docker.launcher</module>
 		<module>launch/org.eclipse.cdt.docker.launcher-feature</module>
 		<module>launch/org.eclipse.cdt.docker.launcher.source-feature</module>
+		-->
 
 		<module>testsrunner/org.eclipse.cdt.testsrunner</module>
 		<module>testsrunner/org.eclipse.cdt.testsrunner.boost</module>
@@ -211,19 +217,28 @@
 		<module>llvm/org.eclipse.cdt.managedbuilder.llvm.ui</module>		
 		<module>llvm/org.eclipse.cdt.managedbuilder.llvm-feature</module>
 		
+		<!-- delete by jwy
 		<module>qt/org.eclipse.cdt.qt.core</module>
 		<module>qt/org.eclipse.cdt.qt.ui</module>
 		<module>qt/org.eclipse.cdt.qt.tests</module>
 		<module>qt/org.eclipse.cdt.qt-feature</module>
 
 		<module>xlc/org.eclipse.cdt.errorparsers.xlc.tests</module>
+		-->
 		
 		<module>remote/org.eclipse.cdt.remote.core</module>
 		<module>remote/org.eclipse.cdt.remote-feature</module>
 		
+		<!-- delete by jwy
 		<module>toolchains/arduino/org.eclipse.cdt.arduino.core</module>
 		<module>toolchains/arduino/org.eclipse.cdt.arduino.ui</module>
 		<module>toolchains/arduino/org.eclipse.cdt.arduino-feature</module>
+		-->
+
+		<module>smartcore/cn.smartcore.debug.core</module>
+		<module>smartcore/cn.smartcore.debug-feature</module>
+		<module>smartcore/cn.smartcore.dev.ui</module>
+		<module>smartcore/cn.smartcore.dev-feature</module>
 
 <!-- 
 		<module>lrparser/org.eclipse.cdt.core.lrparser.tests</module>

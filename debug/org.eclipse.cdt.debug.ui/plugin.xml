@@ -10,10 +10,23 @@
 <!-- Extensions -->
    <extension
          point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <!-- modified by jwy
       <launchConfigurationTypeImage
             icon="icons/obj16/c_app.gif"
             configTypeID="org.eclipse.cdt.launch.applicationLaunchType"
             id="org.eclipse.cdt.launch.localRunLaunchImage">
+      </launchConfigurationTypeImage>
+      -->
+      <launchConfigurationTypeImage
+            icon="icons/obj16/smartsimu_app.gif"
+            configTypeID="org.eclipse.cdt.launch.applicationLaunchType"
+            id="org.eclipse.cdt.launch.localRunLaunchImage">
+      </launchConfigurationTypeImage>
+      <!-- added by jwy -->
+      <launchConfigurationTypeImage
+            icon="icons/obj16/smartsimu_module.gif"
+            configTypeID="org.eclipse.cdt.launch.moduleLaunchType"
+            id="org.eclipse.cdt.launch.moduleLaunchImage">
       </launchConfigurationTypeImage>
       <launchConfigurationTypeImage
             icon="icons/obj16/c_app.gif"
@@ -25,8 +38,15 @@
             configTypeID="org.eclipse.cdt.launch.postmortemLaunchType"
             id="org.eclipse.cdt.launch.coreFileLaunchImage">
       </launchConfigurationTypeImage>
+      <!-- modified by jwy
       <launchConfigurationTypeImage
             icon="icons/obj16/c_app.gif"
+            configTypeID="org.eclipse.cdt.launch.remoteApplicationLaunchType"
+            id="org.eclipse.cdt.launch.remoteRunLaunchImage">
+      </launchConfigurationTypeImage>
+      -->
+      <launchConfigurationTypeImage
+            icon="icons/obj16/smartsimu_app.gif"
             configTypeID="org.eclipse.cdt.launch.remoteApplicationLaunchType"
             id="org.eclipse.cdt.launch.remoteRunLaunchImage">
       </launchConfigurationTypeImage>
@@ -48,6 +68,22 @@
             type="org.eclipse.cdt.launch.applicationLaunchType">
          <launchMode mode="run"/>
       </launchConfigurationTabGroup>
+      <!-- added by jwy -->
+      <launchConfigurationTabGroup
+            class="org.eclipse.cdt.debug.internal.ui.launch.PlaceHolderLaunchConfigurationTabGroup"
+            helpContextId="org.eclipse.cdt.debug.ui.cdt_debugging_projects"
+            id="org.eclipse.cdt.launch.moduleLaunchTabGroup"
+            type="org.eclipse.cdt.launch.moduleLaunchType">
+         <launchMode mode="debug"/>
+      </launchConfigurationTabGroup>
+      <launchConfigurationTabGroup
+            class="org.eclipse.cdt.debug.internal.ui.launch.PlaceHolderLaunchConfigurationTabGroup"
+            helpContextId="org.eclipse.cdt.debug.ui.cdt_debugging_projects"
+            id="org.eclipse.cdt.launch.moduleRunLaunchTabGroup"
+            type="org.eclipse.cdt.launch.moduleLaunchType">
+         <launchMode mode="run"/>
+      </launchConfigurationTabGroup>
+      <!-- delete by jwy
       <launchConfigurationTabGroup
             class="org.eclipse.cdt.debug.internal.ui.launch.PlaceHolderLaunchConfigurationTabGroup"
             helpContextId="org.eclipse.cdt.debug.ui.cdt_debugging_projects"
@@ -60,6 +96,7 @@
             id="org.eclipse.cdt.launch.postmortemLaunchTabGroup"
             type="org.eclipse.cdt.launch.postmortemLaunchType">
       </launchConfigurationTabGroup>
+      -->
       <launchConfigurationTabGroup
             class="org.eclipse.cdt.debug.internal.ui.launch.PlaceHolderLaunchConfigurationTabGroup"
             helpContextId="org.eclipse.cdt.debug.ui.cdt_debugging_projects"

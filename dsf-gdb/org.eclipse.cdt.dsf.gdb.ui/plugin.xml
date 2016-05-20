@@ -5,6 +5,7 @@
    <extension
          point="org.eclipse.debug.ui.launchConfigurationTabs">
       <!-- Local application launch tabs-->
+      <!-- modified by jwy
       <tab
             id="org.eclipse.cdt.dsf.gdb.launch.localApplicationLaunch.mainTab"
             group="org.eclipse.cdt.launch.applicationLaunchTabGroup"
@@ -12,6 +13,14 @@
             class="org.eclipse.cdt.dsf.gdb.internal.ui.launching.CMainTab">
         <associatedDelegate delegate="org.eclipse.cdt.dsf.gdb.launch.localCLaunch"/>
       </tab>
+      -->
+      <tab
+            id="org.eclipse.cdt.dsf.gdb.launch.localApplicationLaunch.mainTab"
+            group="org.eclipse.cdt.launch.applicationLaunchTabGroup"
+            name="%launchTab.main.name"
+            class="org.eclipse.cdt.dsf.gdb.internal.ui.launching.SmartSimuApplicationmMainTab2">
+        <associatedDelegate delegate="org.eclipse.cdt.dsf.gdb.launch.localCLaunch"/>
+      </tab><!-- about localCLaunch, see org.eclipse.cdt.dsf.gdb\plugin.xml-->
       <tab id="org.eclipse.cdt.dsf.gdb.launch.localApplicationLaunch.argumentsTab"
             group="org.eclipse.cdt.launch.applicationLaunchTabGroup"
             name="%launchTab.arguments.name"
@@ -49,6 +58,54 @@
             name="%launchTab.common.name"
             class="org.eclipse.debug.ui.CommonTab">
         <associatedDelegate delegate="org.eclipse.cdt.dsf.gdb.launch.localCLaunch"/>
+        <placement after="org.eclipse.debug.ui.sourceLookupTab"/>
+      </tab>
+      
+      <!-- added by jwy -->
+      <tab
+            id="org.eclipse.cdt.dsf.gdb.launch.localApplicationLaunch.mainTab"
+            group="org.eclipse.cdt.launch.moduleLaunchTabGroup"
+            name="%launchTab.main.name"
+            class="org.eclipse.cdt.dsf.gdb.internal.ui.launching.SmartSimuModuleMainTab2">
+        <associatedDelegate delegate="org.eclipse.cdt.dsf.gdb.launch.moduleLaunch"/>
+      </tab><!-- about localCLaunch, see org.eclipse.cdt.dsf.gdb\plugin.xml-->
+      <tab id="org.eclipse.cdt.dsf.gdb.launch.localApplicationLaunch.argumentsTab"
+            group="org.eclipse.cdt.launch.moduleLaunchTabGroup"
+            name="%launchTab.arguments.name"
+            class="org.eclipse.cdt.dsf.gdb.internal.ui.launching.CArgumentsTab">
+        <associatedDelegate delegate="org.eclipse.cdt.dsf.gdb.launch.moduleLaunch"/>
+        <placement after="org.eclipse.cdt.dsf.gdb.launch.mainTab"/>
+      </tab>
+      <tab 
+            id="org.eclipse.cdt.dsf.gdb.launch.localApplicationLaunch.environmentTab"
+            group="org.eclipse.cdt.launch.moduleLaunchTabGroup"
+            name="%launchTab.environment.name"
+            class="org.eclipse.debug.ui.EnvironmentTab">
+         <associatedDelegate delegate="org.eclipse.cdt.dsf.gdb.launch.moduleLaunch"/>
+         <placement after="org.eclipse.cdt.dsf.gdb.launch.argumentsTab"/>
+      </tab>
+      <tab
+            id="org.eclipse.cdt.dsf.gdb.launch.localApplicationLaunch.debuggerTab"
+            group="org.eclipse.cdt.launch.moduleLaunchTabGroup"
+            name="%launchTab.debugger.name"
+            class="org.eclipse.cdt.dsf.gdb.internal.ui.launching.LocalApplicationCDebuggerTab">
+        <associatedDelegate delegate="org.eclipse.cdt.dsf.gdb.launch.moduleLaunch"/>
+        <placement after="org.eclipse.debug.ui.environmentTab"/>
+      </tab>
+      <tab
+            id="org.eclipse.cdt.dsf.gdb.launch.localApplicationLaunch.sourceLookupTab"
+            group="org.eclipse.cdt.launch.moduleLaunchTabGroup"
+            name="%launchTab.sourceLookup.name"
+            class="org.eclipse.debug.ui.sourcelookup.SourceLookupTab">
+        <associatedDelegate delegate="org.eclipse.cdt.dsf.gdb.launch.moduleLaunch"/>
+        <placement after="org.eclipse.cdt.dsf.gdb.launch.debuggerTab"/>
+      </tab>
+      <tab
+            id="org.eclipse.cdt.dsf.gdb.launch.localApplicationLaunch.commonTab"
+            group="org.eclipse.cdt.launch.moduleLaunchTabGroup"
+            name="%launchTab.common.name"
+            class="org.eclipse.debug.ui.CommonTab">
+        <associatedDelegate delegate="org.eclipse.cdt.dsf.gdb.launch.moduleLaunch"/>
         <placement after="org.eclipse.debug.ui.sourceLookupTab"/>
       </tab>
 

@@ -1553,9 +1553,13 @@ public class GDBProcesses_7_0 extends AbstractDsfService
 									fBackend.interrupt();
 								}
 
-								fCommandControl.queueCommand(
-										fCommandFactory.createMIInterpreterExecConsoleKill((IMIContainerDMContext)getData()),
-										new ImmediateDataRequestMonitor<MIInfo>(rm));
+								// modified by jwy
+//								fCommandControl.queueCommand(
+//										
+//										fCommandFactory.createMIInterpreterExecConsoleKill((IMIContainerDMContext)getData()),
+//										new ImmediateDataRequestMonitor<MIInfo>(rm));
+								rm.done();
+								// end modify
 							} else {
 					            rm.setStatus(new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, INTERNAL_ERROR, "Invalid process context.", null)); //$NON-NLS-1$
 					            rm.done();								

@@ -88,38 +88,76 @@ public class GdbDisconnectCommand implements IDisconnectHandler {
         });
 	}
 
+	// added by jwy
+	public boolean myDisconnect(final IDebugCommandRequest request) {
+		if (request.getElements().length == 0) {
+			request.done();
+			return false;
+		}
+
+		getContainerDMContexts(request.getElements(), new DataRequestMonitor<IContainerDMContext[]>(fExecutor, null) {
+			@Override
+			protected void handleCompleted() {
+				if (!isSuccess()) {
+					request.setStatus(getStatus());
+					request.done();
+				} else {
+					disconnect(getData(), new ImmediateRequestMonitor() {
+						@Override
+						protected void handleCompleted() {
+							if (!isSuccess()) {
+								request.setStatus(getStatus());
+								request.done();
+							} else {
+								waitForTermination(request);
+							}
+						}
+					});
+				}
+			}
+		});
+
+		return false;
+	}
+	// end add
+		
 	@Override
 	public boolean execute(final IDebugCommandRequest request) {
-        if (request.getElements().length == 0) {
-        	request.done();
-        	return false;
-        }
-        
-        getContainerDMContexts(request.getElements(), new DataRequestMonitor<IContainerDMContext[]>(fExecutor, null) {
-        	@Override
-        	protected void handleCompleted() {
-        		if (!isSuccess()) {
-        			request.setStatus(getStatus());
-        			request.done();
-        		}
-        		else {
-        			disconnect(getData(), new ImmediateRequestMonitor() {
-        				@Override
-						protected void handleCompleted() {
-            				if (!isSuccess()) {
-            					request.setStatus(getStatus());
-            					request.done();
-            				}
-            				else {
-            					waitForTermination(request);
-            				}
-        				}
-        			});
-        		}
-        	}
-        });
-        
-        return false;
+		// modified by jwy
+				myDisconnect(request);
+		        new DsfTerminateCommand(fSession).myTerminate(request);
+		        
+//		        if (request.getElements().length == 0) {
+//		        	request.done();
+//		        	return false;
+//		        }
+//		        
+//		        getContainerDMContexts(request.getElements(), new DataRequestMonitor<IContainerDMContext[]>(fExecutor, null) {
+//		        	@Override
+//		        	protected void handleCompleted() {
+//		        		if (!isSuccess()) {
+//		        			request.setStatus(getStatus());
+//		        			request.done();
+//		        		}
+//		        		else {
+//		        			disconnect(getData(), new ImmediateRequestMonitor() {
+//		        				@Override
+//								protected void handleCompleted() {
+//		            				if (!isSuccess()) {
+//		            					request.setStatus(getStatus());
+//		            					request.done();
+//		            				}
+//		            				else {
+//		            					waitForTermination(request);
+//		            				}
+//		        				}
+//		        			});
+//		        		}
+//		        	}
+//		        });
+		        
+		        // end modify
+		        return false;
 	}
     
     /**

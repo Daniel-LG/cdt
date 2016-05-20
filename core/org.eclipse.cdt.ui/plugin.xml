@@ -431,6 +431,7 @@
             %NewWizards.class.description
          </description>
       </wizard>
+      <!-- delete by jwy, to remove the default C/C++ project in Eclipse
       <wizard
             canFinishEarly="false"
             category="org.eclipse.cdt.ui.newCWizards"
@@ -458,7 +459,7 @@
          <description>
              %Cproject.desc
          </description>
-      </wizard>
+      </wizard>-->
        <!-- (defered) wizard
              canFinishEarly="false"
              category="org.eclipse.cdt.ui.newCWizards"
@@ -3875,6 +3876,7 @@
 			</or>
           </enablement>
        </actionProvider>
+	   <!-- delete by jwy, make the default C/C++ project invisible
 	   <commonWizard
 	         associatedExtensionId="org.eclipse.cdt.ui.navigator.content"
 	         menuGroupId="org.eclipse.cdt.ui.newProject"
@@ -3916,7 +3918,7 @@
 		        </and>
          	</or>
          </enablement>
-	   </commonWizard>
+	   </commonWizard>-->
 	   <commonWizard
 	         associatedExtensionId="org.eclipse.cdt.ui.navigator.content"
 	         menuGroupId="org.eclipse.cdt.ui"

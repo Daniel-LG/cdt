@@ -17,6 +17,13 @@
             name="%ApplicationLaunch.name"
             public="true">
       </launchConfigurationType>
+      <!-- added by jwy -->
+      <launchConfigurationType
+            id="org.eclipse.cdt.launch.moduleLaunchType"
+            name="%ModuleLaunch.name"
+            public="true">
+      </launchConfigurationType>
+      <!-- modified by jwy, hide the useless launch and debug type, that is, set "public" to "false"
       <launchConfigurationType
             id="org.eclipse.cdt.launch.attachLaunchType"
             name="%AttachLaunch.name"
@@ -26,6 +33,17 @@
             id="org.eclipse.cdt.launch.postmortemLaunchType"
             name="%PostMortemLaunch.name"
             public="true">
+      </launchConfigurationType>
+      -->
+      <launchConfigurationType
+            id="org.eclipse.cdt.launch.attachLaunchType"
+            name="%AttachLaunch.name"
+            public="false">
+      </launchConfigurationType>
+      <launchConfigurationType
+            id="org.eclipse.cdt.launch.postmortemLaunchType"
+            name="%PostMortemLaunch.name"
+            public="false">
       </launchConfigurationType>
       <launchConfigurationType
             id="org.eclipse.cdt.launch.remoteApplicationLaunchType"

@@ -13,6 +13,17 @@
             sourceLocatorId="org.eclipse.cdt.debug.core.sourceLocator"
             sourcePathComputerId="org.eclipse.cdt.debug.core.sourcePathComputer">
       </launchDelegate>
+      <!-- added by jwy -->
+      <launchDelegate
+            id="org.eclipse.cdt.dsf.gdb.launch.moduleLaunch"
+            type="org.eclipse.cdt.launch.moduleLaunchType"
+            modes="debug"
+            delegate="org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate"
+            name="%launchDelegate.localApplication.name"
+            delegateDescription="%launchDelegate.localApplication.description"
+            sourceLocatorId="org.eclipse.cdt.debug.core.sourceLocator"
+            sourcePathComputerId="org.eclipse.cdt.debug.core.sourcePathComputer">
+      </launchDelegate>
       <launchDelegate
             id="org.eclipse.cdt.dsf.gdb.launch.remoteCLaunch"
             type="org.eclipse.cdt.launch.remoteApplicationLaunchType"
