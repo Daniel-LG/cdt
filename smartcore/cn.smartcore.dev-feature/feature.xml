@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="cn.smartcore.dev"
+      label="Smart-Core dev"
+      version="1.0.0.qualifier"
+      provider-name="Smart-Core"
+      plugin="cn.smartcore.dev.ui"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
+
+   <description>
+      Smart-Core Debugger Integration, programmed by Juwuyang during his internship in Smart-Core, from 2016.04.05 to 2016.04.30.
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="cn.smartcore.dev.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
