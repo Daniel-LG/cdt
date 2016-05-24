@@ -96,7 +96,6 @@
             id="org.eclipse.cdt.launch.postmortemLaunchTabGroup"
             type="org.eclipse.cdt.launch.postmortemLaunchType">
       </launchConfigurationTabGroup>
-      -->
       <launchConfigurationTabGroup
             class="org.eclipse.cdt.debug.internal.ui.launch.PlaceHolderLaunchConfigurationTabGroup"
             helpContextId="org.eclipse.cdt.debug.ui.cdt_debugging_projects"
@@ -111,6 +110,7 @@
             type="org.eclipse.cdt.launch.remoteApplicationLaunchType">
          <launchMode mode="run"/>
       </launchConfigurationTabGroup>
+      -->
    </extension>
 
    <extension

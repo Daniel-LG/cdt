@@ -64,13 +64,17 @@ public class ControlGDBServerHandler extends AbstractHandler {
 	private static final String GDBSERVER_ADDRESS = "127.0.0.1";
 
 	private static final String GDBSERVER_PORT = "2345";
+	
+	public static IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
 
-	public static final MessageConsole myConsole = findConsole(CONSOLE_NAME);
+	public static final MessageConsole smartsimuConsole = findConsole(CONSOLE_NAME);
+
+	public static boolean isFirstStart = true;
 
 	public Object execute(ExecutionEvent event) throws ExecutionException {
 		Command command = event.getCommand();
 		boolean oldValue = HandlerUtil.toggleCommandState(command);
-		IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+		
 
 		// use the old value and perform the operation
 		if (oldValue) {
@@ -136,22 +140,22 @@ public class ControlGDBServerHandler extends AbstractHandler {
 			} catch (PartInitException e) {
 				e.printStackTrace();
 			}
-			view.display(myConsole);
+			view.display(smartsimuConsole);
 
 			CommandLine cmdLine = CommandLine.parse(line);
 			executor = new DefaultExecutor();
 			ExecuteWatchdog watchdog = new ExecuteWatchdog(ExecuteWatchdog.INFINITE_TIMEOUT);
 			executor.setWatchdog(watchdog);
-			MessageConsoleStream outputStream = myConsole.newMessageStream();
-			MessageConsoleStream errorStream = myConsole.newMessageStream();
+			MessageConsoleStream outputStream = smartsimuConsole.newMessageStream();
+			MessageConsoleStream errorStream = smartsimuConsole.newMessageStream();
 			errorStream.setColor(new Color(null, 255, 0, 0));
 			outputStream.setActivateOnWrite(true);
 			errorStream.setActivateOnWrite(true);
-			PumpStreamHandler streamHandler = new PumpStreamHandler(outputStream, outputStream);
+			PumpStreamHandler streamHandler = new PumpStreamHandler(outputStream, errorStream);
 			executor.setStreamHandler(streamHandler);
-			MyExecuteResultHandler resultHandler = new MyExecuteResultHandler(window, command, outputStream);
+			MyExecuteResultHandler resultHandler = new MyExecuteResultHandler(window, command, outputStream, errorStream);
 
-			myConsole.clearConsole();
+			smartsimuConsole.clearConsole();
 
 			try {
 				executor.execute(cmdLine, resultHandler);

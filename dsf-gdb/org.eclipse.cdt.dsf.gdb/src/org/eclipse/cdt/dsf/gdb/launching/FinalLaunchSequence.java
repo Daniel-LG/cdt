@@ -19,9 +19,18 @@
  *******************************************************************************/
 package org.eclipse.cdt.dsf.gdb.launching;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.exec.CommandLine;
+import org.apache.commons.exec.DefaultExecutor;
+import org.apache.commons.exec.ExecuteException;
+import org.apache.commons.exec.ExecuteWatchdog;
+import org.apache.commons.exec.PumpStreamHandler;
 import org.eclipse.cdt.debug.core.CDebugUtils;
 import org.eclipse.cdt.debug.core.ICDTLaunchConfigurationConstants;
 import org.eclipse.cdt.debug.core.model.IConnectHandler;
@@ -50,19 +59,40 @@ import org.eclipse.cdt.dsf.mi.service.command.output.MIGDBVersionInfo;
 import org.eclipse.cdt.dsf.mi.service.command.output.MIInfo;
 import org.eclipse.cdt.dsf.service.DsfServicesTracker;
 import org.eclipse.cdt.dsf.service.DsfSession;
+import org.eclipse.core.commands.Command;
+import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.core.resources.IFile;
+import org.eclipse.core.resources.IProject;
+import org.eclipse.core.resources.IWorkspaceRoot;
+import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.debug.core.ILaunch;
+import org.eclipse.swt.graphics.Color;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.ui.IWorkbenchPage;
+import org.eclipse.ui.IWorkbenchWindow;
+import org.eclipse.ui.PartInitException;
+import org.eclipse.ui.commands.ICommandService;
+import org.eclipse.ui.console.IConsoleConstants;
+import org.eclipse.ui.console.IConsoleView;
+import org.eclipse.ui.console.MessageConsoleStream;
+import org.eclipse.ui.handlers.HandlerUtil;
+import org.eclipse.ui.services.IEvaluationService;
+
+import cn.smartcore.dev.ui.natures.ProjectNature;
+import cn.smartcore.handlers.ControlGDBServerHandler;
+import cn.smartcore.handlers.MyExecuteResultHandler;
 
 public class FinalLaunchSequence extends ReflectionSequence {
 	// The launchConfiguration attributes
 	private Map<String, Object> fAttributes;
 
 	private IGDBControl fCommandControl;
-	private IGDBBackend	fGDBBackend;
+	private IGDBBackend fGDBBackend;
 	private IMIProcesses fProcService;
 	private CommandFactory fCommandFactory;
 
@@ -73,13 +103,15 @@ public class FinalLaunchSequence extends ReflectionSequence {
 	 * @since 4.0
 	 */
 	public FinalLaunchSequence(DsfSession session, Map<String, Object> attributes, RequestMonitorWithProgress rm) {
-		super(session.getExecutor(), rm, LaunchMessages.getString("FinalLaunchSequence.0"), LaunchMessages.getString("FinalLaunchSequence.1"));     //$NON-NLS-1$ //$NON-NLS-2$
+		super(session.getExecutor(), rm, LaunchMessages.getString("FinalLaunchSequence.0"), //$NON-NLS-1$
+				LaunchMessages.getString("FinalLaunchSequence.1")); //$NON-NLS-1$
 		fSession = session;
 		fAttributes = attributes;
 	}
 
 	/**
 	 * Gets the DsfSession of this launch sequence.
+	 * 
 	 * @return the {@link DsfSession}
 	 * @since 4.3
 	 */
@@ -89,6 +121,7 @@ public class FinalLaunchSequence extends ReflectionSequence {
 
 	/**
 	 * Gets the launch configuration attributes, as a {@link Map}.
+	 * 
 	 * @return the launch configuration attributes
 	 * @since 4.3
 	 */
@@ -99,59 +132,63 @@ public class FinalLaunchSequence extends ReflectionSequence {
 	@Override
 	protected String[] getExecutionOrder(String group) {
 		if (GROUP_TOP_LEVEL.equals(group)) {
-			return new String[] {
-					"stepInitializeFinalLaunchSequence",   //$NON-NLS-1$
+			return new String[] { "stepInitializeFinalLaunchSequence", //$NON-NLS-1$
 					// Global GDB settings
-					"stepGDBVersion",   //$NON-NLS-1$
-					"stepSetEnvironmentDirectory",   //$NON-NLS-1$
-					"stepSetBreakpointPending",    //$NON-NLS-1$
-					"stepEnablePrettyPrinting",    //$NON-NLS-1$
-					"stepSetPrintObject",    //$NON-NLS-1$
-					"stepSetCharset",    //$NON-NLS-1$
-					"stepSourceGDBInitFile",   //$NON-NLS-1$
-					"stepSetAutoLoadSharedLibrarySymbols",   //$NON-NLS-1$
-					"stepSetSharedLibraryPaths",   //$NON-NLS-1$
-					
+					"stepGDBVersion", //$NON-NLS-1$
+					"stepSetEnvironmentDirectory", //$NON-NLS-1$
+					"stepSetBreakpointPending", //$NON-NLS-1$
+					"stepEnablePrettyPrinting", //$NON-NLS-1$
+					"stepSetPrintObject", //$NON-NLS-1$
+					"stepSetCharset", //$NON-NLS-1$
+					"stepSourceGDBInitFile", //$NON-NLS-1$
+					"stepSetAutoLoadSharedLibrarySymbols", //$NON-NLS-1$
+					"stepSetSharedLibraryPaths", //$NON-NLS-1$
+
 					// -environment-directory with a lot of paths could
 					// make setting breakpoint incredibly slow, which makes
-					// the debug session un-workable.  We simply stop
+					// the debug session un-workable. We simply stop
 					// using it because it's usefulness is unclear.
 					// Bug 225805
 					//
-					// "stepSetSourceLookupPath",   //$NON-NLS-1$
-					
+					// "stepSetSourceLookupPath", //$NON-NLS-1$
+
+					// added by jwy
+					"stepLaunchSimulator",
 					// For remote-attach launch only
-					"stepRemoteConnection",   //$NON-NLS-1$
+					"stepRemoteConnection", //$NON-NLS-1$
 					// For all launches except attach ones
-					"stepNewProcess", //$NON-NLS-1$
+					// "stepNewProcess", //$NON-NLS-1$
 					// For local attach launch only
-					"stepAttachToProcess",   //$NON-NLS-1$
+					// "stepAttachToProcess", //$NON-NLS-1$
 					// Global
-					"stepDataModelInitializationComplete",   //$NON-NLS-1$
-					"stepCleanup",   //$NON-NLS-1$
+					"stepDataModelInitializationComplete", //$NON-NLS-1$
+					"stepCleanup", //$NON-NLS-1$
 			};
 		}
 		return null;
 	}
 
-	/** 
-	 * Initialize the members of the FinalLaunchSequence class.
-	 * This step is mandatory for the rest of the sequence to complete.
-	 * @since 4.0 
+	/**
+	 * Initialize the members of the FinalLaunchSequence class. This step is
+	 * mandatory for the rest of the sequence to complete.
+	 * 
+	 * @since 4.0
 	 */
 	@Execute
 	public void stepInitializeFinalLaunchSequence(RequestMonitor requestMonitor) {
 		fTracker = new DsfServicesTracker(GdbPlugin.getBundleContext(), fSession.getId());
 		fGDBBackend = fTracker.getService(IGDBBackend.class);
 		if (fGDBBackend == null) {
-			requestMonitor.setStatus(new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, -1, "Cannot obtain GDBBackend service", null)); //$NON-NLS-1$
+			requestMonitor.setStatus(
+					new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, -1, "Cannot obtain GDBBackend service", null)); //$NON-NLS-1$
 			requestMonitor.done();
 			return;
 		}
 
 		fCommandControl = fTracker.getService(IGDBControl.class);
 		if (fCommandControl == null) {
-			requestMonitor.setStatus(new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, -1, "Cannot obtain control service", null)); //$NON-NLS-1$
+			requestMonitor.setStatus(
+					new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, -1, "Cannot obtain control service", null)); //$NON-NLS-1$
 			requestMonitor.done();
 			return;
 		}
@@ -160,7 +197,8 @@ public class FinalLaunchSequence extends ReflectionSequence {
 
 		fProcService = fTracker.getService(IMIProcesses.class);
 		if (fProcService == null) {
-			requestMonitor.setStatus(new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, -1, "Cannot obtain process service", null)); //$NON-NLS-1$
+			requestMonitor.setStatus(
+					new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, -1, "Cannot obtain process service", null)); //$NON-NLS-1$
 			requestMonitor.done();
 			return;
 		}
@@ -168,9 +206,10 @@ public class FinalLaunchSequence extends ReflectionSequence {
 		requestMonitor.done();
 	}
 
-	/** 
+	/**
 	 * Rollback method for {@link #stepInitializeFinalLaunchSequence()}
-	 * @since 4.0 
+	 * 
+	 * @since 4.0
 	 */
 	@RollBack("stepInitializeFinalLaunchSequence")
 	public void rollBackInitializeFinalLaunchSequence(RequestMonitor requestMonitor) {
@@ -182,13 +221,13 @@ public class FinalLaunchSequence extends ReflectionSequence {
 	}
 
 	/**
-	 * Print the version of GDB. 
-	 * @since 4.6 
+	 * Print the version of GDB.
+	 * 
+	 * @since 4.6
 	 */
 	@Execute
 	public void stepGDBVersion(final RequestMonitor requestMonitor) {
-		fCommandControl.queueCommand(
-				fCommandFactory.createMIGDBVersion(fCommandControl.getContext()), 
+		fCommandControl.queueCommand(fCommandFactory.createMIGDBVersion(fCommandControl.getContext()),
 				new DataRequestMonitor<MIGDBVersionInfo>(getExecutor(), requestMonitor) {
 					@Override
 					protected void handleCompleted() {
@@ -199,8 +238,9 @@ public class FinalLaunchSequence extends ReflectionSequence {
 	}
 
 	/**
-	 * Specify GDB's working directory. 
-	 * @since 4.0 
+	 * Specify GDB's working directory.
+	 * 
+	 * @since 4.0
 	 */
 	@Execute
 	public void stepSetEnvironmentDirectory(final RequestMonitor requestMonitor) {
@@ -208,25 +248,27 @@ public class FinalLaunchSequence extends ReflectionSequence {
 		try {
 			dir = fGDBBackend.getGDBWorkingDirectory();
 		} catch (CoreException e) {
-			requestMonitor.setStatus(new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, -1, "Cannot get working directory", e)); //$NON-NLS-1$
+			requestMonitor
+					.setStatus(new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, -1, "Cannot get working directory", e)); //$NON-NLS-1$
 			requestMonitor.done();
 			return;
 		}
 
 		if (dir != null) {
 			fCommandControl.queueCommand(
-					fCommandFactory.createMIEnvironmentCD(fCommandControl.getContext(), dir.toPortableString()), 
+					fCommandFactory.createMIEnvironmentCD(fCommandControl.getContext(), dir.toPortableString()),
 					new DataRequestMonitor<MIInfo>(getExecutor(), requestMonitor));
 		} else {
 			requestMonitor.done();
 		}
 	}
-	
-    /**
-     * Allow breakpoints/tracepoints to be set as pending when using the gdb console 
-     * or a CLI command to create them.
-     * @since 4.0
-     */
+
+	/**
+	 * Allow breakpoints/tracepoints to be set as pending when using the gdb
+	 * console or a CLI command to create them.
+	 * 
+	 * @since 4.0
+	 */
 	@Execute
 	public void stepSetBreakpointPending(final RequestMonitor requestMonitor) {
 		if (fGDBBackend.getSessionType() != SessionType.CORE) {
@@ -239,30 +281,29 @@ public class FinalLaunchSequence extends ReflectionSequence {
 	}
 
 	/**
-	 * Turn on pretty printers for MI variable objects, if enabled in preferences.
-	 * Also, turn off error messages from python, all the time.
+	 * Turn on pretty printers for MI variable objects, if enabled in
+	 * preferences. Also, turn off error messages from python, all the time.
+	 * 
 	 * @since 4.0
 	 */
 	@Execute
 	public void stepEnablePrettyPrinting(final RequestMonitor requestMonitor) {
 		if (Platform.getPreferencesService().getBoolean(GdbPlugin.PLUGIN_ID,
-				IGdbDebugPreferenceConstants.PREF_ENABLE_PRETTY_PRINTING,
-				false, null)) {
+				IGdbDebugPreferenceConstants.PREF_ENABLE_PRETTY_PRINTING, false, null)) {
 
-			fCommandControl.enablePrettyPrintingForMIVariableObjects(
-					new RequestMonitor(getExecutor(), requestMonitor) {
+			fCommandControl.enablePrettyPrintingForMIVariableObjects(new RequestMonitor(getExecutor(), requestMonitor) {
+				@Override
+				protected void handleCompleted() {
+					fCommandControl.setPrintPythonErrors(false, new ImmediateRequestMonitor() {
 						@Override
 						protected void handleCompleted() {
-							fCommandControl.setPrintPythonErrors(false,  new ImmediateRequestMonitor() {
-								@Override
-								protected void handleCompleted() {
-									// Ignore this error
-									// Bug 402988
-									requestMonitor.done();
-								}
-							});
+							// Ignore this error
+							// Bug 402988
+							requestMonitor.done();
 						}
 					});
+				}
+			});
 		} else {
 			fCommandControl.setPrintPythonErrors(false, new ImmediateRequestMonitor() {
 				@Override
@@ -274,17 +315,17 @@ public class FinalLaunchSequence extends ReflectionSequence {
 			});
 		}
 	}
-	
+
 	/**
 	 * Turn on RTTI usage, if enabled in preferences.
+	 * 
 	 * @since 4.1
 	 */
 	@Execute
 	public void stepSetPrintObject(final RequestMonitor requestMonitor) {
 		// Enable or disable variables type determination based on RTTI.
 		// See bug 377536 for details.
-		boolean useRtti = Platform.getPreferencesService().getBoolean(
-				GdbPlugin.PLUGIN_ID,
+		boolean useRtti = Platform.getPreferencesService().getBoolean(GdbPlugin.PLUGIN_ID,
 				IGdbDebugPreferenceConstants.PREF_USE_RTTI, false, null);
 		fCommandControl.queueCommand(
 				fCommandControl.getCommandFactory().createMIGDBSetPrintObject(fCommandControl.getContext(), useRtti),
@@ -293,45 +334,52 @@ public class FinalLaunchSequence extends ReflectionSequence {
 					protected void handleCompleted() {
 						// Not an essential command, so accept errors
 						requestMonitor.done();
-					}					
-				}
-		);
+					}
+				});
 	}
-	
+
 	/**
 	 * Set the charsets.
+	 * 
 	 * @since 4.1
 	 */
 	@Execute
 	public void stepSetCharset(final RequestMonitor requestMonitor) {
-		// Enable printing of sevenbit-strings. This is required to avoid charset issues.
+		// Enable printing of sevenbit-strings. This is required to avoid
+		// charset issues.
 		// See bug 307311 for details.
 		fCommandControl.queueCommand(
-			fCommandFactory.createMIGDBSetPrintSevenbitStrings(fCommandControl.getContext(), true),
-			new ImmediateDataRequestMonitor<MIInfo>(requestMonitor) {
-				@Override
-				protected void handleCompleted() {
-					// Set the charset to ISO-8859-1. We have to do this here because GDB earlier than
-					// 7.0 has no proper Unicode support. Note that we can still handle UTF-8 though, as
-					// we can determine and decode UTF-8 encoded strings on our own. This makes ISO-8859-1
-					// the most suitable option here. See the MIStringHandler class and bug 307311 for
-					// details.
-					fCommandControl.queueCommand(
-							fCommandFactory.createMIGDBSetCharset(fCommandControl.getContext(), "ISO-8859-1"), //$NON-NLS-1$
-							new ImmediateDataRequestMonitor<MIInfo>(requestMonitor) {
-								@Override
-								protected void handleCompleted() {
-									// Not an essential command, so accept errors
-									requestMonitor.done();
-								}
-							});
-				}
-			});
+				fCommandFactory.createMIGDBSetPrintSevenbitStrings(fCommandControl.getContext(), true),
+				new ImmediateDataRequestMonitor<MIInfo>(requestMonitor) {
+					@Override
+					protected void handleCompleted() {
+						// Set the charset to ISO-8859-1. We have to do this
+						// here because GDB earlier than
+						// 7.0 has no proper Unicode support. Note that we can
+						// still handle UTF-8 though, as
+						// we can determine and decode UTF-8 encoded strings on
+						// our own. This makes ISO-8859-1
+						// the most suitable option here. See the
+						// MIStringHandler class and bug 307311 for
+						// details.
+						fCommandControl.queueCommand(
+								fCommandFactory.createMIGDBSetCharset(fCommandControl.getContext(), "ISO-8859-1"), //$NON-NLS-1$
+								new ImmediateDataRequestMonitor<MIInfo>(requestMonitor) {
+									@Override
+									protected void handleCompleted() {
+										// Not an essential command, so accept
+										// errors
+										requestMonitor.done();
+									}
+								});
+					}
+				});
 	}
 
 	/**
 	 * Source the gdbinit file specified in the launch.
-	 * @since 4.0 
+	 * 
+	 * @since 4.0
 	 */
 	@Execute
 	public void stepSourceGDBInitFile(final RequestMonitor requestMonitor) {
@@ -340,18 +388,22 @@ public class FinalLaunchSequence extends ReflectionSequence {
 
 			if (gdbinitFile != null && !gdbinitFile.isEmpty()) {
 				String projectName = (String) fAttributes.get(ICDTLaunchConfigurationConstants.ATTR_PROJECT_NAME);
-				final String expandedGDBInitFile = new DebugStringVariableSubstitutor(projectName).performStringSubstitution(gdbinitFile);
+				final String expandedGDBInitFile = new DebugStringVariableSubstitutor(projectName)
+						.performStringSubstitution(gdbinitFile);
 
 				fCommandControl.queueCommand(
-						fCommandFactory.createCLISource(fCommandControl.getContext(), expandedGDBInitFile), 
+						fCommandFactory.createCLISource(fCommandControl.getContext(), expandedGDBInitFile),
 						new DataRequestMonitor<MIInfo>(getExecutor(), requestMonitor) {
 							@Override
 							protected void handleCompleted() {
-								// If the gdbinitFile is the default, then it may not exist and we
+								// If the gdbinitFile is the default, then it
+								// may not exist and we
 								// should not consider this an error.
-								// If it is not the default, then the user must have specified it and
+								// If it is not the default, then the user must
+								// have specified it and
 								// we want to warn the user if we can't find it.
-								if (!expandedGDBInitFile.equals(IGDBLaunchConfigurationConstants.DEBUGGER_GDB_INIT_DEFAULT)) {
+								if (!expandedGDBInitFile
+										.equals(IGDBLaunchConfigurationConstants.DEBUGGER_GDB_INIT_DEFAULT)) {
 									requestMonitor.setStatus(getStatus());
 								}
 								requestMonitor.done();
@@ -361,41 +413,41 @@ public class FinalLaunchSequence extends ReflectionSequence {
 				requestMonitor.done();
 			}
 		} catch (CoreException e) {
-			requestMonitor.setStatus(new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, -1, "Cannot get gdbinit option", e)); //$NON-NLS-1$
+			requestMonitor
+					.setStatus(new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, -1, "Cannot get gdbinit option", e)); //$NON-NLS-1$
 			requestMonitor.done();
 		}
 	}
 
 	/**
 	 * Enable non-stop mode if requested.
-	 * @since 4.0 
+	 * 
+	 * @since 4.0
 	 */
 	// Keep this method in this class for backwards-compatibility, although
 	// it is called only by sub-classes.
 	// It could be moved to FinalLaunchSequence_7_0, otherwise.
 	@Execute
 	public void stepSetNonStop(final RequestMonitor requestMonitor) {
-		boolean isNonStop = CDebugUtils.getAttribute(
-				fAttributes,
-				IGDBLaunchConfigurationConstants.ATTR_DEBUGGER_NON_STOP,
-				LaunchUtils.getIsNonStopModeDefault());
+		boolean isNonStop = CDebugUtils.getAttribute(fAttributes,
+				IGDBLaunchConfigurationConstants.ATTR_DEBUGGER_NON_STOP, LaunchUtils.getIsNonStopModeDefault());
 
 		// GDBs that don't support non-stop don't allow you to set it to false.
 		// We really should set it to false when GDB supports it though.
 		// Something to fix later.
 		if (isNonStop) {
-			fCommandControl.queueCommand(
-					fCommandFactory.createMIGDBSetTargetAsync(fCommandControl.getContext(), true),
+			fCommandControl.queueCommand(fCommandFactory.createMIGDBSetTargetAsync(fCommandControl.getContext(), true),
 					new DataRequestMonitor<MIInfo>(getExecutor(), requestMonitor) {
 						@Override
 						protected void handleSuccess() {
 							fCommandControl.queueCommand(
-									fCommandFactory.createMIGDBSetPagination(fCommandControl.getContext(), false), 
+									fCommandFactory.createMIGDBSetPagination(fCommandControl.getContext(), false),
 									new DataRequestMonitor<MIInfo>(getExecutor(), requestMonitor) {
 										@Override
 										protected void handleSuccess() {
 											fCommandControl.queueCommand(
-													fCommandFactory.createMIGDBSetNonStop(fCommandControl.getContext(), true), 
+													fCommandFactory.createMIGDBSetNonStop(fCommandControl.getContext(),
+															true),
 													new DataRequestMonitor<MIInfo>(getExecutor(), requestMonitor));
 										}
 									});
@@ -403,8 +455,7 @@ public class FinalLaunchSequence extends ReflectionSequence {
 					});
 		} else {
 			// Explicitly set target-async to off for all-stop mode.
-			fCommandControl.queueCommand(
-					fCommandFactory.createMIGDBSetTargetAsync(fCommandControl.getContext(), false),
+			fCommandControl.queueCommand(fCommandFactory.createMIGDBSetTargetAsync(fCommandControl.getContext(), false),
 					new DataRequestMonitor<MIInfo>(getExecutor(), requestMonitor) {
 						@Override
 						protected void handleError() {
@@ -418,23 +469,23 @@ public class FinalLaunchSequence extends ReflectionSequence {
 
 	/**
 	 * Tell GDB to automatically load or not the shared library symbols
-	 * @since 4.0 
+	 * 
+	 * @since 4.0
 	 */
 	@Execute
 	public void stepSetAutoLoadSharedLibrarySymbols(RequestMonitor requestMonitor) {
-		boolean autolib = CDebugUtils.getAttribute(
-				fAttributes,
+		boolean autolib = CDebugUtils.getAttribute(fAttributes,
 				IGDBLaunchConfigurationConstants.ATTR_DEBUGGER_AUTO_SOLIB,
 				IGDBLaunchConfigurationConstants.DEBUGGER_AUTO_SOLIB_DEFAULT);
 
-		fCommandControl.queueCommand(
-				fCommandFactory.createMIGDBSetAutoSolib(fCommandControl.getContext(), autolib), 
+		fCommandControl.queueCommand(fCommandFactory.createMIGDBSetAutoSolib(fCommandControl.getContext(), autolib),
 				new DataRequestMonitor<MIInfo>(getExecutor(), requestMonitor));
 	}
 
 	/**
 	 * Set the shared library paths.
-	 * @since 4.0 
+	 * 
+	 * @since 4.0
 	 */
 	@Execute
 	public void stepSetSharedLibraryPaths(final RequestMonitor requestMonitor) {
@@ -444,96 +495,268 @@ public class FinalLaunchSequence extends ReflectionSequence {
 			if (!p.isEmpty()) {
 				String[] paths = p.toArray(new String[p.size()]);
 				fCommandControl.queueCommand(
-						fCommandFactory.createMIGDBSetSolibSearchPath(fCommandControl.getContext(), paths), 
+						fCommandFactory.createMIGDBSetSolibSearchPath(fCommandControl.getContext(), paths),
 						new DataRequestMonitor<MIInfo>(getExecutor(), requestMonitor) {
 							@Override
 							protected void handleSuccess() {
-								// Sysroot is not available in GDB6.6 and will make the launch fail in that case.
+								// Sysroot is not available in GDB6.6 and will
+								// make the launch fail in that case.
 								// Let's remove it for now
 								requestMonitor.done();
-								//   	                			// If we are able to set the solib-search-path,
-								//   	                			// we should disable the sysroot variable, as indicated
-								//   	                			// in the GDB documentation.  This is to avoid the sysroot
-								//   	                			// variable finding libraries that were not meant to be found.
-								//   	        	                fCommandControl.queueCommand(
-								//   	        	   	                	new MIGDBSetSysroot(fCommandControl.getContext()), 
-								//   	        	   	                	new DataRequestMonitor<MIInfo>(getExecutor(), requestMonitor));
+								// // If we are able to set the
+								// solib-search-path,
+								// // we should disable the sysroot variable, as
+								// indicated
+								// // in the GDB documentation. This is to avoid
+								// the sysroot
+								// // variable finding libraries that were not
+								// meant to be found.
+								// fCommandControl.queueCommand(
+								// new
+								// MIGDBSetSysroot(fCommandControl.getContext()),
+								// new DataRequestMonitor<MIInfo>(getExecutor(),
+								// requestMonitor));
 							};
 						});
 			} else {
 				requestMonitor.done();
 			}
 		} catch (CoreException e) {
-			requestMonitor.setStatus(new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, -1, "Cannot set share library paths", e)); //$NON-NLS-1$
+			requestMonitor
+					.setStatus(new Status(IStatus.ERROR, GdbPlugin.PLUGIN_ID, -1, "Cannot set share library paths", e)); //$NON-NLS-1$
 			requestMonitor.done();
 		}
 	}
 
 	/**
 	 * Setup the source paths.
-	 * @since 4.0 
+	 * 
+	 * @since 4.0
 	 */
 	@Execute
 	public void stepSetSourceLookupPath(RequestMonitor requestMonitor) {
 		CSourceLookup sourceLookup = fTracker.getService(CSourceLookup.class);
-		ILaunch launch = (ILaunch)fSession.getModelAdapter(ILaunch.class);
-		CSourceLookupDirector locator = (CSourceLookupDirector)launch.getSourceLocator();
-		ISourceLookupDMContext sourceLookupDmc = (ISourceLookupDMContext)fCommandControl.getContext();
+		ILaunch launch = (ILaunch) fSession.getModelAdapter(ILaunch.class);
+		CSourceLookupDirector locator = (CSourceLookupDirector) launch.getSourceLocator();
+		ISourceLookupDMContext sourceLookupDmc = (ISourceLookupDMContext) fCommandControl.getContext();
 
 		sourceLookup.setSourceLookupPath(sourceLookupDmc, locator.getSourceContainers(), requestMonitor);
 	}
 
-	private static final String INVALID = "invalid";   //$NON-NLS-1$
-	/** 
-	 * If we are dealing with a remote-attach debugging session, connect to the target.
-	 * @since 4.0
-	 */
+	private static final String INVALID = "invalid"; //$NON-NLS-1$
+
+	// added by jwy, to launch the SmartSimu first
 	@Execute
-	public void stepRemoteConnection(final RequestMonitor rm) {
-		if (fGDBBackend.getSessionType() == SessionType.REMOTE && fGDBBackend.getIsAttachSession()) {
-			boolean isTcpConnection = CDebugUtils.getAttribute(
-					fAttributes,
-					IGDBLaunchConfigurationConstants.ATTR_REMOTE_TCP,
-					false);
+	public void stepLaunchSimulator() {
+//		if (fGDBBackend.getSessionType() == SessionType.REMOTE && fGDBBackend.getIsAttachSession()) {
+			String projectName = (String) fAttributes.get(ICDTLaunchConfigurationConstants.ATTR_PROJECT_NAME);
+			IProject project = getAPPProject(projectName);
+			String elfFilePath = (String) fAttributes.get(ICDTLaunchConfigurationConstants.ATTR_PROGRAM_NAME);
+			String binFilePath = project.getLocation() + "/" + elfFilePath.substring(0, elfFilePath.length() - 3)
+					+ "bin";
+			String homePath = System.getProperty("user.home");
 
-			if (isTcpConnection) {
-				String remoteTcpHost = CDebugUtils.getAttribute(
-						fAttributes,
-						IGDBLaunchConfigurationConstants.ATTR_HOST, INVALID);
-				String remoteTcpPort = CDebugUtils.getAttribute(
-						fAttributes,
-						IGDBLaunchConfigurationConstants.ATTR_PORT, INVALID);
-
-				fCommandControl.queueCommand(
-						fCommandFactory.createMITargetSelect(fCommandControl.getContext(), 
-								remoteTcpHost, remoteTcpPort, true), 
-								new ImmediateDataRequestMonitor<MIInfo>(rm));
-			} else {
-				String serialDevice = CDebugUtils.getAttribute(
-						fAttributes,
-						IGDBLaunchConfigurationConstants.ATTR_DEV, INVALID);
-
-				fCommandControl.queueCommand(
-						fCommandFactory.createMITargetSelect(fCommandControl.getContext(), 
-								serialDevice, true), 
-								new ImmediateDataRequestMonitor<MIInfo>(rm));
+			try {
+				ControlGDBServerHandler.copy(binFilePath, homePath + "/simu/ram/a.bin");
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
-		} else {
-			rm.done();
-		}
+
+			// TODO: read port from UI to replace the default 8888
+			String simuPort = CDebugUtils.getAttribute(fAttributes, IGDBLaunchConfigurationConstants.ATTR_PORT, "8888");
+			String line = homePath + "/simu/main " + simuPort + " " + project.getLocation() + "/debug-config.txt start "
+					+ homePath + "/simu/conf/conf.so";
+
+			// String line = "gdbserver :8888 " + execFilePath;
+
+			IWorkbenchWindow window = ControlGDBServerHandler.window;
+			IWorkbenchPage page = window.getActivePage();
+			ICommandService commandService = window.getWorkbench().getService(ICommandService.class);
+			Command command = commandService.getCommand("controlGDBServerCommand");
+			try {
+				HandlerUtil.toggleCommandState(command);
+			} catch (ExecutionException e) {
+				e.printStackTrace();
+			}
+
+			Display.getDefault().syncExec(new Runnable() {
+
+				@Override
+				public void run() {
+					String id = IConsoleConstants.ID_CONSOLE_VIEW;
+					IConsoleView view = null;
+					try {
+						view = (IConsoleView) page.showView(id);
+					} catch (PartInitException e) {
+						e.printStackTrace();
+					}
+					view.display(ControlGDBServerHandler.smartsimuConsole);
+				}
+			});
+
+			CommandLine cmdLine = CommandLine.parse(line);
+			ControlGDBServerHandler.executor = new DefaultExecutor();
+			ExecuteWatchdog watchdog = new ExecuteWatchdog(ExecuteWatchdog.INFINITE_TIMEOUT);
+			ControlGDBServerHandler.executor.setWatchdog(watchdog);
+			MessageConsoleStream outputStream = ControlGDBServerHandler.smartsimuConsole.newMessageStream();
+			MessageConsoleStream errorStream = ControlGDBServerHandler.smartsimuConsole.newMessageStream();
+			Display.getDefault().syncExec(new Runnable() {
+
+				@Override
+				public void run() {
+					errorStream.setColor(new Color(null, 255, 0, 0));
+				}
+			});
+			outputStream.setActivateOnWrite(true);
+			errorStream.setActivateOnWrite(true);
+			PumpStreamHandler streamHandler = new PumpStreamHandler(outputStream, errorStream);
+			ControlGDBServerHandler.executor.setStreamHandler(streamHandler);
+			MyExecuteResultHandler resultHandler = new MyExecuteResultHandler(window, command, outputStream,
+					errorStream);
+
+			ControlGDBServerHandler.smartsimuConsole.clearConsole();
+
+			try {
+				ControlGDBServerHandler.executor.execute(cmdLine, resultHandler);
+			} catch (ExecuteException e1) {
+				e1.printStackTrace();
+			} catch (IOException e2) {
+				e2.printStackTrace();
+			}
+
+			try {
+				resultHandler.waitFor(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
+			try {
+				ExecuteException e = resultHandler.getException();
+				String exceptionInfo = e.getMessage();
+				errorStream.println(exceptionInfo);
+				return;
+			} catch (IllegalStateException e) {
+				outputStream.println("simu has been started");
+			}
+
+			// Read debug-config.txt and update the state of the radio command
+			Command radioCommand = commandService.getCommand("selectCommand");
+			IFile file = project.getFile("debug-config.txt");
+			String initialState = "";
+
+			if (file.exists()) {
+				try {
+					BufferedReader bReader = new BufferedReader(new InputStreamReader(file.getContents()));
+					try {
+						initialState = bReader.readLine();
+						if (initialState == null)
+							initialState = "";
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				} catch (CoreException e) {
+					e.printStackTrace();
+				}
+			}
+
+			try {
+				HandlerUtil.updateRadioState(radioCommand, initialState);
+			} catch (ExecutionException e) {
+				e.printStackTrace();
+			}
+
+			IEvaluationService evaluationService = window.getService(IEvaluationService.class);
+			if (evaluationService != null)
+				evaluationService.requestEvaluation("org.eclipse.ui.commands.toggleState");
+//		}
 	}
 
 	/**
-	 * Start a new process if we are not dealing with an attach session
-	 * i.e., a local session, a remote session or a post-mortem (core) session.
+	 * If we are dealing with a remote-attach debugging session, connect to the
+	 * target.
+	 * 
+	 * @since 4.0
+	 */
+	// <jwy> remote debug tag1
+	@Execute
+	public void stepRemoteConnection(final RequestMonitor rm) {
+//		if (fGDBBackend.getSessionType() == SessionType.REMOTE && fGDBBackend.getIsAttachSession()) {
+			boolean isTcpConnection = CDebugUtils.getAttribute(fAttributes,
+					IGDBLaunchConfigurationConstants.ATTR_REMOTE_TCP, false);
+
+			if (isTcpConnection) {
+				// modified by jwy
+//				String remoteTcpHost = CDebugUtils.getAttribute(fAttributes, IGDBLaunchConfigurationConstants.ATTR_HOST,
+//						INVALID);
+//				String remoteTcpPort = CDebugUtils.getAttribute(fAttributes, IGDBLaunchConfigurationConstants.ATTR_PORT,
+//						INVALID);
+				String remoteTcpHost = CDebugUtils.getAttribute(fAttributes, IGDBLaunchConfigurationConstants.ATTR_HOST,
+						"localhost");
+				String remoteTcpPort = CDebugUtils.getAttribute(fAttributes, IGDBLaunchConfigurationConstants.ATTR_PORT,
+						"8888");
+				// end modify
+
+				fCommandControl.queueCommand(fCommandFactory.createMITargetSelect(fCommandControl.getContext(),
+						remoteTcpHost, remoteTcpPort, true), new ImmediateDataRequestMonitor<MIInfo>(rm));
+			} else {
+				String serialDevice = CDebugUtils.getAttribute(fAttributes, IGDBLaunchConfigurationConstants.ATTR_DEV,
+						INVALID);
+
+				fCommandControl.queueCommand(
+						fCommandFactory.createMITargetSelect(fCommandControl.getContext(), serialDevice, true),
+						new ImmediateDataRequestMonitor<MIInfo>(rm));
+			}
+//		} else {
+			rm.done();
+//		}
+	}
+
+	// added by jwy
+	private IProject getAPPProject(String projectName) {
+		if (projectName.length() < 1) {
+			return null;
+		}
+
+		IProject[] projects = getAPPProjects();
+		for (IProject project : projects) {
+			if (project.getName().equals(projectName)) {
+				return project;
+			}
+		}
+
+		return null;
+	}
+
+	// added by jwy
+	private IProject[] getAPPProjects() {
+		IWorkspaceRoot root = ResourcesPlugin.getWorkspace().getRoot();
+		IProject[] projects = root.getProjects();
+		ArrayList<IProject> list = new ArrayList<IProject>();
+
+		for (IProject project : projects) {
+			try {
+				if (project.hasNature(ProjectNature.APP_PROJECT_ID)) {
+					list.add(project);
+				}
+			} catch (CoreException e) {
+				e.printStackTrace();
+			}
+		}
+
+		return list.toArray(new IProject[list.size()]);
+	}
+
+	/**
+	 * Start a new process if we are not dealing with an attach session i.e., a
+	 * local session, a remote session or a post-mortem (core) session.
+	 * 
 	 * @since 4.0
 	 */
 	@Execute
 	public void stepNewProcess(final RequestMonitor rm) {
 		if (!fGDBBackend.getIsAttachSession()) {
 
-			boolean noBinarySpecified = CDebugUtils.getAttribute(
-					fAttributes,
+			boolean noBinarySpecified = CDebugUtils.getAttribute(fAttributes,
 					IGDBLaunchConfigurationConstants.ATTR_DEBUGGER_USE_SOLIB_SYMBOLS_FOR_APP,
 					IGDBLaunchConfigurationConstants.DEBUGGER_USE_SOLIB_SYMBOLS_FOR_APP_DEFAULT);
 
@@ -543,47 +766,51 @@ public class FinalLaunchSequence extends ReflectionSequence {
 				binary = execPath.toPortableString();
 			}
 
-			// Even if binary is null, we must call this to do all the other steps
-			// necessary to create a process.  It is possible that the binary is not needed
-			fProcService.debugNewProcess(fCommandControl.getContext(), binary, fAttributes, 
+			// Even if binary is null, we must call this to do all the other
+			// steps
+			// necessary to create a process. It is possible that the binary is
+			// not needed
+			fProcService.debugNewProcess(fCommandControl.getContext(), binary, fAttributes,
 					new DataRequestMonitor<IDMContext>(getExecutor(), rm) {
-				@Override
-				protected void handleCancel() {
-					// If this step is cancelled, cancel the current sequence.
-					// This is to allow the user to press the cancel button
-					// when prompted for a post-mortem file.
-					// Bug 362105
-					rm.cancel();
-        			rm.done();
-				}
-			});
+						@Override
+						protected void handleCancel() {
+							// If this step is cancelled, cancel the current
+							// sequence.
+							// This is to allow the user to press the cancel
+							// button
+							// when prompted for a post-mortem file.
+							// Bug 362105
+							rm.cancel();
+							rm.done();
+						}
+					});
 		} else {
 			rm.done();
 		}
 	}
 
 	/**
-	 * If we are dealing with an local attach session, perform the attach.
-     * For a remote attach session, we don't attach during the launch; instead
-     * we wait for the user to manually do the attach.
-	 * @since 4.0 
+	 * If we are dealing with an local attach session, perform the attach. For a
+	 * remote attach session, we don't attach during the launch; instead we wait
+	 * for the user to manually do the attach.
+	 * 
+	 * @since 4.0
 	 */
 	@Execute
 	public void stepAttachToProcess(final RequestMonitor requestMonitor) {
 		if (fGDBBackend.getIsAttachSession() && fGDBBackend.getSessionType() != SessionType.REMOTE) {
 			// Is the process id already stored in the launch?
-			int pid = CDebugUtils.getAttribute(
-					fAttributes,
-					ICDTLaunchConfigurationConstants.ATTR_ATTACH_PROCESS_ID, -1);
+			int pid = CDebugUtils.getAttribute(fAttributes, ICDTLaunchConfigurationConstants.ATTR_ATTACH_PROCESS_ID,
+					-1);
 
 			if (pid != -1) {
 				fProcService.attachDebuggerToProcess(
 						fProcService.createProcessContext(fCommandControl.getContext(), Integer.toString(pid)),
 						new DataRequestMonitor<IDMContext>(getExecutor(), requestMonitor));
 			} else {
-				IConnectHandler connectCommand = (IConnectHandler)fSession.getModelAdapter(IConnectHandler.class);
+				IConnectHandler connectCommand = (IConnectHandler) fSession.getModelAdapter(IConnectHandler.class);
 				if (connectCommand instanceof IConnect) {
-					((IConnect)connectCommand).connect(requestMonitor);
+					((IConnect) connectCommand).connect(requestMonitor);
 				} else {
 					requestMonitor.done();
 				}
@@ -592,9 +819,11 @@ public class FinalLaunchSequence extends ReflectionSequence {
 			requestMonitor.done();
 		}
 	}
-	
+
 	/**
-	 * Indicate that the Data Model has been filled.  This will trigger the Debug view to expand.
+	 * Indicate that the Data Model has been filled. This will trigger the Debug
+	 * view to expand.
+	 * 
 	 * @since 4.0
 	 */
 	@Execute
@@ -603,9 +832,10 @@ public class FinalLaunchSequence extends ReflectionSequence {
 				fCommandControl.getProperties());
 		requestMonitor.done();
 	}
-	
+
 	/**
 	 * Cleanup now that the sequence has been run.
+	 * 
 	 * @since 4.0
 	 */
 	@Execute
@@ -615,4 +845,3 @@ public class FinalLaunchSequence extends ReflectionSequence {
 		requestMonitor.done();
 	}
 }
-

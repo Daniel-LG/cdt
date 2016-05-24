@@ -52,6 +52,8 @@ import org.eclipse.debug.core.DebugPlugin;
 import org.eclipse.debug.core.ILaunch;
 import org.eclipse.debug.core.model.IProcess;
 
+import cn.smartcore.handlers.ControlGDBServerHandler;
+
 /**
  * This class causes a process to start (run for the first time), or to
  * be restarted.  The complexity is due to the handling of reverse debugging,
@@ -401,7 +403,7 @@ public class StartOrRestartProcessSequence_7_0 extends ReflectionSequence {
 	public void stepRunProgram(final RequestMonitor rm) {
 		// modified by jwy, the flag is used to record if it is the first time to debug,
 		// if not, we do not use continue
-		if (flag) {
+		if (ControlGDBServerHandler.isFirstStart) {
 			ICommand<MIInfo> command = null;
 			if (useContinueCommand()) {
 				command = fCommandFactory.createMIExecContinue(fContainerDmc);
@@ -429,7 +431,7 @@ public class StartOrRestartProcessSequence_7_0 extends ReflectionSequence {
 						assert false : "Container context was not an IMIContainerDMContext"; //$NON-NLS-1$
 					}
 					rm.done();
-					flag = false;
+					ControlGDBServerHandler.isFirstStart = false;
 				}
 			});
 		} else {

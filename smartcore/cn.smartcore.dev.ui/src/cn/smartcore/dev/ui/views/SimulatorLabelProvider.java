@@ -17,6 +17,9 @@ public class SimulatorLabelProvider extends LabelProvider {
 	@Override
 	public Image getImage(Object element) {
 		if (element instanceof IProject) {
+			if (((IProject) element).getName() == "Default Simulator") {
+				return ImageDescriptor.createFromFile(ProjectDecorator.class, "/icons/view/simu.gif").createImage();
+			}
 			try {
 				if (((IProject) element).hasNature(ProjectNature.SIMULATOR_PROJECT_ID)) {
 					return ImageDescriptor.createFromFile(ProjectDecorator.class, "/icons/view/simu.gif").createImage();
@@ -36,7 +39,14 @@ public class SimulatorLabelProvider extends LabelProvider {
 
 	@Override
 	public String getText(Object element) {
-		return fLableProvider.getText(element);
+		if (element instanceof IProject) {
+			if (((IProject) element).getName() == "Default Simulator") {
+				return "Default Simulator";
+			}
+			return fLableProvider.getText(element);
+		}
+
+		return null;
 	}
 
 }

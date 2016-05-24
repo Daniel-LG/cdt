@@ -34,6 +34,11 @@
             name="%PostMortemLaunch.name"
             public="true">
       </launchConfigurationType>
+      <launchConfigurationType
+            id="org.eclipse.cdt.launch.remoteApplicationLaunchType"
+            name="%RemoteApplicationLaunch.name"
+            public="true">
+      </launchConfigurationType>
       -->
       <launchConfigurationType
             id="org.eclipse.cdt.launch.attachLaunchType"
@@ -48,7 +53,7 @@
       <launchConfigurationType
             id="org.eclipse.cdt.launch.remoteApplicationLaunchType"
             name="%RemoteApplicationLaunch.name"
-            public="true">
+            public="false">
       </launchConfigurationType>
    </extension>
 

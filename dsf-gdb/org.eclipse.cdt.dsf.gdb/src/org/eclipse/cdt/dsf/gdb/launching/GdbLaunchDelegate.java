@@ -215,6 +215,7 @@ public class GdbLaunchDelegate extends AbstractCLaunchDelegate2
             	DsfServicesTracker tracker = new DsfServicesTracker(GdbPlugin.getBundleContext(), launch.getSession().getId());
             	IGDBControl control = tracker.getService(IGDBControl.class);
             	tracker.dispose();
+            	// <jwy> remote debug tag4
             	control.completeInitialization(new RequestMonitorWithProgress(ImmediateExecutor.getInstance(), subMon2) {
             		@Override
             		protected void handleCompleted() {

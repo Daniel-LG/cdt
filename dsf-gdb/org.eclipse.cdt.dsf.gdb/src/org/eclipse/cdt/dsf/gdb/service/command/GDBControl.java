@@ -403,6 +403,7 @@ public class GDBControl extends AbstractMIControl implements IGDBControl {
 	/**
 	 * @since 4.0
 	 */
+	// <jwy> remote debug tag3
 	@Override
 	public void completeInitialization(final RequestMonitor rm) {
 		// We take the attributes from the launchConfiguration
@@ -444,6 +445,7 @@ public class GDBControl extends AbstractMIControl implements IGDBControl {
 	 * 
 	 * @since 4.0
 	 */
+	// <jwy> remote debug tag2
 	protected Sequence getCompleteInitializationSequence(Map<String, Object> attributes, RequestMonitorWithProgress rm) {
 		return new FinalLaunchSequence(getSession(), attributes, rm);
 	}
