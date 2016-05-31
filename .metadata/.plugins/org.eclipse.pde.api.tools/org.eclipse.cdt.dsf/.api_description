@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.dsf" modificationStamp="2652" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.model"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.model{DsfMemoryBlock.java[DsfMemoryBlock" modificationStamp="20840" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.model{DsfLaunch.java[DsfLaunch" modificationStamp="20839" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.model{DsfMemoryBlockRetrieval.java[DsfMemoryBlockRetrieval" modificationStamp="20841" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.sourcelookup"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.sourcelookup{DsfSourceLookupDirector.java[DsfSourceLookupDirector" modificationStamp="20883" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.sourcelookup{DsfSourceLookupParticipant.java[DsfSourceLookupParticipant" modificationStamp="20884" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.datamodel"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.datamodel{AbstractDMEvent.java[AbstractDMEvent" modificationStamp="20886" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.datamodel{CompositeDMContext.java[CompositeDMContext" modificationStamp="20887" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.datamodel{DMContexts.java[DMContexts" modificationStamp="20888" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.datamodel{AbstractDMContext.java[AbstractDMContext" modificationStamp="20885" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.datamodel{DataModelInitializedEvent.java[DataModelInitializedEvent" modificationStamp="20889" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.datamodel{IDMEvent.java[IDMEvent" modificationStamp="20892" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.datamodel{IDMContext.java[IDMContext" modificationStamp="20890" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.datamodel{IDMData.java[IDMData" modificationStamp="20891" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.service"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.service{DsfServicesTracker.java[DsfServicesTracker" modificationStamp="20829" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.service{DsfServices.java[DsfServices" modificationStamp="20828" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.service{AbstractDsfService.java[AbstractDsfService" modificationStamp="20826" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.service{DsfSession.java[DsfSession" modificationStamp="20830" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.service{IDsfService.java[IDsfService" modificationStamp="20831" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.service{DsfServiceEventHandler.java[DsfServiceEventHandler" modificationStamp="20827" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service.command"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service.command{ICommandControlService.java[ICommandControlService" modificationStamp="39024" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service.command{CommandCache.java[CommandCache" modificationStamp="39021" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service.command{ICommandResult.java[ICommandResult" modificationStamp="39026" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service.command{BufferedCommandControl.java[BufferedCommandControl" modificationStamp="39020" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service.command{ICommandControl.java[ICommandControl" modificationStamp="39023" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service.command{ICommandListener.java[ICommandListener" modificationStamp="39025" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service.command{ICommandToken.java[ICommandToken" modificationStamp="39027" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service.command{IEventListener.java[IEventListener" modificationStamp="39028" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service.command{ICommand.java[ICommand" modificationStamp="39022" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{DsfExecutor.java[DsfExecutor" modificationStamp="20900" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{DsfExecutable.java[DsfExecutable" modificationStamp="20899" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{DefaultDsfExecutor.java[DefaultDsfExecutor" modificationStamp="20898" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{ICache.java[ICache" modificationStamp="20903" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{ImmediateExecutor.java[ImmediateExecutor" modificationStamp="20907" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{Immutable.java[Immutable" modificationStamp="20910" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{Query.java[Query" modificationStamp="20912" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{StackTraceWrapper.java[StackTraceWrapper" modificationStamp="20919" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{ConfinedToDsfExecutor.java[ConfinedToDsfExecutor" modificationStamp="20895" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{ThreadSafe.java[ThreadSafe" modificationStamp="20920" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{DsfRunnable.java[DsfRunnable" modificationStamp="20902" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{CountingRequestMonitor.java[CountingRequestMonitor" modificationStamp="20896" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{MultiRequestMonitor.java[MultiRequestMonitor" modificationStamp="20911" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{AbstractCache.java[AbstractCache" modificationStamp="20894" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{ImmediateDataRequestMonitor.java[ImmediateDataRequestMonitor" modificationStamp="20906" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{RequestMonitor.java[RequestMonitor" modificationStamp="20916" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{ThreadSafeAndProhibitedFromDsfExecutor.java[ThreadSafeAndProhibitedFromDsfExecutor" modificationStamp="20921" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{RangeCache.java[RangeCache" modificationStamp="20913" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{Sequence.java[Sequence" modificationStamp="20918" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{ImmediateRequestMonitor.java[ImmediateRequestMonitor" modificationStamp="20909" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{ImmediateCountingRequestMonitor.java[ImmediateCountingRequestMonitor" modificationStamp="20905" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{DataRequestMonitor.java[DataRequestMonitor" modificationStamp="20897" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{Transaction.java[Transaction" modificationStamp="20922" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{DsfMultiStatus.java[DsfMultiStatus" modificationStamp="20901" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{ImmediateInDsfExecutor.java[ImmediateInDsfExecutor" modificationStamp="20908" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{ReflectionSequence.java[ReflectionSequence" modificationStamp="20914" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{RequestCache.java[RequestCache" modificationStamp="20915" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{RequestMonitorWithProgress.java[RequestMonitorWithProgress" modificationStamp="20917" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.concurrent{IDsfStatusConstants.java[IDsfStatusConstants" modificationStamp="20904" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IMixedInstruction.java[IMixedInstruction" modificationStamp="20866" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IRunControl3.java[IRunControl3" modificationStamp="20877" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IMemorySpaces2.java[IMemorySpaces2" modificationStamp="20865" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IRunControl2.java[IRunControl2" modificationStamp="20876" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IDisassembly2.java[IDisassembly2" modificationStamp="20852" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IDisassembly3.java[IDisassembly3" modificationStamp="20853" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IExpressions2.java[IExpressions2" modificationStamp="20857" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IExpressions3.java[IExpressions3" modificationStamp="20858" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{BreakpointsMediator2.java[BreakpointsMediator2" modificationStamp="20845" restrictions="0" visibility="0">
+            <method name="breakpointsAdded" restrictions="8" signature="([Lorg/eclipse/debug/core/model/IBreakpoint;)V" visibility="0"/>
+            <method name="breakpointsChanged" restrictions="8" signature="([Lorg/eclipse/debug/core/model/IBreakpoint;[Lorg/eclipse/core/resources/IMarkerDelta;)V" visibility="0"/>
+            <method name="breakpointsRemoved" restrictions="8" signature="([Lorg/eclipse/debug/core/model/IBreakpoint;[Lorg/eclipse/core/resources/IMarkerDelta;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{ISourceLookup.java[ISourceLookup" modificationStamp="20879" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IInstructionWithRawOpcodes.java[IInstructionWithRawOpcodes" modificationStamp="20861" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IRegisters2.java[IRegisters2" modificationStamp="20874" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IModules.java[IModules" modificationStamp="20867" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IDsfDebugServicesFactory.java[IDsfDebugServicesFactory" modificationStamp="20855" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IModules2.java[IModules2" modificationStamp="20868" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IProcesses.java[IProcesses" modificationStamp="20872" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{ICachingService.java[ICachingService" modificationStamp="20850" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IRunControl.java[IRunControl" modificationStamp="20875" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{BreakpointsMediator.java[BreakpointsMediator" modificationStamp="20844" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IDsfBreakpointExtension.java[IDsfBreakpointExtension" modificationStamp="20854" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IRegisters.java[IRegisters" modificationStamp="20873" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IBreakpointAttributeTranslator2.java[IBreakpointAttributeTranslator2" modificationStamp="20847" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IInstruction.java[IInstruction" modificationStamp="20860" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IMemorySpaces.java[IMemorySpaces" modificationStamp="20864" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IStack.java[IStack" modificationStamp="20880" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IMultiDetach.java[IMultiDetach" modificationStamp="20869" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IMemory.java[IMemory" modificationStamp="20863" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IExpressions.java[IExpressions" modificationStamp="20856" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IBreakpointAttributeTranslator.java[IBreakpointAttributeTranslator" modificationStamp="20846" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{ISymbols.java[ISymbols" modificationStamp="20881" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{AbstractInstruction.java[AbstractInstruction" modificationStamp="20843" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{ISignals.java[ISignals" modificationStamp="20878" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IBreakpointsExtension.java[IBreakpointsExtension" modificationStamp="20849" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IInstructionWithSize.java[IInstructionWithSize" modificationStamp="20862" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IMultiTerminate.java[IMultiTerminate" modificationStamp="20871" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IBreakpoints.java[IBreakpoints" modificationStamp="20848" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IFormattedValues.java[IFormattedValues" modificationStamp="20859" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IMultiRunControl.java[IMultiRunControl" modificationStamp="20870" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{IDisassembly.java[IDisassembly" modificationStamp="20851" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf/src&lt;org.eclipse.cdt.dsf.debug.service{AbstractDsfDebugServicesFactory.java[AbstractDsfDebugServicesFactory" modificationStamp="20842" restrictions="0" visibility="0"/>
+    </package>
+</component>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.codan.ui.cxx" modificationStamp="5883" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.codan.ui.cxx/src&lt;org.eclipse.cdt.codan.ui"/>
+        <type handle="=org.eclipse.cdt.codan.ui.cxx/src&lt;org.eclipse.cdt.codan.ui{AbstractCodanCMarkerResolution.java[AbstractCodanCMarkerResolution" modificationStamp="26650" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.ui.cxx/src&lt;org.eclipse.cdt.codan.ui{AbstractAstRewriteQuickFix.java[AbstractAstRewriteQuickFix" modificationStamp="26649" restrictions="0" visibility="0"/>
+    </package>
+</component>

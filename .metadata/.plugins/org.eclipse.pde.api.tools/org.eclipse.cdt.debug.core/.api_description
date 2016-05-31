@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.debug.core" modificationStamp="4148" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIIntegralValue.java[ICDIIntegralValue" modificationStamp="51534" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIReferenceType.java[ICDIReferenceType" modificationStamp="51541" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIDoubleValue.java[ICDIDoubleValue" modificationStamp="51522" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIStructType.java[ICDIStructType" modificationStamp="51545" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIBoolType.java[ICDIBoolType" modificationStamp="51515" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIAggregateValue.java[ICDIAggregateValue" modificationStamp="51511" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDILongType.java[ICDILongType" modificationStamp="51537" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIBigIntegerValue.java[ICDIBigIntegerValue" modificationStamp="51514" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIEnumType.java[ICDIEnumType" modificationStamp="51523" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIAggregateType.java[ICDIAggregateType" modificationStamp="51510" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIIntegralType.java[ICDIIntegralType" modificationStamp="51533" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIReferenceValue.java[ICDIReferenceValue" modificationStamp="51542" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIPointerValue.java[ICDIPointerValue" modificationStamp="51540" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIDerivedValue.java[ICDIDerivedValue" modificationStamp="51520" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIDerivedType.java[ICDIDerivedType" modificationStamp="51519" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDILongValue.java[ICDILongValue" modificationStamp="51538" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIShortType.java[ICDIShortType" modificationStamp="51543" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIVoidType.java[ICDIVoidType" modificationStamp="51548" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIFloatingPointType.java[ICDIFloatingPointType" modificationStamp="51527" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIWCharValue.java[ICDIWCharValue" modificationStamp="51550" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDICharType.java[ICDICharType" modificationStamp="51517" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIIntValue.java[ICDIIntValue" modificationStamp="51532" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIEnumValue.java[ICDIEnumValue" modificationStamp="51524" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDILongLongType.java[ICDILongLongType" modificationStamp="51535" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDILongLongValue.java[ICDILongLongValue" modificationStamp="51536" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIBoolValue.java[ICDIBoolValue" modificationStamp="51516" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIFunctionType.java[ICDIFunctionType" modificationStamp="51529" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIShortValue.java[ICDIShortValue" modificationStamp="51544" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDICharValue.java[ICDICharValue" modificationStamp="51518" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIWCharType.java[ICDIWCharType" modificationStamp="51549" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIIntType.java[ICDIIntType" modificationStamp="51531" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIFunctionValue.java[ICDIFunctionValue" modificationStamp="51530" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIFloatType.java[ICDIFloatType" modificationStamp="51525" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIDoubleType.java[ICDIDoubleType" modificationStamp="51521" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIType.java[ICDIType" modificationStamp="51547" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIArrayType.java[ICDIArrayType" modificationStamp="51512" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIFloatingPointValue.java[ICDIFloatingPointValue" modificationStamp="51528" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIFloatValue.java[ICDIFloatValue" modificationStamp="51526" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIPointerType.java[ICDIPointerType" modificationStamp="51539" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIStructValue.java[ICDIStructValue" modificationStamp="51546" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model.type{ICDIArrayValue.java[ICDIArrayValue" modificationStamp="51513" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup{CProjectSourceContainer.java[CProjectSourceContainer" modificationStamp="22255" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup{ISourceLookupChangeListener.java[ISourceLookupChangeListener" modificationStamp="22261" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup{ICSourceLocator.java[ICSourceLocator" modificationStamp="22257" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup{MappingSourceContainer.java[MappingSourceContainer" modificationStamp="22262" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup{IDirectorySourceLocation.java[IDirectorySourceLocation" modificationStamp="22258" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup{IMappingSourceContainer.java[IMappingSourceContainer" modificationStamp="22259" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup{SourceLookupMessages.java[SourceLookupMessages" modificationStamp="22265" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup{AbsolutePathSourceContainer.java[AbsolutePathSourceContainer" modificationStamp="22254" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup{ProgramRelativePathSourceContainer.java[ProgramRelativePathSourceContainer" modificationStamp="22263" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup{IProjectSourceLocation.java[IProjectSourceLocation" modificationStamp="22260" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup{SourceLookupFactory.java[SourceLookupFactory" modificationStamp="22264" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.sourcelookup{ICSourceLocation.java[ICSourceLocation" modificationStamp="22256" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIBreakpointManagement3.java[ICDIBreakpointManagement3" modificationStamp="41522" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIBreakpointManagement2.java[ICDIBreakpointManagement2" modificationStamp="41521" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIAddressToSource.java[ICDIAddressToSource" modificationStamp="41515" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIExceptionpoint.java[ICDIExceptionpoint" modificationStamp="41525" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIMemoryBlockManagement.java[ICDIMemoryBlockManagement" modificationStamp="41541" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDITargetConfiguration.java[ICDITargetConfiguration" modificationStamp="41560" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIWatchpoint2.java[ICDIWatchpoint2" modificationStamp="41572" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIMixedInstruction.java[ICDIMixedInstruction" modificationStamp="41545" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIBreakpoint.java[ICDIBreakpoint" modificationStamp="41518" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIObject.java[ICDIObject" modificationStamp="41546" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDISharedLibraryManagement.java[ICDISharedLibraryManagement" modificationStamp="41552" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDISignalManagement.java[ICDISignalManagement" modificationStamp="41554" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIInstruction.java[ICDIInstruction" modificationStamp="41535" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDITargetConfiguration3.java[ICDITargetConfiguration3" modificationStamp="41562" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIArgument.java[ICDIArgument" modificationStamp="41516" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIStackFrame.java[ICDIStackFrame" modificationStamp="41556" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIAddressFactoryManagement.java[ICDIAddressFactoryManagement" modificationStamp="41514" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIMemoryBlock.java[ICDIMemoryBlock" modificationStamp="41540" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIMemoryBlockManagement2.java[ICDIMemoryBlockManagement2" modificationStamp="41542" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIFunctionBreakpoint.java[ICDIFunctionBreakpoint" modificationStamp="41532" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDISourceManagement.java[ICDISourceManagement" modificationStamp="41555" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIBreakpointManagement.java[ICDIBreakpointManagement" modificationStamp="41520" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIExecuteResume.java[ICDIExecuteResume" modificationStamp="41527" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDILocalVariableDescriptor.java[ICDILocalVariableDescriptor" modificationStamp="41538" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIThreadGroup.java[ICDIThreadGroup" modificationStamp="41564" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIVariableDescriptor.java[ICDIVariableDescriptor" modificationStamp="41570" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIAddressBreakpoint.java[ICDIAddressBreakpoint" modificationStamp="41513" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIEventBreakpoint.java[ICDIEventBreakpoint" modificationStamp="41524" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDITracepoint.java[ICDITracepoint" modificationStamp="41567" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIThread.java[ICDIThread" modificationStamp="41563" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIMemorySpaceEncoder.java[ICDIMemorySpaceEncoder" modificationStamp="41543" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIVariable.java[ICDIVariable" modificationStamp="41569" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIRegister.java[ICDIRegister" modificationStamp="41547" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDITarget2.java[ICDITarget2" modificationStamp="41559" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIGlobalVariableDescriptor.java[ICDIGlobalVariableDescriptor" modificationStamp="41534" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDISignal.java[ICDISignal" modificationStamp="41553" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDILocalVariable.java[ICDILocalVariable" modificationStamp="41537" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIMemorySpaceManagement.java[ICDIMemorySpaceManagement" modificationStamp="41544" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIExecuteStep.java[ICDIExecuteStep" modificationStamp="41528" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIRegisterGroup.java[ICDIRegisterGroup" modificationStamp="41549" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIGlobalVariable.java[ICDIGlobalVariable" modificationStamp="41533" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDILineBreakpoint.java[ICDILineBreakpoint" modificationStamp="41536" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIRuntimeOptions.java[ICDIRuntimeOptions" modificationStamp="41550" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIExecuteMoveInstructionPointer.java[ICDIExecuteMoveInstructionPointer" modificationStamp="41526" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIExpression.java[ICDIExpression" modificationStamp="41530" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIRegisterDescriptor.java[ICDIRegisterDescriptor" modificationStamp="41548" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIWatchpoint.java[ICDIWatchpoint" modificationStamp="41571" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIArgumentDescriptor.java[ICDIArgumentDescriptor" modificationStamp="41517" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDILocationBreakpoint.java[ICDILocationBreakpoint" modificationStamp="41539" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDISharedLibrary.java[ICDISharedLibrary" modificationStamp="41551" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDITargetConfiguration2.java[ICDITargetConfiguration2" modificationStamp="41561" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIValue.java[ICDIValue" modificationStamp="41568" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIExpressionManagement.java[ICDIExpressionManagement" modificationStamp="41531" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDITarget.java[ICDITarget" modificationStamp="41558" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIThreadStorage.java[ICDIThreadStorage" modificationStamp="41565" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIBreakpoint2.java[ICDIBreakpoint2" modificationStamp="41519" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIExecuteStepReturn.java[ICDIExecuteStepReturn" modificationStamp="41529" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIDisposable.java[ICDIDisposable" modificationStamp="41523" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDISuspend.java[ICDISuspend" modificationStamp="41557" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.model{ICDIThreadStorageDescriptor.java[ICDIThreadStorageDescriptor" modificationStamp="41566" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.breakpointactions"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.breakpointactions{IBreakpointAction.java[IBreakpointAction" modificationStamp="22155" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.breakpointactions{AbstractBreakpointAction.java[AbstractBreakpointAction" modificationStamp="22152" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.breakpointactions{LogActionEnabler.java[LogActionEnabler" modificationStamp="22159" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.breakpointactions{BreakpointActionManager.java[BreakpointActionManager" modificationStamp="22154" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.breakpointactions{BreakpointActionAdapterFactory.java[BreakpointActionAdapterFactory" modificationStamp="22153" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.breakpointactions{ResumeActionEnabler.java[ResumeActionEnabler" modificationStamp="22160" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.breakpointactions{IResumeActionEnabler.java[IResumeActionEnabler" modificationStamp="22157" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.breakpointactions{IReverseDebugEnabler.java[IReverseDebugEnabler" modificationStamp="22158" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.breakpointactions{ILogActionEnabler.java[ILogActionEnabler" modificationStamp="22156" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDITraceSnapshot.java[ICDITraceSnapshot" modificationStamp="22292" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDILocation.java[ICDILocation" modificationStamp="22283" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIFormattable.java[ICDIFormattable" modificationStamp="22279" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDISignalExitInfo.java[ICDISignalExitInfo" modificationStamp="22289" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIWatchpointScope.java[ICDIWatchpointScope" modificationStamp="22293" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDISession.java[ICDISession" modificationStamp="22285" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIFunctionFinished.java[ICDIFunctionFinished" modificationStamp="22280" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIWatchpointTrigger.java[ICDIWatchpointTrigger" modificationStamp="22294" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIEventManager.java[ICDIEventManager" modificationStamp="22275" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDITraceManager.java[ICDITraceManager" modificationStamp="22291" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDISessionObject.java[ICDISessionObject" modificationStamp="22287" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIExitInfo.java[ICDIExitInfo" modificationStamp="22276" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDICondition.java[ICDICondition" modificationStamp="22271" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIEventBreakpointHit.java[ICDIEventBreakpointHit" modificationStamp="22274" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIFunctionLocation.java[ICDIFunctionLocation" modificationStamp="22281" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIBreakpointHit.java[ICDIBreakpointHit" modificationStamp="22270" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIErrorInfo.java[ICDIErrorInfo" modificationStamp="22273" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDISignalReceived.java[ICDISignalReceived" modificationStamp="22290" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIAddressLocation.java[ICDIAddressLocation" modificationStamp="22269" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIEndSteppingRange.java[ICDIEndSteppingRange" modificationStamp="22272" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDISharedLibraryEvent.java[ICDISharedLibraryEvent" modificationStamp="22288" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDISessionConfiguration.java[ICDISessionConfiguration" modificationStamp="22286" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{CDIException.java[CDIException" modificationStamp="22268" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDILineLocation.java[ICDILineLocation" modificationStamp="22282" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIFormat.java[ICDIFormat" modificationStamp="22278" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDIFileLocation.java[ICDIFileLocation" modificationStamp="22277" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi{ICDILocator.java[ICDILocator" modificationStamp="22284" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core"/>
+        <fragment handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{CDebugUtils.java[CDebugUtils" modificationStamp="22134" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{ICBreakpointListener.java[ICBreakpointListener" modificationStamp="22137" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{ICDIDebugger2.java[ICDIDebugger2" modificationStamp="22139" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{ICDebugConfiguration.java[ICDebugConfiguration" modificationStamp="22141" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{ICDebugger.java[ICDebugger" modificationStamp="22143" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{CDebugCorePlugin.java[CDebugCorePlugin" modificationStamp="22133" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{ICDTLaunchConfigurationConstants.java[ICDTLaunchConfigurationConstants" modificationStamp="22140" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{ICGlobalVariableManager.java[ICGlobalVariableManager" modificationStamp="22144" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{ICDIDebugger.java[ICDIDebugger" modificationStamp="22138" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{ICDebugConstants.java[ICDebugConstants" modificationStamp="22142" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{CDIDebugModel.java[CDIDebugModel" modificationStamp="22132" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{DebugCoreMessages.java[DebugCoreMessages" modificationStamp="22135" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core{ICWatchpointTarget.java[ICWatchpointTarget" modificationStamp="22145" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDIDisconnectedEvent.java[ICDIDisconnectedEvent" modificationStamp="41579" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDICreatedEvent.java[ICDICreatedEvent" modificationStamp="41577" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDIDestroyedEvent.java[ICDIDestroyedEvent" modificationStamp="41578" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDIExecutableReloadedEvent.java[ICDIExecutableReloadedEvent" modificationStamp="41582" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDIBreakpointProblemEvent.java[ICDIBreakpointProblemEvent" modificationStamp="41575" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDIMemoryChangedEvent.java[ICDIMemoryChangedEvent" modificationStamp="41584" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDIEvent.java[ICDIEvent" modificationStamp="41580" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDIChangedEvent.java[ICDIChangedEvent" modificationStamp="41576" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDISuspendedEvent.java[ICDISuspendedEvent" modificationStamp="41587" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDIResumedEvent.java[ICDIResumedEvent" modificationStamp="41586" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDIBreakpointMovedEvent.java[ICDIBreakpointMovedEvent" modificationStamp="41574" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDIEventListener.java[ICDIEventListener" modificationStamp="41581" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDIExitedEvent.java[ICDIExitedEvent" modificationStamp="41583" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/cdi&lt;org.eclipse.cdt.debug.core.cdi.event{ICDIRestartedEvent.java[ICDIRestartedEvent" modificationStamp="41585" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.executables"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.executables{ISourceFileRemapping.java[ISourceFileRemapping" modificationStamp="22173" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.executables{IExecutableImporter.java[IExecutableImporter" modificationStamp="22169" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.executables{ExecutablesManager.java[ExecutablesManager" modificationStamp="22168" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.executables{Executable.java[Executable" modificationStamp="22167" restrictions="0" visibility="0">
+            <method name="getSourceFiles" restrictions="8" signature="(Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/cdt/core/model/ITranslationUnit;" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.executables{IExecutablesChangeListener2.java[IExecutablesChangeListener2" modificationStamp="22171" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.executables{ISourceFileRemappingFactory.java[ISourceFileRemappingFactory" modificationStamp="22174" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.executables{IExecutablesChangeListener.java[IExecutablesChangeListener" modificationStamp="22170" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.executables{ISourceFilesProvider.java[ISourceFilesProvider" modificationStamp="22175" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.executables{IProjectExecutablesProvider.java[IProjectExecutablesProvider" modificationStamp="22172" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.executables{StandardExecutableProvider.java[StandardExecutableProvider" modificationStamp="22176" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.disassembly"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.disassembly{IDisassemblyContextService.java[IDisassemblyContextService" modificationStamp="22166" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.disassembly{IDisassemblyContextListener.java[IDisassemblyContextListener" modificationStamp="22164" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.disassembly{IDisassemblyContextProvider.java[IDisassemblyContextProvider" modificationStamp="22165" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.command"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.command{RestartCommand.java[RestartCommand" modificationStamp="22163" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.command{CCommandAdapterFactory.java[CCommandAdapterFactory" modificationStamp="22161" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.command{CForEachCommand.java[CForEachCommand" modificationStamp="22162" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICBreakpoint2.java[ICBreakpoint2" modificationStamp="22184" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IDebugNewExecutableHandler.java[IDebugNewExecutableHandler" modificationStamp="22212" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ISteppingModeTarget.java[ISteppingModeTarget" modificationStamp="22247" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ITargetProperties.java[ITargetProperties" modificationStamp="22249" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICTracepoint.java[ICTracepoint" modificationStamp="22203" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IRunToLine.java[IRunToLine" modificationStamp="22243" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICastToArray.java[ICastToArray" modificationStamp="22209" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IRestart.java[IRestart" modificationStamp="22232" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IRunToAddress.java[IRunToAddress" modificationStamp="22242" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IReverseResumeHandler.java[IReverseResumeHandler" modificationStamp="22238" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IResumeWithoutSignalHandler.java[IResumeWithoutSignalHandler" modificationStamp="22237" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IGroupDebugContextsHandler.java[IGroupDebugContextsHandler" modificationStamp="22225" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IDummyStackFrame.java[IDummyStackFrame" modificationStamp="22219" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IDisassemblySourceLine.java[IDisassemblySourceLine" modificationStamp="22218" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICRegister.java[ICRegister" modificationStamp="22199" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IReverseStepIntoHandler.java[IReverseStepIntoHandler" modificationStamp="22239" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IFormatSupport.java[IFormatSupport" modificationStamp="22223" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICValue.java[ICValue" modificationStamp="22205" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICFunctionBreakpoint.java[ICFunctionBreakpoint" modificationStamp="22194" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IViewInMemory.java[IViewInMemory" modificationStamp="22252" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{CVariableFormat.java[CVariableFormat" modificationStamp="22178" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IEnableDisableTarget.java[IEnableDisableTarget" modificationStamp="22221" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IStartTracingHandler.java[IStartTracingHandler" modificationStamp="22245" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICBreakpointExtension.java[ICBreakpointExtension" modificationStamp="22185" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICWatchpoint2.java[ICWatchpoint2" modificationStamp="22208" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICAddressBreakpoint.java[ICAddressBreakpoint" modificationStamp="22182" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IRestoreRegisterGroupsHandler.java[IRestoreRegisterGroupsHandler" modificationStamp="22233" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IExecFileInfo.java[IExecFileInfo" modificationStamp="22222" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IStepIntoSelectionHandler.java[IStepIntoSelectionHandler" modificationStamp="22246" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICDebugElement.java[ICDebugElement" modificationStamp="22188" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IResumeWithoutSignal.java[IResumeWithoutSignal" modificationStamp="22236" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICWatchpoint.java[ICWatchpoint" modificationStamp="22207" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICEventBreakpoint.java[ICEventBreakpoint" modificationStamp="22193" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IModuleRetrieval.java[IModuleRetrieval" modificationStamp="22226" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IResumeAtLine.java[IResumeAtLine" modificationStamp="22235" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IDebuggerProcessSupport.java[IDebuggerProcessSupport" modificationStamp="22213" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IRemoveRegisterGroupsHandler.java[IRemoveRegisterGroupsHandler" modificationStamp="22231" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICSignal.java[ICSignal" modificationStamp="22200" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICBreakpointType.java[ICBreakpointType" modificationStamp="22187" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IAsmSourceLine.java[IAsmSourceLine" modificationStamp="22181" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ISaveTraceDataHandler.java[ISaveTraceDataHandler" modificationStamp="22244" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IAsmInstruction.java[IAsmInstruction" modificationStamp="22180" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICastToType.java[ICastToType" modificationStamp="22210" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IMoveToAddress.java[IMoveToAddress" modificationStamp="22227" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICLineBreakpoint2.java[ICLineBreakpoint2" modificationStamp="22197" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICLineBreakpoint.java[ICLineBreakpoint" modificationStamp="22196" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICBreakpoint.java[ICBreakpoint" modificationStamp="22183" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IDisassemblyLine.java[IDisassemblyLine" modificationStamp="22217" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICThread.java[ICThread" modificationStamp="22202" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IMoveToLine.java[IMoveToLine" modificationStamp="22228" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IStopTracingHandler.java[IStopTracingHandler" modificationStamp="22248" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IAddRegisterGroupHandler.java[IAddRegisterGroupHandler" modificationStamp="22179" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IGlobalVariableDescriptor.java[IGlobalVariableDescriptor" modificationStamp="22224" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IDisassemblyBlock.java[IDisassemblyBlock" modificationStamp="22215" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICDynamicPrintf.java[ICDynamicPrintf" modificationStamp="22192" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICDebugTargetGroup.java[ICDebugTargetGroup" modificationStamp="22191" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICModule.java[ICModule" modificationStamp="22198" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{CDebugElementState.java[CDebugElementState" modificationStamp="22177" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICGlobalVariable.java[ICGlobalVariable" modificationStamp="22195" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IPersistableRegisterGroup.java[IPersistableRegisterGroup" modificationStamp="22229" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICVariable.java[ICVariable" modificationStamp="22206" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IDisassemblyInstruction.java[IDisassemblyInstruction" modificationStamp="22216" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICBreakpointFilterExtension.java[ICBreakpointFilterExtension" modificationStamp="22186" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IReverseToggleHandler.java[IReverseToggleHandler" modificationStamp="22241" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICDebugTarget.java[ICDebugTarget" modificationStamp="22190" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICStackFrame.java[ICStackFrame" modificationStamp="22201" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IRegisterDescriptor.java[IRegisterDescriptor" modificationStamp="22230" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IConnectHandler.java[IConnectHandler" modificationStamp="22211" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IReverseStepOverHandler.java[IReverseStepOverHandler" modificationStamp="22240" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICDebugElementStatus.java[ICDebugElementStatus" modificationStamp="22189" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IResumeAtAddress.java[IResumeAtAddress" modificationStamp="22234" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{ICType.java[ICType" modificationStamp="22204" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IDisassembly.java[IDisassembly" modificationStamp="22214" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IUncallHandler.java[IUncallHandler" modificationStamp="22250" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IUngroupDebugContextsHandler.java[IUngroupDebugContextsHandler" modificationStamp="22251" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.core/src&lt;org.eclipse.cdt.debug.core.model{IEditRegisterGroupHandler.java[IEditRegisterGroupHandler" modificationStamp="22220" restrictions="0" visibility="0"/>
+    </package>
+</component>

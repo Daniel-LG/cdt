@@ -19,18 +19,9 @@
  *******************************************************************************/
 package org.eclipse.cdt.dsf.gdb.launching;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.exec.CommandLine;
-import org.apache.commons.exec.DefaultExecutor;
-import org.apache.commons.exec.ExecuteException;
-import org.apache.commons.exec.ExecuteWatchdog;
-import org.apache.commons.exec.PumpStreamHandler;
 import org.eclipse.cdt.debug.core.CDebugUtils;
 import org.eclipse.cdt.debug.core.ICDTLaunchConfigurationConstants;
 import org.eclipse.cdt.debug.core.model.IConnectHandler;
@@ -59,33 +50,12 @@ import org.eclipse.cdt.dsf.mi.service.command.output.MIGDBVersionInfo;
 import org.eclipse.cdt.dsf.mi.service.command.output.MIInfo;
 import org.eclipse.cdt.dsf.service.DsfServicesTracker;
 import org.eclipse.cdt.dsf.service.DsfSession;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.debug.core.ILaunch;
-import org.eclipse.swt.graphics.Color;
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.console.IConsoleConstants;
-import org.eclipse.ui.console.IConsoleView;
-import org.eclipse.ui.console.MessageConsoleStream;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.services.IEvaluationService;
-
-import cn.smartcore.dev.ui.natures.ProjectNature;
-import cn.smartcore.handlers.ControlGDBServerHandler;
-import cn.smartcore.handlers.MyExecuteResultHandler;
 
 public class FinalLaunchSequence extends ReflectionSequence {
 	// The launchConfiguration attributes
@@ -152,14 +122,12 @@ public class FinalLaunchSequence extends ReflectionSequence {
 					//
 					// "stepSetSourceLookupPath", //$NON-NLS-1$
 
-					// added by jwy
-					"stepLaunchSimulator",
 					// For remote-attach launch only
 					"stepRemoteConnection", //$NON-NLS-1$
 					// For all launches except attach ones
-					// "stepNewProcess", //$NON-NLS-1$
+					"stepNewProcess", //$NON-NLS-1$
 					// For local attach launch only
-					// "stepAttachToProcess", //$NON-NLS-1$
+					"stepAttachToProcess", //$NON-NLS-1$
 					// Global
 					"stepDataModelInitializationComplete", //$NON-NLS-1$
 					"stepCleanup", //$NON-NLS-1$
@@ -545,156 +513,24 @@ public class FinalLaunchSequence extends ReflectionSequence {
 
 	private static final String INVALID = "invalid"; //$NON-NLS-1$
 
-	// added by jwy, to launch the SmartSimu first
-	@Execute
-	public void stepLaunchSimulator() {
-//		if (fGDBBackend.getSessionType() == SessionType.REMOTE && fGDBBackend.getIsAttachSession()) {
-			String projectName = (String) fAttributes.get(ICDTLaunchConfigurationConstants.ATTR_PROJECT_NAME);
-			IProject project = getAPPProject(projectName);
-			String elfFilePath = (String) fAttributes.get(ICDTLaunchConfigurationConstants.ATTR_PROGRAM_NAME);
-			String binFilePath = project.getLocation() + "/" + elfFilePath.substring(0, elfFilePath.length() - 3)
-					+ "bin";
-			String homePath = System.getProperty("user.home");
-
-			try {
-				ControlGDBServerHandler.copy(binFilePath, homePath + "/simu/ram/a.bin");
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-
-			// TODO: read port from UI to replace the default 8888
-			String simuPort = CDebugUtils.getAttribute(fAttributes, IGDBLaunchConfigurationConstants.ATTR_PORT, "8888");
-			String line = homePath + "/simu/main " + simuPort + " " + project.getLocation() + "/debug-config.txt start "
-					+ homePath + "/simu/conf/conf.so";
-
-			// String line = "gdbserver :8888 " + execFilePath;
-
-			IWorkbenchWindow window = ControlGDBServerHandler.window;
-			IWorkbenchPage page = window.getActivePage();
-			ICommandService commandService = window.getWorkbench().getService(ICommandService.class);
-			Command command = commandService.getCommand("controlGDBServerCommand");
-			try {
-				HandlerUtil.toggleCommandState(command);
-			} catch (ExecutionException e) {
-				e.printStackTrace();
-			}
-
-			Display.getDefault().syncExec(new Runnable() {
-
-				@Override
-				public void run() {
-					String id = IConsoleConstants.ID_CONSOLE_VIEW;
-					IConsoleView view = null;
-					try {
-						view = (IConsoleView) page.showView(id);
-					} catch (PartInitException e) {
-						e.printStackTrace();
-					}
-					view.display(ControlGDBServerHandler.smartsimuConsole);
-				}
-			});
-
-			CommandLine cmdLine = CommandLine.parse(line);
-			ControlGDBServerHandler.executor = new DefaultExecutor();
-			ExecuteWatchdog watchdog = new ExecuteWatchdog(ExecuteWatchdog.INFINITE_TIMEOUT);
-			ControlGDBServerHandler.executor.setWatchdog(watchdog);
-			MessageConsoleStream outputStream = ControlGDBServerHandler.smartsimuConsole.newMessageStream();
-			MessageConsoleStream errorStream = ControlGDBServerHandler.smartsimuConsole.newMessageStream();
-			Display.getDefault().syncExec(new Runnable() {
-
-				@Override
-				public void run() {
-					errorStream.setColor(new Color(null, 255, 0, 0));
-				}
-			});
-			outputStream.setActivateOnWrite(true);
-			errorStream.setActivateOnWrite(true);
-			PumpStreamHandler streamHandler = new PumpStreamHandler(outputStream, errorStream);
-			ControlGDBServerHandler.executor.setStreamHandler(streamHandler);
-			MyExecuteResultHandler resultHandler = new MyExecuteResultHandler(window, command, outputStream,
-					errorStream);
-
-			ControlGDBServerHandler.smartsimuConsole.clearConsole();
-
-			try {
-				ControlGDBServerHandler.executor.execute(cmdLine, resultHandler);
-			} catch (ExecuteException e1) {
-				e1.printStackTrace();
-			} catch (IOException e2) {
-				e2.printStackTrace();
-			}
-
-			try {
-				resultHandler.waitFor(500);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-
-			try {
-				ExecuteException e = resultHandler.getException();
-				String exceptionInfo = e.getMessage();
-				errorStream.println(exceptionInfo);
-				return;
-			} catch (IllegalStateException e) {
-				outputStream.println("simu has been started");
-			}
-
-			// Read debug-config.txt and update the state of the radio command
-			Command radioCommand = commandService.getCommand("selectCommand");
-			IFile file = project.getFile("debug-config.txt");
-			String initialState = "";
-
-			if (file.exists()) {
-				try {
-					BufferedReader bReader = new BufferedReader(new InputStreamReader(file.getContents()));
-					try {
-						initialState = bReader.readLine();
-						if (initialState == null)
-							initialState = "";
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-				} catch (CoreException e) {
-					e.printStackTrace();
-				}
-			}
-
-			try {
-				HandlerUtil.updateRadioState(radioCommand, initialState);
-			} catch (ExecutionException e) {
-				e.printStackTrace();
-			}
-
-			IEvaluationService evaluationService = window.getService(IEvaluationService.class);
-			if (evaluationService != null)
-				evaluationService.requestEvaluation("org.eclipse.ui.commands.toggleState");
-//		}
-	}
-
 	/**
 	 * If we are dealing with a remote-attach debugging session, connect to the
 	 * target.
 	 * 
 	 * @since 4.0
 	 */
-	// <jwy> remote debug tag1
 	@Execute
 	public void stepRemoteConnection(final RequestMonitor rm) {
-//		if (fGDBBackend.getSessionType() == SessionType.REMOTE && fGDBBackend.getIsAttachSession()) {
+		if (fGDBBackend.getSessionType() == SessionType.REMOTE && fGDBBackend.getIsAttachSession()) {
+
 			boolean isTcpConnection = CDebugUtils.getAttribute(fAttributes,
 					IGDBLaunchConfigurationConstants.ATTR_REMOTE_TCP, false);
 
 			if (isTcpConnection) {
-				// modified by jwy
-//				String remoteTcpHost = CDebugUtils.getAttribute(fAttributes, IGDBLaunchConfigurationConstants.ATTR_HOST,
-//						INVALID);
-//				String remoteTcpPort = CDebugUtils.getAttribute(fAttributes, IGDBLaunchConfigurationConstants.ATTR_PORT,
-//						INVALID);
 				String remoteTcpHost = CDebugUtils.getAttribute(fAttributes, IGDBLaunchConfigurationConstants.ATTR_HOST,
-						"localhost");
+						INVALID);
 				String remoteTcpPort = CDebugUtils.getAttribute(fAttributes, IGDBLaunchConfigurationConstants.ATTR_PORT,
-						"8888");
-				// end modify
+						INVALID);
 
 				fCommandControl.queueCommand(fCommandFactory.createMITargetSelect(fCommandControl.getContext(),
 						remoteTcpHost, remoteTcpPort, true), new ImmediateDataRequestMonitor<MIInfo>(rm));
@@ -706,44 +542,10 @@ public class FinalLaunchSequence extends ReflectionSequence {
 						fCommandFactory.createMITargetSelect(fCommandControl.getContext(), serialDevice, true),
 						new ImmediateDataRequestMonitor<MIInfo>(rm));
 			}
-//		} else {
+		}
+		else {
 			rm.done();
-//		}
-	}
-
-	// added by jwy
-	private IProject getAPPProject(String projectName) {
-		if (projectName.length() < 1) {
-			return null;
 		}
-
-		IProject[] projects = getAPPProjects();
-		for (IProject project : projects) {
-			if (project.getName().equals(projectName)) {
-				return project;
-			}
-		}
-
-		return null;
-	}
-
-	// added by jwy
-	private IProject[] getAPPProjects() {
-		IWorkspaceRoot root = ResourcesPlugin.getWorkspace().getRoot();
-		IProject[] projects = root.getProjects();
-		ArrayList<IProject> list = new ArrayList<IProject>();
-
-		for (IProject project : projects) {
-			try {
-				if (project.hasNature(ProjectNature.APP_PROJECT_ID)) {
-					list.add(project);
-				}
-			} catch (CoreException e) {
-				e.printStackTrace();
-			}
-		}
-
-		return list.toArray(new IProject[list.size()]);
 	}
 
 	/**
@@ -770,6 +572,7 @@ public class FinalLaunchSequence extends ReflectionSequence {
 			// steps
 			// necessary to create a process. It is possible that the binary is
 			// not needed
+			// <jwy> remote debug tag1
 			fProcService.debugNewProcess(fCommandControl.getContext(), binary, fAttributes,
 					new DataRequestMonitor<IDMContext>(getExecutor(), rm) {
 						@Override

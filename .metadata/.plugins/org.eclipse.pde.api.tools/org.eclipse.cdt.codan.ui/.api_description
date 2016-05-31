@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.codan.ui" modificationStamp="5935" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.codan.ui/src&lt;org.eclipse.cdt.codan.ui"/>
+        <type handle="=org.eclipse.cdt.codan.ui/src&lt;org.eclipse.cdt.codan.ui{LabelFieldEditor.java[LabelFieldEditor" modificationStamp="26674" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.ui/src&lt;org.eclipse.cdt.codan.ui{AbstractCodanProblemDetailsProvider.java[AbstractCodanProblemDetailsProvider" modificationStamp="26671" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.ui/src&lt;org.eclipse.cdt.codan.ui{CodanEditorUtility.java[CodanEditorUtility" modificationStamp="26672" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.ui/src&lt;org.eclipse.cdt.codan.ui{ICodanMarkerResolution.java[ICodanMarkerResolution" modificationStamp="26673" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.codan.ui/src&lt;org.eclipse.cdt.codan.ui.handlers"/>
+        <type handle="=org.eclipse.cdt.codan.ui/src&lt;org.eclipse.cdt.codan.ui.handlers{RunCodanCommand.java[RunCodanCommand" modificationStamp="26676" restrictions="0" visibility="0"/>
+    </package>
+</component>

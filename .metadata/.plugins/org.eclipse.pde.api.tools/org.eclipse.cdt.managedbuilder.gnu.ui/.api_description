@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.managedbuilder.gnu.ui" modificationStamp="1738" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.cygwin"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.cygwin{IsGnuCygwinToolChainSupported.java[IsGnuCygwinToolChainSupported" modificationStamp="17091" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.cygwin{GnuCygwinConfigurationEnvironmentSupplier.java[GnuCygwinConfigurationEnvironmentSupplier" modificationStamp="17090" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.cygwin{CygwinPathResolver.java[CygwinPathResolver" modificationStamp="17089" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.ui"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.ui{GnuUIPlugin.java[GnuUIPlugin" modificationStamp="17096" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.ui{ProfAppCalculator.java[ProfAppCalculator" modificationStamp="17098" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.ui{GprofAppCalculator.java[GprofAppCalculator" modificationStamp="17097" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.ui{GcovAppCalculator.java[GcovAppCalculator" modificationStamp="17095" restrictions="0" visibility="0"/>
+    </package>
+</component>

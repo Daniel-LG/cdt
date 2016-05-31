@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.dsf.gdb.tests" modificationStamp="2546" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb.tests/src&lt;org.eclipse.cdt.dsf.mi.service.command"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb.tests/src&lt;org.eclipse.cdt.dsf.gdb"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb.tests/src&lt;org.eclipse.cdt.dsf.mi.service"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb.tests/src&lt;org.eclipse.cdt.dsf.mi.service.command.output"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb.tests/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands"/>
+    </package>
+</component>

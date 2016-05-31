@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.autotools.core" modificationStamp="6330" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{IAConfiguration.java[IAConfiguration" modificationStamp="45566" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{InternalConfigureOption.java[InternalConfigureOption" modificationStamp="45569" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{FlagConfigureOption.java[FlagConfigureOption" modificationStamp="45564" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{AutotoolsConfiguration.java[AutotoolsConfiguration" modificationStamp="45556" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{AutotoolsConfigurationManager.java[AutotoolsConfigurationManager" modificationStamp="45557" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{ConfigureMessages.java[ConfigureMessages" modificationStamp="45560" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{StringConfigureOption.java[StringConfigureOption" modificationStamp="45571" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{IFlagConfigureValueOption.java[IFlagConfigureValueOption" modificationStamp="45568" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{BinConfigureOption.java[BinConfigureOption" modificationStamp="45559" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{FlagValueConfigureOption.java[FlagValueConfigureOption" modificationStamp="45565" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{MultiArgConfigureOption.java[MultiArgConfigureOption" modificationStamp="45570" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{AbstractConfigurationOption.java[AbstractConfigurationOption" modificationStamp="45555" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{ConfigureTool.java[ConfigureTool" modificationStamp="45563" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{ConfigureOptionCategory.java[ConfigureOptionCategory" modificationStamp="45562" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{IConfigureOption.java[IConfigureOption" modificationStamp="45567" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core.configure{AutotoolsOptionValueHandler.java[AutotoolsOptionValueHandler" modificationStamp="45558" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{DefaultNoDependencyCalculator.java[DefaultNoDependencyCalculator" modificationStamp="27337" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{AutotoolsConfigurationBuilder.java[AutotoolsConfigurationBuilder" modificationStamp="27332" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{AutotoolsProblemMarkerInfo.java[AutotoolsProblemMarkerInfo" modificationStamp="27335" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{MarkerGenerator.java[MarkerGenerator" modificationStamp="27343" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{PkgconfigErrorResolution.java[PkgconfigErrorResolution" modificationStamp="27345" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{IConfigurationCloneListener.java[IConfigurationCloneListener" modificationStamp="27341" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{IAutotoolsMarker.java[IAutotoolsMarker" modificationStamp="27340" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{MakeMessages.java[MakeMessages" modificationStamp="27342" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{ErrorParser.java[ErrorParser" modificationStamp="27338" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{AutotoolsPropertyConstants.java[AutotoolsPropertyConstants" modificationStamp="27336" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{VersionComparator.java[VersionComparator" modificationStamp="27346" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{MarkerResolutionGenerator.java[MarkerResolutionGenerator" modificationStamp="27344" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{AutotoolsNewMakeGenerator.java[AutotoolsNewMakeGenerator" modificationStamp="27334" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{AutotoolsEnvironmentVariableSupplier.java[AutotoolsEnvironmentVariableSupplier" modificationStamp="27333" restrictions="10" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.internal.autotools.core{ErrorParserManager.java[ErrorParserManager" modificationStamp="27339" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.autotools.core"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.autotools.core{AutotoolsOptionConstants.java[AutotoolsOptionConstants" modificationStamp="27350" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.autotools.core{IAutotoolsOption.java[IAutotoolsOption" modificationStamp="27352" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.autotools.core{AutotoolsPlugin.java[AutotoolsPlugin" modificationStamp="27351" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.core/src&lt;org.eclipse.cdt.autotools.core{AutotoolsNewProjectNature.java[AutotoolsNewProjectNature" modificationStamp="27349" restrictions="0" visibility="0"/>
+    </package>
+</component>

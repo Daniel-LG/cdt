@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.codan.checkers" modificationStamp="6083" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.codan.checkers/src&lt;org.eclipse.cdt.codan.checkers"/>
+        <type handle="=org.eclipse.cdt.codan.checkers/src&lt;org.eclipse.cdt.codan.checkers{CodanCheckersActivator.java[CodanCheckersActivator" modificationStamp="26977" restrictions="0" visibility="0"/>
+    </package>
+</component>

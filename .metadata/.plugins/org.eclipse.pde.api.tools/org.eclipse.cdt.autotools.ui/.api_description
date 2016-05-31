@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.autotools.ui" modificationStamp="6195" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors{AutoconfReconcilingStrategy.java[AutoconfReconcilingStrategy" modificationStamp="27127" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors{AutoconfPartitionScanner.java[AutoconfPartitionScanner" modificationStamp="27125" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors{AutoconfSourceViewerConfiguration.java[AutoconfSourceViewerConfiguration" modificationStamp="27128" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors{IAutotoolsEditor.java[IAutotoolsEditor" modificationStamp="27133" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors{AutoconfEditor.java[AutoconfEditor" modificationStamp="27107" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors{AutoconfEditorMacroValidator.java[AutoconfEditorMacroValidator" modificationStamp="27108" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors{AutoconfDocumentProvider.java[AutoconfDocumentProvider" modificationStamp="27105" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors{AutoconfMacroContentAssistProcessor.java[AutoconfMacroContentAssistProcessor" modificationStamp="27117" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.outline"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfTokenizer.java[AutoconfTokenizer" modificationStamp="45323" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{IAutoconfMacroValidator.java[IAutoconfMacroValidator" modificationStamp="45328" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfCaseElement.java[AutoconfCaseElement" modificationStamp="45310" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfForElement.java[AutoconfForElement" modificationStamp="45314" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{IAutoconfMacroDetector.java[IAutoconfMacroDetector" modificationStamp="45327" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfElseElement.java[AutoconfElseElement" modificationStamp="45313" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfRootElement.java[AutoconfRootElement" modificationStamp="45321" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfIfElement.java[AutoconfIfElement" modificationStamp="45315" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfUntilElement.java[AutoconfUntilElement" modificationStamp="45324" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{IAutoconfErrorHandler.java[IAutoconfErrorHandler" modificationStamp="45326" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfWhileElement.java[AutoconfWhileElement" modificationStamp="45325" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfSelectElement.java[AutoconfSelectElement" modificationStamp="45322" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfElifElement.java[AutoconfElifElement" modificationStamp="45312" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfMacroArgumentElement.java[AutoconfMacroArgumentElement" modificationStamp="45316" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{InvalidMacroException.java[InvalidMacroException" modificationStamp="45332" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{ITokenConstants.java[ITokenConstants" modificationStamp="45330" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfMacroElement.java[AutoconfMacroElement" modificationStamp="45318" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfElement.java[AutoconfElement" modificationStamp="45311" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfParser.java[AutoconfParser" modificationStamp="45320" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfCaseConditionElement.java[AutoconfCaseConditionElement" modificationStamp="45309" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{Token.java[Token" modificationStamp="45334" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfMacroDetector.java[AutoconfMacroDetector" modificationStamp="45317" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{AutoconfOutlineErrorHandler.java[AutoconfOutlineErrorHandler" modificationStamp="45319" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.autotools.ui/src&lt;org.eclipse.cdt.autotools.ui.editors.parser{ParseException.java[ParseException" modificationStamp="45333" restrictions="0" visibility="0"/>
+    </package>
+</component>

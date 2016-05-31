@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.eclipse.core.resources.ResourcesPlugin"/>
+<fullyQualifiedTypeName name="java.io.FileDescriptor"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="org.eclipse.jface.internal.InternalPolicy"/>
+<fullyQualifiedTypeName name="org.eclipse.core.commands.ExecutionException"/>
+<fullyQualifiedTypeName name="org.eclipse.core.runtime.Path"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.graphics.Color"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="cn.smartcore.handlers.ControlGDBServerHandler"/>
+<fullyQualifiedTypeName name="launch.LaunchSimulator"/>
+<fullyQualifiedTypeName name="org.eclipse.core.resources.IProject"/>
+<fullyQualifiedTypeName name="cn.smartcore.dev.ui.natures.ProjectNature"/>
+<fullyQualifiedTypeName name="java.util.concurrent.BrokenBarrierException"/>
+<fullyQualifiedTypeName name="org.eclipse.core.commands.Command"/>
+<fullyQualifiedTypeName name="cn.smartcore.debug.core.handlers.ControlGDBServerHandler"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Display"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="org.eclipse.ui.PlatformUI"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="org.osgi.framework.FrameworkUtil"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.util.Hashtable"/>
+<fullyQualifiedTypeName name="cn.smartcore.debug.core.launch.LaunchSimulator"/>
+<fullyQualifiedTypeName name="org.osgi.framework.BundleContext"/>
+<fullyQualifiedTypeName name="org.osgi.framework.ServiceReference"/>
+<fullyQualifiedTypeName name="cn.smartcore.debug.core.ILaunchSimulator"/>
+<fullyQualifiedTypeName name="org.apache.commons.exec.DefaultExecutor"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="cn.smartcore.debug.core.Activator"/>
+</qualifiedTypeNameHistroy>

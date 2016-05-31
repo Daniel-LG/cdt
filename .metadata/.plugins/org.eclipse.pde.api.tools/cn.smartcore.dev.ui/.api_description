@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="cn.smartcore.dev.ui" modificationStamp="6529" version="1.2">
+    <package visibility="1">
+        <fragment handle="=cn.smartcore.dev.ui/src&lt;cn.smartcore.dev.ui.natures"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=cn.smartcore.dev.ui/src&lt;cn.smartcore.dev.ui.views"/>
+    </package>
+</component>

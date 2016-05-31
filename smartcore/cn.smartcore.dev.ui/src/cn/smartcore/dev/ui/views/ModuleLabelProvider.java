@@ -19,14 +19,14 @@ public class ModuleLabelProvider extends LabelProvider implements ITableLabelPro
 	@Override
 	public Image getImage(Object element) {
 		if (element instanceof IProject) {
-			return ImageDescriptor.createFromFile(ProjectDecorator.class, "/icons/view/module.gif").createImage();
+			return ImageDescriptor.createFromFile(ModuleLabelProvider.class, "/icons/view/module.gif").createImage();
 		} else if (element instanceof String) {
 			if (((String) element).indexOf("simict_attribute_interface") != -1) {
-				return ImageDescriptor.createFromFile(ProjectDecorator.class, "/icons/view/attribute_interface.gif").createImage();
+				return ImageDescriptor.createFromFile(ModuleLabelProvider.class, "/icons/view/attribute_interface.gif").createImage();
 			} else if (((String) element).indexOf("simict_attribute") != -1) {
-				return ImageDescriptor.createFromFile(ProjectDecorator.class, "/icons/view/attribute.gif").createImage();
+				return ImageDescriptor.createFromFile(ModuleLabelProvider.class, "/icons/view/attribute.gif").createImage();
 			} else {
-				return ImageDescriptor.createFromFile(ProjectDecorator.class, "/icons/view/interface.gif").createImage();
+				return ImageDescriptor.createFromFile(ModuleLabelProvider.class, "/icons/view/interface.gif").createImage();
 			}
 		} else {
 			return fLableProvider.getImage(element);

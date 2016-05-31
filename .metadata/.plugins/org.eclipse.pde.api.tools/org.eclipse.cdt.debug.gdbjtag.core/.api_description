@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.debug.gdbjtag.core" modificationStamp="4079" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.dsf.gdb.service.extensions"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.dsf.gdb.service.extensions{GDBJtagControl_HEAD.java[GDBJtagControl_HEAD" modificationStamp="58171" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.dsf.gdb.service.macos"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.dsf.gdb.service.macos{MacOSGdbJtagDebugServicesFactory.java[MacOSGdbJtagDebugServicesFactory" modificationStamp="58172" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core{IGDBJtagConstants.java[IGDBJtagConstants" modificationStamp="22052" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core{Messages.java[Messages" modificationStamp="22054" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core{GDBJtagDSFFinalLaunchSequence.java[GDBJtagDSFFinalLaunchSequence" modificationStamp="22045" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core{GDBJtagCommandFactory.java[GDBJtagCommandFactory" modificationStamp="22044" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core{GDBJtagDSFFinalLaunchSequence_7_2.java[GDBJtagDSFFinalLaunchSequence_7_2" modificationStamp="22046" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core{IGDBJtagConnection.java[IGDBJtagConnection" modificationStamp="22051" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core{GDBJtagDSFFinalLaunchSequence_7_7.java[GDBJtagDSFFinalLaunchSequence_7_7" modificationStamp="22047" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core{GDBJtagDSFLaunchConfigurationDelegate.java[GDBJtagDSFLaunchConfigurationDelegate" modificationStamp="22048" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core{GDBJtagLaunchConfigurationDelegate.java[GDBJtagLaunchConfigurationDelegate" modificationStamp="22050" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core{Activator.java[Activator" modificationStamp="22043" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core{GDBJtagDebugger.java[GDBJtagDebugger" modificationStamp="22049" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.jtagdevice"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.jtagdevice{GDBJtagDeviceContributionFactory.java[GDBJtagDeviceContributionFactory" modificationStamp="41208" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.jtagdevice{AbatronBDI2000.java[AbatronBDI2000" modificationStamp="41204" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.jtagdevice{DefaultGDBJtagConnectionImpl.java[DefaultGDBJtagConnectionImpl" modificationStamp="41205" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.jtagdevice{GDBJtagDeviceContribution.java[GDBJtagDeviceContribution" modificationStamp="41207" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.jtagdevice{GenericDevice.java[GenericDevice" modificationStamp="41209" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.jtagdevice{DefaultGDBJtagDeviceImpl.java[DefaultGDBJtagDeviceImpl" modificationStamp="41206" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.jtagdevice{IGDBJtagDevice.java[IGDBJtagDevice" modificationStamp="41210" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.jtagdevice{MacraigorUsb2Demon.java[MacraigorUsb2Demon" modificationStamp="41211" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.dsf.gdb.service"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.dsf.gdb.service{GDBJtagControl_7_7.java[GDBJtagControl_7_7" modificationStamp="58167" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.dsf.gdb.service{GDBJtagControl_7_0.java[GDBJtagControl_7_0" modificationStamp="58164" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.dsf.gdb.service{GDBJtagControl_7_2.java[GDBJtagControl_7_2" modificationStamp="58165" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.dsf.gdb.service{GDBJtagControl_7_4.java[GDBJtagControl_7_4" modificationStamp="58166" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.dsf.gdb.service{GdbJtagDebugServicesFactory.java[GdbJtagDebugServicesFactory" modificationStamp="58168" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.gdbjtag.core/src&lt;org.eclipse.cdt.debug.gdbjtag.core.dsf.gdb.service{GDBJtagControl.java[GDBJtagControl" modificationStamp="58163" restrictions="0" visibility="0"/>
+    </package>
+</component>

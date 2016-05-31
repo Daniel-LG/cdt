@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.debug.mi.core" modificationStamp="4018" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{RegisterManager.java[RegisterManager" modificationStamp="40871" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{SharedLibraryEvent.java[SharedLibraryEvent" modificationStamp="40875" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{FileLocation.java[FileLocation" modificationStamp="40861" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{FunctionFinished.java[FunctionFinished" modificationStamp="40863" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{ProcessManager.java[ProcessManager" modificationStamp="40870" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{SessionObject.java[SessionObject" modificationStamp="40874" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{LineLocation.java[LineLocation" modificationStamp="40864" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{ThreadManager.java[ThreadManager" modificationStamp="40881" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{SharedLibraryManager.java[SharedLibraryManager" modificationStamp="40876" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{MI2CDIException.java[MI2CDIException" modificationStamp="40867" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{SignalReceived.java[SignalReceived" modificationStamp="40879" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{VariableManager.java[VariableManager" modificationStamp="40882" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{Session.java[Session" modificationStamp="40872" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{ExpressionManager.java[ExpressionManager" modificationStamp="40860" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{Locator.java[Locator" modificationStamp="40866" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{Format.java[Format" modificationStamp="40862" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{MemoryManager.java[MemoryManager" modificationStamp="40869" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{SourceManager.java[SourceManager" modificationStamp="40880" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{EndSteppingRange.java[EndSteppingRange" modificationStamp="40855" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{ErrorInfo.java[ErrorInfo" modificationStamp="40856" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{Manager.java[Manager" modificationStamp="40868" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{SignalExitInfo.java[SignalExitInfo" modificationStamp="40877" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{WatchpointScope.java[WatchpointScope" modificationStamp="40883" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{Location.java[Location" modificationStamp="40865" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{WatchpointTrigger.java[WatchpointTrigger" modificationStamp="40884" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{BreakpointManager.java[BreakpointManager" modificationStamp="40851" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{SessionConfiguration.java[SessionConfiguration" modificationStamp="40873" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{CdiResources.java[CdiResources" modificationStamp="40852" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{EventBreakpointHit.java[EventBreakpointHit" modificationStamp="40857" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{SignalManager.java[SignalManager" modificationStamp="40878" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{EventManager.java[EventManager" modificationStamp="40858" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{ExitInfo.java[ExitInfo" modificationStamp="40859" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{Condition.java[Condition" modificationStamp="40854" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi{BreakpointHit.java[BreakpointHit" modificationStamp="40850" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.macos"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.macos{MacOSMIVarUpdate.java[MacOSMIVarUpdate" modificationStamp="58040" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.macos{MacOSMIVarUpdateInfo.java[MacOSMIVarUpdateInfo" modificationStamp="58041" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.macos{MacOsCLIInfoThreadsInfo.java[MacOsCLIInfoThreadsInfo" modificationStamp="58042" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.macos{MacOSMIEnvironmentCD.java[MacOSMIEnvironmentCD" modificationStamp="58039" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.macos{MacOSCLIInfoPID.java[MacOSCLIInfoPID" modificationStamp="58036" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.macos{MacOSCLIInfoThreads.java[MacOSCLIInfoThreads" modificationStamp="58037" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.macos{StandardMacOSCommandFactory.java[StandardMacOSCommandFactory" modificationStamp="58043" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.macos{MacOSCLIPtype.java[MacOSCLIPtype" modificationStamp="58038" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.event"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.event{SuspendedEvent.java[SuspendedEvent" modificationStamp="51260" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.event{ChangedEvent.java[ChangedEvent" modificationStamp="51253" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.event{MemoryChangedEvent.java[MemoryChangedEvent" modificationStamp="51258" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.event{DestroyedEvent.java[DestroyedEvent" modificationStamp="51255" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.event{ExitedEvent.java[ExitedEvent" modificationStamp="51257" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.event{CreatedEvent.java[CreatedEvent" modificationStamp="51254" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.event{DisconnectedEvent.java[DisconnectedEvent" modificationStamp="51256" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.event{ResumedEvent.java[ResumedEvent" modificationStamp="51259" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{EnumValue.java[EnumValue" modificationStamp="58060" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{BoolType.java[BoolType" modificationStamp="58051" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{WCharType.java[WCharType" modificationStamp="58087" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{ArrayValue.java[ArrayValue" modificationStamp="58050" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{BoolValue.java[BoolValue" modificationStamp="58052" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{VoidType.java[VoidType" modificationStamp="58085" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{FloatingPointValue.java[FloatingPointValue" modificationStamp="58064" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{LongType.java[LongType" modificationStamp="58074" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{IntegralType.java[IntegralType" modificationStamp="58070" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{VoidValue.java[VoidValue" modificationStamp="58086" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{Type.java[Type" modificationStamp="58084" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{AggregateType.java[AggregateType" modificationStamp="58047" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{CharValue.java[CharValue" modificationStamp="58054" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{WCharValue.java[WCharValue" modificationStamp="58088" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{FloatingPointType.java[FloatingPointType" modificationStamp="58063" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{DerivedType.java[DerivedType" modificationStamp="58055" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{IncompleteType.java[IncompleteType" modificationStamp="58067" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{FloatType.java[FloatType" modificationStamp="58061" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{DoubleType.java[DoubleType" modificationStamp="58057" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{PointerType.java[PointerType" modificationStamp="58076" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{IntValue.java[IntValue" modificationStamp="58069" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{ReferenceValue.java[ReferenceValue" modificationStamp="58079" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{CharType.java[CharType" modificationStamp="58053" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{StructType.java[StructType" modificationStamp="58082" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{PointerValue.java[PointerValue" modificationStamp="58077" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{ShortValue.java[ShortValue" modificationStamp="58081" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{LongLongValue.java[LongLongValue" modificationStamp="58073" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{DoubleValue.java[DoubleValue" modificationStamp="58058" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{LongValue.java[LongValue" modificationStamp="58075" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{FunctionType.java[FunctionType" modificationStamp="58065" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{EnumType.java[EnumType" modificationStamp="58059" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{LongLongType.java[LongLongType" modificationStamp="58072" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{ShortType.java[ShortType" modificationStamp="58080" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{DerivedValue.java[DerivedValue" modificationStamp="58056" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{ArrayType.java[ArrayType" modificationStamp="58049" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{FloatValue.java[FloatValue" modificationStamp="58062" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{FunctionValue.java[FunctionValue" modificationStamp="58066" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{IntType.java[IntType" modificationStamp="58068" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{ReferenceType.java[ReferenceType" modificationStamp="58078" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{AggregateValue.java[AggregateValue" modificationStamp="58048" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{IntegralValue.java[IntegralValue" modificationStamp="58071" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model.type{StructValue.java[StructValue" modificationStamp="58083" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIGDBShowInfo.java[MIGDBShowInfo" modificationStamp="40679" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIOutput.java[MIOutput" modificationStamp="40688" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIVar.java[MIVar" modificationStamp="40707" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIFrame.java[MIFrame" modificationStamp="40674" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIGDBShowEndianInfo.java[MIGDBShowEndianInfo" modificationStamp="40677" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{CLIInfoSignalsInfo.java[CLIInfoSignalsInfo" modificationStamp="40653" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIVarListChildrenInfo.java[MIVarListChildrenInfo" modificationStamp="40715" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIVarShowFormatInfo.java[MIVarShowFormatInfo" modificationStamp="40717" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIVarShowAttributesInfo.java[MIVarShowAttributesInfo" modificationStamp="40716" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIVarEvaluateExpressionInfo.java[MIVarEvaluateExpressionInfo" modificationStamp="40711" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIOOBRecord.java[MIOOBRecord" modificationStamp="40687" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIThreadSelectInfo.java[MIThreadSelectInfo" modificationStamp="40704" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIBreakWatchInfo.java[MIBreakWatchInfo" modificationStamp="40662" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{CLIPTypeInfo.java[CLIPTypeInfo" modificationStamp="40655" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIDataEvaluateExpressionInfo.java[MIDataEvaluateExpressionInfo" modificationStamp="40667" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIVarInfoExpressionInfo.java[MIVarInfoExpressionInfo" modificationStamp="40712" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{CLIWhatisInfo.java[CLIWhatisInfo" modificationStamp="40656" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{CLIInfoProgramInfo.java[CLIInfoProgramInfo" modificationStamp="40651" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIDataListChangedRegistersInfo.java[MIDataListChangedRegistersInfo" modificationStamp="40668" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIInfo.java[MIInfo" modificationStamp="40681" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIVarInfoNumChildrenInfo.java[MIVarInfoNumChildrenInfo" modificationStamp="40713" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{CLIInfoThreadsInfo.java[CLIInfoThreadsInfo" modificationStamp="40654" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIConst.java[MIConst" modificationStamp="40665" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIGDBShowDirectoriesInfo.java[MIGDBShowDirectoriesInfo" modificationStamp="40676" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MITuple.java[MITuple" modificationStamp="40705" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIInfoSharedLibraryInfo.java[MIInfoSharedLibraryInfo" modificationStamp="40682" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIMemory.java[MIMemory" modificationStamp="40685" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIArg.java[MIArg" modificationStamp="40657" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIVarDeleteInfo.java[MIVarDeleteInfo" modificationStamp="40710" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIConsoleStreamOutput.java[MIConsoleStreamOutput" modificationStamp="40664" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIList.java[MIList" modificationStamp="40683" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIDataReadMemoryInfo.java[MIDataReadMemoryInfo" modificationStamp="40671" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIStackInfoDepthInfo.java[MIStackInfoDepthInfo" modificationStamp="40696" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIParser.java[MIParser" modificationStamp="40689" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIStatusAsyncOutput.java[MIStatusAsyncOutput" modificationStamp="40700" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIBreakListInfo.java[MIBreakListInfo" modificationStamp="40661" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIThreadListIdsInfo.java[MIThreadListIdsInfo" modificationStamp="40703" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{CLIInfoProcInfo.java[CLIInfoProcInfo" modificationStamp="40650" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIBreakpoint.java[MIBreakpoint" modificationStamp="40663" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIExecAsyncOutput.java[MIExecAsyncOutput" modificationStamp="40673" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIVarInfoTypeInfo.java[MIVarInfoTypeInfo" modificationStamp="40714" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIStackListArgumentsInfo.java[MIStackListArgumentsInfo" modificationStamp="40697" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MITargetStreamOutput.java[MITargetStreamOutput" modificationStamp="40702" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIResultRecord.java[MIResultRecord" modificationStamp="40692" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIBreakInsertInfo.java[MIBreakInsertInfo" modificationStamp="40660" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIDataDisassembleInfo.java[MIDataDisassembleInfo" modificationStamp="40666" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIStackListLocalsInfo.java[MIStackListLocalsInfo" modificationStamp="40699" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIDataListRegisterNamesInfo.java[MIDataListRegisterNamesInfo" modificationStamp="40669" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIAsm.java[MIAsm" modificationStamp="40658" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIValue.java[MIValue" modificationStamp="40706" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{CLIInfoSharedLibraryInfo.java[CLIInfoSharedLibraryInfo" modificationStamp="40652" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIAsyncRecord.java[MIAsyncRecord" modificationStamp="40659" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MISrcAsm.java[MISrcAsm" modificationStamp="40695" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIStreamRecord.java[MIStreamRecord" modificationStamp="40701" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIVarChange.java[MIVarChange" modificationStamp="40708" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MINotifyAsyncOutput.java[MINotifyAsyncOutput" modificationStamp="40686" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIVarUpdateInfo.java[MIVarUpdateInfo" modificationStamp="40718" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MILogStreamOutput.java[MILogStreamOutput" modificationStamp="40684" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIGDBShowAddressSizeInfo.java[MIGDBShowAddressSizeInfo" modificationStamp="40675" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIResult.java[MIResult" modificationStamp="40691" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIStackListFramesInfo.java[MIStackListFramesInfo" modificationStamp="40698" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIGDBShowExitCodeInfo.java[MIGDBShowExitCodeInfo" modificationStamp="40678" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIRegisterValue.java[MIRegisterValue" modificationStamp="40690" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIDataListRegisterValuesInfo.java[MIDataListRegisterValuesInfo" modificationStamp="40670" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIEnvironmentPWDInfo.java[MIEnvironmentPWDInfo" modificationStamp="40672" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{CLIInfoLineInfo.java[CLIInfoLineInfo" modificationStamp="40649" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIVarCreateInfo.java[MIVarCreateInfo" modificationStamp="40709" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIGDBShowSolibSearchPathInfo.java[MIGDBShowSolibSearchPathInfo" modificationStamp="40680" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MISigHandle.java[MISigHandle" modificationStamp="40694" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{CLICatchInfo.java[CLICatchInfo" modificationStamp="40648" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.output{MIShared.java[MIShared" modificationStamp="40693" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIInferiorExitEvent.java[MIInferiorExitEvent" modificationStamp="40732" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIMemoryCreatedEvent.java[MIMemoryCreatedEvent" modificationStamp="40736" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MISharedLibUnloadedEvent.java[MISharedLibUnloadedEvent" modificationStamp="40743" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MISignalChangedEvent.java[MISignalChangedEvent" modificationStamp="40744" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIEvent.java[MIEvent" modificationStamp="40728" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIMemoryChangedEvent.java[MIMemoryChangedEvent" modificationStamp="40735" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIRegisterChangedEvent.java[MIRegisterChangedEvent" modificationStamp="40737" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIThreadExitEvent.java[MIThreadExitEvent" modificationStamp="40749" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIInferiorSignalExitEvent.java[MIInferiorSignalExitEvent" modificationStamp="40733" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIDetachedEvent.java[MIDetachedEvent" modificationStamp="40726" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIGDBExitEvent.java[MIGDBExitEvent" modificationStamp="40730" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIFunctionFinishedEvent.java[MIFunctionFinishedEvent" modificationStamp="40729" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIInferiorCreatedEvent.java[MIInferiorCreatedEvent" modificationStamp="40731" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MILocationReachedEvent.java[MILocationReachedEvent" modificationStamp="40734" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIRunningEvent.java[MIRunningEvent" modificationStamp="40739" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIBreakpointDeletedEvent.java[MIBreakpointDeletedEvent" modificationStamp="40721" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MISteppingRangeEvent.java[MISteppingRangeEvent" modificationStamp="40746" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIThreadCreatedEvent.java[MIThreadCreatedEvent" modificationStamp="40748" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIVarChangedEvent.java[MIVarChangedEvent" modificationStamp="40750" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIChangedEvent.java[MIChangedEvent" modificationStamp="40723" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIWatchpointScopeEvent.java[MIWatchpointScopeEvent" modificationStamp="40753" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIErrorEvent.java[MIErrorEvent" modificationStamp="40727" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIBreakpointChangedEvent.java[MIBreakpointChangedEvent" modificationStamp="40719" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MICreatedEvent.java[MICreatedEvent" modificationStamp="40724" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIStoppedEvent.java[MIStoppedEvent" modificationStamp="40747" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIBreakpointCreatedEvent.java[MIBreakpointCreatedEvent" modificationStamp="40720" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MISharedLibCreatedEvent.java[MISharedLibCreatedEvent" modificationStamp="40741" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIWatchpointTriggerEvent.java[MIWatchpointTriggerEvent" modificationStamp="40754" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MISignalEvent.java[MISignalEvent" modificationStamp="40745" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIVarDeletedEvent.java[MIVarDeletedEvent" modificationStamp="40752" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIBreakpointHitEvent.java[MIBreakpointHitEvent" modificationStamp="40722" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIVarCreatedEvent.java[MIVarCreatedEvent" modificationStamp="40751" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIRegisterCreatedEvent.java[MIRegisterCreatedEvent" modificationStamp="40738" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MIDestroyedEvent.java[MIDestroyedEvent" modificationStamp="40725" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MISharedLibEvent.java[MISharedLibEvent" modificationStamp="40742" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.event{MISharedLibChangedEvent.java[MISharedLibChangedEvent" modificationStamp="40740" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core"/>
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core"/>
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{GDBDebugger.java[GDBDebugger" modificationStamp="21880" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{Queue.java[Queue" modificationStamp="21908" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{GDBServerDebugger.java[GDBServerDebugger" modificationStamp="21884" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{MIProcessAdapter.java[MIProcessAdapter" modificationStamp="21892" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{IMILaunchConfigurationConstants.java[IMILaunchConfigurationConstants" modificationStamp="21887" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{IGDBServerMILaunchConfigurationConstants.java[IGDBServerMILaunchConfigurationConstants" modificationStamp="21885" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{AbstractGDBCDIDebugger.java[AbstractGDBCDIDebugger" modificationStamp="21876" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{IMITTY.java[IMITTY" modificationStamp="21902" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{CLIProcessor.java[CLIProcessor" modificationStamp="21896" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{MITTYAdapter.java[MITTYAdapter" modificationStamp="21893" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{GDBCDIDebugger.java[GDBCDIDebugger" modificationStamp="21878" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{CoreProcess.java[CoreProcess" modificationStamp="21898" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{MinGWDebugger.java[MinGWDebugger" modificationStamp="21894" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{MIInferior.java[MIInferior" modificationStamp="21905" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{MISession.java[MISession" modificationStamp="21907" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{GDBServerCDIDebugger.java[GDBServerCDIDebugger" modificationStamp="21882" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{MIPlugin.java[MIPlugin" modificationStamp="21889" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{GDBProcess.java[GDBProcess" modificationStamp="21881" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{TxThread.java[TxThread" modificationStamp="21911" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{MIException.java[MIException" modificationStamp="21903" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{RxThread.java[RxThread" modificationStamp="21909" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{IMIConstants.java[IMIConstants" modificationStamp="21886" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{CygwinMIProcessAdapter.java[CygwinMIProcessAdapter" modificationStamp="21877" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{CommandQueue.java[CommandQueue" modificationStamp="21897" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{EventThread.java[EventThread" modificationStamp="21900" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{MICoreUtils.java[MICoreUtils" modificationStamp="21888" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{GDBCDIDebugger2.java[GDBCDIDebugger2" modificationStamp="21879" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{GDBTypeParser.java[GDBTypeParser" modificationStamp="21901" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{MIProcess.java[MIProcess" modificationStamp="21906" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{SessionProcess.java[SessionProcess" modificationStamp="21910" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{GDBServerCDIDebugger2.java[GDBServerCDIDebugger2" modificationStamp="21883" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/src&lt;org.eclipse.cdt.debug.mi.core{MIPreferenceInitializer.java[MIPreferenceInitializer" modificationStamp="21891" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{MIFormat.java[MIFormat" modificationStamp="21904" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core{ErrorThread.java[ErrorThread" modificationStamp="21899" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories{CommandFactoryManager.java[CommandFactoryManager" modificationStamp="51209" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories{CommandFactoryDescriptor.java[CommandFactoryDescriptor" modificationStamp="51208" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories{CommandFactoriesMessages.java[CommandFactoriesMessages" modificationStamp="51206" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories{StandardCommandFactory.java[StandardCommandFactory" modificationStamp="51210" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.win32"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.win32{WinMIEnvironmentCD.java[WinMIEnvironmentCD" modificationStamp="58034" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.win32{CygwinCommandFactory.java[CygwinCommandFactory" modificationStamp="58028" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.win32{StandardWinCommandFactory.java[StandardWinCommandFactory" modificationStamp="58031" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.win32{CygwinMIEnvironmentDirectory.java[CygwinMIEnvironmentDirectory" modificationStamp="58030" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.win32{WinMIGDBSetAutoSolib.java[WinMIGDBSetAutoSolib" modificationStamp="58035" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.win32{CygwinMIEnvironmentCD.java[CygwinMIEnvironmentCD" modificationStamp="58029" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.win32{WinCLIInfoSharedLibrary.java[WinCLIInfoSharedLibrary" modificationStamp="58032" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.win32{WinCLIInfoSharedLibraryInfo.java[WinCLIInfoSharedLibraryInfo" modificationStamp="58033" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIEnvironmentDirectory.java[MIEnvironmentDirectory" modificationStamp="40791" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVarInfoType.java[MIVarInfoType" modificationStamp="40841" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBShowAddressSize.java[MIGDBShowAddressSize" modificationStamp="40816" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVarListChildren.java[MIVarListChildren" modificationStamp="40842" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIFileExecFile.java[MIFileExecFile" modificationStamp="40805" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBShowEndian.java[MIGDBShowEndian" modificationStamp="40818" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVarInfoExpression.java[MIVarInfoExpression" modificationStamp="40839" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLIInfoLine.java[CLIInfoLine" modificationStamp="40759" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIBreakDisable.java[MIBreakDisable" modificationStamp="40776" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIExecNext.java[MIExecNext" modificationStamp="40798" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVarAssign.java[MIVarAssign" modificationStamp="40835" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MITargetDownload.java[MITargetDownload" modificationStamp="40831" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MICommand.java[MICommand" modificationStamp="40781" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIEnvironmentCD.java[MIEnvironmentCD" modificationStamp="40790" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MITargetDetach.java[MITargetDetach" modificationStamp="40830" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLITargetAttach.java[CLITargetAttach" modificationStamp="40769" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIDataListChangedRegisters.java[MIDataListChangedRegisters" modificationStamp="40784" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIEnvironmentPath.java[MIEnvironmentPath" modificationStamp="40793" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIDataListRegisterValues.java[MIDataListRegisterValues" modificationStamp="40786" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIExecReturn.java[MIExecReturn" modificationStamp="40800" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIDataWriteMemory.java[MIDataWriteMemory" modificationStamp="40788" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIBreakCondition.java[MIBreakCondition" modificationStamp="40774" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBShowExitCode.java[MIGDBShowExitCode" modificationStamp="40819" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVarInfoNumChildren.java[MIVarInfoNumChildren" modificationStamp="40840" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIExecNextInstruction.java[MIExecNextInstruction" modificationStamp="40799" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVarSetFormat.java[MIVarSetFormat" modificationStamp="40843" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLISignal.java[CLISignal" modificationStamp="40768" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIExecUntil.java[MIExecUntil" modificationStamp="40804" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIInfoSharedLibrary.java[MIInfoSharedLibrary" modificationStamp="40822" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIFileSymbolFile.java[MIFileSymbolFile" modificationStamp="40806" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIThreadListIds.java[MIThreadListIds" modificationStamp="40833" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CommandFactory.java[CommandFactory" modificationStamp="40772" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLIPType.java[CLIPType" modificationStamp="40766" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIInterpreterExec.java[MIInterpreterExec" modificationStamp="40823" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLIInfoProc.java[CLIInfoProc" modificationStamp="40760" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIExecStepInstruction.java[MIExecStepInstruction" modificationStamp="40803" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLIHandle.java[CLIHandle" modificationStamp="40758" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLIInfoSignals.java[CLIInfoSignals" modificationStamp="40763" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBExit.java[MIGDBExit" modificationStamp="40807" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIExecContinue.java[MIExecContinue" modificationStamp="40795" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIStackSelectFrame.java[MIStackSelectFrame" modificationStamp="40829" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{Command.java[Command" modificationStamp="40771" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLIExecAbort.java[CLIExecAbort" modificationStamp="40757" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIExecStep.java[MIExecStep" modificationStamp="40802" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBShowDirectories.java[MIGDBShowDirectories" modificationStamp="40817" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBSetStopOnSolibEvents.java[MIGDBSetStopOnSolibEvents" modificationStamp="40814" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIBreakAfter.java[MIBreakAfter" modificationStamp="40773" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIStackListFrames.java[MIStackListFrames" modificationStamp="40827" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIDataListRegisterNames.java[MIDataListRegisterNames" modificationStamp="40785" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBSetSolibSearchPath.java[MIGDBSetSolibSearchPath" modificationStamp="40813" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVarDelete.java[MIVarDelete" modificationStamp="40837" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLICatch.java[CLICatch" modificationStamp="40755" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIExecRun.java[MIExecRun" modificationStamp="40801" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLIInfoProgram.java[CLIInfoProgram" modificationStamp="40761" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBShowPrompt.java[MIGDBShowPrompt" modificationStamp="40820" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIBreakList.java[MIBreakList" modificationStamp="40779" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVersion.java[MIVersion" modificationStamp="40847" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLIJump.java[CLIJump" modificationStamp="40765" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIStackListLocals.java[MIStackListLocals" modificationStamp="40828" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLIInfoSharedLibrary.java[CLIInfoSharedLibrary" modificationStamp="40762" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLISharedLibrary.java[CLISharedLibrary" modificationStamp="40767" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MITargetSelect.java[MITargetSelect" modificationStamp="40832" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVarCreate.java[MIVarCreate" modificationStamp="40836" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBShowSolibSearchPath.java[MIGDBShowSolibSearchPath" modificationStamp="40821" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBSet.java[MIGDBSet" modificationStamp="40808" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLIInfoThreads.java[CLIInfoThreads" modificationStamp="40764" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIExecArguments.java[MIExecArguments" modificationStamp="40794" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLICommand.java[CLICommand" modificationStamp="40756" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIBreakInsert.java[MIBreakInsert" modificationStamp="40778" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIDataEvaluateExpression.java[MIDataEvaluateExpression" modificationStamp="40783" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIThreadSelect.java[MIThreadSelect" modificationStamp="40834" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIDataReadMemory.java[MIDataReadMemory" modificationStamp="40787" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIDataWriteRegisterValues.java[MIDataWriteRegisterValues" modificationStamp="40789" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIStackInfoDepth.java[MIStackInfoDepth" modificationStamp="40825" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIBreakWatch.java[MIBreakWatch" modificationStamp="40780" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVarShowAttributes.java[MIVarShowAttributes" modificationStamp="40844" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVarUpdate.java[MIVarUpdate" modificationStamp="40846" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{CLIWhatis.java[CLIWhatis" modificationStamp="40770" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBSetNewConsole.java[MIGDBSetNewConsole" modificationStamp="40812" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIExecInterrupt.java[MIExecInterrupt" modificationStamp="40797" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIDataDisassemble.java[MIDataDisassemble" modificationStamp="40782" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBSetBreakpointPending.java[MIGDBSetBreakpointPending" modificationStamp="40810" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBShow.java[MIGDBShow" modificationStamp="40815" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIInterpreterExecConsole.java[MIInterpreterExecConsole" modificationStamp="40824" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVarShowFormat.java[MIVarShowFormat" modificationStamp="40845" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIEnvironmentPWD.java[MIEnvironmentPWD" modificationStamp="40792" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{RawCommand.java[RawCommand" modificationStamp="40848" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBSetAutoSolib.java[MIGDBSetAutoSolib" modificationStamp="40809" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIExecFinish.java[MIExecFinish" modificationStamp="40796" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIBreakEnable.java[MIBreakEnable" modificationStamp="40777" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIGDBSetEnvironment.java[MIGDBSetEnvironment" modificationStamp="40811" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIVarEvaluateExpression.java[MIVarEvaluateExpression" modificationStamp="40838" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIStackListArguments.java[MIStackListArguments" modificationStamp="40826" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command{MIBreakDelete.java[MIBreakDelete" modificationStamp="40775" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{Expression.java[Expression" modificationStamp="51223" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{CoreFileConfiguration.java[CoreFileConfiguration" modificationStamp="51220" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{FunctionLocation.java[FunctionLocation" modificationStamp="51225" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{Breakpoint.java[Breakpoint" modificationStamp="51218" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{AddressBreakpoint.java[AddressBreakpoint" modificationStamp="51214" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{TargetConfiguration.java[TargetConfiguration" modificationStamp="51244" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{MixedInstruction.java[MixedInstruction" modificationStamp="51235" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{Register.java[Register" modificationStamp="51236" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{Thread.java[Thread" modificationStamp="51245" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{AddressLocation.java[AddressLocation" modificationStamp="51215" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{GlobalVariableDescriptor.java[GlobalVariableDescriptor" modificationStamp="51227" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{Watchpoint.java[Watchpoint" modificationStamp="51251" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{Target.java[Target" modificationStamp="51243" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{Exceptionpoint.java[Exceptionpoint" modificationStamp="51222" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{ArgumentDescriptor.java[ArgumentDescriptor" modificationStamp="51217" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{Signal.java[Signal" modificationStamp="51241" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{Instruction.java[Instruction" modificationStamp="51228" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{MemoryBlock.java[MemoryBlock" modificationStamp="51234" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{RegisterGroup.java[RegisterGroup" modificationStamp="51238" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{GlobalVariable.java[GlobalVariable" modificationStamp="51226" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{CObject.java[CObject" modificationStamp="51219" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{LocationBreakpoint.java[LocationBreakpoint" modificationStamp="51232" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{LocalVariableDescriptor.java[LocalVariableDescriptor" modificationStamp="51231" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{ThreadStorage.java[ThreadStorage" modificationStamp="51246" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{LineBreakpoint.java[LineBreakpoint" modificationStamp="51229" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{RegisterDescriptor.java[RegisterDescriptor" modificationStamp="51237" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{RuntimeOptions.java[RuntimeOptions" modificationStamp="51239" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{Argument.java[Argument" modificationStamp="51216" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{VariableDescriptor.java[VariableDescriptor" modificationStamp="51250" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{FunctionBreakpoint.java[FunctionBreakpoint" modificationStamp="51224" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{Variable.java[Variable" modificationStamp="51249" restrictions="0" visibility="0">
+            <method name="getHexAddress" restrictions="8" signature="()Ljava/lang/String;" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{SharedLibrary.java[SharedLibrary" modificationStamp="51240" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{MappedSourceLocation.java[MappedSourceLocation" modificationStamp="51233" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{EventBreakpoint.java[EventBreakpoint" modificationStamp="51221" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{LocalVariable.java[LocalVariable" modificationStamp="51230" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{Value.java[Value" modificationStamp="51248" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{ThreadStorageDescriptor.java[ThreadStorageDescriptor" modificationStamp="51247" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/cdi&lt;org.eclipse.cdt.debug.mi.core.cdi.model{StackFrame.java[StackFrame" modificationStamp="51242" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.linux"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.linux{StandardLinuxCommandFactory.java[StandardLinuxCommandFactory" modificationStamp="58046" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.linux{LinuxCLIInfoSharedLibrary.java[LinuxCLIInfoSharedLibrary" modificationStamp="58044" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.core/mi&lt;org.eclipse.cdt.debug.mi.core.command.factories.linux{LinuxCLIInfoSharedLibraryInfo.java[LinuxCLIInfoSharedLibraryInfo" modificationStamp="58045" restrictions="0" visibility="0"/>
+    </package>
+</component>

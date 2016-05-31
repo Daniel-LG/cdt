@@ -1,23 +1,18 @@
 package cn.smartcore.dev.ui.views;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 import org.eclipse.cdt.core.CCorePlugin;
 import org.eclipse.cdt.core.CCorePreferenceConstants;
 import org.eclipse.cdt.core.model.CoreModel;
-import org.eclipse.cdt.core.settings.model.ICConfigurationDescription;
-import org.eclipse.cdt.core.settings.model.ICProjectDescription;
 import org.eclipse.cdt.core.settings.model.ICProjectDescriptionManager;
-import org.eclipse.cdt.core.settings.model.ICSourceEntry;
 import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
@@ -125,6 +120,37 @@ public class ModuleContentProvider implements ITreeContentProvider, IResourceCha
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
+				
+				// "strings" command is tested, TODO: test if "build" can invoke Resource Change listener
+//				Process p = null;
+//				try {
+//					System.out.println("strings "+project.getLocation()+"/Debug/a.elf");
+//					p = Runtime.getRuntime().exec("strings "+project.getLocation()+"/Debug/a.elf");
+//				} catch (IOException e1) {
+//					// TODO Auto-generated catch block
+//					e1.printStackTrace();
+//				}
+//
+//				try {
+//					p.waitFor();
+//				} catch (InterruptedException e1) {
+//					// TODO Auto-generated catch block
+//					e1.printStackTrace();
+//				}
+//				BufferedReader buf = new BufferedReader(new InputStreamReader(p.getInputStream()));
+//				String line = "";
+//				String output = "";
+//
+//				try {
+//					while ((line = buf.readLine()) != null) {
+//						output += line + "\n";
+//					}
+//				} catch (IOException e1) {
+//					// TODO Auto-generated catch block
+//					e1.printStackTrace();
+//				}
+//
+//				System.out.println(output);
 			}
 
 			Object[] children = new Object[simictAttribute.size() + simictAttributeInterface.size()
@@ -182,20 +208,20 @@ public class ModuleContentProvider implements ITreeContentProvider, IResourceCha
 			return;
 		}
 
-//		Set<IProject> affectedProjects = new HashSet<IProject>();
-//		boolean flag = collectAffectedProjects(delta, affectedProjects);
+		// Set<IProject> affectedProjects = new HashSet<IProject>();
+		// boolean flag = collectAffectedProjects(delta, affectedProjects);
 
-//		if (flag) {
-			refreshView();
-//			return;
-//		}
+		// if (flag) {
+		refreshView();
+		// return;
+		// }
 
 		// If the view is being filtered or source roots shown,
 		// adding/removing resources can structurally affect the tree
 		// starting with the project
-//		for (IProject project : affectedProjects) {
-//			refreshProjectTree(project);
-//		}
+		// for (IProject project : affectedProjects) {
+		// refreshProjectTree(project);
+		// }
 
 	}
 
@@ -350,7 +376,7 @@ public class ModuleContentProvider implements ITreeContentProvider, IResourceCha
 	@Override
 	public void dispose() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

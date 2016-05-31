@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.remote.serial"
+      label="%featureName"
+      version="2.0.0.201507010000"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.remote.serial.core"
+         download-size="58"
+         install-size="81"
+         version="1.0.0.201507010000"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.remote.serial.ui"
+         download-size="67"
+         install-size="99"
+         version="1.0.0.201507010000"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.debug.ui.memory.transport" modificationStamp="3747" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.ui.memory.transport/src&lt;org.eclipse.cdt.debug.ui.memory.transport"/>
+        <type handle="=org.eclipse.cdt.debug.ui.memory.transport/src&lt;org.eclipse.cdt.debug.ui.memory.transport{SRecordImporter.java[SRecordImporter" modificationStamp="39459" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui.memory.transport/src&lt;org.eclipse.cdt.debug.ui.memory.transport{SRecordExporter.java[SRecordExporter" modificationStamp="39458" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui.memory.transport/src&lt;org.eclipse.cdt.debug.ui.memory.transport{RAWBinaryExporter.java[RAWBinaryExporter" modificationStamp="39456" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui.memory.transport/src&lt;org.eclipse.cdt.debug.ui.memory.transport{PlainTextExporter.java[PlainTextExporter" modificationStamp="39454" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui.memory.transport/src&lt;org.eclipse.cdt.debug.ui.memory.transport{PlainTextImporter.java[PlainTextImporter" modificationStamp="39455" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui.memory.transport/src&lt;org.eclipse.cdt.debug.ui.memory.transport{ExportMemoryDialog.java[ExportMemoryDialog" modificationStamp="39450" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui.memory.transport/src&lt;org.eclipse.cdt.debug.ui.memory.transport{RAWBinaryImporter.java[RAWBinaryImporter" modificationStamp="39457" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui.memory.transport/src&lt;org.eclipse.cdt.debug.ui.memory.transport{ImportMemoryDialog.java[ImportMemoryDialog" modificationStamp="39451" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.ui.memory.transport/src&lt;org.eclipse.cdt.debug.ui.memory.transport.model"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.ui.memory.transport/src&lt;org.eclipse.cdt.debug.ui.memory.transport.actions"/>
+    </package>
+</component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.gdb" modificationStamp="2253" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.gdb/src&lt;org.eclipse.cdt.gdb.eventbkpts"/>
+        <type handle="=org.eclipse.cdt.gdb/src&lt;org.eclipse.cdt.gdb.eventbkpts{IEventBreakpointConstants.java[IEventBreakpointConstants" modificationStamp="19262" restrictions="0" visibility="0"/>
+    </package>
+</component>

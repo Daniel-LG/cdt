@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.debug.mi.ui" modificationStamp="3984" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.ui/src&lt;org.eclipse.cdt.debug.mi.ui.console"/>
+        <type handle="=org.eclipse.cdt.debug.mi.ui/src&lt;org.eclipse.cdt.debug.mi.ui.console{VerboseModeChangedEvent.java[VerboseModeChangedEvent" modificationStamp="40522" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.ui/src&lt;org.eclipse.cdt.debug.mi.ui.console{MiConsolePageParticipant.java[MiConsolePageParticipant" modificationStamp="40521" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.ui/src&lt;org.eclipse.cdt.debug.mi.ui"/>
+        <type handle="=org.eclipse.cdt.debug.mi.ui/src&lt;org.eclipse.cdt.debug.mi.ui{MIUIUtils.java[MIUIUtils" modificationStamp="21865" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.ui/src&lt;org.eclipse.cdt.debug.mi.ui{IMILaunchConfigurationComponent.java[IMILaunchConfigurationComponent" modificationStamp="21864" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.mi.ui/src&lt;org.eclipse.cdt.debug.mi.ui.console.actions"/>
+        <type handle="=org.eclipse.cdt.debug.mi.ui/src&lt;org.eclipse.cdt.debug.mi.ui.console.actions{MiConsoleSaveAction.java[MiConsoleSaveAction" modificationStamp="50891" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.ui/src&lt;org.eclipse.cdt.debug.mi.ui.console.actions{MiConsoleMessages.java[MiConsoleMessages" modificationStamp="50889" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.ui/src&lt;org.eclipse.cdt.debug.mi.ui.console.actions{IMiConsoleImagesConst.java[IMiConsoleImagesConst" modificationStamp="50888" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.mi.ui/src&lt;org.eclipse.cdt.debug.mi.ui.console.actions{MiConsoleVerboseModeAction.java[MiConsoleVerboseModeAction" modificationStamp="50892" restrictions="0" visibility="0"/>
+    </package>
+</component>

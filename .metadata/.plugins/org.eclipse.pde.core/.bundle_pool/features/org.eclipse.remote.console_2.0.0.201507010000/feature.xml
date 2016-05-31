@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.remote.console"
+      label="%featureName"
+      version="2.0.0.201507010000"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.remote.console"
+         download-size="96"
+         install-size="156"
+         version="1.0.0.201507010000"
+         unpack="false"/>
+
+</feature>

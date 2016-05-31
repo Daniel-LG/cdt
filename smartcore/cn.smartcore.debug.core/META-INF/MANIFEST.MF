@@ -4,7 +4,7 @@ Bundle-Name: Smart-Core Debug Plug-in
 Bundle-SymbolicName: cn.smartcore.debug.core;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: Smart-Core
-Bundle-Activator: cn.smartcore.Activator
+Bundle-Activator: cn.smartcore.debug.core.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.core.resources,
@@ -13,5 +13,5 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.ui.console
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
-Export-Package: cn.smartcore.handlers,
- org.apache.commons.exec
+Eclipse-BundleShape: dir
+Export-Package: cn.smartcore.debug.core

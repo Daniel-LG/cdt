@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.visualizer.ui" modificationStamp="489" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.canvas"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.canvas{VirtualBoundsGraphicObject.java[VirtualBoundsGraphicObject" modificationStamp="11884" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.canvas{GraphicObject.java[GraphicObject" modificationStamp="11881" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.canvas{IGraphicObject.java[IGraphicObject" modificationStamp="11882" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.canvas{GraphicCanvasVisualizer.java[GraphicCanvasVisualizer" modificationStamp="11880" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.canvas{ITooltipProvider.java[ITooltipProvider" modificationStamp="11883" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.canvas{BufferedCanvas.java[BufferedCanvas" modificationStamp="11878" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.canvas{GraphicCanvas.java[GraphicCanvas" modificationStamp="11879" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.plugin"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.plugin{CDTVisualizerUIPlugin.java[CDTVisualizerUIPlugin" modificationStamp="11875" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.events"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.events{IVisualizerViewerListener.java[IVisualizerViewerListener" modificationStamp="11876" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.events{VisualizerViewerEvent.java[VisualizerViewerEvent" modificationStamp="11877" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui{VisualizerView.java[VisualizerView" modificationStamp="10753" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui{Visualizer.java[Visualizer" modificationStamp="10751" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui{IVisualizer.java[IVisualizer" modificationStamp="10749" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui{VisualizerViewer.java[VisualizerViewer" modificationStamp="10754" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui{VisualizerAction.java[VisualizerAction" modificationStamp="10752" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui{IVisualizerViewer.java[IVisualizerViewer" modificationStamp="10750" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.test"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.test{TestCanvasVisualizer.java[TestCanvasVisualizer" modificationStamp="11874" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.test{TestCanvas.java[TestCanvas" modificationStamp="11873" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{Colors.java[Colors" modificationStamp="11859" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{SelectionProviderAdapter.java[SelectionProviderAdapter" modificationStamp="11867" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{ScrollPanel.java[ScrollPanel" modificationStamp="11865" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{SelectionManager.java[SelectionManager" modificationStamp="11866" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{UIResourceManager.java[UIResourceManager" modificationStamp="11871" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{Timer.java[Timer" modificationStamp="11869" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{Todo.java[Todo" modificationStamp="11870" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{RunnableWithResult.java[RunnableWithResult" modificationStamp="11864" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{Event.java[Event" modificationStamp="11860" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{SelectionUtils.java[SelectionUtils" modificationStamp="11868" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{ListenerList.java[ListenerList" modificationStamp="11862" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{MouseMonitor.java[MouseMonitor" modificationStamp="11863" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{GUIUtils.java[GUIUtils" modificationStamp="11861" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.visualizer.ui/src&lt;org.eclipse.cdt.visualizer.ui.util{WorkbenchSelectionAdapter.java[WorkbenchSelectionAdapter" modificationStamp="11872" restrictions="0" visibility="0"/>
+    </package>
+</component>

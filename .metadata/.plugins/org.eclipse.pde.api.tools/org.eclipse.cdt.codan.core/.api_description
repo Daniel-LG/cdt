@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.codan.core" modificationStamp="6054" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core{CodanCorePlugin.java[CodanCorePlugin" modificationStamp="26830" restrictions="0" visibility="0">
+            <method name="log" restrictions="8" signature="(Ljava/lang/Throwable;)V" visibility="0"/>
+            <method name="log" restrictions="8" signature="(Ljava/lang/String;Ljava/lang/Throwable;)V" visibility="0"/>
+            <method name="log" restrictions="8" signature="(Ljava/lang/String;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core{PreferenceConstants.java[PreferenceConstants" modificationStamp="26832" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core{CodanRuntime.java[CodanRuntime" modificationStamp="26831" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{AbstractProblemPreference.java[AbstractProblemPreference" modificationStamp="26866" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{LaunchModeProblemPreference.java[LaunchModeProblemPreference" modificationStamp="26874" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{SharedRootProblemPreference.java[SharedRootProblemPreference" modificationStamp="26880" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{BasicProblemPreference.java[BasicProblemPreference" modificationStamp="26867" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{IProblemPreference.java[IProblemPreference" modificationStamp="26869" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{IProblemPreferenceCompositeValue.java[IProblemPreferenceCompositeValue" modificationStamp="26871" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{Messages.java[Messages" modificationStamp="26877" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{IProblemPreferenceCompositeDescriptor.java[IProblemPreferenceCompositeDescriptor" modificationStamp="26870" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{IProblemPreferenceValue.java[IProblemPreferenceValue" modificationStamp="26873" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{ListProblemPreference.java[ListProblemPreference" modificationStamp="26875" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{FileScopeProblemPreference.java[FileScopeProblemPreference" modificationStamp="26868" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{RootProblemPreference.java[RootProblemPreference" modificationStamp="26879" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{MapProblemPreference.java[MapProblemPreference" modificationStamp="26876" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.param{IProblemPreferenceDescriptor.java[IProblemPreferenceDescriptor" modificationStamp="26872" restrictions="3" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IProblemProfile.java[IProblemProfile" modificationStamp="26855" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{ICheckerInvocationContext.java[ICheckerInvocationContext" modificationStamp="26843" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{ICodanProblemMarker.java[ICodanProblemMarker" modificationStamp="26848" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IProblemMultiple.java[IProblemMultiple" modificationStamp="26854" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IRunnableInEditorChecker.java[IRunnableInEditorChecker" modificationStamp="26861" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{AbstractProblemReporter.java[AbstractProblemReporter" modificationStamp="26838" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IProblem.java[IProblem" modificationStamp="26849" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{AbstractCheckerWithProblemPreferences.java[AbstractCheckerWithProblemPreferences" modificationStamp="26836" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IProblemElement.java[IProblemElement" modificationStamp="26851" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{ICheckersRegistry.java[ICheckersRegistry" modificationStamp="26845" restrictions="3" visibility="0">
+            <method name="updateProfile" restrictions="8" signature="(Lorg/eclipse/core/resources/IResource;Lorg/eclipse/cdt/codan/core/model/IProblemProfile;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IProblemReporter.java[IProblemReporter" modificationStamp="26857" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{CheckerLaunchMode.java[CheckerLaunchMode" modificationStamp="26839" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{Messages.java[Messages" modificationStamp="26862" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IProblemReporterPersistent.java[IProblemReporterPersistent" modificationStamp="26858" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{ICheckerWithPreferences.java[ICheckerWithPreferences" modificationStamp="26844" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IProblemWorkingCopy.java[IProblemWorkingCopy" modificationStamp="26860" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IProblemCategory.java[IProblemCategory" modificationStamp="26850" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IProblemLocationFactory.java[IProblemLocationFactory" modificationStamp="26853" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{Checkers.java[Checkers" modificationStamp="26840" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{ProblemProfileChangeEvent.java[ProblemProfileChangeEvent" modificationStamp="26864" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{CodanSeverity.java[CodanSeverity" modificationStamp="26841" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IProblemProfileChangeListener.java[IProblemProfileChangeListener" modificationStamp="26856" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{AbstractProblemLocation.java[AbstractProblemLocation" modificationStamp="26837" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{ICodanBuilder.java[ICodanBuilder" modificationStamp="26846" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{AbstractChecker.java[AbstractChecker" modificationStamp="26835" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{ICodanDisposable.java[ICodanDisposable" modificationStamp="26847" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IProblemLocation.java[IProblemLocation" modificationStamp="26852" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IProblemReporterSessionPersistent.java[IProblemReporterSessionPersistent" modificationStamp="26859" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.codan.core/src&lt;org.eclipse.cdt.codan.core.model{IChecker.java[IChecker" modificationStamp="26842" restrictions="3" visibility="0"/>
+    </package>
+</component>

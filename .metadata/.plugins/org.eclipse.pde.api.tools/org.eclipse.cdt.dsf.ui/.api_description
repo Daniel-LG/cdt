@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.dsf.ui" modificationStamp="2482" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.internal.ui.debugview.layout.actions"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.internal.ui.debugview.layout.actions{DsfDebugViewLayoutCommand.java[DsfDebugViewLayoutCommand" modificationStamp="60251" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.internal.ui.debugview.layout.actions{DsfGroupDebugContextsCommand.java[DsfGroupDebugContextsCommand" modificationStamp="60252" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.internal.ui.debugview.layout.actions{DsfUngroupDebugContextsCommand.java[DsfUngroupDebugContextsCommand" modificationStamp="60253" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.contexts"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.contexts{DsfSuspendTrigger.java[DsfSuspendTrigger" modificationStamp="37545" restrictions="0" visibility="0">
+            <method name="eventDispatched" restrictions="8" signature="(Lorg/eclipse/cdt/dsf/datamodel/DataModelInitializedEvent;)V" visibility="0"/>
+        </type>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.actions"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.actions{DsfStepIntoSelectionHyperlinkDetector.java[DsfStepIntoSelectionHyperlinkDetector" modificationStamp="37551" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.actions{AbstractDisassemblyBreakpointsTarget.java[AbstractDisassemblyBreakpointsTarget" modificationStamp="37546" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.actions{DsfCommandRunnable.java[DsfCommandRunnable" modificationStamp="37547" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.actions{DsfSuspendCommand.java[DsfSuspendCommand" modificationStamp="37555" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.actions{DsfStepIntoCommand.java[DsfStepIntoCommand" modificationStamp="37549" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.actions{IDsfStepIntoSelection.java[IDsfStepIntoSelection" modificationStamp="37556" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.actions{DsfResumeCommand.java[DsfResumeCommand" modificationStamp="37548" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.actions{DsfSteppingModeTarget.java[DsfSteppingModeTarget" modificationStamp="37554" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.actions{DsfStepIntoSelectionCommand.java[DsfStepIntoSelectionCommand" modificationStamp="37550" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.actions{DsfStepOverCommand.java[DsfStepOverCommand" modificationStamp="37552" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.actions{DsfStepReturnCommand.java[DsfStepReturnCommand" modificationStamp="37553" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.sourcelookup"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.sourcelookup{Messages.java[Messages" modificationStamp="37540" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.sourcelookup{InstructionPointerManager.java[InstructionPointerManager" modificationStamp="37539" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.sourcelookup{DsfSourceDisplayAdapter.java[DsfSourceDisplayAdapter" modificationStamp="37536" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.sourcelookup{SourceLookupResult.java[SourceLookupResult" modificationStamp="37542" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.sourcelookup{IInstructionPointerPresentation.java[IInstructionPointerPresentation" modificationStamp="37537" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.sourcelookup{InstructionPointerImageProvider.java[InstructionPointerImageProvider" modificationStamp="37538" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui{AbstractDsfDebugTextHover.java[AbstractDsfDebugTextHover" modificationStamp="19663" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui{DsfDebugTextHover.java[DsfDebugTextHover" modificationStamp="19664" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui{DsfDebugUITools.java[DsfDebugUITools" modificationStamp="19665" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui{IDsfDebugUIConstants.java[IDsfDebugUIConstants" modificationStamp="19666" restrictions="1" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.ui.concurrent"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.ui.concurrent{ViewerDataRequestMonitor.java[ViewerDataRequestMonitor" modificationStamp="19631" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.ui.concurrent{DisplayDsfExecutor.java[DisplayDsfExecutor" modificationStamp="19628" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.ui.concurrent{ViewerCountingRequestMonitor.java[ViewerCountingRequestMonitor" modificationStamp="19630" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.ui.concurrent{ViewerRequestMonitor.java[ViewerRequestMonitor" modificationStamp="19632" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.ui.concurrent{SimpleDisplayExecutor.java[SimpleDisplayExecutor" modificationStamp="19629" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.memory"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.memory{SelectUpdatePolicyAction.java[SelectUpdatePolicyAction" modificationStamp="37544" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.ui/src&lt;org.eclipse.cdt.dsf.debug.ui.memory{RefreshAction.java[RefreshAction" modificationStamp="37543" restrictions="0" visibility="0"/>
+    </package>
+</component>

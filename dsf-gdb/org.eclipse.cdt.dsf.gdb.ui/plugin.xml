@@ -36,11 +36,21 @@
          <associatedDelegate delegate="org.eclipse.cdt.dsf.gdb.launch.localCLaunch"/>
          <placement after="org.eclipse.cdt.dsf.gdb.launch.argumentsTab"/>
       </tab>
+      <!-- modified by jwy, make it debug in remote mode
       <tab
             id="org.eclipse.cdt.dsf.gdb.launch.localApplicationLaunch.debuggerTab"
             group="org.eclipse.cdt.launch.applicationLaunchTabGroup"
             name="%launchTab.debugger.name"
             class="org.eclipse.cdt.dsf.gdb.internal.ui.launching.LocalApplicationCDebuggerTab">
+        <associatedDelegate delegate="org.eclipse.cdt.dsf.gdb.launch.localCLaunch"/>
+        <placement after="org.eclipse.debug.ui.environmentTab"/>
+      </tab>
+      -->
+      <tab
+            id="org.eclipse.cdt.dsf.gdb.launch.localApplicationLaunch.debuggerTab"
+            group="org.eclipse.cdt.launch.applicationLaunchTabGroup"
+            name="%launchTab.debugger.name"
+            class="org.eclipse.cdt.dsf.gdb.internal.ui.launching.RemoteApplicationCDebuggerTab">
         <associatedDelegate delegate="org.eclipse.cdt.dsf.gdb.launch.localCLaunch"/>
         <placement after="org.eclipse.debug.ui.environmentTab"/>
       </tab>

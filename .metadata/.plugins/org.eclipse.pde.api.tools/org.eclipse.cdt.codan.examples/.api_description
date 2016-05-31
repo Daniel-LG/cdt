@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.codan.examples" modificationStamp="5981" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.codan.examples/src&lt;org.eclipse.cdt.codan.examples.uicontrib"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.codan.examples/src&lt;org.eclipse.cdt.codan.examples.checkers"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.codan.examples/src&lt;org.eclipse.cdt.codan.examples"/>
+    </package>
+</component>

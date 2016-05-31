@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.managedbuilder.llvm.ui" modificationStamp="1647" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.llvm.ui/src&lt;org.eclipse.cdt.managedbuilder.llvm.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.llvm.ui/src&lt;org.eclipse.cdt.managedbuilder.llvm.ui.preferences"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.llvm.ui/src&lt;org.eclipse.cdt.managedbuilder.llvm.ui.preferences{IncludePathListEditor.java[IncludePathListEditor" modificationStamp="35118" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.llvm.ui/src&lt;org.eclipse.cdt.managedbuilder.llvm.ui.preferences{LibraryPathListEditor.java[LibraryPathListEditor" modificationStamp="35120" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.llvm.ui/src&lt;org.eclipse.cdt.managedbuilder.llvm.ui.preferences{LibraryListEditor.java[LibraryListEditor" modificationStamp="35119" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.llvm.ui/src&lt;org.eclipse.cdt.managedbuilder.llvm.ui.preferences{LlvmListEditor.java[LlvmListEditor" modificationStamp="35121" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.llvm.ui/src&lt;org.eclipse.cdt.managedbuilder.llvm.ui"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.llvm.ui/src&lt;org.eclipse.cdt.managedbuilder.llvm.ui{LlvmBuildEnvironmentVariable.java[LlvmBuildEnvironmentVariable" modificationStamp="17003" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.llvm.ui/src&lt;org.eclipse.cdt.managedbuilder.llvm.ui{LlvmEnvironmentVariableSupplier.java[LlvmEnvironmentVariableSupplier" modificationStamp="17004" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.llvm.ui/src&lt;org.eclipse.cdt.managedbuilder.llvm.makegen"/>
+    </package>
+</component>

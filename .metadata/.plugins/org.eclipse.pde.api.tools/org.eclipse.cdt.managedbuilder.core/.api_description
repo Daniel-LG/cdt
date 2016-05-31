@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.managedbuilder.core" modificationStamp="1825" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu{GnuLinkOutputNameProvider.java[GnuLinkOutputNameProvider" modificationStamp="17614" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu{GnuMakefileGenerator.java[GnuMakefileGenerator" modificationStamp="17615" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu{IManagedBuildGnuToolInfo.java[IManagedBuildGnuToolInfo" modificationStamp="17616" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu{GnuDependencyGroupInfo.java[GnuDependencyGroupInfo" modificationStamp="17613" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu{DefaultGCCDependencyCalculator3Commands.java[DefaultGCCDependencyCalculator3Commands" modificationStamp="17610" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu{DefaultGCCDependencyCalculator2Commands.java[DefaultGCCDependencyCalculator2Commands" modificationStamp="17608" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu{DefaultGCCDependencyCalculatorPreBuildCommands.java[DefaultGCCDependencyCalculatorPreBuildCommands" modificationStamp="17612" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu{ManagedBuildGnuToolInfo.java[ManagedBuildGnuToolInfo" modificationStamp="17617" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu{DefaultGCCDependencyCalculator3.java[DefaultGCCDependencyCalculator3" modificationStamp="17609" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu{DefaultGCCDependencyCalculator2.java[DefaultGCCDependencyCalculator2" modificationStamp="17607" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu{DefaultGCCDependencyCalculatorPreBuild.java[DefaultGCCDependencyCalculatorPreBuild" modificationStamp="17611" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen.gnu{DefaultGCCDependencyCalculator.java[DefaultGCCDependencyCalculator" modificationStamp="17606" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.pdomdepgen"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.pdomdepgen{PDOMDependencyGenerator.java[PDOMDependencyGenerator" modificationStamp="17594" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.pdomdepgen{PDOMDependencyCalculator.java[PDOMDependencyCalculator" modificationStamp="17593" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine.processes"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine.processes{SetMBSStringListOptionValues.java[SetMBSStringListOptionValues" modificationStamp="17571" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine.processes{AppendToMBSStringListOptionValues.java[AppendToMBSStringListOptionValues" modificationStamp="17564" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine.processes{ExcludeResources.java[ExcludeResources" modificationStamp="17567" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine.processes{SetMBSBooleanOptionValue.java[SetMBSBooleanOptionValue" modificationStamp="17570" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine.processes{NewManagedProject.java[NewManagedProject" modificationStamp="17569" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine.processes{AddLanguageSettingsProvider.java[AddLanguageSettingsProvider" modificationStamp="17563" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine.processes{GenerateMakefileWithBuildDescription.java[GenerateMakefileWithBuildDescription" modificationStamp="17568" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine.processes{CreateIncludeFolder.java[CreateIncludeFolder" modificationStamp="17566" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine.processes{AppendToMBSStringOptionValue.java[AppendToMBSStringOptionValue" modificationStamp="17565" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine.processes{SetMBSStringOptionValue.java[SetMBSStringOptionValue" modificationStamp="17572" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.scannerconfig"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.scannerconfig{IManagedScannerInfoCollector.java[IManagedScannerInfoCollector" modificationStamp="17584" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine{CreateProjectProgressMonitor.java[CreateProjectProgressMonitor" modificationStamp="17558" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine{ProjectCreatedActions.java[ProjectCreatedActions" modificationStamp="17561" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.templateengine{Messages.java[Messages" modificationStamp="17559" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.language.settings.providers"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.language.settings.providers{AbstractLanguageSettingsOutputScanner.java[AbstractLanguageSettingsOutputScanner" modificationStamp="35693" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.language.settings.providers{AbstractBuildCommandParser.java[AbstractBuildCommandParser" modificationStamp="35691" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.language.settings.providers{AbstractBuiltinSpecsDetector.java[AbstractBuiltinSpecsDetector" modificationStamp="35692" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.language.settings.providers{GCCBuiltinSpecsDetector.java[GCCBuiltinSpecsDetector" modificationStamp="35695" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.language.settings.providers{GCCBuildCommandParser.java[GCCBuildCommandParser" modificationStamp="35694" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.language.settings.providers{ToolchainBuiltinSpecsDetector.java[ToolchainBuiltinSpecsDetector" modificationStamp="35696" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.macros"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.macros{IBuildMacroProvider.java[IBuildMacroProvider" modificationStamp="17622" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.macros{IBuildMacroStatus.java[IBuildMacroStatus" modificationStamp="17623" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.macros{IOptionContextData.java[IOptionContextData" modificationStamp="17628" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.macros{IFileContextData.java[IFileContextData" modificationStamp="17627" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.macros{BuildMacroException.java[BuildMacroException" modificationStamp="17620" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.macros{IReservedMacroNameSupplier.java[IReservedMacroNameSupplier" modificationStamp="17630" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.macros{IFileContextBuildMacroValues.java[IFileContextBuildMacroValues" modificationStamp="17626" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.macros{IBuildMacro.java[IBuildMacro" modificationStamp="17621" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.macros{IConfigurationBuildMacroSupplier.java[IConfigurationBuildMacroSupplier" modificationStamp="17625" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.macros{IBuildMacroSupplier.java[IBuildMacroSupplier" modificationStamp="17624" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.macros{IProjectBuildMacroSupplier.java[IProjectBuildMacroSupplier" modificationStamp="17629" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.build.core.scannerconfig"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.build.core.scannerconfig{ICfgScannerConfigBuilderInfo2Set.java[ICfgScannerConfigBuilderInfo2Set" modificationStamp="17905" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.build.core.scannerconfig{CfgInfoContext.java[CfgInfoContext" modificationStamp="17904" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.build.core.scannerconfig{ScannerConfigNature.java[ScannerConfigNature" modificationStamp="17907" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.build.core.scannerconfig{ScannerConfigBuilder.java[ScannerConfigBuilder" modificationStamp="17906" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen{IManagedDependencyCalculator.java[IManagedDependencyCalculator" modificationStamp="17597" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen{IManagedDependencyCommands.java[IManagedDependencyCommands" modificationStamp="17598" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen{IManagedDependencyGeneratorType.java[IManagedDependencyGeneratorType" modificationStamp="17601" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen{IManagedBuilderMakefileGenerator.java[IManagedBuilderMakefileGenerator" modificationStamp="17595" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen{IManagedDependencyInfo.java[IManagedDependencyInfo" modificationStamp="17602" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen{IManagedBuilderMakefileGenerator2.java[IManagedBuilderMakefileGenerator2" modificationStamp="17596" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen{IManagedDependencyPreBuild.java[IManagedDependencyPreBuild" modificationStamp="17603" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen{IManagedDependencyGenerator2.java[IManagedDependencyGenerator2" modificationStamp="17600" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.makegen{IManagedDependencyGenerator.java[IManagedDependencyGenerator" modificationStamp="17599" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildproperties"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildproperties{IBuildPropertyManager.java[IBuildPropertyManager" modificationStamp="17888" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildproperties{IPropertyBase.java[IPropertyBase" modificationStamp="17891" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildproperties{IBuildPropertyType.java[IBuildPropertyType" modificationStamp="17889" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildproperties{IBuildProperties.java[IBuildProperties" modificationStamp="17886" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildproperties{IBuildProperty.java[IBuildProperty" modificationStamp="17887" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildproperties{IBuildPropertyValue.java[IBuildPropertyValue" modificationStamp="17890" restrictions="3" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.envvar"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.envvar{IConfigurationEnvironmentVariableSupplier.java[IConfigurationEnvironmentVariableSupplier" modificationStamp="17824" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.envvar{IProjectEnvironmentVariableSupplier.java[IProjectEnvironmentVariableSupplier" modificationStamp="17828" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.envvar{IEnvironmentVariableSupplier.java[IEnvironmentVariableSupplier" modificationStamp="17827" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.envvar{IBuildEnvironmentVariable.java[IBuildEnvironmentVariable" modificationStamp="17823" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.envvar{IEnvironmentVariableProvider.java[IEnvironmentVariableProvider" modificationStamp="17826" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.envvar{IEnvironmentBuildPathsChangeListener.java[IEnvironmentBuildPathsChangeListener" modificationStamp="17825" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IManagedIsToolChainSupported.java[IManagedIsToolChainSupported" modificationStamp="17857" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{OptionStringValue.java[OptionStringValue" modificationStamp="17884" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IManagedOptionValueHandler.java[IManagedOptionValueHandler" modificationStamp="17858" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IOutputType.java[IOutputType" modificationStamp="17869" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{ManagedBuilderCorePlugin.java[ManagedBuilderCorePlugin" modificationStamp="17881" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IToolReference.java[IToolReference" modificationStamp="17878" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{ManagedCProjectNature.java[ManagedCProjectNature" modificationStamp="17882" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{ExternalBuildRunner.java[ExternalBuildRunner" modificationStamp="17832" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IBuildObject.java[IBuildObject" modificationStamp="17834" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IAdditionalInput.java[IAdditionalInput" modificationStamp="17833" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IOptionCategory.java[IOptionCategory" modificationStamp="17865" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IInputOrder.java[IInputOrder" modificationStamp="17848" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IManagedBuildDefinitionsStartup.java[IManagedBuildDefinitionsStartup" modificationStamp="17851" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{ITool.java[ITool" modificationStamp="17876" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IConfiguration.java[IConfiguration" modificationStamp="17840" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IManagedCommandLineGenerator.java[IManagedCommandLineGenerator" modificationStamp="17853" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IOptionCategoryApplicability.java[IOptionCategoryApplicability" modificationStamp="17866" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IInputType.java[IInputType" modificationStamp="17849" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IEnvVarBuildPath.java[IEnvVarBuildPath" modificationStamp="17844" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IProjectType.java[IProjectType" modificationStamp="17870" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IHoldsOptions.java[IHoldsOptions" modificationStamp="17847" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IMultiConfiguration.java[IMultiConfiguration" modificationStamp="17862" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IConvertManagedBuildObject.java[IConvertManagedBuildObject" modificationStamp="17843" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IResourceInfo.java[IResourceInfo" modificationStamp="17872" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{AbstractBuildRunner.java[AbstractBuildRunner" modificationStamp="17829" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{ResourceChangeHandler2.java[ResourceChangeHandler2" modificationStamp="17885" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IBuildObjectProperties.java[IBuildObjectProperties" modificationStamp="17835" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{ITarget.java[ITarget" modificationStamp="17874" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IManagedCommandLineInfo.java[IManagedCommandLineInfo" modificationStamp="17854" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{BuildException.java[BuildException" modificationStamp="17830" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IReverseOptionPathConverter.java[IReverseOptionPathConverter" modificationStamp="17873" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IOptionApplicability.java[IOptionApplicability" modificationStamp="17864" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IOption.java[IOption" modificationStamp="17863" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IOptionPathConverter.java[IOptionPathConverter" modificationStamp="17868" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{InternalBuildRunner.java[InternalBuildRunner" modificationStamp="17879" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IFileInfo.java[IFileInfo" modificationStamp="17845" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{ITargetPlatform.java[ITargetPlatform" modificationStamp="17875" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IBuilder.java[IBuilder" modificationStamp="17839" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IManagedConfigElement.java[IManagedConfigElement" modificationStamp="17855" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IFolderInfo.java[IFolderInfo" modificationStamp="17846" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IBuildObjectPropertiesContainer.java[IBuildObjectPropertiesContainer" modificationStamp="17836" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IConfigurationNameProvider.java[IConfigurationNameProvider" modificationStamp="17841" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IManagedBuildInfo.java[IManagedBuildInfo" modificationStamp="17852" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IManagedOutputNameProvider.java[IManagedOutputNameProvider" modificationStamp="17859" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IResourceConfiguration.java[IResourceConfiguration" modificationStamp="17871" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{BuildListComparator.java[BuildListComparator" modificationStamp="17831" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{ILanguageInfoCalculator.java[ILanguageInfoCalculator" modificationStamp="17850" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IBuildPathResolver.java[IBuildPathResolver" modificationStamp="17837" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{ManagedBuildManager.java[ManagedBuildManager" modificationStamp="17880" restrictions="6" visibility="0">
+            <method name="putConfigElement" restrictions="8" signature="(Lorg/eclipse/cdt/managedbuilder/core/IBuildObject;Lorg/eclipse/cdt/managedbuilder/core/IManagedConfigElement;)V" visibility="0"/>
+            <method name="getConfigElement" restrictions="8" signature="(Lorg/eclipse/cdt/managedbuilder/core/IBuildObject;)Lorg/eclipse/cdt/managedbuilder/core/IManagedConfigElement;" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{ManagedOptionValueHandler.java[ManagedOptionValueHandler" modificationStamp="17883" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IModificationStatus.java[IModificationStatus" modificationStamp="17861" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IConfigurationV2.java[IConfigurationV2" modificationStamp="17842" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IManagedConfigElementProvider.java[IManagedConfigElementProvider" modificationStamp="17856" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IOptionCommandGenerator.java[IOptionCommandGenerator" modificationStamp="17867" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IManagedProject.java[IManagedProject" modificationStamp="17860" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IToolChain.java[IToolChain" modificationStamp="17877" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IBuildPropertiesRestriction.java[IBuildPropertiesRestriction" modificationStamp="17838" restrictions="3" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildmodel"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildmodel{IBuildIOType.java[IBuildIOType" modificationStamp="17896" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildmodel{IBuildDescriptionFactory.java[IBuildDescriptionFactory" modificationStamp="17895" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildmodel{IStepVisitor.java[IStepVisitor" modificationStamp="17899" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildmodel{IBuildCommand.java[IBuildCommand" modificationStamp="17893" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildmodel{IBuildDescription.java[IBuildDescription" modificationStamp="17894" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildmodel{BuildDescriptionManager.java[BuildDescriptionManager" modificationStamp="17892" restrictions="6" visibility="0">
+            <method name="createBuildDescription" restrictions="8" signature="(Lorg/eclipse/cdt/managedbuilder/core/IConfiguration;Lorg/eclipse/cdt/managedbuilder/internal/buildmodel/IConfigurationBuildState;Lorg/eclipse/core/resources/IResourceDelta;I)Lorg/eclipse/cdt/managedbuilder/buildmodel/IBuildDescription;" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildmodel{IBuildResource.java[IBuildResource" modificationStamp="17897" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.buildmodel{IBuildStep.java[IBuildStep" modificationStamp="17898" restrictions="3" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.newmake.core"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.newmake.core{IMakeCommonBuildInfo.java[IMakeCommonBuildInfo" modificationStamp="17555" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.newmake.core{IMakeBuilderInfo.java[IMakeBuilderInfo" modificationStamp="17554" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.newmake.core{MakeScannerInfo.java[MakeScannerInfo" modificationStamp="17556" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.newmake.core{MakeScannerProvider.java[MakeScannerProvider" modificationStamp="17557" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.projectconverter"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.projectconverter{ConverterMessages.java[ConverterMessages" modificationStamp="17585" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.projectconverter{UpdateManagedProjectManager.java[UpdateManagedProjectManager" modificationStamp="17592" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.projectconverter{UpdateManagedProject30.java[UpdateManagedProject30" modificationStamp="17590" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.projectconverter{UpdateManagedProject31.java[UpdateManagedProject31" modificationStamp="17591" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.projectconverter{UpdateManagedProject20.java[UpdateManagedProject20" modificationStamp="17588" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.projectconverter{UpdateManagedProject21.java[UpdateManagedProject21" modificationStamp="17589" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.projectconverter{UpdateManagedProject12.java[UpdateManagedProject12" modificationStamp="17587" restrictions="0" visibility="0"/>
+    </package>
+</component>

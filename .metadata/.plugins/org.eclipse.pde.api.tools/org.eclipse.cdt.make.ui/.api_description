@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.make.ui" modificationStamp="1944" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.actions"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.actions{BuildTargetHandler.java[BuildTargetHandler" modificationStamp="18446" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.actions{BuildLastTargetAction.java[BuildLastTargetAction" modificationStamp="18443" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.actions{AbstractTargetAction.java[AbstractTargetAction" modificationStamp="18442" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.actions{BuildTargetAction.java[BuildTargetAction" modificationStamp="18445" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.actions{CreateTargetAction.java[CreateTargetAction" modificationStamp="18447" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.actions{UpdateMakeProjectAction.java[UpdateMakeProjectAction" modificationStamp="18448" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.actions{BuildLastTargetHandler.java[BuildLastTargetHandler" modificationStamp="18444" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.views"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.views{FilterEmtpyFoldersAction.java[FilterEmtpyFoldersAction" modificationStamp="18464" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.views{EditTargetAction.java[EditTargetAction" modificationStamp="18463" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.views{DeleteTargetAction.java[DeleteTargetAction" modificationStamp="18462" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.views{AddTargetAction.java[AddTargetAction" modificationStamp="18459" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.views{BuildTargetAction.java[BuildTargetAction" modificationStamp="18460" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.views{PasteTargetAction.java[PasteTargetAction" modificationStamp="18466" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.views{CopyTargetAction.java[CopyTargetAction" modificationStamp="18461" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.views{RebuildLastTargetAction.java[RebuildLastTargetAction" modificationStamp="18467" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.views{MakeView.java[MakeView" modificationStamp="18465" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.wizards"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.wizards{ConvertToMakeProjectWizard.java[ConvertToMakeProjectWizard" modificationStamp="18468" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.wizards{NewMakeCProjectWizard.java[NewMakeCProjectWizard" modificationStamp="18472" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.wizards{MakeProjectWizardOptionPage.java[MakeProjectWizardOptionPage" modificationStamp="18470" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.wizards{ConvertToMakeProjectWizardPage.java[ConvertToMakeProjectWizardPage" modificationStamp="18469" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.wizards{UpdateMakeProjectWizard.java[UpdateMakeProjectWizard" modificationStamp="18474" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.wizards{NewMakeCCProjectWizard.java[NewMakeCCProjectWizard" modificationStamp="18471" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.wizards{NewMakeProjectWizard.java[NewMakeProjectWizard" modificationStamp="18473" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.wizards{UpdateMakeProjectWizardPage.java[UpdateMakeProjectWizardPage" modificationStamp="18475" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui{TargetBuild.java[TargetBuild" modificationStamp="18435" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui{MakeLabelProvider.java[MakeLabelProvider" modificationStamp="18434" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui{MakeContentProvider.java[MakeContentProvider" modificationStamp="18433" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui{TargetListViewerPart.java[TargetListViewerPart" modificationStamp="18436" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui{IWorkingCopyManager.java[IWorkingCopyManager" modificationStamp="18431" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui{IWorkingCopyManagerExtension.java[IWorkingCopyManagerExtension" modificationStamp="18432" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui{TargetSourceContainer.java[TargetSourceContainer" modificationStamp="18437" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui{IMakeHelpContextIds.java[IMakeHelpContextIds" modificationStamp="18430" restrictions="3" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.dialogs"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.dialogs{DiscoveredPathContainerPage.java[DiscoveredPathContainerPage" modificationStamp="18452" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.dialogs{GCCPerFileSCDProfilePage.java[GCCPerFileSCDProfilePage" modificationStamp="18454" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.dialogs{DiscoveryOptionsBlock.java[DiscoveryOptionsBlock" modificationStamp="18453" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.dialogs{MBSPerProjectSCDProfilePage.java[MBSPerProjectSCDProfilePage" modificationStamp="18456" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.dialogs{BuildTargetDialog.java[BuildTargetDialog" modificationStamp="18451" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.dialogs{SettingsBlock.java[SettingsBlock" modificationStamp="18458" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.dialogs{AbstractDiscoveryOptionsBlock.java[AbstractDiscoveryOptionsBlock" modificationStamp="18449" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.dialogs{AbstractDiscoveryPage.java[AbstractDiscoveryPage" modificationStamp="18450" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.dialogs{GCCPerProjectSCDProfilePage.java[GCCPerProjectSCDProfilePage" modificationStamp="18455" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.ui/src&lt;org.eclipse.cdt.make.ui.dialogs{MakeTargetDialog.java[MakeTargetDialog" modificationStamp="18457" restrictions="6" visibility="0"/>
+    </package>
+</component>

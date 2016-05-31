@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.make.core" modificationStamp="2009" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{DiscoveredScannerInfoProvider.java[DiscoveredScannerInfoProvider" modificationStamp="18801" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{IScannerConfigBuilderInfo2Set.java[IScannerConfigBuilderInfo2Set" modificationStamp="18806" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{DiscoveredScannerInfo.java[DiscoveredScannerInfo" modificationStamp="18800" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{IScannerInfoCollector.java[IScannerInfoCollector" modificationStamp="18807" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{ScannerConfigNature.java[ScannerConfigNature" modificationStamp="18815" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{ScannerConfigBuilder.java[ScannerConfigBuilder" modificationStamp="18814" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{IDiscoveredPathManager.java[IDiscoveredPathManager" modificationStamp="18802" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{InfoContext.java[InfoContext" modificationStamp="18812" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{PathInfo.java[PathInfo" modificationStamp="18813" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{IScannerConfigBuilderInfo2.java[IScannerConfigBuilderInfo2" modificationStamp="18805" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{ScannerConfigScope.java[ScannerConfigScope" modificationStamp="18816" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{IScannerInfoCollectorCleaner.java[IScannerInfoCollectorCleaner" modificationStamp="18810" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{IScannerInfoConsoleParser.java[IScannerInfoConsoleParser" modificationStamp="18811" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{IExternalScannerInfoProvider.java[IExternalScannerInfoProvider" modificationStamp="18803" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{IScannerConfigBuilderInfo.java[IScannerConfigBuilderInfo" modificationStamp="18804" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{IScannerInfoCollector3.java[IScannerInfoCollector3" modificationStamp="18809" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{IScannerInfoCollector2.java[IScannerInfoCollector2" modificationStamp="18808" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.scannerconfig{ScannerInfoTypes.java[ScannerInfoTypes" modificationStamp="18817" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IParent.java[IParent" modificationStamp="18787" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{ISccsGetRule.java[ISccsGetRule" modificationStamp="18791" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{ISpecialRule.java[ISpecialRule" modificationStamp="18793" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IMakefileReaderProvider.java[IMakefileReaderProvider" modificationStamp="18785" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{ICommand.java[ICommand" modificationStamp="18776" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IRule.java[IRule" modificationStamp="18790" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IAutomaticVariable.java[IAutomaticVariable" modificationStamp="18773" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IEmptyLine.java[IEmptyLine" modificationStamp="18780" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IDefaultRule.java[IDefaultRule" modificationStamp="18778" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IInferenceRule.java[IInferenceRule" modificationStamp="18782" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IPosixRule.java[IPosixRule" modificationStamp="18788" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{ISuffixesRule.java[ISuffixesRule" modificationStamp="18794" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{ISilentRule.java[ISilentRule" modificationStamp="18792" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IArchiveTarget.java[IArchiveTarget" modificationStamp="18772" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IComment.java[IComment" modificationStamp="18777" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IMakefile.java[IMakefile" modificationStamp="18784" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IPreciousRule.java[IPreciousRule" modificationStamp="18789" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IMakefileValidator.java[IMakefileValidator" modificationStamp="18786" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{ITargetRule.java[ITargetRule" modificationStamp="18796" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IIgnoreRule.java[IIgnoreRule" modificationStamp="18781" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{ITarget.java[ITarget" modificationStamp="18795" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IBuiltinFunction.java[IBuiltinFunction" modificationStamp="18775" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IMacroDefinition.java[IMacroDefinition" modificationStamp="18783" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IBadDirective.java[IBadDirective" modificationStamp="18774" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile{IDirective.java[IDirective" modificationStamp="18779" restrictions="3" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core{IMakeTarget.java[IMakeTarget" modificationStamp="18759" restrictions="3" visibility="0">
+            <method name="setName" restrictions="8" signature="(Ljava/lang/String;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core{IMakeTargetManager.java[IMakeTargetManager" modificationStamp="18761" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core{IMakeBuilderInfo.java[IMakeBuilderInfo" modificationStamp="18757" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core{MakeBuilder.java[MakeBuilder" modificationStamp="18762" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core{MakeBuilderUtil.java[MakeBuilderUtil" modificationStamp="18763" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core{IMakeCommonBuildInfo.java[IMakeCommonBuildInfo" modificationStamp="18758" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core{IMakeTargetListener.java[IMakeTargetListener" modificationStamp="18760" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core{MakeCorePlugin.java[MakeCorePlugin" modificationStamp="18764" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core{MakeProjectNature.java[MakeProjectNature" modificationStamp="18765" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core{MakeScannerInfo.java[MakeScannerInfo" modificationStamp="18766" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core{MakeTargetEvent.java[MakeTargetEvent" modificationStamp="18768" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core{MakeScannerProvider.java[MakeScannerProvider" modificationStamp="18767" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{IUnExport.java[IUnExport" modificationStamp="36623" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{ITerminal.java[ITerminal" modificationStamp="36622" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{IIntermediateRule.java[IIntermediateRule" modificationStamp="36617" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{IDeleteOnErrorRule.java[IDeleteOnErrorRule" modificationStamp="36613" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{IGNUMakefile.java[IGNUMakefile" modificationStamp="36615" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{ISecondaryRule.java[ISecondaryRule" modificationStamp="36621" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{IConditional.java[IConditional" modificationStamp="36612" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{IPhonyRule.java[IPhonyRule" modificationStamp="36620" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{IVariableDefinition.java[IVariableDefinition" modificationStamp="36625" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{INotParallelRule.java[INotParallelRule" modificationStamp="36619" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{IExportAllVariablesRule.java[IExportAllVariablesRule" modificationStamp="36614" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{ILowResolutionTimeRule.java[ILowResolutionTimeRule" modificationStamp="36618" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{IInclude.java[IInclude" modificationStamp="36616" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.make.core/src&lt;org.eclipse.cdt.make.core.makefile.gnu{IVPath.java[IVPath" modificationStamp="36624" restrictions="3" visibility="0"/>
+    </package>
+</component>

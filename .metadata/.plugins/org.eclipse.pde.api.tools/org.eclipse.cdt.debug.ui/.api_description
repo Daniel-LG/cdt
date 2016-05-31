@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.debug.ui" modificationStamp="3919" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.sourcelookup"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.sourcelookup{OldDefaultSourceLocator.java[OldDefaultSourceLocator" modificationStamp="21617" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.sourcelookup{DefaultSourceLocator.java[DefaultSourceLocator" modificationStamp="21616" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.sourcelookup{SourceLookupMessages.java[SourceLookupMessages" modificationStamp="21618" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui{ICDebugUIConstants.java[ICDebugUIConstants" modificationStamp="21544" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui{ICDebuggerPage.java[ICDebuggerPage" modificationStamp="21545" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui{ICDebuggerPageExtension.java[ICDebuggerPageExtension" modificationStamp="21546" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui{AbstractCDebuggerPage.java[AbstractCDebuggerPage" modificationStamp="21542" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui{PinElementHandle.java[PinElementHandle" modificationStamp="21548" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui{CDebugUIPlugin.java[CDebugUIPlugin" modificationStamp="21543" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui{UIMessages.java[UIMessages" modificationStamp="21549" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui{IPinProvider.java[IPinProvider" modificationStamp="21547" restrictions="0" visibility="0">
+            <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui{IPinProvider.java[IPinProvider[IPinModelListener" modificationStamp="21547" restrictions="1" visibility="0"/>
+        </type>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.importexecutable"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.importexecutable{AbstractImportExecutableWizard.java[AbstractImportExecutableWizard" modificationStamp="21608" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.importexecutable{ImportExecutablePageOne.java[ImportExecutablePageOne" modificationStamp="21609" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.importexecutable{ImportExecutableWizard.java[ImportExecutableWizard" modificationStamp="21611" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.importexecutable{Messages.java[Messages" modificationStamp="21612" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.importexecutable{ImportExecutablePageTwo.java[ImportExecutablePageTwo" modificationStamp="21610" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.editors"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.editors{AbstractDebugTextHover.java[AbstractDebugTextHover" modificationStamp="21607" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly.rulers"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly.rulers{RulerColumnDescriptor.java[RulerColumnDescriptor" modificationStamp="40016" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly.rulers{RulerColumnPreferenceAdapter.java[RulerColumnPreferenceAdapter" modificationStamp="40017" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly.rulers{IColumnSupport.java[IColumnSupport" modificationStamp="40014" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly.rulers{IContributedRulerColumn.java[IContributedRulerColumn" modificationStamp="40015" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly.rulers{AbstractContributedRulerColumn.java[AbstractContributedRulerColumn" modificationStamp="40013" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly.rulers{RulerColumnRegistry.java[RulerColumnRegistry" modificationStamp="40018" restrictions="4" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints{AddWatchpointActionDelegate.java[AddWatchpointActionDelegate" modificationStamp="21585" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints{AddWatchpointOnVariableActionDelegate.java[AddWatchpointOnVariableActionDelegate" modificationStamp="21586" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints{IToggleBreakpointsTargetCExtension.java[IToggleBreakpointsTargetCExtension" modificationStamp="21595" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints{CBreakpointPropertyDialogAction.java[CBreakpointPropertyDialogAction" modificationStamp="21587" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints{CEventBreakpointsLabelProviderFactory.java[CEventBreakpointsLabelProviderFactory" modificationStamp="21589" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints{AbstractToggleBreakpointAdapter.java[AbstractToggleBreakpointAdapter" modificationStamp="21584" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints{DefaultCBreakpointUIContribution.java[DefaultCBreakpointUIContribution" modificationStamp="21590" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints{ICBreakpointContext.java[ICBreakpointContext" modificationStamp="21591" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints{ICBreakpointsUIContributionUser.java[ICBreakpointsUIContributionUser" modificationStamp="21593" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints{ICBreakpointsUIContribution.java[ICBreakpointsUIContribution" modificationStamp="21592" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints{CBreakpointUIContributionFactory.java[CBreakpointUIContributionFactory" modificationStamp="21588" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpoints{IFieldEditorFactory.java[IFieldEditorFactory" modificationStamp="21594" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.preferences"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.preferences{ReadOnlyFieldEditor.java[ReadOnlyFieldEditor" modificationStamp="21614" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ExternalToolAction.java[ExternalToolAction" modificationStamp="21563" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ActionsList.java[ActionsList" modificationStamp="21560" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{SoundAction.java[SoundAction" modificationStamp="21580" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ReverseDebugActionComposite.java[ReverseDebugActionComposite" modificationStamp="21578" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ActionsPreferencePage.java[ActionsPreferencePage" modificationStamp="21561" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{GlobalActionsList.java[GlobalActionsList" modificationStamp="21566" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{LogAction.java[LogAction" modificationStamp="21568" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{PreferenceConstants.java[PreferenceConstants" modificationStamp="21572" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ExternalToolActionPage.java[ExternalToolActionPage" modificationStamp="21565" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{SoundActionPage.java[SoundActionPage" modificationStamp="21582" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ReverseDebugActionPage.java[ReverseDebugActionPage" modificationStamp="21579" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{Messages.java[Messages" modificationStamp="21571" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ActionDialog.java[ActionDialog" modificationStamp="21559" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ResumeAction.java[ResumeAction" modificationStamp="21574" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{IBreakpointActionPage.java[IBreakpointActionPage" modificationStamp="21567" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ResumeActionComposite.java[ResumeActionComposite" modificationStamp="21575" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{LogActionComposite.java[LogActionComposite" modificationStamp="21569" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ResumeActionPage.java[ResumeActionPage" modificationStamp="21576" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{PreferenceInitializer.java[PreferenceInitializer" modificationStamp="21573" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ActionsPropertyPage.java[ActionsPropertyPage" modificationStamp="21562" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ExternalToolActionComposite.java[ExternalToolActionComposite" modificationStamp="21564" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{SoundActionComposite.java[SoundActionComposite" modificationStamp="21581" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{ReverseDebugAction.java[ReverseDebugAction" modificationStamp="21577" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.breakpointactions{LogActionPage.java[LogActionPage" modificationStamp="21570" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly{IDocumentElementLabelUpdate.java[IDocumentElementLabelUpdate" modificationStamp="21602" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly{IDocumentPresentation.java[IDocumentPresentation" modificationStamp="21603" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly{IDocumentElementAnnotationUpdate.java[IDocumentElementAnnotationUpdate" modificationStamp="21598" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly{IDocumentElementContentUpdate.java[IDocumentElementContentUpdate" modificationStamp="21600" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly{IDocumentBaseChangeUpdate.java[IDocumentBaseChangeUpdate" modificationStamp="21596" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly{IDocumentUpdate.java[IDocumentUpdate" modificationStamp="21604" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly{IDocumentElementContentProvider.java[IDocumentElementContentProvider" modificationStamp="21599" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly{IElementToggleBreakpointAdapter.java[IElementToggleBreakpointAdapter" modificationStamp="21605" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly{IDocumentElementAnnotationProvider.java[IDocumentElementAnnotationProvider" modificationStamp="21597" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.debug.ui/src&lt;org.eclipse.cdt.debug.ui.disassembly{IDocumentElementLabelProvider.java[IDocumentElementLabelProvider" modificationStamp="21601" restrictions="0" visibility="0"/>
+    </package>
+</component>

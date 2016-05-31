@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.dsf.gdb" modificationStamp="2628" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb{IGDBLaunchConfigurationConstants.java[IGDBLaunchConfigurationConstants" modificationStamp="19848" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb{GDBTypeParser.java[GDBTypeParser" modificationStamp="19847" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb{IGdbDebugPreferenceConstants.java[IGdbDebugPreferenceConstants" modificationStamp="19850" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb{IGdbDebugConstants.java[IGdbDebugConstants" modificationStamp="19849" restrictions="1" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{FinalLaunchSequence_7_0.java[FinalLaunchSequence_7_0" modificationStamp="19876" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{FinalLaunchSequence_7_2.java[FinalLaunchSequence_7_2" modificationStamp="19877" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{FinalLaunchSequence.java[FinalLaunchSequence" modificationStamp="20386" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{ITracedLaunch.java[ITracedLaunch" modificationStamp="19887" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{IProcessExtendedInfo.java[IProcessExtendedInfo" modificationStamp="19886" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{GdbAttachLaunchDelegate.java[GdbAttachLaunchDelegate" modificationStamp="19882" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{ShutdownSequence.java[ShutdownSequence" modificationStamp="19893" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{GdbProcessFactory.java[GdbProcessFactory" modificationStamp="19885" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{FinalLaunchSequence_7_7.java[FinalLaunchSequence_7_7" modificationStamp="19878" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{LaunchUtils.java[LaunchUtils" modificationStamp="19891" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{GDBServerDebugger.java[GDBServerDebugger" modificationStamp="19881" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{InferiorRuntimeProcess.java[InferiorRuntimeProcess" modificationStamp="19888" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{ServicesLaunchSequence.java[ServicesLaunchSequence" modificationStamp="19892" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{LaunchMessages.java[LaunchMessages" modificationStamp="19889" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{GdbLaunchDelegate.java[GdbLaunchDelegate" modificationStamp="19884" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{GdbLaunch.java[GdbLaunch" modificationStamp="19883" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{GDBProcess.java[GDBProcess" modificationStamp="19880" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.launching{GDBDebugger.java[GDBDebugger" modificationStamp="19879" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.breakpoint.actions"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.breakpoint.actions{MILogActionEnabler.java[MILogActionEnabler" modificationStamp="49035" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.breakpoint.actions{BreakpointActionAdapter.java[BreakpointActionAdapter" modificationStamp="49034" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.breakpoint.actions{MIReverseDebugEnabler.java[MIReverseDebugEnabler" modificationStamp="49037" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.breakpoint.actions{MIResumeActionEnabler.java[MIResumeActionEnabler" modificationStamp="49036" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIDetachedEvent.java[MIDetachedEvent" modificationStamp="48860" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIBreakpointHitEvent.java[MIBreakpointHitEvent" modificationStamp="48858" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIInferiorSignalExitEvent.java[MIInferiorSignalExitEvent" modificationStamp="48865" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MISignalEvent.java[MISignalEvent" modificationStamp="48870" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIWatchpointTriggerEvent.java[MIWatchpointTriggerEvent" modificationStamp="48878" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MILocationReachedEvent.java[MILocationReachedEvent" modificationStamp="48866" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIBreakpointChangedEvent.java[MIBreakpointChangedEvent" modificationStamp="48857" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIFunctionFinishedEvent.java[MIFunctionFinishedEvent" modificationStamp="48863" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIThreadCreatedEvent.java[MIThreadCreatedEvent" modificationStamp="48873" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{IMIDMEvent.java[IMIDMEvent" modificationStamp="48856" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MISharedLibEvent.java[MISharedLibEvent" modificationStamp="48868" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MISteppingRangeEvent.java[MISteppingRangeEvent" modificationStamp="48871" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MICatchpointHitEvent.java[MICatchpointHitEvent" modificationStamp="48859" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIThreadGroupCreatedEvent.java[MIThreadGroupCreatedEvent" modificationStamp="48875" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIRunningEvent.java[MIRunningEvent" modificationStamp="48867" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIInferiorExitEvent.java[MIInferiorExitEvent" modificationStamp="48864" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIEvent.java[MIEvent" modificationStamp="48862" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MISignalChangedEvent.java[MISignalChangedEvent" modificationStamp="48869" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIStoppedEvent.java[MIStoppedEvent" modificationStamp="48872" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIErrorEvent.java[MIErrorEvent" modificationStamp="48861" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIThreadExitEvent.java[MIThreadExitEvent" modificationStamp="48874" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIThreadGroupExitedEvent.java[MIThreadGroupExitedEvent" modificationStamp="48876" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.events{MIWatchpointScopeEvent.java[MIWatchpointScopeEvent" modificationStamp="48877" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBControl_HEAD.java[GDBControl_HEAD" modificationStamp="38650" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBBackend_HEAD.java[GDBBackend_HEAD" modificationStamp="38646" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBProcesses_HEAD.java[GDBProcesses_HEAD" modificationStamp="38656" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBBreakpointsManager_HEAD.java[GDBBreakpointsManager_HEAD" modificationStamp="38647" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBSourceLookup_HEAD.java[GDBSourceLookup_HEAD" modificationStamp="38660" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBDisassembly_HEAD.java[GDBDisassembly_HEAD" modificationStamp="38651" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBHardwareAndOS_HEAD.java[GDBHardwareAndOS_HEAD" modificationStamp="38653" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBTraceControl_HEAD.java[GDBTraceControl_HEAD" modificationStamp="38662" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBExpressions_HEAD.java[GDBExpressions_HEAD" modificationStamp="38652" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBBreakpointsSynchronizer_HEAD.java[GDBBreakpointsSynchronizer_HEAD" modificationStamp="38648" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBMemory_HEAD.java[GDBMemory_HEAD" modificationStamp="38654" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBRegisters_HEAD.java[GDBRegisters_HEAD" modificationStamp="38657" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBRunControl_NS_HEAD.java[GDBRunControl_NS_HEAD" modificationStamp="38659" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBRunControl_HEAD.java[GDBRunControl_HEAD" modificationStamp="38658" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBStack_HEAD.java[GDBStack_HEAD" modificationStamp="38661" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBBreakpoints_HEAD.java[GDBBreakpoints_HEAD" modificationStamp="38649" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.extensions{GDBModules_HEAD.java[GDBModules_HEAD" modificationStamp="38655" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.command"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.command{GDBControl_7_4.java[GDBControl_7_4" modificationStamp="38670" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.command{CommandFactory_6_8.java[CommandFactory_6_8" modificationStamp="38663" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.command{GDBControl_7_0.java[GDBControl_7_0" modificationStamp="38668" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.command{GdbCommandTimeoutManager.java[GdbCommandTimeoutManager" modificationStamp="38672" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.command{CustomTimeoutsMap.java[CustomTimeoutsMap" modificationStamp="38664" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.command{GDBControl.java[GDBControl" modificationStamp="38666" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.command{GDBControl_7_2.java[GDBControl_7_2" modificationStamp="38669" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.command{IGDBControl.java[IGDBControl" modificationStamp="38673" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.command{GDBControlDMContext.java[GDBControlDMContext" modificationStamp="38667" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.command{GDBControl_7_7.java[GDBControl_7_7" modificationStamp="38671" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.command{GDBBackendCLIProcess.java[GDBBackendCLIProcess" modificationStamp="38665" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{IMIExecutionDMContext.java[IMIExecutionDMContext" modificationStamp="19824" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{IMIProcessDMContext.java[IMIProcessDMContext" modificationStamp="19826" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{CSourceLookup.java[CSourceLookup" modificationStamp="19818" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIModules.java[MIModules" modificationStamp="19837" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIFormat.java[MIFormat" modificationStamp="19835" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIProcesses.java[MIProcesses" modificationStamp="19838" restrictions="0" visibility="0">
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$IResumedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$ISuspendedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$IStartedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$IExitedDMEvent;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIExpressions.java[MIExpressions" modificationStamp="19834" restrictions="0" visibility="0">
+            <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIExpressions.java[MIExpressions[MIExpressionDMC" modificationStamp="19834" restrictions="2" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$IExitedDMEvent;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIMemory.java[MIMemory" modificationStamp="19836" restrictions="0" visibility="0">
+            <method name="eventDispatched" restrictions="8" signature="(Lorg/eclipse/cdt/dsf/debug/service/IExpressions$IExpressionChangedDMEvent;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIStack.java[MIStack" modificationStamp="19841" restrictions="0" visibility="0">
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$IResumedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$ISuspendedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/command/events/IMIDMEvent;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{IMIBackend2.java[IMIBackend2" modificationStamp="19820" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{IMIExpressions.java[IMIExpressions" modificationStamp="19825" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIBreakpoints.java[MIBreakpoints" modificationStamp="19830" restrictions="0" visibility="0">
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/command/events/MIWatchpointScopeEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/command/ICommandControlService$ICommandControlShutdownDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IBreakpointsExtension$IBreakpointHitDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$IResumedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$IExitedDMEvent;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIRunControl.java[MIRunControl" modificationStamp="19840" restrictions="0" visibility="0">
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/command/events/MIRunningEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/command/events/MIStoppedEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/command/events/MIThreadCreatedEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/command/events/MIThreadExitEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/MIRunControl$ContainerResumedEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/MIRunControl$ContainerSuspendedEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/command/ICommandControlService$ICommandControlShutdownDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/MIRunControl$StartedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$IExitedDMEvent;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{IMIContainerDMContext.java[IMIContainerDMContext" modificationStamp="19823" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{IMIRunControl.java[IMIRunControl" modificationStamp="19828" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIVariableManager.java[MIVariableManager" modificationStamp="19842" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{IMICommandControl.java[IMICommandControl" modificationStamp="19822" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIBreakpointsManager.java[MIBreakpointsManager" modificationStamp="19831" restrictions="0" visibility="0">
+            <method name="eventDispatched" restrictions="8" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$IStartedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="8" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$IExitedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/command/ICommandControlService$ICommandControlShutdownDMEvent;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIBreakpointsSynchronizer.java[MIBreakpointsSynchronizer" modificationStamp="19832" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{IMIBackend.java[IMIBackend" modificationStamp="19819" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIRegisters.java[MIRegisters" modificationStamp="19839" restrictions="0" visibility="0">
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$IResumedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRunControl$ISuspendedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/IRegisters$IRegisterChangedDMEvent;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{Messages.java[Messages" modificationStamp="19843" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIDisassembly.java[MIDisassembly" modificationStamp="19833" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{IMIProcesses.java[IMIProcesses" modificationStamp="19827" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{MIBreakpointDMData.java[MIBreakpointDMData" modificationStamp="19829" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service{IMIBreakpointPathAdjuster.java[IMIBreakpointPathAdjuster" modificationStamp="19821" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.macos"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.macos{MacOSGDBRunControl.java[MacOSGDBRunControl" modificationStamp="38644" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.macos{MacOSGdbDebugServicesFactory.java[MacOSGdbDebugServicesFactory" modificationStamp="38645" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.macos{MacOSCommandFactory.java[MacOSCommandFactory" modificationStamp="38642" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service.macos{MacOSGDBProcesses.java[MacOSGDBProcesses" modificationStamp="38643" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.breakpoints"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.breakpoints{Messages.java[Messages" modificationStamp="19859" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.breakpoints{CBreakpointGdbThreadsFilterExtension.java[CBreakpointGdbThreadsFilterExtension" modificationStamp="19857" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.breakpoints{GDBDynamicPrintfUtils.java[GDBDynamicPrintfUtils" modificationStamp="19858" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{CLIEventProcessor_7_0.java[CLIEventProcessor_7_0" modificationStamp="38627" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{AbstractMIControl.java[AbstractMIControl" modificationStamp="38625" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{MIControlDMContext.java[MIControlDMContext" modificationStamp="38633" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{AbstractCLIProcess.java[AbstractCLIProcess" modificationStamp="38624" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{CLIEventProcessor.java[CLIEventProcessor" modificationStamp="38626" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{IEventProcessor.java[IEventProcessor" modificationStamp="38630" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{CLIEventProcessor_7_7.java[CLIEventProcessor_7_7" modificationStamp="38628" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{MIRunControlEventProcessor.java[MIRunControlEventProcessor" modificationStamp="38636" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{CommandFactory.java[CommandFactory" modificationStamp="38629" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{MIBackendCLIProcess.java[MIBackendCLIProcess" modificationStamp="38632" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{MIRunControlEventProcessor_7_0.java[MIRunControlEventProcessor_7_0" modificationStamp="38637" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{LargePipedInputStream.java[LargePipedInputStream" modificationStamp="38631" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{MIInferiorProcess.java[MIInferiorProcess" modificationStamp="38634" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command{MIInferiorProcess_7_3.java[MIInferiorProcess_7_3" modificationStamp="38635" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GdbDebugServicesFactory.java[GdbDebugServicesFactory" modificationStamp="19927" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{IGDBTraceControl2.java[IGDBTraceControl2" modificationStamp="19936" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBProcesses.java[GDBProcesses" modificationStamp="19928" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBPatternMatchingExpressions.java[GDBPatternMatchingExpressions" modificationStamp="19911" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBRunControl_7_6.java[GDBRunControl_7_6" modificationStamp="19924" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBBreakpoints_7_4.java[GDBBreakpoints_7_4" modificationStamp="19901" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBHardwareAndOS_7_10.java[GDBHardwareAndOS_7_10" modificationStamp="19906" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBMemory_7_6.java[GDBMemory_7_6" modificationStamp="19910" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBBreakpoints_7_2.java[GDBBreakpoints_7_2" modificationStamp="19900" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{StartOrRestartProcessSequence_7_0.java[StartOrRestartProcessSequence_7_0" modificationStamp="20337" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBProcesses_7_2_1.java[GDBProcesses_7_2_1" modificationStamp="19916" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBBreakpoints_7_0.java[GDBBreakpoints_7_0" modificationStamp="19899" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{StartOrRestartProcessSequence_7_3.java[StartOrRestartProcessSequence_7_3" modificationStamp="19942" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBBackend.java[GDBBackend" modificationStamp="19896" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBMemory_7_0.java[GDBMemory_7_0" modificationStamp="19909" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{IGDBHardwareAndOS2.java[IGDBHardwareAndOS2" modificationStamp="19931" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBProcesses_7_2.java[GDBProcesses_7_2" modificationStamp="19915" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBBreakpoints_7_7.java[GDBBreakpoints_7_7" modificationStamp="19903" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBProcesses_7_3.java[GDBProcesses_7_3" modificationStamp="19917" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBBreakpoints_7_6.java[GDBBreakpoints_7_6" modificationStamp="19902" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBProcesses_7_4.java[GDBProcesses_7_4" modificationStamp="19918" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBBreakpointsManager_7_0.java[GDBBreakpointsManager_7_0" modificationStamp="19897" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBTraceControl_7_2.java[GDBTraceControl_7_2" modificationStamp="19925" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBBreakpointsManager_7_2.java[GDBBreakpointsManager_7_2" modificationStamp="19898" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBProcesses_7_0.java[GDBProcesses_7_0" modificationStamp="19913" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBProcesses_7_1.java[GDBProcesses_7_1" modificationStamp="19914" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBRunControl.java[GDBRunControl" modificationStamp="19920" restrictions="0" visibility="0">
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/command/events/MIInferiorExitEvent;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBTraceControl_7_4.java[GDBTraceControl_7_4" modificationStamp="19926" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{IGDBMemory.java[IGDBMemory" modificationStamp="19932" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBRunControl_7_0_NS.java[GDBRunControl_7_0_NS" modificationStamp="19922" restrictions="0" visibility="0">
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/command/events/MIRunningEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/command/events/MIStoppedEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/command/events/MIThreadCreatedEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/command/events/MIThreadExitEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/gdb/service/GDBRunControl_7_0_NS$ResumedEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/gdb/service/GDBRunControl_7_0_NS$SuspendedEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/gdb/service/GDBRunControl_7_0_NS$StartedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/gdb/service/GDBRunControl_7_0_NS$ExitedDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/debug/service/command/ICommandControlService$ICommandControlShutdownDMEvent;)V" visibility="0"/>
+            <method name="eventDispatched" restrictions="24" signature="(Lorg/eclipse/cdt/dsf/mi/service/command/events/MIInferiorExitEvent;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GdbDebugServicesFactoryNS.java[GdbDebugServicesFactoryNS" modificationStamp="19928" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{IReverseRunControl.java[IReverseRunControl" modificationStamp="19937" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{IGDBTraceControl.java[IGDBTraceControl" modificationStamp="19935" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{IGDBProcesses.java[IGDBProcesses" modificationStamp="19934" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{SessionType.java[SessionType" modificationStamp="19940" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBMemory.java[GDBMemory" modificationStamp="19908" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBRunControl_7_2_NS.java[GDBRunControl_7_2_NS" modificationStamp="19923" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{Messages.java[Messages" modificationStamp="19938" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBHardwareAndOS_7_5.java[GDBHardwareAndOS_7_5" modificationStamp="19907" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{IGDBHardwareAndOS.java[IGDBHardwareAndOS" modificationStamp="19930" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{DebugNewProcessSequence.java[DebugNewProcessSequence" modificationStamp="21609" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBRegisters.java[GDBRegisters" modificationStamp="19919" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{IGDBBackend.java[IGDBBackend" modificationStamp="19929" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBHardwareAndOS.java[GDBHardwareAndOS" modificationStamp="19905" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBDisassembly_7_3.java[GDBDisassembly_7_3" modificationStamp="19904" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{GDBRunControl_7_0.java[GDBRunControl_7_0" modificationStamp="19921" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{IGDBMemory2.java[IGDBMemory2" modificationStamp="19933" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.service{DebugNewProcessSequence_7_2.java[DebugNewProcessSequence_7_2" modificationStamp="19895" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output.macos"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output.macos{MacOSMIVarUpdateInfo.java[MacOSMIVarUpdateInfo" modificationStamp="57238" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands.macos"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands.macos{MacOSMIEnvironmentCD.java[MacOSMIEnvironmentCD" modificationStamp="57239" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands.macos{MacOSMIVarUpdate.java[MacOSMIVarUpdate" modificationStamp="57240" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecStep.java[MIExecStep" modificationStamp="48947" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIRemote.java[CLIRemote" modificationStamp="48894" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarCreate.java[MIVarCreate" modificationStamp="49019" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarShowAttributes.java[MIVarShowAttributes" modificationStamp="49029" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLITraceDump.java[CLITraceDump" modificationStamp="48901" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIInterpreterExecConsole.java[MIInterpreterExecConsole" modificationStamp="48989" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIThreadSelect.java[MIThreadSelect" modificationStamp="49008" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLICommand.java[CLICommand" modificationStamp="48883" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIBreakPasscount.java[MIBreakPasscount" modificationStamp="48918" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecArguments.java[MIExecArguments" modificationStamp="48933" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIInfoProgram.java[CLIInfoProgram" modificationStamp="48887" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecReverseStepInstruction.java[MIExecReverseStepInstruction" modificationStamp="48945" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetCircularTraceBuffer.java[MIGDBSetCircularTraceBuffer" modificationStamp="48960" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetNonStop.java[MIGDBSetNonStop" modificationStamp="48967" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarSetUpdateRange.java[MIVarSetUpdateRange" modificationStamp="49028" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIRecord.java[CLIRecord" modificationStamp="48893" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIBreakEnable.java[MIBreakEnable" modificationStamp="48915" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIDataWriteMemoryBytes.java[MIDataWriteMemoryBytes" modificationStamp="48929" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecReverseStep.java[MIExecReverseStep" modificationStamp="48944" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarInfoExpression.java[MIVarInfoExpression" modificationStamp="49022" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetPrintObject.java[MIGDBSetPrintObject" modificationStamp="48969" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIUnsetEnv.java[CLIUnsetEnv" modificationStamp="48902" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MICommand.java[MICommand" modificationStamp="48920" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBExit.java[MIGDBExit" modificationStamp="48954" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIInfoOs.java[MIInfoOs" modificationStamp="48987" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITargetSelect.java[MITargetSelect" modificationStamp="49003" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIThreadInfo.java[MIThreadInfo" modificationStamp="49006" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIDataListRegisterValues.java[MIDataListRegisterValues" modificationStamp="48925" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBShowLanguage.java[MIGDBShowLanguage" modificationStamp="48984" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecReturn.java[MIExecReturn" modificationStamp="48940" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIDataDisassemble.java[MIDataDisassemble" modificationStamp="48922" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITraceFindNone.java[MITraceFindNone" modificationStamp="49012" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{ExprMetaGetChildren.java[ExprMetaGetChildren" modificationStamp="48906" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITraceStop.java[MITraceStop" modificationStamp="49017" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIRemoveInferior.java[MIRemoveInferior" modificationStamp="48993" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetBreakpointPending.java[MIGDBSetBreakpointPending" modificationStamp="48958" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetDetachOnFork.java[MIGDBSetDetachOnFork" modificationStamp="48962" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarInfoPathExpression.java[MIVarInfoPathExpression" modificationStamp="49024" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIDataEvaluateExpression.java[MIDataEvaluateExpression" modificationStamp="48923" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarUpdate.java[MIVarUpdate" modificationStamp="49031" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIAddInferior.java[MIAddInferior" modificationStamp="48909" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetSysroot.java[MIGDBSetSysroot" modificationStamp="48976" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIMaintenance.java[CLIMaintenance" modificationStamp="48891" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBShowExitCode.java[MIGDBShowExitCode" modificationStamp="48983" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITargetAttach.java[MITargetAttach" modificationStamp="48999" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBShow.java[MIGDBShow" modificationStamp="48982" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIAddressableSize.java[CLIAddressableSize" modificationStamp="48880" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecReverseNextInstruction.java[MIExecReverseNextInstruction" modificationStamp="48943" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecContinue.java[MIExecContinue" modificationStamp="48934" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIBreakDelete.java[MIBreakDelete" modificationStamp="48913" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecUntil.java[MIExecUntil" modificationStamp="48950" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetDisconnectedTracing.java[MIGDBSetDisconnectedTracing" modificationStamp="48963" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLICatch.java[CLICatch" modificationStamp="48882" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIJump.java[CLIJump" modificationStamp="48890" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITraceListVariables.java[MITraceListVariables" modificationStamp="49013" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIStackInfoDepth.java[MIStackInfoDepth" modificationStamp="48994" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetLanguage.java[MIGDBSetLanguage" modificationStamp="48966" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIRemoteGet.java[CLIRemoteGet" modificationStamp="48895" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarEvaluateExpression.java[MIVarEvaluateExpression" modificationStamp="49021" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIEnablePrettyPrinting.java[MIEnablePrettyPrinting" modificationStamp="48930" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecNext.java[MIExecNext" modificationStamp="48938" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecReverseContinue.java[MIExecReverseContinue" modificationStamp="48941" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIThread.java[CLIThread" modificationStamp="48899" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITraceStatus.java[MITraceStatus" modificationStamp="49016" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIListFeatures.java[MIListFeatures" modificationStamp="48991" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIThreadListIds.java[MIThreadListIds" modificationStamp="49007" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIDetach.java[CLIDetach" modificationStamp="48884" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarListChildren.java[MIVarListChildren" modificationStamp="49026" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITargetDisconnect.java[MITargetDisconnect" modificationStamp="49001" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIInterpreterExec.java[MIInterpreterExec" modificationStamp="48988" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetPagination.java[MIGDBSetPagination" modificationStamp="48968" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIStackSelectFrame.java[MIStackSelectFrame" modificationStamp="48998" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetSchedulerLocking.java[MIGDBSetSchedulerLocking" modificationStamp="48972" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarInfoNumChildren.java[MIVarInfoNumChildren" modificationStamp="49023" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIEnvironmentCD.java[MIEnvironmentCD" modificationStamp="48931" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{ExprMetaCommand.java[ExprMetaCommand" modificationStamp="48903" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{ExprMetaGetVar.java[ExprMetaGetVar" modificationStamp="48908" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetAutoSolib.java[MIGDBSetAutoSolib" modificationStamp="48957" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarInfoType.java[MIVarInfoType" modificationStamp="49025" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIBreakCondition.java[MIBreakCondition" modificationStamp="48912" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIInfoThreads.java[CLIInfoThreads" modificationStamp="48889" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIDataReadMemory.java[MIDataReadMemory" modificationStamp="48926" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetPrintSevenbitStrings.java[MIGDBSetPrintSevenbitStrings" modificationStamp="48970" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetTargetCharset.java[MIGDBSetTargetCharset" modificationStamp="48978" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBVersion.java[MIGDBVersion" modificationStamp="48985" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{RawCommand.java[RawCommand" modificationStamp="49032" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIBreakAfter.java[MIBreakAfter" modificationStamp="48910" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITraceFindFrameNumber.java[MITraceFindFrameNumber" modificationStamp="49011" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIDataReadMemoryBytes.java[MIDataReadMemoryBytes" modificationStamp="48927" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecNextInstruction.java[MIExecNextInstruction" modificationStamp="48939" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetSolibAbsolutePrefix.java[MIGDBSetSolibAbsolutePrefix" modificationStamp="48973" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecFinish.java[MIExecFinish" modificationStamp="48935" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetArgs.java[MIGDBSetArgs" modificationStamp="48956" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecJump.java[MIExecJump" modificationStamp="48937" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIStackListArguments.java[MIStackListArguments" modificationStamp="48995" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIDataListRegisterNames.java[MIDataListRegisterNames" modificationStamp="48924" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetSolibSearchPath.java[MIGDBSetSolibSearchPath" modificationStamp="48974" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIDataWriteMemory.java[MIDataWriteMemory" modificationStamp="48928" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIInfoBreak.java[CLIInfoBreak" modificationStamp="48886" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{Adjustable.java[Adjustable" modificationStamp="48879" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIShowEndian.java[CLIShowEndian" modificationStamp="48897" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITraceSave.java[MITraceSave" modificationStamp="49014" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIStackListLocals.java[MIStackListLocals" modificationStamp="48997" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetTargetAsync.java[MIGDBSetTargetAsync" modificationStamp="48977" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIBreakInsert.java[MIBreakInsert" modificationStamp="48916" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLISource.java[CLISource" modificationStamp="48898" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIFileExecFile.java[MIFileExecFile" modificationStamp="48952" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIFileExecAndSymbols.java[MIFileExecAndSymbols" modificationStamp="48951" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{ExprMetaGetValue.java[ExprMetaGetValue" modificationStamp="48907" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecInterrupt.java[MIExecInterrupt" modificationStamp="48936" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetTargetWideCharset.java[MIGDBSetTargetWideCharset" modificationStamp="48979" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIFileSymbolFile.java[MIFileSymbolFile" modificationStamp="48953" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIInfoSharedLibrary.java[CLIInfoSharedLibrary" modificationStamp="48888" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{ExprMetaGetAttributes.java[ExprMetaGetAttributes" modificationStamp="48904" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{ExprMetaGetChildCount.java[ExprMetaGetChildCount" modificationStamp="48905" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarSetFormat.java[MIVarSetFormat" modificationStamp="49027" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITargetSelectCore.java[MITargetSelectCore" modificationStamp="49004" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIBreakList.java[MIBreakList" modificationStamp="48917" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIBreakWatch.java[MIBreakWatch" modificationStamp="48919" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecReverseNext.java[MIExecReverseNext" modificationStamp="48942" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITargetDetach.java[MITargetDetach" modificationStamp="49000" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarAssign.java[MIVarAssign" modificationStamp="49018" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSet.java[MIGDBSet" modificationStamp="48955" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetEnv.java[MIGDBSetEnv" modificationStamp="48964" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLISharedLibrary.java[CLISharedLibrary" modificationStamp="48896" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecStepInstruction.java[MIExecStepInstruction" modificationStamp="48948" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITraceStart.java[MITraceStart" modificationStamp="49015" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIPasscount.java[CLIPasscount" modificationStamp="48892" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIListThreadGroups.java[MIListThreadGroups" modificationStamp="48992" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIExecAbort.java[CLIExecAbort" modificationStamp="48885" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIInterpreterExecConsoleKill.java[MIInterpreterExecConsoleKill" modificationStamp="48990" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITargetSelectTFile.java[MITargetSelectTFile" modificationStamp="49005" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarShowFormat.java[MIVarShowFormat" modificationStamp="49030" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIInferiorTTYSet.java[MIInferiorTTYSet" modificationStamp="48986" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLITrace.java[CLITrace" modificationStamp="48900" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecUncall.java[MIExecUncall" modificationStamp="48949" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetTraceNotes.java[MIGDBSetTraceNotes" modificationStamp="48980" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIEnvironmentDirectory.java[MIEnvironmentDirectory" modificationStamp="48932" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetPythonPrintStack.java[MIGDBSetPythonPrintStack" modificationStamp="48971" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITraceFind.java[MITraceFind" modificationStamp="49010" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetTraceUser.java[MIGDBSetTraceUser" modificationStamp="48981" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{CLIAttach.java[CLIAttach" modificationStamp="48881" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetHostCharset.java[MIGDBSetHostCharset" modificationStamp="48965" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIBreakDisable.java[MIBreakDisable" modificationStamp="48914" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIDPrintfInsert.java[MIDPrintfInsert" modificationStamp="48921" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIVarDelete.java[MIVarDelete" modificationStamp="49020" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIStackListFrames.java[MIStackListFrames" modificationStamp="48996" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIExecRun.java[MIExecRun" modificationStamp="48946" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIBreakCommands.java[MIBreakCommands" modificationStamp="48911" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITargetDownload.java[MITargetDownload" modificationStamp="49002" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetDPrintfStyle.java[MIGDBSetDPrintfStyle" modificationStamp="48961" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetCharset.java[MIGDBSetCharset" modificationStamp="48959" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MITraceDefineVariable.java[MITraceDefineVariable" modificationStamp="49009" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.commands{MIGDBSetStopOnSolibEvents.java[MIGDBSetStopOnSolibEvents" modificationStamp="48975" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{ExprMetaGetAttributesInfo.java[ExprMetaGetAttributesInfo" modificationStamp="48780" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MILogStreamOutput.java[MILogStreamOutput" modificationStamp="48812" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{ExprMetaGetValueInfo.java[ExprMetaGetValueInfo" modificationStamp="48783" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarShowFormatInfo.java[MIVarShowFormatInfo" modificationStamp="48853" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MITargetDownloadInfo.java[MITargetDownloadInfo" modificationStamp="48828" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIStackListFramesInfo.java[MIStackListFramesInfo" modificationStamp="48823" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MITraceFindInfo.java[MITraceFindInfo" modificationStamp="48833" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{CLIShowEndianInfo.java[CLIShowEndianInfo" modificationStamp="48776" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIAsyncRecord.java[MIAsyncRecord" modificationStamp="48787" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIAddInferiorInfo.java[MIAddInferiorInfo" modificationStamp="48785" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MITargetStreamOutput.java[MITargetStreamOutput" modificationStamp="48829" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarDeleteInfo.java[MIVarDeleteInfo" modificationStamp="48844" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIDataDisassembleInfo.java[MIDataDisassembleInfo" modificationStamp="48793" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIResult.java[MIResult" modificationStamp="48819" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIDataListRegisterNamesInfo.java[MIDataListRegisterNamesInfo" modificationStamp="48795" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarUpdateInfo.java[MIVarUpdateInfo" modificationStamp="48854" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{CLITraceInfo.java[CLITraceInfo" modificationStamp="48779" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{ExprMetaGetChildCountInfo.java[ExprMetaGetChildCountInfo" modificationStamp="48781" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIMixedInstruction.java[MIMixedInstruction" modificationStamp="48813" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarShowAttributesInfo.java[MIVarShowAttributesInfo" modificationStamp="48852" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIGDBVersionInfo.java[MIGDBVersionInfo" modificationStamp="48805" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIDataListRegisterValuesInfo.java[MIDataListRegisterValuesInfo" modificationStamp="48796" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIDataReadMemoryInfo.java[MIDataReadMemoryInfo" modificationStamp="48798" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIConst.java[MIConst" modificationStamp="48792" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarInfoPathExpressionInfo.java[MIVarInfoPathExpressionInfo" modificationStamp="48848" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIBreakListInfo.java[MIBreakListInfo" modificationStamp="48789" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIDisplayHint.java[MIDisplayHint" modificationStamp="48800" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIDataEvaluateExpressionInfo.java[MIDataEvaluateExpressionInfo" modificationStamp="48794" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIParser.java[MIParser" modificationStamp="48817" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIInfoOsInfo.java[MIInfoOsInfo" modificationStamp="48807" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIInfo.java[MIInfo" modificationStamp="48806" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{ExprMetaGetVarInfo.java[ExprMetaGetVarInfo" modificationStamp="48784" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarListChildrenInfo.java[MIVarListChildrenInfo" modificationStamp="48850" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarChange.java[MIVarChange" modificationStamp="48842" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{CLIInfoSharedLibraryInfo.java[CLIInfoSharedLibraryInfo" modificationStamp="48774" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIBreakInsertInfo.java[MIBreakInsertInfo" modificationStamp="48788" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIDataWriteMemoryInfo.java[MIDataWriteMemoryInfo" modificationStamp="48799" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIInstruction.java[MIInstruction" modificationStamp="48808" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIResultRecord.java[MIResultRecord" modificationStamp="48820" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIStatusAsyncOutput.java[MIStatusAsyncOutput" modificationStamp="48825" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIValue.java[MIValue" modificationStamp="48839" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIThreadListIdsInfo.java[MIThreadListIdsInfo" modificationStamp="48832" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarInfoNumChildrenInfo.java[MIVarInfoNumChildrenInfo" modificationStamp="48847" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{ExprMetaGetChildrenInfo.java[ExprMetaGetChildrenInfo" modificationStamp="48782" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{CLICatchInfo.java[CLICatchInfo" modificationStamp="48771" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIList.java[MIList" modificationStamp="48809" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarAssignInfo.java[MIVarAssignInfo" modificationStamp="48841" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MITraceStatusInfo.java[MITraceStatusInfo" modificationStamp="48836" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{CLIInfoThreadsInfo.java[CLIInfoThreadsInfo" modificationStamp="48775" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIStackInfoDepthInfo.java[MIStackInfoDepthInfo" modificationStamp="48821" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIArg.java[MIArg" modificationStamp="48786" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIConsoleStreamOutput.java[MIConsoleStreamOutput" modificationStamp="48791" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarEvaluateExpressionInfo.java[MIVarEvaluateExpressionInfo" modificationStamp="48845" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{CLIThreadInfo.java[CLIThreadInfo" modificationStamp="48777" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIDataReadMemoryBytesInfo.java[MIDataReadMemoryBytesInfo" modificationStamp="48797" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIFrame.java[MIFrame" modificationStamp="48802" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIStackListArgumentsInfo.java[MIStackListArgumentsInfo" modificationStamp="48822" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MINotifyAsyncOutput.java[MINotifyAsyncOutput" modificationStamp="48814" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVar.java[MIVar" modificationStamp="48840" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MITraceListVariablesInfo.java[MITraceListVariablesInfo" modificationStamp="48834" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarInfoTypeInfo.java[MIVarInfoTypeInfo" modificationStamp="48849" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIOOBRecord.java[MIOOBRecord" modificationStamp="48815" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIExecAsyncOutput.java[MIExecAsyncOutput" modificationStamp="48801" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIStringHandler.java[MIStringHandler" modificationStamp="48827" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIStreamRecord.java[MIStreamRecord" modificationStamp="48826" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIThread.java[MIThread" modificationStamp="48830" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarSetFormatInfo.java[MIVarSetFormatInfo" modificationStamp="48851" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{CLITraceDumpInfo.java[CLITraceDumpInfo" modificationStamp="48778" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MITraceStopInfo.java[MITraceStopInfo" modificationStamp="48837" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIOutput.java[MIOutput" modificationStamp="48816" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIStackListLocalsInfo.java[MIStackListLocalsInfo" modificationStamp="48824" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarCreateInfo.java[MIVarCreateInfo" modificationStamp="48843" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MITraceRecord.java[MITraceRecord" modificationStamp="48835" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{CLIAddressableSizeInfo.java[CLIAddressableSizeInfo" modificationStamp="48770" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIGDBShowExitCodeInfo.java[MIGDBShowExitCodeInfo" modificationStamp="48803" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIListFeaturesInfo.java[MIListFeaturesInfo" modificationStamp="48810" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIRegisterValue.java[MIRegisterValue" modificationStamp="48818" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MITuple.java[MITuple" modificationStamp="48838" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIListThreadGroupsInfo.java[MIListThreadGroupsInfo" modificationStamp="48811" restrictions="0" visibility="0">
+            <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIListThreadGroupsInfo.java[MIListThreadGroupsInfo[IThreadGroupInfo" modificationStamp="48811" restrictions="3" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIThreadInfoInfo.java[MIThreadInfoInfo" modificationStamp="48831" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIGDBShowLanguageInfo.java[MIGDBShowLanguageInfo" modificationStamp="48804" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{CLIInfoBreakInfo.java[CLIInfoBreakInfo" modificationStamp="48772" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{CLIInfoProgramInfo.java[CLIInfoProgramInfo" modificationStamp="48773" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIVarInfoExpressionInfo.java[MIVarInfoExpressionInfo" modificationStamp="48846" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.mi.service.command.output{MIBreakpoint.java[MIBreakpoint" modificationStamp="48790" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.actions"/>
+        <type handle="=org.eclipse.cdt.dsf.gdb/src&lt;org.eclipse.cdt.dsf.gdb.actions{IConnect.java[IConnect" modificationStamp="19856" restrictions="0" visibility="0"/>
+    </package>
+</component>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.ui" modificationStamp="702" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.extensions"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.extensions{ICallToResult.java[ICallToResult" modificationStamp="13017" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.extensions{IExternalSearchProvider.java[IExternalSearchProvider" modificationStamp="13019" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.extensions{ICalledByResult.java[ICalledByResult" modificationStamp="13018" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.extensions{ICallHierarchyProvider.java[ICallHierarchyProvider" modificationStamp="13016" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools{IDocCommentOwnershipListener.java[IDocCommentOwnershipListener" modificationStamp="12930" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools{DefaultMultilineCommentAutoEditStrategy.java[DefaultMultilineCommentAutoEditStrategy" modificationStamp="12927" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools{IDocCommentDictionary.java[IDocCommentDictionary" modificationStamp="12928" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools{IDocCommentOwner.java[IDocCommentOwner" modificationStamp="12929" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools{IDocCommentSimpleDictionary.java[IDocCommentSimpleDictionary" modificationStamp="12931" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools{IDocCommentViewerConfiguration.java[IDocCommentViewerConfiguration" modificationStamp="12932" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.internal.ui.resources"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.internal.ui.resources{ResourceExclusionContributor.java[ResourceExclusionContributor" modificationStamp="13564" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.pages"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.pages{UIWizardPage.java[UIWizardPage" modificationStamp="12276" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.pages{TemplateInputDialog.java[TemplateInputDialog" modificationStamp="12272" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.pages{UIPage.java[UIPage" modificationStamp="12274" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.pages{UIPagesProvider.java[UIPagesProvider" modificationStamp="12275" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.pages{TemplatePreferencePage.java[TemplatePreferencePage" modificationStamp="12273" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.pages{Messages.java[Messages" modificationStamp="12270" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.pages{NewProjectCreationPage.java[NewProjectCreationPage" modificationStamp="12271" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.folding"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.folding{ICFoldingPreferenceBlock.java[ICFoldingPreferenceBlock" modificationStamp="12935" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.folding{ICFoldingStructureProvider.java[ICFoldingStructureProvider" modificationStamp="12936" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{TemplateClassWizard.java[TemplateClassWizard" modificationStamp="12257" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{TemplateEngineUIUtil.java[TemplateEngineUIUtil" modificationStamp="12260" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{ProjectSelectionPage.java[ProjectSelectionPage" modificationStamp="12254" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{TemplateDrivenWizard.java[TemplateDrivenWizard" modificationStamp="12258" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{IPagesAfterTemplateSelectionProvider.java[IPagesAfterTemplateSelectionProvider" modificationStamp="12249" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{TemplateEngineUI.java[TemplateEngineUI" modificationStamp="12259" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{IWizardDataPage.java[IWizardDataPage" modificationStamp="12251" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{Messages.java[Messages" modificationStamp="12252" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{TemplateListSelectionPage.java[TemplateListSelectionPage" modificationStamp="12261" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{SimpleElementException.java[SimpleElementException" modificationStamp="12255" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{AbstractWizardDataPage.java[AbstractWizardDataPage" modificationStamp="12247" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{WizardNode.java[WizardNode" modificationStamp="12263" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{TemplatesChoiceWizard.java[TemplatesChoiceWizard" modificationStamp="12262" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{ITemplatesListProvider.java[ITemplatesListProvider" modificationStamp="12250" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{FormBrowser.java[FormBrowser" modificationStamp="12248" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine{Template.java[Template" modificationStamp="12256" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.doxygen"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.doxygen{DoxygenSingleConfiguration.java[DoxygenSingleConfiguration" modificationStamp="30641" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.doxygen{DoxygenMultilineAutoEditStrategy.java[DoxygenMultilineAutoEditStrategy" modificationStamp="30638" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.doxygen{DoxygenMultilineConfiguration.java[DoxygenMultilineConfiguration" modificationStamp="30639" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.doxygen{DoxygenHelper.java[DoxygenHelper" modificationStamp="30637" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.doxygen{DoxygenSingleAutoEditStrategy.java[DoxygenSingleAutoEditStrategy" modificationStamp="30640" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring{CTextFileChange.java[CTextFileChange" modificationStamp="12941" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{NewCProjectWizard.java[NewCProjectWizard" modificationStamp="12882" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{NewClassCreationWizardPage.java[NewClassCreationWizardPage" modificationStamp="12885" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{NewSourceFileCreationWizard.java[NewSourceFileCreationWizard" modificationStamp="12889" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CWizardHandler.java[CWizardHandler" modificationStamp="12874" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{IWizardWithMemory.java[IWizardWithMemory" modificationStamp="12879" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CNewWizard.java[CNewWizard" modificationStamp="12872" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CDTCommonProjectWizard.java[CDTCommonProjectWizard" modificationStamp="12869" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{NewCDTProjectWizard.java[NewCDTProjectWizard" modificationStamp="12881" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{NewCProjectWizardOptionPage.java[NewCProjectWizardOptionPage" modificationStamp="12883" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{NewHeaderFileCreationWizard.java[NewHeaderFileCreationWizard" modificationStamp="12888" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{NewFolderCreationWizard.java[NewFolderCreationWizard" modificationStamp="12887" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{NewFileCreationWizard.java[NewFileCreationWizard" modificationStamp="12886" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{IWizardItemsListListener.java[IWizardItemsListListener" modificationStamp="12878" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{TemplateSelectionPage.java[TemplateSelectionPage" modificationStamp="12892" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{NewCProjectWizardPage.java[NewCProjectWizardPage" modificationStamp="12884" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{NewSourceFolderCreationWizard.java[NewSourceFolderCreationWizard" modificationStamp="12890" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{IPathEntryContainerPage.java[IPathEntryContainerPage" modificationStamp="12877" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CDTProjectWizard.java[CDTProjectWizard" modificationStamp="12871" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{NewCCProjectWizard.java[NewCCProjectWizard" modificationStamp="12880" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{ProjectTypePage.java[ProjectTypePage" modificationStamp="12891" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CDTMainWizardPage.java[CDTMainWizardPage" modificationStamp="12870" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{ICPathContainerPage.java[ICPathContainerPage" modificationStamp="12876" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CCProjectWizard.java[CCProjectWizard" modificationStamp="12868" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CProjectWizard.java[CProjectWizard" modificationStamp="12873" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{EntryDescriptor.java[EntryDescriptor" modificationStamp="12875" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/browser&lt;org.eclipse.cdt.ui.browser.typeinfo"/>
+        <type handle="=org.eclipse.cdt.ui/browser&lt;org.eclipse.cdt.ui.browser.typeinfo{TypeInfoMessages.java[TypeInfoMessages" modificationStamp="13835" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/browser&lt;org.eclipse.cdt.ui.browser.typeinfo{TypeSelectionDialog.java[TypeSelectionDialog" modificationStamp="13837" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/browser&lt;org.eclipse.cdt.ui.browser.typeinfo{TypeInfoLabelProvider.java[TypeInfoLabelProvider" modificationStamp="13834" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.generic"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.generic{GenericTagCompletionProposalComputer.java[GenericTagCompletionProposalComputer" modificationStamp="30634" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.generic{AbstractGenericTagDocCommentViewerConfiguration.java[AbstractGenericTagDocCommentViewerConfiguration" modificationStamp="30631" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.generic{GenericDocTag.java[GenericDocTag" modificationStamp="30632" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.generic{GenericTagDoubleClickStrategy.java[GenericTagDoubleClickStrategy" modificationStamp="30635" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.generic{GenericTagCommentScanner.java[GenericTagCommentScanner" modificationStamp="30633" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.doctools.generic{GenericTagSimpleDictionary.java[GenericTagSimpleDictionary" modificationStamp="30636" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree.uiwidgets"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree.uiwidgets{UIBrowseWidget.java[UIBrowseWidget" modificationStamp="28242" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree.uiwidgets{UISpecialListWidget.java[UISpecialListWidget" modificationStamp="28245" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree.uiwidgets{UIStringListWidget.java[UIStringListWidget" modificationStamp="28246" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree.uiwidgets{UISelectWidget.java[UISelectWidget" modificationStamp="28244" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree.uiwidgets{UITextWidget.java[UITextWidget" modificationStamp="28247" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree.uiwidgets{UIComposite.java[UIComposite" modificationStamp="28243" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree.uiwidgets{UIBooleanWidget.java[UIBooleanWidget" modificationStamp="28241" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{CygwinPEBinaryParserPage.java[CygwinPEBinaryParserPage" modificationStamp="13028" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{DocCommentOwnerComposite.java[DocCommentOwnerComposite" modificationStamp="13034" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{AbstractGNUBinaryParserPage.java[AbstractGNUBinaryParserPage" modificationStamp="13023" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{DocCommentOwnerBlock.java[DocCommentOwnerBlock" modificationStamp="13032" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{IndexerBlock.java[IndexerBlock" modificationStamp="13043" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{PreferenceScopeBlock.java[PreferenceScopeBlock" modificationStamp="13048" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{NullIndexerBlock.java[NullIndexerBlock" modificationStamp="13047" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{IndexerOptionPropertyPage.java[IndexerOptionPropertyPage" modificationStamp="13044" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{TabFolderOptionBlock.java[TabFolderOptionBlock" modificationStamp="13052" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{DOMSourceIndexerBlock.java[DOMSourceIndexerBlock" modificationStamp="13029" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{RegularExpressionStatusDialog.java[RegularExpressionStatusDialog" modificationStamp="13051" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{GNUElfBinaryParserPage.java[GNUElfBinaryParserPage" modificationStamp="13036" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{ReferenceBlock.java[ReferenceBlock" modificationStamp="13049" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{CacheSizeBlock.java[CacheSizeBlock" modificationStamp="13027" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{FastIndexerBlock.java[FastIndexerBlock" modificationStamp="13035" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{IInputStatusValidator.java[IInputStatusValidator" modificationStamp="13042" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{ICOptionContainer.java[ICOptionContainer" modificationStamp="13039" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{ICOptionPage.java[ICOptionPage" modificationStamp="13041" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{AbstractBinaryParserPage.java[AbstractBinaryParserPage" modificationStamp="13020" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{GNUXCoffBinaryParserPage.java[GNUXCoffBinaryParserPage" modificationStamp="13038" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{AbstractErrorParserBlock.java[AbstractErrorParserBlock" modificationStamp="13022" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{InputStatusDialog.java[InputStatusDialog" modificationStamp="13045" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{AbstractIndexerPage.java[AbstractIndexerPage" modificationStamp="13024" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{MachOBinaryParserPage.java[MachOBinaryParserPage" modificationStamp="13046" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{DocCommentOwnerCombo.java[DocCommentOwnerCombo" modificationStamp="13033" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{DialogsMessages.java[DialogsMessages" modificationStamp="13030" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{AbstractCOptionPage.java[AbstractCOptionPage" modificationStamp="13021" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{GNUSomBinaryParserPage.java[GNUSomBinaryParserPage" modificationStamp="13037" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{CHelpConfigurationPropertyPage.java[CHelpConfigurationPropertyPage" modificationStamp="13026" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{ICOptionContainerExtension.java[ICOptionContainerExtension" modificationStamp="13040" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{BinaryParserBlock.java[BinaryParserBlock" modificationStamp="13025" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.dialogs{RegexErrorParserOptionPage.java[RegexErrorParserOptionPage" modificationStamp="13050" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.language.settings.providers"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.language.settings.providers{LanguageSettingsProvidersImages.java[LanguageSettingsProvidersImages" modificationStamp="30644" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.language.settings.providers{AbstractLanguageSettingProviderOptionPage.java[AbstractLanguageSettingProviderOptionPage" modificationStamp="30643" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.contentassist"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.contentassist{ICompletionProposalComputer.java[ICompletionProposalComputer" modificationStamp="12925" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.contentassist{ICEditorContentAssistInvocationContext.java[ICEditorContentAssistInvocationContext" modificationStamp="12923" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.contentassist{ICompletionContributor.java[ICompletionContributor" modificationStamp="12924" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.contentassist{ContentAssistInvocationContext.java[ContentAssistInvocationContext" modificationStamp="12922" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.contentassist{IProposalFilter.java[IProposalFilter" modificationStamp="12926" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{ICColorConstants.java[ICColorConstants" modificationStamp="12899" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{ICCompletionProposal.java[ICCompletionProposal" modificationStamp="12900" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{ICPartitions.java[ICPartitions" modificationStamp="12902" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{ICHelpInvocationContext.java[ICHelpInvocationContext" modificationStamp="12901" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{ITokenStore.java[ITokenStore" modificationStamp="12913" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{ISemanticToken.java[ISemanticToken" modificationStamp="12912" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{IContentAssistHelpInvocationContext.java[IContentAssistHelpInvocationContext" modificationStamp="12905" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{IQuickFixProcessor.java[IQuickFixProcessor" modificationStamp="12910" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{ICTokenScanner.java[ICTokenScanner" modificationStamp="12903" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{IColorManager.java[IColorManager" modificationStamp="12904" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{IInvocationContext.java[IInvocationContext" modificationStamp="12907" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{ITokenStoreFactory.java[ITokenStoreFactory" modificationStamp="12914" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{AbstractCScanner.java[AbstractCScanner" modificationStamp="12896" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{IHoverHelpInvocationContext.java[IHoverHelpInvocationContext" modificationStamp="12906" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{ISemanticHighlighter.java[ISemanticHighlighter" modificationStamp="12911" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{TaskTagRule.java[TaskTagRule" modificationStamp="12916" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{IQuickAssistProcessor.java[IQuickAssistProcessor" modificationStamp="12909" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{IProblemLocation.java[IProblemLocation" modificationStamp="12908" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{SharedASTJob.java[SharedASTJob" modificationStamp="12915" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{AsmSourceViewerConfiguration.java[AsmSourceViewerConfiguration" modificationStamp="12897" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text{CSourceViewerConfiguration.java[CSourceViewerConfiguration" modificationStamp="12898" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree{IPageTypeConstants.java[IPageTypeConstants" modificationStamp="12282" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree{UIGroupTypeEnum.java[UIGroupTypeEnum" modificationStamp="12292" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree{IUIElementTreeBuilderHelper.java[IUIElementTreeBuilderHelper" modificationStamp="12284" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree{InputUIElement.java[InputUIElement" modificationStamp="12286" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree{SimpleUIElementGroup.java[SimpleUIElementGroup" modificationStamp="12287" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree{UIElementTreeBuilderManager.java[UIElementTreeBuilderManager" modificationStamp="12291" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree{GenericUIElementGroup.java[GenericUIElementGroup" modificationStamp="12281" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree{IUIElementTreeBuilderManager.java[IUIElementTreeBuilderManager" modificationStamp="12285" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree{IPatternMatchingTable.java[IPatternMatchingTable" modificationStamp="12283" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree{UIElement.java[UIElement" modificationStamp="12289" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree{UIAttributes.java[UIAttributes" modificationStamp="12288" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.uitree{UIElementTreeBuilderHelper.java[UIElementTreeBuilderHelper" modificationStamp="12290" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui"/>
+        <fragment handle="=org.eclipse.cdt.ui/browser&lt;org.eclipse.cdt.ui"/>
+        <fragment handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{NamespacesGrouping.java[NamespacesGrouping" modificationStamp="10827" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{CElementImageDescriptor.java[CElementImageDescriptor" modificationStamp="10802" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{CUIPreferenceInitializer.java[CUIPreferenceInitializer" modificationStamp="10806" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{CElementSorter.java[CElementSorter" modificationStamp="10804" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{SharedImagesFactory.java[SharedImagesFactory" modificationStamp="10829" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{IRequiredInclude.java[IRequiredInclude" modificationStamp="10821" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{IPropertyChangeParticipant.java[IPropertyChangeParticipant" modificationStamp="10820" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{IWorkingCopyManagerExtension.java[IWorkingCopyManagerExtension" modificationStamp="10823" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{CDTUIImages.java[CDTUIImages" modificationStamp="10798" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{ICEditor.java[ICEditor" modificationStamp="10813" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{FunctionPrototypeSummary.java[FunctionPrototypeSummary" modificationStamp="10808" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{ICHelpProvider.java[ICHelpProvider" modificationStamp="10815" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{IBuildConsoleListener.java[IBuildConsoleListener" modificationStamp="10810" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{CElementGrouping.java[CElementGrouping" modificationStamp="10801" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{ICHelpResourceDescriptor.java[ICHelpResourceDescriptor" modificationStamp="10816" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{ICDTConstants.java[ICDTConstants" modificationStamp="10812" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{PreferenceConstants.java[PreferenceConstants" modificationStamp="10828" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{ILanguageUI.java[ILanguageUI" modificationStamp="10819" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{CDTUITools.java[CDTUITools" modificationStamp="10799" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{IFunctionSummary.java[IFunctionSummary" modificationStamp="10818" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{CUIPlugin.java[CUIPlugin" modificationStamp="10805" restrictions="6" visibility="0">
+            <method name="getImageDescriptorRegistry" restrictions="8" signature="()Lorg/eclipse/cdt/internal/ui/util/ImageDescriptorRegistry;" visibility="0"/>
+            <method name="getProblemMarkerManager" restrictions="8" signature="()Lorg/eclipse/cdt/internal/ui/util/ProblemMarkerManager;" visibility="0"/>
+            <method name="getDocumentProvider" restrictions="8" signature="()Lorg/eclipse/cdt/internal/ui/editor/CDocumentProvider;" visibility="0"/>
+            <method name="getBufferFactory" restrictions="8" signature="()Lorg/eclipse/cdt/internal/core/model/IBufferFactory;" visibility="0"/>
+            <method name="logError" restrictions="8" signature="(Ljava/lang/String;)V" visibility="0"/>
+            <method name="getSharedTextColors" restrictions="8" signature="()Lorg/eclipse/jface/text/source/ISharedTextColors;" visibility="0"/>
+            <method name="getASTProvider" restrictions="8" signature="()Lorg/eclipse/cdt/internal/ui/editor/ASTProvider;" visibility="0"/>
+            <method name="getFoldingStructureProviderRegistry" restrictions="8" signature="()Lorg/eclipse/cdt/internal/ui/text/folding/CFoldingStructureProviderRegistry;" visibility="0"/>
+            <method name="createErrorStatus" restrictions="8" signature="(Ljava/lang/String;)Lorg/eclipse/core/runtime/Status;" visibility="0"/>
+            <method name="createErrorStatus" restrictions="8" signature="(Ljava/lang/String;Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/Status;" visibility="0"/>
+            <method name="getCEditorTextHoverDescriptors" restrictions="8" signature="()[Lorg/eclipse/cdt/internal/ui/text/c/hover/CEditorTextHoverDescriptor;" visibility="0"/>
+            <method name="log" restrictions="8" signature="(Ljava/lang/Throwable;)V" visibility="0"/>
+            <method name="log" restrictions="8" signature="(Ljava/lang/String;Ljava/lang/Throwable;)V" visibility="0"/>
+            <method name="log" restrictions="8" signature="(Lorg/eclipse/core/runtime/IStatus;)V" visibility="0"/>
+            <method name="getConsoleManager" restrictions="8" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;)Lorg/eclipse/cdt/ui/IBuildConsoleManager;" visibility="0"/>
+            <field name="ID_NAMESPACES_VIEW" restrictions="8" visibility="0"/>
+            <field name="ID_TYPES_VIEW" restrictions="8" visibility="0"/>
+            <field name="ID_PROJECTS_VIEW" restrictions="8" visibility="0"/>
+            <field name="ID_MEMBERS_VIEW" restrictions="8" visibility="0"/>
+            <method name="getTextTools" restrictions="8" signature="()Lorg/eclipse/cdt/internal/ui/text/CTextTools;" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{CElementLabelProvider.java[CElementLabelProvider" modificationStamp="10803" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{IBuildConsoleEvent.java[IBuildConsoleEvent" modificationStamp="10809" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{Messages.java[Messages" modificationStamp="10825" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{ICHelpBook.java[ICHelpBook" modificationStamp="10814" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{IEditorInputDelegate.java[IEditorInputDelegate" modificationStamp="10817" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{IncludesGrouping.java[IncludesGrouping" modificationStamp="10824" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{IWorkingCopyManager.java[IWorkingCopyManager" modificationStamp="10822" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{CodeGeneration.java[CodeGeneration" modificationStamp="10807" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{CDTSharedImages.java[CDTSharedImages" modificationStamp="10797" restrictions="6" visibility="0">
+            <method name="register" restrictions="8" signature="(Ljava/net/URL;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{IBuildConsoleManager.java[IBuildConsoleManager" modificationStamp="10811" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui{CElementContentProvider.java[CElementContentProvider" modificationStamp="10800" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.event"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.event{PatternEventListener.java[PatternEventListener" modificationStamp="12269" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.event{PatternEvent.java[PatternEvent" modificationStamp="12268" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{ShowInCViewAction.java[ShowInCViewAction" modificationStamp="13070" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{BuildActiveConfigMenuAction.java[BuildActiveConfigMenuAction" modificationStamp="13053" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{ChangeConfigAction.java[ChangeConfigAction" modificationStamp="13059" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{GenerateActionGroup.java[GenerateActionGroup" modificationStamp="13064" restrictions="2" visibility="0">
+            <method name="selectionChanged" restrictions="8" signature="(Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V" visibility="0"/>
+            <method name="&lt;init&gt;" restrictions="8" signature="(Lorg/eclipse/cdt/internal/ui/editor/CEditor;Ljava/lang/String;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{CdtActionConstants.java[CdtActionConstants" modificationStamp="13055" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{ChangeBuildConfigContextAction.java[ChangeBuildConfigContextAction" modificationStamp="13057" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{FormatAllAction.java[FormatAllAction" modificationStamp="13063" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{SelectionDispatchAction.java[SelectionDispatchAction" modificationStamp="13069" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{CustomFiltersActionGroup.java[CustomFiltersActionGroup" modificationStamp="13060" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{OpenAction.java[OpenAction" modificationStamp="13067" restrictions="0" visibility="0">
+            <method name="&lt;init&gt;" restrictions="8" signature="(Lorg/eclipse/cdt/internal/ui/editor/CEditor;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{ExcludeFromBuildAction.java[ExcludeFromBuildAction" modificationStamp="13062" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{OpenViewActionGroup.java[OpenViewActionGroup" modificationStamp="13068" restrictions="0" visibility="0">
+            <method name="&lt;init&gt;" restrictions="8" signature="(Lorg/eclipse/ui/part/Page;Lorg/eclipse/cdt/internal/ui/editor/CEditor;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{MemberFilterActionGroup.java[MemberFilterActionGroup" modificationStamp="13066" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{ChangeBuildConfigActionBase.java[ChangeBuildConfigActionBase" modificationStamp="13056" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{BuildConfigAction.java[BuildConfigAction" modificationStamp="13054" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{WorkingSetConfigAction.java[WorkingSetConfigAction" modificationStamp="13071" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{ChangeBuildConfigMenuAction.java[ChangeBuildConfigMenuAction" modificationStamp="13058" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{DeleteResConfigsAction.java[DeleteResConfigsAction" modificationStamp="13061" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.actions{ManageConfigsAction.java[ManageConfigsAction" modificationStamp="13065" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{StringListModeControl.java[StringListModeControl" modificationStamp="13008" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{AbstractLangsListTab.java[AbstractLangsListTab" modificationStamp="12957" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{RefsTab.java[RefsTab" modificationStamp="13006" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{PropertyTester.java[PropertyTester" modificationStamp="13005" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{CDTHelpContextIds.java[CDTHelpContextIds" modificationStamp="12964" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{CDTStatusInfo.java[CDTStatusInfo" modificationStamp="12967" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{AbstractPropertyDialog.java[AbstractPropertyDialog" modificationStamp="12960" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{MultiLineTextFieldEditor.java[MultiLineTextFieldEditor" modificationStamp="12999" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{PrefPage_Abstract.java[PrefPage_Abstract" modificationStamp="13003" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{NewConfigurationDialog.java[NewConfigurationDialog" modificationStamp="13000" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{AbstractCPropertyTab.java[AbstractCPropertyTab" modificationStamp="12955" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ExpDialog.java[ExpDialog" modificationStamp="12978" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ExPatternDialog.java[ExPatternDialog" modificationStamp="12976" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{AbstractSinglePage.java[AbstractSinglePage" modificationStamp="12961" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{CDTPrefUtil.java[CDTPrefUtil" modificationStamp="12965" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ImportExportWizardButtons.java[ImportExportWizardButtons" modificationStamp="12989" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{IncludeTab.java[IncludeTab" modificationStamp="12992" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ExpLibraryTab.java[ExpLibraryTab" modificationStamp="12982" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{SymbolDialog.java[SymbolDialog" modificationStamp="13010" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{UIMessages.java[UIMessages" modificationStamp="13013" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{CLocationOutputTab.java[CLocationOutputTab" modificationStamp="12969" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ProjectContentsArea.java[ProjectContentsArea" modificationStamp="13004" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{CDTPropertyManager.java[CDTPropertyManager" modificationStamp="12966" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ErrorParsTab.java[ErrorParsTab" modificationStamp="12975" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ICPropertyProvider.java[ICPropertyProvider" modificationStamp="12984" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{PageLayout.java[PageLayout" modificationStamp="13001" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{BinaryParsTab.java[BinaryParsTab" modificationStamp="12962" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{IConfigManager.java[IConfigManager" modificationStamp="12987" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{AbstractPage.java[AbstractPage" modificationStamp="12958" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ExpIncludeFileTab.java[ExpIncludeFileTab" modificationStamp="12979" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{StructureTreeTab.java[StructureTreeTab" modificationStamp="13009" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ICPropertyTab.java[ICPropertyTab" modificationStamp="12986" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{INewCfgDialog.java[INewCfgDialog" modificationStamp="12988" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ExPatternEntryDialog.java[ExPatternEntryDialog" modificationStamp="12977" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{LibraryTab.java[LibraryTab" modificationStamp="12994" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{SymbolTab.java[SymbolTab" modificationStamp="13011" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{EnvDialog.java[EnvDialog" modificationStamp="12973" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ICPropertyProvider2.java[ICPropertyProvider2" modificationStamp="12985" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{TypedCDTViewerFilter.java[TypedCDTViewerFilter" modificationStamp="13012" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ConfigMultiSelectionDialog.java[ConfigMultiSelectionDialog" modificationStamp="12972" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{EnvironmentTab.java[EnvironmentTab" modificationStamp="12974" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{CLocationTab.java[CLocationTab" modificationStamp="12971" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{IncludeFileTab.java[IncludeFileTab" modificationStamp="12991" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ExpLibraryPathTab.java[ExpLibraryPathTab" modificationStamp="12981" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{AbstractPrefPage.java[AbstractPrefPage" modificationStamp="12959" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{IncludeDialog.java[IncludeDialog" modificationStamp="12990" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ExpSymbolTab.java[ExpSymbolTab" modificationStamp="12983" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{RenameConfigurationDialog.java[RenameConfigurationDialog" modificationStamp="13007" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{BuildVarListDialog.java[BuildVarListDialog" modificationStamp="12963" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{Page_head_general.java[Page_head_general" modificationStamp="13002" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{MultiCfgContributedEnvironment.java[MultiCfgContributedEnvironment" modificationStamp="12998" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{AbstractExportTab.java[AbstractExportTab" modificationStamp="12956" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{CLocationSourceTab.java[CLocationSourceTab" modificationStamp="12970" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ManageConfigSelector.java[ManageConfigSelector" modificationStamp="12997" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ExpIncludeTab.java[ExpIncludeTab" modificationStamp="12980" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{CDTUIListComparator.java[CDTUIListComparator" modificationStamp="12968" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ManageConfigDialog.java[ManageConfigDialog" modificationStamp="12995" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{LibraryPathTab.java[LibraryPathTab" modificationStamp="12993" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.newui{ManageConfigRunner.java[ManageConfigRunner" modificationStamp="12996" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.resources"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.resources{RefreshExclusionContributionManager.java[RefreshExclusionContributionManager" modificationStamp="12938" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.resources{RefreshExclusionContributor.java[RefreshExclusionContributor" modificationStamp="12939" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.resources{Messages.java[Messages" modificationStamp="12937" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring.actions"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring.actions{ExtractConstantAction.java[ExtractConstantAction" modificationStamp="12945" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring.actions{ImplementMethodAction.java[ImplementMethodAction" modificationStamp="12950" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring.actions{CRenameAction.java[CRenameAction" modificationStamp="12944" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring.actions{ExtractLocalVariableAction.java[ExtractLocalVariableAction" modificationStamp="12947" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring.actions{GettersAndSettersAction.java[GettersAndSettersAction" modificationStamp="12948" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring.actions{HideMethodAction.java[HideMethodAction" modificationStamp="12949" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring.actions{ExtractFunctionAction.java[ExtractFunctionAction" modificationStamp="12946" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring.actions{RefactoringAction.java[RefactoringAction" modificationStamp="12953" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring.actions{Messages.java[Messages" modificationStamp="12951" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring.actions{CRefactoringActionGroup.java[CRefactoringActionGroup" modificationStamp="12943" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.refactoring.actions{ToggleFunctionAction.java[ToggleFunctionAction" modificationStamp="12954" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.processes"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.processes{Messages.java[Messages" modificationStamp="12278" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/templateengine&lt;org.eclipse.cdt.ui.templateengine.processes{OpenFiles.java[OpenFiles" modificationStamp="12279" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.c.hover"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.text.c.hover{ICEditorTextHover.java[ICEditorTextHover" modificationStamp="30642" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/utils.ui&lt;org.eclipse.cdt.utils.ui.controls"/>
+        <type handle="=org.eclipse.cdt.ui/utils.ui&lt;org.eclipse.cdt.utils.ui.controls{FileListControl.java[FileListControl" modificationStamp="12243" restrictions="2" visibility="0">
+            <type handle="=org.eclipse.cdt.ui/utils.ui&lt;org.eclipse.cdt.utils.ui.controls{FileListControl.java[FileListControl[ClipboardList" modificationStamp="12243" restrictions="4" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.ui/utils.ui&lt;org.eclipse.cdt.utils.ui.controls{IFileListChangeListener.java[IFileListChangeListener" modificationStamp="12244" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/utils.ui&lt;org.eclipse.cdt.utils.ui.controls{TabFolderLayout.java[TabFolderLayout" modificationStamp="12246" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/utils.ui&lt;org.eclipse.cdt.utils.ui.controls{ControlFactory.java[ControlFactory" modificationStamp="12242" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/utils.ui&lt;org.eclipse.cdt.utils.ui.controls{RadioButtonsArea.java[RadioButtonsArea" modificationStamp="12245" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards.conversion"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards.conversion{ConvertProjectWizardPage.java[ConvertProjectWizardPage" modificationStamp="12895" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards.conversion{ConversionWizard.java[ConversionWizard" modificationStamp="12894" restrictions="0" visibility="0"/>
+    </package>
+</component>

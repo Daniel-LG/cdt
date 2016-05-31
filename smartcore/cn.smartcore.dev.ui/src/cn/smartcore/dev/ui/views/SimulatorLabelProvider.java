@@ -7,7 +7,6 @@ import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.ui.model.WorkbenchLabelProvider;
 
-import cn.smartcore.dev.ui.ProjectDecorator;
 import cn.smartcore.dev.ui.natures.ProjectNature;
 
 public class SimulatorLabelProvider extends LabelProvider {
@@ -18,16 +17,16 @@ public class SimulatorLabelProvider extends LabelProvider {
 	public Image getImage(Object element) {
 		if (element instanceof IProject) {
 			if (((IProject) element).getName() == "Default Simulator") {
-				return ImageDescriptor.createFromFile(ProjectDecorator.class, "/icons/view/simu.gif").createImage();
+				return ImageDescriptor.createFromFile(SimulatorLabelProvider.class, "/icons/view/simu.gif").createImage();
 			}
 			try {
 				if (((IProject) element).hasNature(ProjectNature.SIMULATOR_PROJECT_ID)) {
-					return ImageDescriptor.createFromFile(ProjectDecorator.class, "/icons/view/simu.gif").createImage();
+					return ImageDescriptor.createFromFile(SimulatorLabelProvider.class, "/icons/view/simu.gif").createImage();
 				} else if (((IProject) element).hasNature(ProjectNature.MODULE_PROJECT_ID)) {
-					return ImageDescriptor.createFromFile(ProjectDecorator.class, "/icons/view/module.gif")
+					return ImageDescriptor.createFromFile(SimulatorLabelProvider.class, "/icons/view/module.gif")
 							.createImage();
 				} else {
-					return ImageDescriptor.createFromFile(ProjectDecorator.class, "/icons/view/app.gif").createImage();
+					return ImageDescriptor.createFromFile(SimulatorLabelProvider.class, "/icons/view/app.gif").createImage();
 				}
 			} catch (CoreException e) {
 				e.printStackTrace();

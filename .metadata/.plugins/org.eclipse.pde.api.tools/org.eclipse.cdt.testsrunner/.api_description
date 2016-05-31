@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.testsrunner" modificationStamp="920" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal{TestsRunnerPlugin.java[TestsRunnerPlugin" modificationStamp="16031" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.launcher"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.launcher{UILauncherMessages.java[UILauncherMessages" modificationStamp="32311" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.launcher{CTestingTab.java[CTestingTab" modificationStamp="32309" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.launcher{EmptyConfigurationTabGroup.java[EmptyConfigurationTabGroup" modificationStamp="32310" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.launcher"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.launcher{ITestsLaunchConfigurationConstants.java[ITestsLaunchConfigurationConstants" modificationStamp="16037" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.launcher{LauncherMessages.java[LauncherMessages" modificationStamp="16038" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.launcher{CdiRunTestsLaunchDelegate.java[CdiRunTestsLaunchDelegate" modificationStamp="16035" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.launcher{TestsRunnerProviderInfo.java[TestsRunnerProviderInfo" modificationStamp="16042" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.launcher{DsfGdbRunTestsLaunchDelegate.java[DsfGdbRunTestsLaunchDelegate" modificationStamp="16036" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.launcher{TestsRunnerProvidersManager.java[TestsRunnerProvidersManager" modificationStamp="16043" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.launcher{TestingProcessFactory.java[TestingProcessFactory" modificationStamp="16041" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.launcher{ProcessWrapper.java[ProcessWrapper" modificationStamp="16040" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{ShowFileNameOnlyAction.java[ShowFileNameOnlyAction" modificationStamp="32300" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{ActionsMessages.java[ActionsMessages" modificationStamp="32286" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{OpenInEditorAction.java[OpenInEditorAction" modificationStamp="32293" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{RelaunchSelectedAction.java[RelaunchSelectedAction" modificationStamp="32295" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{TestsHierarchyCollapseAllAction.java[TestsHierarchyCollapseAllAction" modificationStamp="32306" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{ShowNextFailureAction.java[ShowNextFailureAction" modificationStamp="32301" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{ShowTestsInHierarchyAction.java[ShowTestsInHierarchyAction" modificationStamp="32303" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{StopAction.java[StopAction" modificationStamp="32305" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{CopySelectedTestsAction.java[CopySelectedTestsAction" modificationStamp="32289" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{ShowTimeAction.java[ShowTimeAction" modificationStamp="32304" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{TestsHierarchyExpandAllAction.java[TestsHierarchyExpandAllAction" modificationStamp="32307" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{CopySelectedMessagesAction.java[CopySelectedMessagesAction" modificationStamp="32288" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{MessageLevelFilterAction.java[MessageLevelFilterAction" modificationStamp="32291" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{ScrollLockAction.java[ScrollLockAction" modificationStamp="32298" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{RerunSelectedAction.java[RerunSelectedAction" modificationStamp="32297" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{ShowFailedOnlyAction.java[ShowFailedOnlyAction" modificationStamp="32299" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{ToggleOrientationAction.java[ToggleOrientationAction" modificationStamp="32308" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{RerunAction.java[RerunAction" modificationStamp="32296" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{MessagesOrderingAction.java[MessagesOrderingAction" modificationStamp="32292" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{HistoryDropDownAction.java[HistoryDropDownAction" modificationStamp="32290" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{RedebugSelectedAction.java[RedebugSelectedAction" modificationStamp="32294" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view.actions{ShowPreviousFailureAction.java[ShowPreviousFailureAction" modificationStamp="32302" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.launcher"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.launcher{BaseTestsLaunchDelegate.java[BaseTestsLaunchDelegate" modificationStamp="16027" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.launcher{ITestsRunnerConstants.java[ITestsRunnerConstants" modificationStamp="16028" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.launcher{ITestsRunnerProvider.java[ITestsRunnerProvider" modificationStamp="16029" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.launcher{ITestsRunnerProviderInfo.java[ITestsRunnerProviderInfo" modificationStamp="16030" restrictions="3" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view{CounterPanel.java[CounterPanel" modificationStamp="32273" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view{TestsHierarchyViewer.java[TestsHierarchyViewer" modificationStamp="32281" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view{MessagesViewer.java[MessagesViewer" modificationStamp="32275" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view{TestPathUtils.java[TestPathUtils" modificationStamp="32280" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view{ProgressCountPanel.java[ProgressCountPanel" modificationStamp="32277" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view{DummyUISession.java[DummyUISession" modificationStamp="32274" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view{ResultsView.java[ResultsView" modificationStamp="32279" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view{ProgressBar.java[ProgressBar" modificationStamp="32276" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view{ResultsPanel.java[ResultsPanel" modificationStamp="32278" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view{UIUpdater.java[UIUpdater" modificationStamp="32282" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.ui.view{UIViewMessages.java[UIViewMessages" modificationStamp="32283" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.model"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.model{TestingSessionsManager.java[TestingSessionsManager" modificationStamp="16054" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.model{TestMessage.java[TestMessage" modificationStamp="16050" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.model{TestItem.java[TestItem" modificationStamp="16048" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.model{ModelMessages.java[ModelMessages" modificationStamp="16045" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.model{TestSuite.java[TestSuite" modificationStamp="16052" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.model{TestLocation.java[TestLocation" modificationStamp="16049" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.model{TestModelManager.java[TestModelManager" modificationStamp="16051" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.model{TestCase.java[TestCase" modificationStamp="16047" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.model{ITestingSessionsManagerListener.java[ITestingSessionsManagerListener" modificationStamp="16044" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.internal.model{TestingSession.java[TestingSession" modificationStamp="16053" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model{ITestLocation.java[ITestLocation" modificationStamp="16017" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model{ITestModelAccessor.java[ITestModelAccessor" modificationStamp="16019" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model{ITestModelUpdater.java[ITestModelUpdater" modificationStamp="16020" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model{ModelMessages.java[ModelMessages" modificationStamp="16024" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model{IModelVisitor.java[IModelVisitor" modificationStamp="16014" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model{ITestSuite.java[ITestSuite" modificationStamp="16021" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model{ITestCase.java[ITestCase" modificationStamp="16015" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model{ITestMessage.java[ITestMessage" modificationStamp="16018" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model{ITestingSessionListener.java[ITestingSessionListener" modificationStamp="16023" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model{ITestingSession.java[ITestingSession" modificationStamp="16022" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model{ITestItem.java[ITestItem" modificationStamp="16016" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.testsrunner/src&lt;org.eclipse.cdt.testsrunner.model{TestingException.java[TestingException" modificationStamp="16026" restrictions="0" visibility="0"/>
+    </package>
+</component>

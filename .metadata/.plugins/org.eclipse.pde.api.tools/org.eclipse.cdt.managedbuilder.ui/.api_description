@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.cdt.managedbuilder.ui" modificationStamp="1606" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{CfgHolder.java[CfgHolder" modificationStamp="16768" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{NewMakeProjFromExisting.java[NewMakeProjFromExisting" modificationStamp="16776" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{CDTConfigWizardPage.java[CDTConfigWizardPage" modificationStamp="16767" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{AbstractCWizard.java[AbstractCWizard" modificationStamp="16766" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{ConvertToMakeWizardPage.java[ConvertToMakeWizardPage" modificationStamp="16770" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{MBSCustomPageManager.java[MBSCustomPageManager" modificationStamp="16773" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{MBSWizardHandler.java[MBSWizardHandler" modificationStamp="16774" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{MBSCustomPage.java[MBSCustomPage" modificationStamp="16771" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{STDWizardHandler.java[STDWizardHandler" modificationStamp="16778" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{ToolChainSelectionPage.java[ToolChainSelectionPage" modificationStamp="16780" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{MBSCustomPageData.java[MBSCustomPageData" modificationStamp="16772" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{ConvertToMakeWizard.java[ConvertToMakeWizard" modificationStamp="16769" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{StdBuildWizard.java[StdBuildWizard" modificationStamp="16779" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{ManagedBuildWizard.java[ManagedBuildWizard" modificationStamp="16775" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.wizards{NewMakeProjFromExistingPage.java[NewMakeProjFromExistingPage" modificationStamp="16777" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{Page_Discovery.java[Page_Discovery" modificationStamp="16749" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{CNewOptionsPage.java[CNewOptionsPage" modificationStamp="16736" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{Page_ToolChain.java[Page_ToolChain" modificationStamp="16753" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{CPropertyVarsTab.java[CPropertyVarsTab" modificationStamp="16737" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{DiscoveryTab.java[DiscoveryTab" modificationStamp="16739" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{FileListControlFieldEditor.java[FileListControlFieldEditor" modificationStamp="16740" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{ToolListContentProvider.java[ToolListContentProvider" modificationStamp="16760" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{Page_PathAndSymb.java[Page_PathAndSymb" modificationStamp="16752" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{BuildBehaviourTab.java[BuildBehaviourTab" modificationStamp="16729" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{IBuildInfoContainer.java[IBuildInfoContainer" modificationStamp="16741" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{ToolSelectionDialog.java[ToolSelectionDialog" modificationStamp="16763" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{NewVarDialog.java[NewVarDialog" modificationStamp="16747" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{Page_Variables.java[Page_Variables" modificationStamp="16754" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{AbstractSingleBuildPage.java[AbstractSingleBuildPage" modificationStamp="16726" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{BuildStepsTab.java[BuildStepsTab" modificationStamp="16732" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{ToolListLabelProvider.java[ToolListLabelProvider" modificationStamp="16762" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{BuildOptionSettingsUI.java[BuildOptionSettingsUI" modificationStamp="16731" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{StringFieldEditorM.java[StringFieldEditorM" modificationStamp="16758" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{ManagedBuilderUIPlugin.java[ManagedBuilderUIPlugin" modificationStamp="16744" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{ArtifactTab.java[ArtifactTab" modificationStamp="16728" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{ToolChainEditTab.java[ToolChainEditTab" modificationStamp="16759" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{AbstractToolSettingUI.java[AbstractToolSettingUI" modificationStamp="16727" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{RefreshPolicyExceptionDialog.java[RefreshPolicyExceptionDialog" modificationStamp="16756" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{Page_BuildSettings.java[Page_BuildSettings" modificationStamp="16748" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{NewCfgDialog.java[NewCfgDialog" modificationStamp="16746" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{RefreshPolicyTab.java[RefreshPolicyTab" modificationStamp="16757" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{CBuildLocationOutputTab.java[CBuildLocationOutputTab" modificationStamp="16735" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{NewBuildConfigurationDialog.java[NewBuildConfigurationDialog" modificationStamp="16745" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{Page_ExpPathAndSymb.java[Page_ExpPathAndSymb" modificationStamp="16751" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{ManagedBuilderUIImages.java[ManagedBuilderUIImages" modificationStamp="16743" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{DiscoveryPageWrapper.java[DiscoveryPageWrapper" modificationStamp="16738" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{Page_Environment.java[Page_Environment" modificationStamp="16750" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{BuildOptionComboFieldEditor.java[BuildOptionComboFieldEditor" modificationStamp="16730" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{ICustomBuildOptionEditor.java[ICustomBuildOptionEditor" modificationStamp="16742" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{BuilderSettingsTab.java[BuilderSettingsTab" modificationStamp="16734" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{ToolSettingsTab.java[ToolSettingsTab" modificationStamp="16765" restrictions="6" visibility="0">
+            <method name="obtainMacroProvider" restrictions="8" signature="()Lorg/eclipse/cdt/managedbuilder/internal/macros/BuildMacroProvider;" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{ToolSettingsPrefStore.java[ToolSettingsPrefStore" modificationStamp="16764" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{ToolListElement.java[ToolListElement" modificationStamp="16761" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{BuildToolSettingUI.java[BuildToolSettingUI" modificationStamp="16733" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{AbstractCBuildPropertyTab.java[AbstractCBuildPropertyTab" modificationStamp="16725" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.properties{Page_head_build.java[Page_head_build" modificationStamp="16755" restrictions="6" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.preferences"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.preferences{PrefPage_PropertyPage.java[PrefPage_PropertyPage" modificationStamp="16719" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.preferences{PropertyMultiCfgTab.java[PropertyMultiCfgTab" modificationStamp="16722" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.preferences{PropertyPageDefsTab.java[PropertyPageDefsTab" modificationStamp="16723" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.preferences{WizardDefaultsTab.java[WizardDefaultsTab" modificationStamp="16724" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.preferences{PrefPage_MultiConfig.java[PrefPage_MultiConfig" modificationStamp="16716" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.preferences{PrefPage_Vars.java[PrefPage_Vars" modificationStamp="16720" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.preferences{PrefPage_NewCDTProject.java[PrefPage_NewCDTProject" modificationStamp="16717" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.preferences{PrefPage_Env.java[PrefPage_Env" modificationStamp="16715" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.preferences{PreferredToolchainsTab.java[PreferredToolchainsTab" modificationStamp="16721" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.ui/src&lt;org.eclipse.cdt.managedbuilder.ui.preferences{PrefPage_NewCDTWizard.java[PrefPage_NewCDTWizard" modificationStamp="16718" restrictions="6" visibility="0"/>
+    </package>
+</component>

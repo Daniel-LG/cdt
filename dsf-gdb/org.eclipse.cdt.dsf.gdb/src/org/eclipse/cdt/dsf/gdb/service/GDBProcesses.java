@@ -321,6 +321,7 @@ public class GDBProcesses extends MIProcesses implements IGDBProcesses {
 			});
 	}
 	
+	// <jwy> remote debug tag0
 	@Override
 	public void debugNewProcess(IDMContext dmc, String file, 
 			                    Map<String, Object> attributes, DataRequestMonitor<IDMContext> rm) {

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeMetadataRepository version='1.0.0'?>
+<repository name='TM/RSE Luna Milestone Test Site'
+    type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1332292111001'/>
+  </properties>
+  <children size='6'>
+    <child location='M4'/>
+    <child location='RC1'/>
+    <child location='RC3'/>
+    <child location='RC4'/>
+    <child location='20140704'/>
+    <child location='201407211901'/>
+  </children>
+</repository>

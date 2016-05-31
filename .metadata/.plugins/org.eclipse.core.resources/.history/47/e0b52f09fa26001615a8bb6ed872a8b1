@@ -1,0 +1,13 @@
+package cn.smartcore.debug.core;
+
+import org.apache.commons.exec.DefaultExecutor;
+
+public interface ILaunchSimulator {
+
+	boolean isFirstStart();
+	
+	DefaultExecutor getExecutor();
+
+	void launch(String binFilePath, String simulatorProjectName, String port, String coreConfigPath);
+
+}
