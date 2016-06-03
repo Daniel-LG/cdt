@@ -1,191 +1,94 @@
 package cn.smartcore.dev.ui.wizards;
 
 import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.InvocationTargetException;
 import java.net.URI;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IFolder;
+import org.eclipse.cdt.core.CCorePlugin;
+import org.eclipse.cdt.internal.ui.newui.Messages;
+import org.eclipse.cdt.ui.wizards.CProjectWizard;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IProjectDescription;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IWorkspace;
+import org.eclipse.core.resources.IWorkspaceRoot;
+import org.eclipse.core.resources.IWorkspaceRunnable;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
 import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.OperationCanceledException;
 import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Status;
 import org.eclipse.core.runtime.SubProgressMonitor;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.wizard.Wizard;
-import org.eclipse.ui.INewWizard;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchWizard;
-import org.eclipse.ui.actions.WorkspaceModifyOperation;
-import org.eclipse.ui.dialogs.WizardNewProjectCreationPage;
-import org.eclipse.ui.wizards.newresource.BasicNewProjectResourceWizard;
 
 import cn.smartcore.dev.ui.natures.ProjectNature;
 
-public class NewSimulatorWizard extends Wizard implements INewWizard {
+/**
+ * @author juwy
+ * 
+ * We set simulator project as a C project so that we can make use of the
+ * internal builders in CDT, @see CommonBuilder#build. In the future, if you
+ * know how to implement your own builder in CDT, you may no longer need to
+ * extend the CProjectWizard
+ */
+public class NewSimulatorWizard extends CProjectWizard {
 
-	// Use the WizardNewProjectCreationPage, which is provided by the Eclipse
-	// framework.
-	private WizardNewProjectCreationPage wizardPage;
-
-	private IConfigurationElement config;
-
-	private IWorkbench workbench;
-
-	private IStructuredSelection selection;
-
-	private IProject project;
+	private static final int SMARTSIMU_SIMULATOR = 1;
 
 	public NewSimulatorWizard() {
-		super();
-		setNeedsProgressMonitor(true);
+		super(SMARTSIMU_SIMULATOR);
 	}
 
-	// Add pages to the wizard.
-	public void addPages() {
-		wizardPage = new WizardNewProjectCreationPage("New Smart-Core Module Project");
-		wizardPage.setDescription("Create a new Smart-Core Module Project.");
-		wizardPage.setTitle("New Smart-Core Module Project");
-		addPage(wizardPage);
-		// testPage = new MyPage();
-		// addPage(testPage);
-	}
+	@Override
+	public IProject createIProject(String name, URI location, IProgressMonitor monitor) throws CoreException {
+		monitor.beginTask(Messages.CDTCommonProjectWizard_creatingProject, 100);
 
-	// This method is called when 'Finish' button is pressed in the wizard.
-	public boolean performFinish() {
-		if (project != null) {
-			return true;
-		}
+		if (newProject != null)
+			return newProject;
 
-		final IProject projectHandle = wizardPage.getProjectHandle();
-		URI projectURI = (!wizardPage.useDefaults()) ? wizardPage.getLocationURI() : null;
 		IWorkspace workspace = ResourcesPlugin.getWorkspace();
-		final IProjectDescription desc = workspace.newProjectDescription(projectHandle.getName());
-		desc.setLocationURI(projectURI);
-		try {
-			addNature(desc);
-		} catch (CoreException e1) {
-			e1.printStackTrace();
-		}
+		IWorkspaceRoot root = workspace.getRoot();
+		final IProject newProjectHandle = root.getProject(name);
 
-		WorkspaceModifyOperation op = new WorkspaceModifyOperation() {
-			protected void execute(IProgressMonitor monitor) throws CoreException {
-				createProject(desc, projectHandle, monitor);
-			}
-		};
-
-		/*
-		 * This isn't as robust as the code in the BasicNewProjectResourceWizard
-		 * class. Consider beefing this up to improve error handling. Note: The
-		 * first parameter should be false!!!
-		 */
-		try {
-			getContainer().run(false, true, op);
-		} catch (InterruptedException e) {
-			return false;
-		} catch (InvocationTargetException e) {
-			Throwable realException = e.getTargetException();
-			MessageDialog.openError(getShell(), "Error", realException.getMessage());
-			return false;
-		}
-
-		project = projectHandle;
-
-		if (project == null) {
-			return false;
-		}
-
-		BasicNewProjectResourceWizard.updatePerspective(config);
-		BasicNewProjectResourceWizard.selectAndReveal(project, workbench.getActiveWorkbenchWindow());
-
-		// System.out.println(testPage.getText1());
-		return true;
-	}
-
-	// Create the project in the workspace.
-	void createProject(IProjectDescription description, IProject proj, IProgressMonitor monitor)
-			throws CoreException, OperationCanceledException {
-		try {
-			monitor.beginTask("", 2000);
-			proj.create(description, new SubProgressMonitor(monitor, 100));
-
-			if (monitor.isCanceled()) {
-				throw new OperationCanceledException();
-			}
-
-			proj.open(IResource.BACKGROUND_REFRESH, new SubProgressMonitor(monitor, 100));
-
-			// now we have the project and we can do more things with it before
-			// updating the perspective.
-			IContainer container = (IContainer) proj;
-
-			// Add the conf file
-			InputStream resourceStream = new ByteArrayInputStream(("test").getBytes());
-			addFileToProject(container, new Path("simu.conf"), resourceStream, monitor);
-			resourceStream.close();
-
-			// Add the images folder.
-			// IFolder imageFolder = container.getFolder(new Path("images"));
-			// imageFolder.create(true, true, monitor);
-		} catch (Exception ioe) {
-			IStatus status = new Status(IStatus.ERROR, "NewFileWizard", IStatus.OK, ioe.getLocalizedMessage(), null);
-			throw new CoreException(status);
-		} finally {
-			monitor.done();
-		}
-	}
-
-	// Adds a new file to the project.
-	private void addFileToProject(IContainer container, Path path, InputStream contentStream, IProgressMonitor monitor)
-			throws CoreException {
-		final IFile file = container.getFile(path);
-		if (file.exists()) {
-			file.setContents(contentStream, true, true, monitor);
+		if (!newProjectHandle.exists()) {
+			IProjectDescription description = workspace.newProjectDescription(newProjectHandle.getName());
+			// ֻ������������޸ģ�resourceChange����project���������д����ģ����֮�������nature��
+			// resourceChange�Ĵ�������в����и�nature�����ModuleContent.resourceChange
+			Util.addNature(description, ProjectNature.SIMULATOR_PROJECT_ID);
+			if (location != null)
+				description.setLocationURI(location);
+			newProject = CCorePlugin.getDefault().createCDTProject(description, newProjectHandle,
+					new SubProgressMonitor(monitor, 25));
 		} else {
-			file.create(contentStream, true, monitor);
+			IWorkspaceRunnable runnable = new IWorkspaceRunnable() {
+				@Override
+				public void run(IProgressMonitor monitor) throws CoreException {
+					newProjectHandle.refreshLocal(IResource.DEPTH_INFINITE, monitor);
+				}
+			};
+			workspace.run(runnable, root, IWorkspace.AVOID_UPDATE, new SubProgressMonitor(monitor, 25));
+			newProject = newProjectHandle;
 		}
-	}
 
-	private void addNature(IProjectDescription description) throws CoreException {
-		String[] prevNatures = description.getNatureIds();
-		for (int i = 0; i < prevNatures.length; i++) {
-			if (prevNatures[i].equals(ProjectNature.SIMULATOR_PROJECT_ID)) {
-				return;
-			}
+		// Open the project if we have to
+		if (!newProject.isOpen()) {
+			newProject.open(new SubProgressMonitor(monitor, 25));
 		}
-		String[] newNatures = new String[prevNatures.length + 1];
-		System.arraycopy(prevNatures, 0, newNatures, 0, prevNatures.length);
-		newNatures[prevNatures.length] = ProjectNature.SIMULATOR_PROJECT_ID;
-		description.setNatureIds(newNatures);
+
+		continueCreationMonitor = new SubProgressMonitor(monitor, 25);
+		IProject proj = continueCreation(newProject);
+
+		monitor.done();
+
+		// Add the conf file
+		InputStream resourceStream = new ByteArrayInputStream(("").getBytes());
+		Util.addFileToProject(newProject, new Path("simu.conf"), resourceStream, monitor);
+		try {
+			resourceStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return proj;
 	}
 
-	/**
-	 * We will accept the selection in the workbench to see if we can initialize
-	 * from it.
-	 * 
-	 * @see IWorkbenchWizard#init(IWorkbench, IStructuredSelection)
-	 */
-	public void init(IWorkbench workbench, IStructuredSelection selection) {
-		this.selection = selection;
-		this.workbench = workbench;
-	}
-
-	/**
-	 * Sets the initialization data for the wizard.
-	 */
-	public void setInitializationData(IConfigurationElement config, String propertyName, Object data)
-			throws CoreException {
-		this.config = config;
-	}
 }

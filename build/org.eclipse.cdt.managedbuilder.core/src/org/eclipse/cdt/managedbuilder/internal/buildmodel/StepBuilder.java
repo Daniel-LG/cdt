@@ -76,6 +76,7 @@ public class StepBuilder implements IBuildModelBuilder {
 	public int build(OutputStream out, OutputStream err,
 			IProgressMonitor monitor){
 
+		System.out.println("build invoked");
 		monitor.beginTask("", getNumCommands());	//$NON-NLS-1$
 		monitor.subTask("");	//$NON-NLS-1$
 

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=org.eclipse.cdt.dsf.gdb.ui/src&lt;org.eclipse.cdt.dsf.gdb.internal.ui.launching{LocalApplicationCDebuggerTab.java[LocalApplicationCDebuggerTab" modifiers="1" timestamp="1464049860000"/>
+<typeInfo handle="=org.eclipse.cdt.managedbuilder.core/src&lt;org.eclipse.cdt.managedbuilder.core{IOptionCommandGenerator.java[IOptionCommandGenerator" modifiers="513" timestamp="1464049566000"/>
+<typeInfo handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CDTMainWizardPage.java[CDTMainWizardPage" modifiers="1" timestamp="1464921568000"/>
+<typeInfo handle="=cn.smartcore.dev.ui/\/home\/juwy\/Dev\/workspace\/cdt\/.metadata\/.plugins\/org.eclipse.pde.core\/.bundle_pool\/plugins\/org.eclipse.core.resources_3.10.1.v20150725-1910.jar&lt;org.eclipse.core.resources(IncrementalProjectBuilder.class[IncrementalProjectBuilder" modifiers="1057" timestamp="1464051913000"/>
+<typeInfo handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CProjectWizard.java[CProjectWizard" modifiers="1" timestamp="1464825002000"/>
 </typeInfoHistroy>

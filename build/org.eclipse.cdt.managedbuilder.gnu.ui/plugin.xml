@@ -979,6 +979,11 @@
 			  owner="cdt.managedbuild.tool.gnu.c.compiler"
 			  name="%OptionCategory.Dialect"
 			  id="gnu.c.compiler.category.dialect">
+			  <!-- added by jwy, if we do not need these options in the future, we can use the following code in each optionCategory
+			  <enablement type="ALL">
+				<false/>
+			  </enablement>
+			  -->
 		  </optionCategory>
 		  <option
 			  category="gnu.c.compiler.category.dialect"

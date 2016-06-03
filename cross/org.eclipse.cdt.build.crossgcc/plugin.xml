@@ -47,6 +47,7 @@
                id="cdt.managedbuild.option.gnu.cross.prefix"
                isAbstract="false"
                name="%option.prefix"
+               commandGenerator="org.eclipse.cdt.internal.build.crossgcc.SmartSimuPrefixGenerator"
                resourceFilter="all"
                valueType="string">
          </option>
@@ -59,7 +60,9 @@
                resourceFilter="all"
                valueType="string">
          </option>
+         <!-- modified by jwy, add commandLinePattern -->
          <tool
+			   commandLinePattern="${COMMAND} -g -mcpu=v8 -O0 -c ${INPUTS} -o src/main.o"
                commandLineGenerator="org.eclipse.cdt.internal.build.crossgcc.CrossCommandLineGenerator"
                id="cdt.managedbuild.tool.gnu.cross.c.compiler"
                isAbstract="false"
@@ -73,7 +76,10 @@
                name="%tool.gpp.compiler"
                superClass="cdt.managedbuild.tool.gnu.cpp.compiler">
          </tool>
+         <!-- modified by jwy, add command and commandLinePattern -->
          <tool
+         	   command="ld"
+         	   commandLinePattern="${COMMAND} -g -T ${path}/linkscript.lds --oformat binary -o a.bin ${path}/bsp.o src/main.o; ${COMMAND} -g -T ${path}/linkscript.lds -o a.elf ${path}/bsp.o src/main.o"
                commandLineGenerator="org.eclipse.cdt.internal.build.crossgcc.CrossCommandLineGenerator"
                id="cdt.managedbuild.tool.gnu.cross.c.linker"
                isAbstract="false"

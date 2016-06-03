@@ -3,6 +3,7 @@ package cn.smartcore.dev.ui.wizards;
 import java.net.URI;
 
 import org.eclipse.cdt.core.CCorePlugin;
+import org.eclipse.cdt.core.templateengine.SharedDefaults;
 import org.eclipse.cdt.internal.ui.newui.Messages;
 import org.eclipse.cdt.ui.wizards.CProjectWizard;
 import org.eclipse.core.resources.IProject;
@@ -21,6 +22,22 @@ import cn.smartcore.dev.ui.natures.ProjectNature;
 // App project is exactly a C Project, just 
 public class NewAPPWizard extends CProjectWizard {
 
+	static final String SHARED_DEFAULTS_PREFIX_KEY = "prefix";
+
+	static final String SHARED_DEFAULTS_PREFIX_VALUE = "sparc-rtems4.11-";
+
+	private static final int SMARTSIMU_APP = 0;
+
+	public NewAPPWizard() {
+		super(SMARTSIMU_APP);
+		/** 
+		 * see @org.eclipse.cdt.internal.build.crossgcc.SetCrossCommandWizardPage
+		 * Set the default "prefix"
+		 */
+		SharedDefaults.getInstance().getSharedDefaultsMap().put(SHARED_DEFAULTS_PREFIX_KEY,
+				SHARED_DEFAULTS_PREFIX_VALUE);
+	}
+
 	@Override
 	public IProject createIProject(String name, URI location, IProgressMonitor monitor) throws CoreException {
 		monitor.beginTask(Messages.CDTCommonProjectWizard_creatingProject, 100);
@@ -34,9 +51,9 @@ public class NewAPPWizard extends CProjectWizard {
 
 		if (!newProjectHandle.exists()) {
 			IProjectDescription description = workspace.newProjectDescription(newProjectHandle.getName());
-			// Ö»ÄÜÔÚÕâÀï½øÐÐÐÞ¸Ä£¬resourceChangeÊÇÔÚproject´´½¨¹ý³ÌÖÐ´¥·¢µÄ£¬Èç¹ûÖ®ºóÔÙÌí¼Ónature£¬
-			// resourceChangeµÄ´¦Àí¹ý³ÌÖÐ²»º¬ÓÐ¸Ãnature£¬Ïê¼ûModuleContent.resourceChange
-			addNature(description);
+			// Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä£ï¿½resourceChangeï¿½ï¿½ï¿½ï¿½projectï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½natureï¿½ï¿½
+			// resourceChangeï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½Ð¸ï¿½natureï¿½ï¿½ï¿½ï¿½ï¿½ModuleContent.resourceChange
+			Util.addNature(description, ProjectNature.APP_PROJECT_ID);
 			if (location != null)
 				description.setLocationURI(location);
 			newProject = CCorePlugin.getDefault().createCDTProject(description, newProjectHandle,
@@ -65,31 +82,4 @@ public class NewAPPWizard extends CProjectWizard {
 		return proj;
 	}
 
-	private void addNature(IProject project) throws CoreException {
-		if (!project.hasNature(ProjectNature.APP_PROJECT_ID)) {
-			IProjectDescription description = project.getDescription();
-			String[] prevNatures = description.getNatureIds();
-			String[] newNatures = new String[prevNatures.length + 1];
-			System.arraycopy(prevNatures, 0, newNatures, 0, prevNatures.length);
-			newNatures[prevNatures.length] = ProjectNature.APP_PROJECT_ID;
-			description.setNatureIds(newNatures);
-
-			IProgressMonitor monitor = null;
-			project.setDescription(description, monitor);
-		}
-	}
-
-	private void addNature(IProjectDescription description) throws CoreException {
-		String[] prevNatures = description.getNatureIds();
-		for (int i = 0; i < prevNatures.length; i++) {
-			if (prevNatures[i].equals(ProjectNature.APP_PROJECT_ID)) {
-				return;
-			}
-		}
-		String[] newNatures = new String[prevNatures.length + 1];
-		System.arraycopy(prevNatures, 0, newNatures, 0, prevNatures.length);
-		newNatures[prevNatures.length] = ProjectNature.APP_PROJECT_ID;
-		description.setNatureIds(newNatures);
-	}
-	
 }

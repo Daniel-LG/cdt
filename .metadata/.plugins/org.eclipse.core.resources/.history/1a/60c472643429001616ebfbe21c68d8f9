@@ -1,0 +1,14 @@
+package cn.smartcore.dev.ui.wizards;
+
+import org.eclipse.cdt.ui.wizards.CProjectWizard;
+
+public class NewSimulatorWizard extends CProjectWizard {
+
+	private static final int SMARTSIMU_SIMULATOR = 1;
+	
+	public NewSimulatorWizard(){
+		super(SMARTSIMU_SIMULATOR);
+	}
+	
+	
+}

@@ -14,7 +14,9 @@
  *******************************************************************************/
 package org.eclipse.cdt.managedbuilder.internal.core;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URI;
 import java.util.ArrayList;
@@ -55,6 +57,8 @@ import org.eclipse.cdt.managedbuilder.macros.IBuildMacroProvider;
 import org.eclipse.cdt.managedbuilder.makegen.IManagedBuilderMakefileGenerator;
 import org.eclipse.cdt.managedbuilder.makegen.IManagedBuilderMakefileGenerator2;
 import org.eclipse.cdt.newmake.core.IMakeBuilderInfo;
+import org.eclipse.core.resources.IContainer;
+import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
@@ -96,6 +100,9 @@ public class CommonBuilder extends ACBuilder {
 	private static CfgBuildSet fBuildSet = new CfgBuildSet();
 
 	private boolean fBuildErrOccured;
+	
+	// added by jwy
+	private String SMARTSIMU_SIMULATOR_NATURE = "cn.smartcore.dev.ui.SimulatorProject";
 
 	public CommonBuilder() {
 	}
@@ -434,8 +441,20 @@ public class CommonBuilder extends ACBuilder {
 			printEvent(kind, args);
 
 		fBuildSet.start(this);
-
 		IProject project = getProject();
+		
+		// added by jwy, if this is a simulator project, first we generate a C file from the conf file
+		if (project.hasNature(SMARTSIMU_SIMULATOR_NATURE)) {
+			// Add the C file to project
+			// TODO: how to generate the C file?
+			InputStream resourceStream = new ByteArrayInputStream(("#include<stdio.h>\nint main(){\n\tprintf(\"aaa\");\n}").getBytes());
+			addFileToProject(project, new Path("main.c"), resourceStream, monitor);
+			try {
+				resourceStream.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 
 		if(!isCdtProjectCreated(project))
 			return project.getReferencedProjects();
@@ -463,6 +482,17 @@ public class CommonBuilder extends ACBuilder {
 			outputTrace(project.getName(), "<<done build requested, type = " + kind); //$NON-NLS-1$
 
 		return projects;
+	}
+	
+	// Added by jwy. Adds a new file to the project.
+	static void addFileToProject(IContainer container, Path path, InputStream contentStream, IProgressMonitor monitor)
+			throws CoreException {
+		final IFile file = container.getFile(path);
+		if (file.exists()) {
+			file.setContents(contentStream, true, true, monitor);
+		} else {
+			file.create(contentStream, true, monitor);
+		}
 	}
 
 	protected IProject[] build(int kind, IProject project, IBuilder[] builders, boolean isForeground, IProgressMonitor monitor) throws CoreException{

@@ -27,6 +27,12 @@ import cn.smartcore.dev.ui.natures.ProjectNature;
 // New Smart-Core Module wizard. Its role is to specify and create necessary files in the Smart-Core Module Project.
 public class NewModuleWizard extends CProjectWizard {
 
+	private static final int SMARTSIMU_MODULE = 1;
+
+	public NewModuleWizard() {
+		super(SMARTSIMU_MODULE);
+	}
+
 	@Override
 	public IProject createIProject(String name, URI location, IProgressMonitor monitor) throws CoreException {
 		monitor.beginTask(Messages.CDTCommonProjectWizard_creatingProject, 100);
@@ -40,9 +46,9 @@ public class NewModuleWizard extends CProjectWizard {
 
 		if (!newProjectHandle.exists()) {
 			IProjectDescription description = workspace.newProjectDescription(newProjectHandle.getName());
-			// Ö»ÄÜÔÚÕâÀï½øÐÐÐÞ¸Ä£¬resourceChangeÊÇÔÚproject´´½¨¹ý³ÌÖÐ´¥·¢µÄ£¬Èç¹ûÖ®ºóÔÙÌí¼Ónature£¬
-			// resourceChangeµÄ´¦Àí¹ý³ÌÖÐ²»º¬ÓÐ¸Ãnature£¬Ïê¼ûModuleContent.resourceChange
-			addNature(description);
+			// Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä£ï¿½resourceChangeï¿½ï¿½ï¿½ï¿½projectï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½natureï¿½ï¿½
+			// resourceChangeï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½Ð¸ï¿½natureï¿½ï¿½ï¿½ï¿½ï¿½ModuleContent.resourceChange
+			Util.addNature(description, ProjectNature.MODULE_PROJECT_ID);
 			if (location != null)
 				description.setLocationURI(location);
 			newProject = CCorePlugin.getDefault().createCDTProject(description, newProjectHandle,
@@ -70,7 +76,7 @@ public class NewModuleWizard extends CProjectWizard {
 
 		// Add the conf file
 		InputStream resourceStream = new ByteArrayInputStream(("").getBytes());
-		addFileToProject(newProject, new Path("module.conf"), resourceStream, monitor);
+		Util.addFileToProject(newProject, new Path("module.conf"), resourceStream, monitor);
 		try {
 			resourceStream.close();
 		} catch (IOException e) {
@@ -80,41 +86,4 @@ public class NewModuleWizard extends CProjectWizard {
 		return proj;
 	}
 
-	private void addNature(IProject project) throws CoreException {
-		if (!project.hasNature(ProjectNature.MODULE_PROJECT_ID)) {
-			IProjectDescription description = project.getDescription();
-			String[] prevNatures = description.getNatureIds();
-			String[] newNatures = new String[prevNatures.length + 1];
-			System.arraycopy(prevNatures, 0, newNatures, 0, prevNatures.length);
-			newNatures[prevNatures.length] = ProjectNature.MODULE_PROJECT_ID;
-			description.setNatureIds(newNatures);
-
-			IProgressMonitor monitor = null;
-			project.setDescription(description, monitor);
-		}
-	}
-
-	private void addNature(IProjectDescription description) throws CoreException {
-		String[] prevNatures = description.getNatureIds();
-		for (int i = 0; i < prevNatures.length; i++) {
-			if (prevNatures[i].equals(ProjectNature.MODULE_PROJECT_ID)) {
-				return;
-			}
-		}
-		String[] newNatures = new String[prevNatures.length + 1];
-		System.arraycopy(prevNatures, 0, newNatures, 0, prevNatures.length);
-		newNatures[prevNatures.length] = ProjectNature.MODULE_PROJECT_ID;
-		description.setNatureIds(newNatures);
-	}
-
-	// Adds a new file to the project.
-	private void addFileToProject(IContainer container, Path path, InputStream contentStream, IProgressMonitor monitor)
-			throws CoreException {
-		final IFile file = container.getFile(path);
-		if (file.exists()) {
-			file.setContents(contentStream, true, true, monitor);
-		} else {
-			file.create(contentStream, true, monitor);
-		}
-	}
 }

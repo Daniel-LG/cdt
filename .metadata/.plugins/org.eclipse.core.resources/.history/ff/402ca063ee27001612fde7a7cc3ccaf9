@@ -1,0 +1,144 @@
+package org.eclipse.cdt.ui.wizards;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IConfigurationElement;
+import org.eclipse.core.runtime.IExtension;
+import org.eclipse.core.runtime.IExtensionPoint;
+import org.eclipse.core.runtime.IStatus;
+import org.eclipse.core.runtime.Platform;
+import org.eclipse.core.runtime.Status;
+import org.eclipse.jface.wizard.IWizard;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Tree;
+import org.eclipse.swt.widgets.TreeItem;
+
+import org.eclipse.cdt.ui.CUIPlugin;
+
+import org.eclipse.cdt.internal.ui.newui.Messages;
+
+public class SmartSimuAPPMainWizardPage extends CDTMainWizardPage {
+
+	public SmartSimuAPPMainWizardPage(String pageName) {
+		super(pageName);
+	}
+
+	@Override
+	public CWizardHandler updateData(Tree tree, Composite right, Button show_sup,
+			IWizardItemsListListener ls, IWizard wizard) {
+		// Remember selected item
+		TreeItem[] selection = tree.getSelection();
+		TreeItem selectedItem = selection.length > 0 ? selection[0] : null;
+		String savedLabel = selectedItem != null ? selectedItem.getText() : null;
+		String savedParentLabel = getParentText(selectedItem);
+
+		tree.removeAll();
+		IExtensionPoint extensionPoint =
+				Platform.getExtensionRegistry().getExtensionPoint(EXTENSION_POINT_ID);
+		if (extensionPoint == null) return null;
+		IExtension[] extensions = extensionPoint.getExtensions();
+		if (extensions == null) return null;
+
+		List<EntryDescriptor> items = new ArrayList<EntryDescriptor>();
+		for (int i = 0; i < extensions.length; ++i)	{
+			IConfigurationElement[] elements = extensions[i].getConfigurationElements();
+			for (IConfigurationElement element : elements) {
+				if (element.getName().equals(ELEMENT_NAME)) {
+					CNewWizard w = null;
+					try {
+						w = (CNewWizard) element.createExecutableExtension(CLASS_NAME);
+					} catch (CoreException e) {
+						System.out.println(Messages.CMainWizardPage_5 + e.getLocalizedMessage());
+						return null;
+					}
+					if (w == null)
+						return null;
+					w.setDependentControl(right, ls);
+					for (EntryDescriptor ed : w.createItems(show_sup.getSelection(), wizard))
+					{
+						if(ed.getId().equals("org.eclipse.cdt.build.core.buildArtefactType.exe"))
+							items.add(ed);
+						if (ed.getParentId() != null && ed.getParentId()
+								.equals("org.eclipse.cdt.build.core.buildArtefactType.exe"))
+							if (ed.getName().equals("Empty Project")
+									|| ed.getName().equals("Hello World ANSI C Project"))
+								items.add(ed);
+						System.out.println(ed.getId()+" >"+ed.getName()+" >"+ed.getParentId());
+					}
+				}
+			}
+		}
+		// If there is a EntryDescriptor which is default for category, make sure it
+		// is in the front of the list.
+		for (int i = 0; i < items.size(); ++i) {
+			EntryDescriptor ed = items.get(i);
+			if (ed.isDefaultForCategory()) {
+				items.remove(i);
+				items.add(0, ed);
+				break;
+			}
+		}
+
+		// items filtering
+		if (ls != null) { // NULL means call from prefs
+			List<EntryDescriptor> filteredItems = ls.filterItems(items);
+			List<EntryDescriptor> newItems = new ArrayList<EntryDescriptor>(filteredItems);
+
+			// Add parent folders
+			for (EntryDescriptor ed : filteredItems) {
+				if (!ed.isCategory()) {
+					String parentId = ed.getParentId();
+					if (parentId != null) {
+						boolean found = false;
+						for (EntryDescriptor item : newItems) {
+							if (item.isCategory() && parentId.equals(item.getId())) {
+								found = true;
+								break;
+							}
+						}
+						if (!found) {
+							for (EntryDescriptor item : items) {
+								if (item.isCategory() && parentId.equals(item.getId())) {
+									newItems.add(item);
+									break;
+								}
+							}
+						}
+					}
+				}
+			}
+			items = newItems;
+		}
+
+		addItemsToTree(tree, items);
+
+		if (tree.getItemCount() > 0) {
+			TreeItem target = null;
+			// Try to search item which was selected before
+			if (savedLabel != null) {
+				target = findItem(tree, savedLabel, savedParentLabel);
+			}
+			if (target == null) {
+				// Default selection associated with "org.eclipse.cdt.build.core.buildArtefactType.exe" project type
+				target = findItem(tree, Messages.CDTMainWizardPage_DefaultProjectType,
+						Messages.CDTMainWizardPage_DefaultProjectCategory);
+				if (target == null) {
+					CUIPlugin.log(new Status(IStatus.WARNING, CUIPlugin.PLUGIN_ID,
+							"Default project not found in New C/C++ Project Wizard")); //$NON-NLS-1$
+				}
+			}
+			if (target == null) {
+				target = tree.getItem(0);
+				if (target.getItemCount() != 0)
+					target = target.getItem(0);
+			}
+			tree.setSelection(target);
+			return (CWizardHandler)target.getData();
+		}
+		return null;
+	}
+	
+}

@@ -11,7 +11,6 @@
 <fullyQualifiedTypeName name="cn.smartcore.handlers.ControlGDBServerHandler"/>
 <fullyQualifiedTypeName name="launch.LaunchSimulator"/>
 <fullyQualifiedTypeName name="org.eclipse.core.resources.IProject"/>
-<fullyQualifiedTypeName name="cn.smartcore.dev.ui.natures.ProjectNature"/>
 <fullyQualifiedTypeName name="java.util.concurrent.BrokenBarrierException"/>
 <fullyQualifiedTypeName name="org.eclipse.core.commands.Command"/>
 <fullyQualifiedTypeName name="cn.smartcore.debug.core.handlers.ControlGDBServerHandler"/>
@@ -28,6 +27,13 @@
 <fullyQualifiedTypeName name="org.osgi.framework.ServiceReference"/>
 <fullyQualifiedTypeName name="cn.smartcore.debug.core.ILaunchSimulator"/>
 <fullyQualifiedTypeName name="org.apache.commons.exec.DefaultExecutor"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="cn.smartcore.debug.core.Activator"/>
+<fullyQualifiedTypeName name="org.eclipse.cdt.internal.ui.typehierarchy.THHistoryAction"/>
+<fullyQualifiedTypeName name="org.eclipse.core.resources.ICommand"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="org.eclipse.core.resources.IResourceDelta"/>
+<fullyQualifiedTypeName name="org.eclipse.core.resources.IResourceDeltaVisitor"/>
+<fullyQualifiedTypeName name="cn.smartcore.dev.ui.wizards.Util"/>
+<fullyQualifiedTypeName name="cn.smartcore.dev.ui.natures.ProjectNature"/>
+<fullyQualifiedTypeName name="org.eclipse.core.resources.IContainer"/>
 </qualifiedTypeNameHistroy>

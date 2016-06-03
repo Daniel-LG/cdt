@@ -1,0 +1,5 @@
+package org.eclipse.cdt.ui.wizards;
+
+public class SmartSimuAPPMainWizardPage extends CDTMainWizardPage {
+
+}
