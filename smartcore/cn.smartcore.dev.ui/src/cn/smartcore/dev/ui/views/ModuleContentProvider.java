@@ -1,8 +1,10 @@
 package cn.smartcore.dev.ui.views;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,6 +25,7 @@ import org.eclipse.core.resources.IResourceDelta;
 import org.eclipse.core.resources.IWorkspace;
 import org.eclipse.core.resources.IWorkspaceRoot;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.QualifiedName;
 import org.eclipse.core.runtime.preferences.IEclipsePreferences.IPreferenceChangeListener;
 import org.eclipse.core.runtime.preferences.IEclipsePreferences.PreferenceChangeEvent;
 import org.eclipse.core.runtime.preferences.InstanceScope;
@@ -33,6 +36,7 @@ import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.jface.viewers.Viewer;
 import org.eclipse.swt.widgets.Display;
 
+import cn.smartcore.dev.ui.messages.Messages;
 import cn.smartcore.dev.ui.natures.ProjectNature;
 
 public class ModuleContentProvider implements ITreeContentProvider, IResourceChangeListener, IPreferenceChangeListener {
@@ -90,68 +94,75 @@ public class ModuleContentProvider implements ITreeContentProvider, IResourceCha
 				System.out.println(e.getMessage());
 			}
 		} else if (parentElement instanceof IProject) {
-			IProject project = (IProject) parentElement;
+			// all of these projects are module projects
 			ArrayList<String> simictAttribute = new ArrayList<String>();
 			ArrayList<String> simictAttributeInterface = new ArrayList<String>();
 			ArrayList<String> simictInterface = new ArrayList<String>();
-			IFile file = project.getFile("module.conf");
-
-			if (file.exists()) {
-				InputStream is = null;
-				try {
-					is = file.getContents();
-				} catch (CoreException e) {
-					e.printStackTrace();
-				}
-				InputStreamReader isr = new InputStreamReader(is);
-				BufferedReader br = new BufferedReader(isr);
-
-				String str;
-				try {
-					while ((str = br.readLine()) != null) {
-						if (str.indexOf("simict_attribute_interface") != -1) {
-							simictAttributeInterface.add(str);
-						} else if (str.indexOf("simict_attribute") != -1) {
-							simictAttribute.add(str);
-						} else {
-							simictInterface.add(str);
-						}
-					}
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-				
-				// "strings" command is tested, TODO: test if "build" can invoke Resource Change listener
-//				Process p = null;
-//				try {
-//					System.out.println("strings "+project.getLocation()+"/Debug/a.elf");
-//					p = Runtime.getRuntime().exec("strings "+project.getLocation()+"/Debug/a.elf");
-//				} catch (IOException e1) {
-//					// TODO Auto-generated catch block
-//					e1.printStackTrace();
-//				}
-//
-//				try {
-//					p.waitFor();
-//				} catch (InterruptedException e1) {
-//					// TODO Auto-generated catch block
-//					e1.printStackTrace();
-//				}
-//				BufferedReader buf = new BufferedReader(new InputStreamReader(p.getInputStream()));
-//				String line = "";
-//				String output = "";
-//
-//				try {
-//					while ((line = buf.readLine()) != null) {
-//						output += line + "\n";
-//					}
-//				} catch (IOException e1) {
-//					// TODO Auto-generated catch block
-//					e1.printStackTrace();
-//				}
-//
-//				System.out.println(output);
+			IProject project = (IProject) parentElement;
+			String moduleConfigPath = null;
+			try {
+				moduleConfigPath = project
+						.getPersistentProperty(new QualifiedName(Messages.Qualifier, Messages.Property_1));
+			} catch (CoreException e1) {
+				e1.printStackTrace();
 			}
+			File moduleConfigFile = new File(moduleConfigPath);
+			BufferedReader br = null;
+			try {
+				br = new BufferedReader(new InputStreamReader(new FileInputStream(moduleConfigFile)));
+			} catch (FileNotFoundException e1) {
+				e1.printStackTrace();
+			}
+
+			String tmpstr;
+			try {
+				while ((tmpstr = br.readLine()) != null) {
+					if (tmpstr.contains("simict_attribute_interface")) {
+						simictAttributeInterface.add(tmpstr);
+					} else if (tmpstr.contains("simict_attribute")) {
+						simictAttribute.add(tmpstr);
+					} else if (tmpstr.contains("simict_interface")) {
+						simictInterface.add(tmpstr);
+					}
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+			// "strings" command is tested, TODO: test if "build" can invoke
+			// Resource Change listener
+			// Process p = null;
+			// try {
+			// System.out.println("strings
+			// "+project.getLocation()+"/Debug/a.elf");
+			// p = Runtime.getRuntime().exec("strings
+			// "+project.getLocation()+"/Debug/a.elf");
+			// } catch (IOException e1) {
+			// // TODO Auto-generated catch block
+			// e1.printStackTrace();
+			// }
+			//
+			// try {
+			// p.waitFor();
+			// } catch (InterruptedException e1) {
+			// // TODO Auto-generated catch block
+			// e1.printStackTrace();
+			// }
+			// BufferedReader buf = new BufferedReader(new
+			// InputStreamReader(p.getInputStream()));
+			// String line = "";
+			// String output = "";
+			//
+			// try {
+			// while ((line = buf.readLine()) != null) {
+			// output += line + "\n";
+			// }
+			// } catch (IOException e1) {
+			// // TODO Auto-generated catch block
+			// e1.printStackTrace();
+			// }
+			//
+			// System.out.println(output);
 
 			Object[] children = new Object[simictAttribute.size() + simictAttributeInterface.size()
 					+ simictInterface.size()];

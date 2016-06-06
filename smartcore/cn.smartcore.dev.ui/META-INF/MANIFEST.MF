@@ -11,8 +11,10 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.ui.ide,
  org.eclipse.cdt.ui,
  org.eclipse.cdt.core,
- org.eclipse.ui.console
+ org.eclipse.ui.console,
+ org.eclipse.core.filesystem
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
+Eclipse-BundleShape: dir
 Export-Package: cn.smartcore.dev.ui.natures,
  cn.smartcore.dev.ui.views

@@ -325,8 +325,6 @@ public class CDTMainWizardPage extends WizardNewProjectCreationPage implements I
 						} else {
 							items.add(ed);
 						}
-						// System.out.println(ed.getId()+" >"+ed.getName()+"
-						// >"+ed.getParentId());
 					}
 				}
 			}

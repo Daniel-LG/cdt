@@ -1,0 +1,40 @@
+package cn.smartcore.dev.ui.wizards;
+
+import org.eclipse.jface.viewers.IStructuredSelection;
+import org.eclipse.jface.wizard.Wizard;
+import org.eclipse.jface.wizard.WizardPage;
+import org.eclipse.ui.INewWizard;
+import org.eclipse.ui.IWorkbench;
+import org.eclipse.ui.dialogs.WizardNewProjectCreationPage;
+import org.eclipse.ui.wizards.newresource.BasicNewResourceWizard;
+
+public class NewModuleWizard extends BasicNewResourceWizard {
+	
+	private WizardNewProjectCreationPage fMainPage;
+
+	public NewModuleWizard() {
+		super();
+		setNeedsProgressMonitor(true);
+	}
+	
+	@Override
+	public void addPages() {
+		fMainPage = new ModuleProjectMainWizardPage("New SmartSimu Module Project");
+		fMainPage.setDescription("Create a new SmartSimu Module Project.");
+		fMainPage.setTitle("New SmartSimu Module Project");
+		addPage(fMainPage);
+	}
+	
+	@Override
+	public void init(IWorkbench workbench, IStructuredSelection selection) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean performFinish() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

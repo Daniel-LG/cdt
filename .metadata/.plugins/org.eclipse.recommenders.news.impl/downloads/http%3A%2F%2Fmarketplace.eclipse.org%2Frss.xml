@@ -5,6 +5,176 @@
     <description></description>
     <language>en</language>
           <item>
+    <title>Task Tag Decorator</title>
+    <link>http://marketplace.eclipse.org/content/task-tag-decorator</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/default_images/default_2.png&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Mon, 2007-04-16 10:37&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sun, 2016-06-05 22:34&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/pkrupets/listings&quot; title=&quot;Pavel Krupets&quot;&gt;Pavel Krupets&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;In large projects there are a lot of task tags like TODO, FIXME, etc. and Eclipse provides only plain list of all these task tags which I think is difficult to use. &quot;Task Tag Decorator&quot; plugin is a simple plugin which can decorate &quot;Package Explorer&quot; view with icons or text decorations.&lt;/p&gt;
+&lt;p&gt;Supported Plug-ins:&lt;br /&gt;
+- JDT&lt;br /&gt;
+- CDT&lt;br /&gt;
+- DLTK based plug-ins (Eclipse PHP, Ruby, JavaScript, Tcl). See &lt;a href=&quot;http://wiki.eclipse.org/DLTK_Based_Projects&quot;&gt;http://wiki.eclipse.org/DLTK_Based_Projects&lt;/a&gt; for more info&lt;br /&gt;
+- Any plug-in which uses Eclipse Resources API (only basic decoration)&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Mon, 16 Apr 2007 14:37:46 +0000</pubDate>
+ <dc:creator>pkrupets</dc:creator>
+ <guid isPermaLink="false">439 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/task-tag-decorator#comments</comments>
+  </item>
+  <item>
+    <title>Avroclipse</title>
+    <link>http://marketplace.eclipse.org/content/avroclipse</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/default_images/default_2.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Mon, 2015-11-09 06:30&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sun, 2016-06-05 17:34&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/dvanderkruk/listings&quot; title=&quot;Damiaan van der Kruk&quot;&gt;Damiaan van der Kruk&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;An (unofficial) Eclipse plugin for editing Avro IDL (avdl) files.&lt;/p&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;h3&gt;Syntax Highlighting&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/dvdkruk/avroclipse/raw/master/avroclipse.releng/syntax_highlighting.gif&quot; alt=&quot;Syntax Highlighting&quot; style=&quot;max-width:100%;&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Validation&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/dvdkruk/avroclipse/raw/master/avroclipse.releng/error_highlighting.gif&quot; alt=&quot;Error Highlighting&quot; style=&quot;max-width:100%;&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Code Completion&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/dvdkruk/avroclipse/raw/master/avroclipse.releng/code_completion.gif&quot; alt=&quot;Code Completion&quot; style=&quot;max-width:100%;&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Mon, 09 Nov 2015 11:30:38 +0000</pubDate>
+ <dc:creator>dvanderkruk</dc:creator>
+ <guid isPermaLink="false">2600501 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/avroclipse#comments</comments>
+  </item>
+  <item>
+    <title>Vrapper (Vim)</title>
+    <link>http://marketplace.eclipse.org/content/vrapper-vim</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/vrapper_logo_small_0.png&quot; width=&quot;100&quot; height=&quot;73&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Mon, 2009-03-02 10:49&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sat, 2016-06-04 14:05&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/mmisingname4i2/listings&quot; title=&quot;Vrapper Team&quot;&gt;Vrapper Team&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Vrapper acts as a wrapper for Eclipse text editors to provide a Vim-like input scheme for moving around and editing text.&lt;/p&gt;
+&lt;p&gt;Unlike other plugins which embed Vim in Eclipse, Vrapper imitates the behaviour of Vim while still using whatever editor you have opened in the workbench. The goal is to have the comfort and ease which comes with the different modes, complex commands and count/operator/motion combinations which are the key features behind editing with Vim, while preserving the powerful features of the different Eclipse text editors, like code generation and refactoring.&lt;/p&gt;
+&lt;p&gt;Vrapper tries to offer Eclipse users the best of both worlds.&lt;/p&gt;
+&lt;p&gt;Our update site also has optional Vrapper extensions which are not available via the Marketplace.  They include additional support for programming languages and ports of various vimscripts.&lt;br /&gt;
+Specifically, they are:&lt;br /&gt;
+* Split Editor commands (requires Eclipse 4+)&lt;br /&gt;
+* Java extensions (requires JDT)&lt;br /&gt;
+* C/C++ extensions (requires CDT)&lt;br /&gt;
+* Python extensions (requires PyDev)&lt;br /&gt;
+* Port of surround.vim vimscript&lt;br /&gt;
+* Port of ipmotion.vim vimscript&lt;br /&gt;
+* Port of argtextobj.vim vimscript&lt;br /&gt;
+* Port of methodtextobj.vim vimscript&lt;br /&gt;
+* Port of exchange.vim vimscript&lt;br /&gt;
+* Port of textobj-line.vim vimscript&lt;br /&gt;
+* Port of vim-indent-object.vim vimscript&lt;br /&gt;
+* Port of cycle.vim vimscript&lt;br /&gt;
+* Port of camelcasemotion.vim vimscript&lt;br /&gt;
+* Integration with clang-format command&lt;br /&gt;
+Documentation for these optional plugins can be found here:&lt;br /&gt;&lt;a href=&quot;http://vrapper.sourceforge.net/documentation/?topic=optional_plugins&quot;&gt;http://vrapper.sourceforge.net/documentation/?topic=optional_plugins&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Fork us on GitHub!&lt;br /&gt;&lt;a href=&quot;https://github.com/vrapper/vrapper&quot;&gt;https://github.com/vrapper/vrapper&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Mon, 02 Mar 2009 15:49:34 +0000</pubDate>
+ <dc:creator>mmisingname4i2</dc:creator>
+ <guid isPermaLink="false">881 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/vrapper-vim#comments</comments>
+  </item>
+  <item>
+    <title>SonarLint</title>
+    <link>http://marketplace.eclipse.org/content/sonarlint</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/sonarlint-110x80_0.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2015-10-15 14:54&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2016-06-03 10:27&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/jhenrym6y/listings&quot; title=&quot;Julien HENRY&quot;&gt;Julien HENRY&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;SonarLint is an Eclipse plugin that provides on-the-fly feedback to developers on new bugs and quality issues injected into Java, JavaScript and PHP code.&lt;/p&gt;
+&lt;p&gt;If your project is analysed on SonarQube (formerly known as &quot;Sonar&quot;), SonarLint can connect to the server to retrieve the appropriate quality profiles and settings for that project.&lt;/p&gt;
+&lt;p&gt;Documentation: &lt;a href=&quot;http://eclipse.sonarlint.org/&quot;&gt;http://eclipse.sonarlint.org/&lt;/a&gt;&lt;br /&gt;
+For any question or feedback please join the &lt;a href=&quot;https://groups.google.com/forum/#!forum/sonarlint&quot;&gt;SonarLint User group&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Thu, 15 Oct 2015 18:54:47 +0000</pubDate>
+ <dc:creator>jhenrym6y</dc:creator>
+ <guid isPermaLink="false">2568658 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/sonarlint#comments</comments>
+  </item>
+  <item>
+    <title>Eclipse Code Recommenders</title>
+    <link>http://marketplace.eclipse.org/content/eclipse-code-recommenders</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/logo_19.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2009-03-11 10:02&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2016-06-03 08:30&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/mbruch/listings&quot; title=&quot;Marcel Bruch&quot;&gt;Marcel Bruch&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;h2 style=&quot;font-size:3em;&quot;&gt;Eclipse Code Recommenders&lt;/h2&gt;
+&lt;p&gt;Eclipse Code Recommenders assists Java developers in learning how to use and extend new APIs by leveraging the information hidden in the source code of existing applications and integrating the gained knowledge back into our day-to-day development tool: Eclipse. It offers:&lt;/p&gt;
+&lt;h2&gt;Intelligent Code Completion&lt;/h2&gt;
+&lt;p&gt;Struggling with a new API? Eclipse Code Recommenders’ award-winning intelligent code completion shows you how other developers have successfully used the API in similar situations. Use it to learn new APIs faster – one &lt;em&gt;ctrl+space&lt;em&gt; at a time.&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://marketplace.eclipse.org/sites/default/files/code-recommenders-call-completion-narrow.png&quot; width=&quot;520px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Code Recommendes supports a wide range of Eclipse APIs but also common classes of the Java Runtime Environment. &lt;a href=&quot;https://www.eclipse.org/recommenders/getting-started/&quot;&gt;Give it a spin...&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Subwords Completion&lt;/h2&gt;
+&lt;p&gt;Unpleased with typing every method name from the very beginning or using camel-case matching? Code Recommenders&#039; Subwords completion allows you to just enter any subword and its abbreviations and still finds what you are looking for. No need to typing &lt;em&gt;get...&lt;/em&gt; and &lt;em&gt;set...&lt;/em&gt; anymore:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://marketplace.eclipse.org/sites/default/files/code-recommenders-subwords-completion-narrow.png&quot; width=&quot;520px&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Extended Javadoc View&lt;/h2&gt;
+&lt;p&gt;Tired of incomplete or outdated documentation? Eclipse Code Recommenders’ extended documentation shows you information that really matters, data-mined straight from the code.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://marketplace.eclipse.org/sites/default/files/code-recommenders-apidocs-overrides-narrow.png&quot; width=&quot;520px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The Extended API documentation view in Eclipse offers you a wide range of additional API information like which methods developers typically override, which methods they usually invoke on an object, code snippets and many things more...&lt;/p&gt;
+&lt;h2&gt;Snipmatch Code Snippet Search&lt;/h2&gt;
+&lt;p&gt;Often times, using an API correctly is more than selecting the right method, right? what is needed is an entire code snippet. Snipmatch lets you search a growing repository for the snippets you need. Moreover, the Snipmatch project develops tools that make it easy to contribute back to the community, be it by writing new snippets or improving existing ones.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://marketplace.eclipse.org/sites/default/files/code-recommenders-snipmatch-completion.png&quot; width=&quot;520px&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Additional Links&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://eclipse.org/recommenders/manual/&quot;&gt;User Manual&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://eclipse.org/recommenders/getting-started/&quot;&gt;Getting Started Guide&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://eclipse.org/recommenders/faq/&quot;&gt;FAQ&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.4.0&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.4.0&lt;/a&gt; - under development (&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.4.0&amp;amp;bug_status=NEW&amp;amp;bug_status=ASSIGNED&amp;amp;bug_status=REOPENED&quot;&gt;open bugs&lt;/a&gt;)&lt;/li&gt;
+&lt;!--  old releases --&gt;&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.3.3&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.3.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.3.2&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.3.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.3.1&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.3.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.3.0&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.3.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.2.6&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.2.6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.2.5&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.2.5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.2.4&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.2.4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.2.3&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.2.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.2.2&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.2.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.2.1&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.2.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.2.0&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.2.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.14&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.14&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.13&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.13&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.12&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.12&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.11&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.11&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.10&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.9&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.8&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.7&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.6&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.5&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.4&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.3&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.2&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.1&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.1.0&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.0.7&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.0.7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.0.6&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.0.6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.0.5&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.0.5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?product=Recommenders&amp;amp;target_milestone=2.0.4&amp;amp;bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&quot;&gt;v2.0.4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Have a feature request? Found a bug?&lt;/h2&gt;
+&lt;p&gt;Report it to our &lt;a href=&quot;https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Recommenders&amp;amp;version=2.1.0&amp;amp;bug_severity=enhancement&amp;amp;short_desc=Your%20short%20description&amp;amp;comment=A%20longer%20description&amp;amp;component=Core&amp;amp;rep_platform=All&amp;amp;op_sys=All&quot;&gt;Bugzilla&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;You like Code Recommenders?&lt;/h2&gt;
+&lt;p&gt;Then &lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;add your review below,&lt;/li&gt;
+&lt;li&gt;add it to your marketplace favorites, and&lt;/li&gt;
+&lt;li&gt;help spread the word...&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Wed, 11 Mar 2009 14:02:10 +0000</pubDate>
+ <dc:creator>mbruch</dc:creator>
+ <guid isPermaLink="false">889 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/eclipse-code-recommenders#comments</comments>
+  </item>
+  <item>
+    <title>Trema</title>
+    <link>http://marketplace.eclipse.org/content/trema</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/Trema-Logo.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2015-07-15 12:15&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2016-06-03 06:53&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/neclipse/listings&quot; title=&quot;Netcetera Eclipse&quot;&gt;Netcetera Eclipse&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Trema is an Eclipse plugins that allows you to manage your text resources and translations. It allows you to keep all text resources and translations in a single place but still giving you the possibility to let those translations be composed by other people without access or knowledge of development environments.&lt;/p&gt;
+&lt;p&gt;You can store all your Text resources that you use within your application in a single database (*.trm xml file). From this unified text resource database you can export the text resources that remain to be translated as Excel or CSV File to the people that do the translations. They can do the translations of the text resources in Excel and send you back the file, which can then be merged with your existing text resource database.&lt;/p&gt;
+&lt;p&gt;Together with trema-maven you can also generate your java properties files, angular json files or android xml text resource files to be used within your application from the text resource database.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Wed, 15 Jul 2015 16:15:59 +0000</pubDate>
+ <dc:creator>neclipse</dc:creator>
+ <guid isPermaLink="false">2439683 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/trema#comments</comments>
+  </item>
+  <item>
+    <title>Vaadin Plugin for Eclipse</title>
+    <link>http://marketplace.eclipse.org/content/vaadin-plugin-eclipse</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/logo-rgb-110x80-wide-on-white-bg.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2009-10-09 09:49&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2016-06-03 05:09&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/smisingname8q3/listings&quot; title=&quot;Sami Ekblad&quot;&gt;Sami Ekblad&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Vaadin is a powerful open source UI library for creating rich web user interfaces. It is a Java EE compatible component library that makes it easy for Java developers to create stunning web applications. No need for JavaScript or XML programming - just use Java:&lt;/p&gt;
+&lt;p&gt;Label l = new Label(&quot;Hello Vaadin User&quot;);&lt;br /&gt;
+layout.addComponent(l);&lt;/p&gt;
+&lt;p&gt;In addition to dozens of built-in components the Vaadin Directory at &lt;a href=&quot;https://vaadin.com/directory&quot;&gt;https://vaadin.com/directory&lt;/a&gt; provides over 500 extra widgets and components for building your application.&lt;/p&gt;
+&lt;p&gt;The Vaadin Plugin for Eclipse comes with project wizard and samples and WYSIWYG visual designer and wizards to speed up the development.&lt;/p&gt;
+&lt;p&gt;Vaadin Ltd offers professional tools and support for the framework. Learn more at &lt;a href=&quot;https://vaadin.com/tools-and-services&quot;&gt;https://vaadin.com/tools-and-services&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Fri, 09 Oct 2009 13:49:12 +0000</pubDate>
+ <dc:creator>smisingname8q3</dc:creator>
+ <guid isPermaLink="false">1023 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/vaadin-plugin-eclipse#comments</comments>
+  </item>
+  <item>
     <title>MintJams PKI Tools</title>
     <link>http://marketplace.eclipse.org/content/mintjams-pki-tools</link>
     <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/pkilogo.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2013-05-15 04:39&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2016-06-02 18:35&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/kfukudar10/listings&quot; title=&quot;Kenichi Fukuda&quot;&gt;Kenichi Fukuda&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;div&gt;MintJams PKI Tools is a Public Key Infrastructure (PKI) starting tool. It allows to manage own key pairs and associated certificates and build the Certification Authorities.&lt;/div&gt;
@@ -90,127 +260,6 @@
  <dc:creator>owhite</dc:creator>
  <guid isPermaLink="false">29591 at http://marketplace.eclipse.org</guid>
  <comments>http://marketplace.eclipse.org/content/jrebel-eclipse#comments</comments>
-  </item>
-  <item>
-    <title>Kotlin Plugin for Eclipse</title>
-    <link>http://marketplace.eclipse.org/content/kotlin-plugin-eclipse</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/em_size.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2015-03-25 19:04&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2016-06-02 07:46&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/jjetbrains/listings&quot; title=&quot;JB JetBrains&quot;&gt;JB JetBrains&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The Kotlin Plugin for Eclipse helps you write, run, debug and test programs in &lt;a href=&quot;http://kotlinlang.org/&quot;&gt;Kotlin language&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Wed, 25 Mar 2015 23:04:10 +0000</pubDate>
- <dc:creator>jjetbrains</dc:creator>
- <guid isPermaLink="false">2257536 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/kotlin-plugin-eclipse#comments</comments>
-  </item>
-  <item>
-    <title>Avroclipse</title>
-    <link>http://marketplace.eclipse.org/content/avroclipse</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/default_images/default_2.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Mon, 2015-11-09 06:30&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2016-06-02 07:18&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/dvanderkruk/listings&quot; title=&quot;Damiaan van der Kruk&quot;&gt;Damiaan van der Kruk&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;An (unofficial) Eclipse plugin for editing Avro IDL (avdl) files.&lt;/p&gt;
-&lt;h2&gt;Features&lt;/h2&gt;
-&lt;h3&gt;Syntax Highlighting&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://github.com/dvdkruk/avroclipse/raw/master/avroclipse.releng/syntax_highlighting.gif&quot; alt=&quot;Syntax Highlighting&quot; style=&quot;max-width:100%;&quot; /&gt;&lt;/p&gt;
-&lt;h3&gt;Validation&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://github.com/dvdkruk/avroclipse/raw/master/avroclipse.releng/error_highlighting.gif&quot; alt=&quot;Error Highlighting&quot; style=&quot;max-width:100%;&quot; /&gt;&lt;/p&gt;
-&lt;h3&gt;Code Completion&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://github.com/dvdkruk/avroclipse/raw/master/avroclipse.releng/code_completion.gif&quot; alt=&quot;Code Completion&quot; style=&quot;max-width:100%;&quot; /&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Mon, 09 Nov 2015 11:30:38 +0000</pubDate>
- <dc:creator>dvanderkruk</dc:creator>
- <guid isPermaLink="false">2600501 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/avroclipse#comments</comments>
-  </item>
-  <item>
-    <title>Design and Verification Tools (DVT) IDE for e, SystemVerilog, and VHDL</title>
-    <link>http://marketplace.eclipse.org/content/design-and-verification-tools-dvt-ide-e-systemverilog-and-vhdl</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/AMIQ_logo_web_110x63.jpg&quot; width=&quot;110&quot; height=&quot;63&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2006-04-19 08:00&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2016-06-02 06:23&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/emisingname6ia/listings&quot; title=&quot;AMIQ Support&quot;&gt;AMIQ Support&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Design and Verification Tools (DVT) is an integrated development environment (IDE) for the &lt;strong&gt;&lt;em&gt;e&lt;/em&gt; language, SystemVerilog, Verilog,  VHDL, and mixed language projects&lt;/strong&gt; that also provides &lt;strong&gt;Universal Verification Methodology (UVM) support&lt;/strong&gt;.  It is similar to well-known programming tools like Visual Studio®, NetBeans®, and IntelliJ®.  &lt;/p&gt;
-&lt;p&gt;DVT comprises a proprietary IEEE standard-compliant parser, a smart code editor, an intuitive GUI, a comprehensive set of features that help with code inspection, navigation, documentation, and debugging,  and an innovative linting framework. &lt;/p&gt;
-&lt;p&gt;DVT allows design and verification engineers to overcome the limitations of plain text editors and use a modern and powerful tool that enables them to:&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;Increase the speed and quality of new code development&lt;/li&gt;
-&lt;li&gt;Easily understand complex or poorly documented source code&lt;/li&gt;
-&lt;li&gt;Simplify the maintenance of legacy code and reusable libraries&lt;/li&gt;
-&lt;li&gt;Accelerate language and methodology learning&lt;/li&gt;
-&lt;li&gt;Automatically generate well-organized source code documentation&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://www.dvteclipse.com/mkt/Fig1-DVT-640x400-48border-web.jpg&quot; alt=&quot;DVT Overview Screenshot &quot; height=&quot;388&quot; width=&quot;620&quot; border=&quot;0&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;FEATURES &lt;/span&gt;&lt;br /&gt;
-Some of the features that DVT offers include:&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;Autocomplete&lt;/li&gt;
-&lt;li&gt;Compilation errors signaled on the fly &lt;/li&gt;
-&lt;li&gt;In-line reminders for task tracking (TO DOs)&lt;/li&gt;
-&lt;li&gt;Customizable code and project templates&lt;/li&gt;
-&lt;li&gt;Dedicated wizards to generate getters and setters, override&lt;br /&gt;
-functions, or help with UVM factory registration&lt;/li&gt;
-&lt;li&gt;Hyperlinks that help navigate faster in the source code
-&lt;/li&gt;&lt;li&gt;Semantic search&lt;/li&gt;
-&lt;li&gt;Refactoring&lt;/li&gt;
-&lt;li&gt;Macro expansion&lt;/li&gt;
-&lt;li&gt;Class and structural browsing&lt;/li&gt;
-&lt;li&gt;Trace port connections &lt;/li&gt;
-&lt;li&gt;UML diagrams for inspecting and documenting the architecture&lt;/li&gt;
-&lt;li&gt;Module flow diagrams for inspecting and documenting a module structure&lt;/li&gt;
-&lt;li&gt;Automated documentation extraction&lt;/li&gt;
-&lt;li&gt;UVM support and compliance checking&lt;/li&gt;
-&lt;li&gt;Cross-language capabilities for mixed-language projects&lt;/li&gt;
-&lt;li&gt;Vi and emacs emulation&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;INTEGRATION WITH OTHER TOOLS&lt;/span&gt;&lt;br /&gt;
-Since it is built on the Eclipse Platform, the DVT IDE can be easily integrated within a large plug-in ecosystem. It also integrates seamlessly with all major hardware simulators such as NCSim , Specman , VCS , and Questa, to enable simplified simulation analysis and debugging. In addition, it works with revision control systems like CVS, Git, Subversion, ClearCase and bug tracking systems such as Bugzilla and ClearQuest.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;RESOURCES &lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt; &lt;a href=&quot;http://www.dvteclipse.com/Design_and_Verification_Tools_Eclipse_IDE.html&quot; target=&quot;_blank&quot;&gt;DVT web page&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.dvteclipse.com/datasheet/AMIQ_DVT_Datasheet.pdf&quot; target=&quot;_blank&quot;&gt;DVT datasheet&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/dvteclipse&quot; target=&quot;_blank&quot;&gt;Demo movies&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.dvteclipse.com/UVM_Support_in_DVT_Eclipse.html&quot;&gt;UVM Support in DVT&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.dvteclipse.com/DVT_Debugger_Add-On_Module.html&quot;&gt;DVT Debugger Module&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Wed, 19 Apr 2006 12:00:18 +0000</pubDate>
- <dc:creator>emisingname6ia</dc:creator>
- <guid isPermaLink="false">192 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/design-and-verification-tools-dvt-ide-e-systemverilog-and-vhdl#comments</comments>
-  </item>
-  <item>
-    <title>More Clipboard</title>
-    <link>http://marketplace.eclipse.org/content/more-clipboard</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/default_images/default_2.png&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Mon, 2009-02-09 10:28&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2016-06-02 01:55&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/mmisingnameori/listings&quot; title=&quot;Mikhail Barg&quot;&gt;Mikhail Barg&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;More Clipboard keeps track of the latest entries copied/cut into clipboard buffer and allows quick pasting from the popup list by pressing a hotkey. Inspired by Multi Clipboard plugin for Eclipse and Visual Assist for MS VS. &lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Mon, 09 Feb 2009 15:28:37 +0000</pubDate>
- <dc:creator>mmisingnameori</dc:creator>
- <guid isPermaLink="false">857 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/more-clipboard#comments</comments>
-  </item>
-  <item>
-    <title>Performance Tool for Java Development</title>
-    <link>http://marketplace.eclipse.org/content/performance-tool-java-development</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/XRebel_EclipseMarketplace_v1_110x80.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2016-04-26 08:10&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2016-06-01 16:43&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/owhite/listings&quot; title=&quot;Jevgeni Kabanov&quot;&gt;Jevgeni Kabanov&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;XRebel is a development time performance monitor for Java web apps. Find slow methods and HTTP calls, excessive queries, and hidden exceptions within your web application. Get rapid feedback in development where issues are easiest to debug - before committing your code.&lt;/p&gt;
-&lt;p&gt;Learn more and watch a quick demo of it in action here:&lt;br /&gt;&lt;a href=&quot;http://zeroturnaround.com/software/xrebel/?utm_source=eclipse&amp;amp;utm_medium=banner&amp;amp;utm_campaign=xrebel_eclipse_marketplace&quot;&gt;http://www.xrebel.com&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Tue, 26 Apr 2016 12:10:25 +0000</pubDate>
- <dc:creator>owhite</dc:creator>
- <guid isPermaLink="false">2854925 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/performance-tool-java-development#comments</comments>
-  </item>
-  <item>
-    <title>JavaStudio</title>
-    <link>http://marketplace.eclipse.org/content/javastudio</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/logo_puzzle_eclipse_1.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2016-05-19 02:58&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2016-06-01 16:39&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/hcunier/listings&quot; title=&quot;Java Studio&quot;&gt;Java Studio&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Ready to go Enterprise WebApps!&lt;br /&gt;
-JavaStudio is a &quot;Modeling through Automized Tests&quot; visual Java development environment to build an Scalable Enterprise Web App with pleasant users. It helps you to Create your project from scratch and Visually Build your Application in the easiest way. If you were a .net developer or a Delphi developer and want to code with same paradigm, JavExpress Studio is Ready.&lt;/p&gt;
-&lt;p&gt;No more copying dependencies, no more writing annoying annotations on JPA entities, no more editing html codes, no more duplicating same page layout, no more leaked connections, no more hardwritten handler attaching, no more untestable applications and there are more &quot;no mores&quot; to explore!&lt;/p&gt;
-&lt;p&gt;You don&#039;t need to learn new things. You will use WorldWide Open and Improved technologies but with a powerful IDE witout pain.&lt;/p&gt;
-&lt;p&gt;All of your code will be Spring, Jpa(Hibernate), GWT compatible and will work at unbelievable speed on production environment. Your application will work on any J2SE Container.&lt;/p&gt;
-&lt;p&gt;JavExpress platform has been used on many biggest projects and got a few awards for now!&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Thu, 19 May 2016 06:58:23 +0000</pubDate>
- <dc:creator>hcunier</dc:creator>
- <guid isPermaLink="false">2892308 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/javastudio#comments</comments>
-  </item>
-  <item>
-    <title>EGerrit</title>
-    <link>http://marketplace.eclipse.org/content/egerrit</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/SmallEGerrit.png&quot; width=&quot;100&quot; height=&quot;78&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2015-10-23 15:41&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2016-06-01 15:09&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/prapicau/listings&quot; title=&quot;Pascal Rapicault&quot;&gt;Pascal Rapicault&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The EGerrit plug-in aims at deeply integrating the best of Gerrit&#039;s features into Eclipse to minimize the context switch from the IDE to the web, and leveraging IDE specific features such as syntax coloring, navigation, etc&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Fri, 23 Oct 2015 19:41:55 +0000</pubDate>
- <dc:creator>prapicau</dc:creator>
- <guid isPermaLink="false">2579663 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/egerrit#comments</comments>
   </item>
   </channel>
 </rss>

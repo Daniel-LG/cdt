@@ -32,7 +32,7 @@ import cn.smartcore.dev.ui.natures.ProjectNature;
  */
 public class NewSimulatorWizard extends CProjectWizard {
 
-	private static final int SMARTSIMU_SIMULATOR = 1;
+	private static final int SMARTSIMU_SIMULATOR = 2;
 
 	public NewSimulatorWizard() {
 		super(SMARTSIMU_SIMULATOR);

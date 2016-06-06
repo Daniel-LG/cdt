@@ -1,13 +1,17 @@
 package cn.smartcore.dev.ui;
 
+import java.io.File;
+
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.QualifiedName;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.jface.viewers.IDecoration;
 import org.eclipse.jface.viewers.ILabelDecorator;
 import org.eclipse.jface.viewers.ILabelProviderListener;
 import org.eclipse.swt.graphics.Image;
 
+import cn.smartcore.dev.ui.messages.Messages;
 import cn.smartcore.dev.ui.natures.ProjectNature;
 
 public class ProjectDecorator implements ILabelDecorator {
@@ -66,7 +70,15 @@ public class ProjectDecorator implements ILabelDecorator {
 	public String decorateText(String text, Object element) {
 		try {
 			if (((IProject) element).hasNature(ProjectNature.MODULE_PROJECT_ID)) {
-				return text + " [Module]";
+				String moduleConfigPath = ((IProject) element)
+						.getPersistentProperty(new QualifiedName(Messages.Qualifier, Messages.Property_1));
+				if (moduleConfigPath != null) {
+					// moduleConfigPath=/xx/xx/xx/moduleType.conf
+					String moduleType = moduleConfigPath.substring(moduleConfigPath.lastIndexOf(File.separator) + 1,
+							moduleConfigPath.lastIndexOf('.'));
+					return text + " [Module Type:" + moduleType + "]";
+				}
+				return text + " [Module Type:Unknown]";
 			} else if (((IProject) element).hasNature(ProjectNature.SIMULATOR_PROJECT_ID)) {
 				return text + " [Simulator]";
 			} else if (((IProject) element).hasNature(ProjectNature.APP_PROJECT_ID)) {

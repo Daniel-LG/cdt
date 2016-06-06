@@ -8,6 +8,119 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>JBoss Tools Team: JBoss Fuse Tooling - Camel File Validation - Existing, Improved and New</title>
+	<guid isPermaLink="true">http://tools.jboss.org/blog/eclipse-fuse-tooling-new-validation.html</guid>
+	<link>http://tools.jboss.org/blog/eclipse-fuse-tooling-new-validation.html</link>
+	<description>&lt;div&gt;&lt;div id=&quot;preamble&quot;&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Note: This article has been posted also on &lt;a href=&quot;http://developers.redhat.com/blog/2016/05/20/jboss-fuse-tooling-camel-file-validation-existing-improved-and-new/&quot;&gt;Red Hat Developers Program blog&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;As I mentioned in this earlier &lt;a href=&quot;http://developers.redhat.com/blog/2016/05/17/jboss-fuse-tooling-diagram-reworked-new-shiny-colors-and-more/&quot;&gt;post&lt;/a&gt;, the 8.0.0.Beta2 version of JBoss Fuse Tooling is available. In this article I will cover another new and updated feature: validations. I will explain what was already available and what’s new which improves productivity.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;existing&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#existing&quot;&gt;&lt;/a&gt;Existing&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;In Fuse Camel Editor, the classic XML editor is used in the source tab. Consequently, we can rely on the Eclipse built-in validation of xml files against xsd. You just have to right-click on the source code, then Validate.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img alt=&quot;validation-XSD&quot; src=&quot;http://tools.jboss.org/blog/images/fuse/validation/validation-XSD.png&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;There was a limitation about blueprint, I let you check this issue report in case the validation doesn’t work for you in previous versions: &lt;a href=&quot;https://issues.jboss.org/browse/FUSETOOLS-1653&quot;&gt;FUSETOOLS-1653&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;improved-and-new&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#improved-and-new&quot;&gt;&lt;/a&gt;Improved and New&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;fuse-validation-everywhere&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#fuse-validation-everywhere&quot;&gt;&lt;/a&gt;Fuse validation everywhere&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Going further than the xsd validation, the Fuse validation validates some characteristics of the component URI. This validation reports Problem markers against the Camel Component. This kind of validation was already available through Properties view but there was no global vision of these issues.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can now see markers in:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;Project explorer&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;Camel Route Diagram&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;Tree nodes for Global configuration element&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;Source tab editor&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;Problems view&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img alt=&quot;validationEverywhere&quot; src=&quot;http://tools.jboss.org/blog/images/fuse/validation/validationEverywhere.png&quot; /&gt;&lt;/span&gt;
+      &lt;span class=&quot;image&quot;&gt;&lt;img alt=&quot;validationOnXmlFile&quot; src=&quot;http://tools.jboss.org/blog/images/fuse/validation/validationOnXmlFile.png&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;jump-from-problems-view&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#jump-from-problems-view&quot;&gt;&lt;/a&gt;Jump from Problems view&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When double-clicking on Fuse Validation error in Problems view, you are redirected to the correct Editor tab depending on which specific Camel element the error comes from.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;For the xsd validation, you are redirected to the source editor.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Mon, 06 Jun 2016 06:52:27 +0000</pubDate>
+</item>
+<item>
+	<title>Annamalai Chockalingam: Eclipse Summit India 2016 @ Bangalore</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-2310191777550204104.post-8151207423587474790</guid>
+	<link>http://eclipseo.blogspot.com/2016/06/eclipse-summit-india-2016-bangalore.html</link>
+	<description>&lt;div dir=&quot;ltr&quot; style=&quot;text-align: left;&quot;&gt;Hey Guys&lt;br /&gt;&lt;br /&gt;Thanks to Eclipse Foundation and IBM, this year Eclipse Day has been upgraded to a 2 Day Conference 'Eclipse Summit'. It is open for Registration. Happening in the Month of Aug from 25th to 27th.&lt;br /&gt;&lt;br /&gt;Visit : &lt;a href=&quot;http://eclipsesummit.in/#register&quot; target=&quot;_blank&quot;&gt;Eclipse Summit Website&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;The Summit is open for Talk Submission and Registration. Earlier you register the better discount you get.&lt;br /&gt;I am definitely looking forward to be there and have already submitted my talk on &lt;b&gt;&lt;a href=&quot;https://confengine.com/eclipse-summit-2016/proposal/2661/consuming-an-emf-model-in-ur-eclipse-ui-importance-of-edit-plugin&quot; target=&quot;_blank&quot;&gt;Consuming EMF Model in Eclipse UI - Importance of .EDIT Plugin&lt;/a&gt;&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Lets make this event a grand success and it definitely needs your support as a Community&lt;br /&gt;Looking forward to meet you all out there.&lt;/div&gt;</description>
+	<pubDate>Sat, 04 Jun 2016 04:47:44 +0000</pubDate>
+	<author>noreply@blogger.com (Its_Me_Malai)</author>
+</item>
+<item>
+	<title>Annamalai Chockalingam: Eclipse Neon Demo Camp 2016 on 22nd June 2016 @ Infosys</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-2310191777550204104.post-6940463829242100276</guid>
+	<link>http://eclipseo.blogspot.com/2016/05/eclipse-neon-demo-camp-2016-on-23rd.html</link>
+	<description>&lt;div dir=&quot;ltr&quot; style=&quot;text-align: left;&quot;&gt;Guys Back is the release season in the Eclipse World, bringing back the opportunity to network thru its democamp. this time its Eclipse Neon Demo Camp 2016 on 22nd June 2016 @ Infosys.&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://1.bp.blogspot.com/-oItjYG2TvtY/V0ZtMBDxq9I/AAAAAAAAJFs/7QRxBGVIbvsvgTafO0_ZkrTy3l8XFXlqQCLcB/s1600/banner.png&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;171&quot; src=&quot;https://1.bp.blogspot.com/-oItjYG2TvtY/V0ZtMBDxq9I/AAAAAAAAJFs/7QRxBGVIbvsvgTafO0_ZkrTy3l8XFXlqQCLcB/s640/banner.png&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Registrations are open for talks and participation: &lt;a href=&quot;https://docs.google.com/forms/d/1n4LFY7zLKofAmVKJ5whB1BFXzInJ0Nh32b5uPbXaSZE/&quot; target=&quot;_blank&quot;&gt;Click Here&lt;/a&gt;.&lt;br /&gt;Looking forward to meet many of you out there. :)&lt;/div&gt;</description>
+	<pubDate>Sat, 04 Jun 2016 03:42:55 +0000</pubDate>
+	<author>noreply@blogger.com (Its_Me_Malai)</author>
+</item>
+<item>
+	<title>VIATRA: VIATRA 1.2.1 Released</title>
+	<guid isPermaLink="false">5614faafe4b03f677dc3822b:56153118e4b022593e35e24b:574bdccef8baf34bebd9189b</guid>
+	<link>http://viatra.net/news/2016/6/viatra-121-released</link>
+	<description>&lt;p&gt;The &lt;a href=&quot;http://eclipse.org/viatra&quot; target=&quot;_blank&quot;&gt;VIATRA project&lt;/a&gt; is happy to report that the service release 1.2.1 is now available, with some &lt;a href=&quot;https://projects.eclipse.org/projects/modeling.viatra/releases/1.2.1/bugs&quot; target=&quot;_blank&quot;&gt;hotfixes&lt;/a&gt; for our 1.2.0 version. The most important of these are fixing an exception in the local search based query evaluation algorithm and correcting our Maven artifacts. Read our &lt;a href=&quot;http://viatra.net/news/2016/5/viatra-1-2-0-released&quot; target=&quot;_blank&quot;&gt;previous post&lt;/a&gt; for the most important highlights of the 1.2.x VIATRA release cycle.&lt;/p&gt;&lt;p&gt;All downloads are available now from the &lt;a href=&quot;https://www.eclipse.org/viatra/downloads.php&quot; target=&quot;_blank&quot;&gt;downloads area&lt;/a&gt; or the &lt;a href=&quot;http://marketplace.eclipse.org/content/viatra&quot; target=&quot;_blank&quot;&gt;marketplace&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Feel free to reach out on the Eclipse Forums of VIATRA or the developer mailing list if you have questions or request &lt;a href=&quot;http://incquerylabs.com/&quot; target=&quot;_blank&quot;&gt;industrial support&lt;/a&gt; for more advanced issues.&lt;/p&gt;</description>
+	<pubDate>Fri, 03 Jun 2016 08:13:02 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: It's FEEP-ing time!</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/WBcpu6OgqPw/its-feep-ing-time</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/WBcpu6OgqPw/its-feep-ing-time</link>
+	<description>We're improving the Eclipse Platform and it's all thanks to you!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/WBcpu6OgqPw&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Fri, 03 Jun 2016 06:32:00 +0000</pubDate>
+</item>
+<item>
+	<title>Mikael Barbero: It’s FEEP-ing time!</title>
+	<guid isPermaLink="true">https://mikael-barbero.tumblr.com/post/145308146515</guid>
+	<link>https://mikael-barbero.tumblr.com/post/145308146515</link>
+	<description>&lt;p&gt;FEEP does sound like a bird call, but it stands for Friend of Eclipse Enhancement Program. Yes, it is a mouthful. You may wonder what it stand for… Well, let me tell you! &lt;/p&gt;&lt;p&gt;FEEP is a program launched by the Eclipse Foundation late last year to utilize all the donations made through the Friends of Eclipse program to make significant and meaningful improvements and enhancements to the Eclipse IDE/Platform. Prior to this launch, all donations were being reinvested into the general Eclipse community, but FEEP commits to investing all your donations into improving the Eclipse Platform. In other words, &lt;b&gt;100% of your donation will fund Eclipse Platform improvements&lt;/b&gt;!&lt;/p&gt;&lt;p&gt;Since the program was first launched in 2015, we’ve already made many concrete improvements and we are planning even more. We have been working closely with representatives from the Eclipse Architecture Council and Project Management Committee (PMC) to identify bugs and problems that are important to community members and that will improve your everyday coding life. Here is what we’ve done so far thanks to your donations:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Mac install experience&lt;/b&gt;: Eclipse is now packaged as a native OS X application, which means it’s now easier for Mac users to install Eclipse packages!&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;GTK3 support&lt;/b&gt;: GTK3 support has been improved, making the Linux user experience much better.&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Download and Updates&lt;/b&gt;: p2 metadata is now distributed with a new compression scheme (xz) to be downloaded faster. Processes relying on these downloads (like check for updates and dependency resolution) now requires less waiting time!&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Autosave of all workbench editors&lt;/b&gt;: As the title implies, all workbench editors are now automatically saved, which prevents the unfortunate loss of work.&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Dark theme for Windows&lt;/b&gt;: Updates were made to the Eclipse Dark theme to make it easier to work with and more appealing to the user’s eyes.&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Lower memory consumption&lt;/b&gt;: some memory leaks, especially in the toolbar handling, have been fixed. It means one thing: fewer OutOfMemoryError!&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;figure class=&quot;tmblr-full&quot;&gt;&lt;img alt=&quot;image&quot; src=&quot;https://67.media.tumblr.com/a0ca12bd27b31465b69d9022815171be/tumblr_inline_o85gh7cTLi1tnayhr_540.png&quot; /&gt;&lt;/figure&gt;&lt;p&gt;To experience these changes in your workspace you’ll want to install the latest version of Eclipse Neon. &lt;a href=&quot;https://www.eclipse.org/downloads&quot;&gt;Download Eclipse Neon&lt;/a&gt; (4.6) now (or use a &lt;a href=&quot;https://www.eclipse.org/downloads/index-developer.php&quot;&gt;developer build&lt;/a&gt; if you see this message before the release scheduled on June 22nd 2016). &lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;FEEP is an ongoing program and we’re continually planning new enhancements&lt;/b&gt;. Like any well laid out plan, the upcoming fixes are always subject to change, but as the plan stands today, here are the the next targeted fixes: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Even faster download of Eclipse updates&lt;br /&gt;&lt;/li&gt;&lt;li&gt;Identify and report non cancelable background tasks easily&lt;br /&gt;&lt;/li&gt;&lt;li&gt;More improvements to the Windows dark theme&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://projects.eclipse.org/development_effort/enable-refresh-using-native-hooks&quot;&gt;No more “resource is out of sync with the filesystem” error &lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;li&gt;Add the &lt;a href=&quot;https://projects.eclipse.org/development_effort/fix-poor-user-experience-jvm-selection-dialog&quot;&gt;ability to choose which Java runtime&lt;/a&gt; to be used to start Eclipse.&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://projects.eclipse.org/development_effort/wtp-xml-editor-technology-face-lift&quot;&gt;XML Editor improvements&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Obviously, &lt;b&gt;the development depends on the amount of donations received&lt;/b&gt;. The great news is, you can make a difference and help improve the Eclipse Platform! Don’t be shy, every dollar counts and the community will benefit from your support. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;We also offer benefits to donors joining our Friends and Best Friends program. Find out &lt;a href=&quot;http://www.eclipse.org/donate/benefits.php&quot;&gt;how to receive benefits&lt;/a&gt;. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Make a difference, please &lt;a href=&quot;http://www.eclipse.org/donate/&quot;&gt;donate today&lt;/a&gt;! &lt;/b&gt;&lt;br /&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 02 Jun 2016 15:03:27 +0000</pubDate>
+</item>
+<item>
 	<title>VIATRA: Eclipse Neon DemoCamp in Budapest</title>
 	<guid isPermaLink="false">5614faafe4b03f677dc3822b:56153118e4b022593e35e24b:574ff23f86db43b347aa73b4</guid>
 	<link>http://viatra.net/news/2016/6/eclipse-neon-democamp-in-budapest</link>
@@ -224,14 +337,6 @@
 	<pubDate>Thu, 26 May 2016 09:53:47 +0000</pubDate>
 </item>
 <item>
-	<title>Annamalai Chockalingam: Eclipse Neon Demo Camp 2016 on 23rd June 2016 @ Infosys</title>
-	<guid isPermaLink="false">tag:blogger.com,1999:blog-2310191777550204104.post-6940463829242100276</guid>
-	<link>http://eclipseo.blogspot.com/2016/05/eclipse-neon-demo-camp-2016-on-23rd.html</link>
-	<description>&lt;div dir=&quot;ltr&quot; style=&quot;text-align: left;&quot;&gt;Guys Back is the release season in the Eclipse World, bringing back the opportunity to network thru its democamp. this time its Eclipse Neon Demo Camp 2016 on 23rd June 2016 @ Infosys.&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://1.bp.blogspot.com/-oItjYG2TvtY/V0ZtMBDxq9I/AAAAAAAAJFs/7QRxBGVIbvsvgTafO0_ZkrTy3l8XFXlqQCLcB/s1600/banner.png&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;171&quot; src=&quot;https://1.bp.blogspot.com/-oItjYG2TvtY/V0ZtMBDxq9I/AAAAAAAAJFs/7QRxBGVIbvsvgTafO0_ZkrTy3l8XFXlqQCLcB/s640/banner.png&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Registrations are open for talks and participation: &lt;a href=&quot;https://docs.google.com/forms/d/1n4LFY7zLKofAmVKJ5whB1BFXzInJ0Nh32b5uPbXaSZE/&quot; target=&quot;_blank&quot;&gt;Click Here&lt;/a&gt;.&lt;br /&gt;Looking forward to meet many of you out there. :)&lt;/div&gt;</description>
-	<pubDate>Thu, 26 May 2016 03:29:55 +0000</pubDate>
-	<author>noreply@blogger.com (Its_Me_Malai)</author>
-</item>
-<item>
 	<title>JBoss Tools Team: JBoss Tools Alpha2 for Eclipse Neon</title>
 	<guid isPermaLink="true">http://tools.jboss.org/blog/alpha-for-neon.html</guid>
 	<link>http://tools.jboss.org/blog/alpha-for-neon.html</link>
@@ -404,94 +509,6 @@
 	<description>&lt;p&gt;What is a Linter?Linters are Code Quality Inspectors, which work by basically parsing your code. They check JavaScript code for common mistakes and discrepancies without running the application.You can plug linters into your code editor or copy and paste your code into any standard online linting tool. Linting your code is a great thing to […]&lt;/p&gt;
 &lt;p&gt;The post &lt;a href=&quot;https://www.genuitec.com/javascript-linters-even-in-your-ide/&quot; rel=&quot;nofollow&quot;&gt;JavaScript Linters, even in your IDE!&lt;/a&gt; appeared first on &lt;a href=&quot;https://www.genuitec.com&quot; rel=&quot;nofollow&quot;&gt;Genuitec&lt;/a&gt;.&lt;/p&gt;</description>
 	<pubDate>Mon, 23 May 2016 17:34:30 +0000</pubDate>
-</item>
-<item>
-	<title>Maximilian and Jonas: Eclipse Demo Camp Neon, June 20th 2016 – Already sold out?</title>
-	<guid isPermaLink="false">http://eclipsesource.com/blogs/?p=26626</guid>
-	<link>http://eclipsesource.com/blogs/2016/05/23/eclipse-demo-camp-neon-june-20th-2016-already-sold-out/</link>
-	<description>&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Every year it is amazing to see how fast the &lt;/span&gt;&lt;a href=&quot;http://www.eventbrite.de/e/eclipse-democamp-neon-2016-tickets-24957309986&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Eclipse DemoCamp in Munich&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; sells out. To give everyone a fair chance to register, we have announced the time the registration opens in advance. This year, it took less than 24 hours, until the available 110 seats were fully booked. However, even if you did not get a seat, we still encourage you to register for the waiting list. You can register &lt;/span&gt;&lt;a href=&quot;http://www.eventbrite.de/e/eclipse-democamp-neon-2016-tickets-24957309986&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;here&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;. There you’ll also find detailed information on the location, agenda, time and more. The democamp is in 4 weeks (June 20th 2016) and some of the 110 registrants will be forced to cancel. We remind all current registrants to double check their availability. We expect some people to unregister before the event. If and only if you are on the waiting list, you will be notified immediately, once a seat becomes available. We wish you good luck and we are looking forward to great demos and seeing you in June!&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://eclipsesource.com/blogs/wp-content/uploads/2016/05/DemoCamp.png&quot; rel=&quot;attachment wp-att-26529&quot;&gt;&lt;img alt=&quot;DemoCamp&quot; class=&quot;aligncenter wp-image-26529&quot; height=&quot;186&quot; src=&quot;http://eclipsesource.com/blogs/wp-content/uploads/2016/05/DemoCamp-294x300.png&quot; width=&quot;182&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-&lt;span style=&quot;font-weight: 400;&quot;&gt;A big thanks to our sponsors: BSI Business Systems Integration AG,  EclipseSource München GmbH, Eclipse Foundation, Capgemini Deutschland GmbH and Angelika for organization.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block;&quot;&gt;&lt;a href=&quot;https://twitter.com/intent/tweet?source=webclient&amp;amp;text=Eclipse+Demo+Camp+Neon%2C+June+20th+2016+%26%238211%3B+Already+sold+out%3F&amp;amp;via=eclipsesource&amp;amp;url=http://eclipsesource.com/blogs/2016/05/23/eclipse-demo-camp-neon-june-20th-2016-already-sold-out/&quot; style=&quot;margin-right: 5px;&quot; target=&quot;_blank&quot; title=&quot;Share on Twitter&quot;&gt;&lt;img alt=&quot;Twitter&quot; src=&quot;http://eclipsesource.com/blogs/wp-content/plugins/custom-about-author/images/social_media/twitter.png&quot; title=&quot;Twitter&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;https://plus.google.com/share?url=http://eclipsesource.com/blogs/2016/05/23/eclipse-demo-camp-neon-june-20th-2016-already-sold-out/&quot; style=&quot;margin-right: 5px;&quot; target=&quot;_blank&quot; title=&quot;+1&quot;&gt;&lt;img alt=&quot;Google+&quot; src=&quot;http://eclipsesource.com/blogs/wp-content/plugins/custom-about-author/images/social_media/google_plus.png&quot; title=&quot;Google+&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.linkedin.com/cws/share?url=http://eclipsesource.com/blogs/2016/05/23/eclipse-demo-camp-neon-june-20th-2016-already-sold-out/&quot; style=&quot;margin-right: 5px;&quot; target=&quot;_blank&quot; title=&quot;Share on LinkedIn&quot;&gt;&lt;img alt=&quot;LinkedIn&quot; src=&quot;http://eclipsesource.com/blogs/wp-content/plugins/custom-about-author/images/social_media/linkedin.png&quot; title=&quot;LinkedIn&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;https://www.facebook.com/sharer/sharer.php?u=http://eclipsesource.com/blogs/2016/05/23/eclipse-demo-camp-neon-june-20th-2016-already-sold-out/&amp;amp;t=Eclipse+Demo+Camp+Neon%2C+June+20th+2016+%26%238211%3B+Already+sold+out%3F&quot; style=&quot;margin-right: 5px;&quot; target=&quot;_blank&quot; title=&quot;Facebook&quot;&gt;&lt;img alt=&quot;Facebook&quot; src=&quot;http://eclipsesource.com/blogs/wp-content/plugins/custom-about-author/images/social_media/facebook.png&quot; title=&quot;Facebook&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;a href=&quot;http://eclipsesource.com/blogs/2016/05/23/eclipse-demo-camp-neon-june-20th-2016-already-sold-out/#respond&quot;&gt;Leave a Comment&lt;/a&gt;. Tagged with &lt;a href=&quot;http://eclipsesource.com/blogs/tag/democamp/&quot; title=&quot;democamp Tag&quot;&gt;democamp&lt;/a&gt;, &lt;a href=&quot;http://eclipsesource.com/blogs/tag/eclipse/&quot; title=&quot;eclipse Tag&quot;&gt;eclipse&lt;/a&gt;, &lt;a href=&quot;http://eclipsesource.com/blogs/tag/democamp/&quot; title=&quot;democamp Tag&quot;&gt;democamp&lt;/a&gt;, &lt;a href=&quot;http://eclipsesource.com/blogs/tag/eclipse/&quot; title=&quot;eclipse Tag&quot;&gt;eclipse&lt;/a&gt;&lt;p&gt;&lt;/p&gt;</description>
-	<pubDate>Mon, 23 May 2016 10:42:01 +0000</pubDate>
-</item>
-<item>
-	<title>Kai Kreuzer: openHAB 2.0 beta3 Release</title>
-	<guid isPermaLink="false">http://www.kaikreuzer.de/2016/05/22/openhab-releases</guid>
-	<link>http://www.kaikreuzer.de/2016/05/22/openhab-releases/</link>
-	<description>&lt;p&gt;Some time has passed since the openHAB 2.0 beta2 release and a lot development efforts were done - so it was clearly time to &lt;a href=&quot;https://github.com/openhab/openhab-distro/releases/tag/2.0.0.b3&quot;&gt;release openHAB 2.0 beta3&lt;/a&gt;. I see that many openHAB contributors and users are moving over from 1.x by looking at the activity in our forum and there has been very positive feedback regarding the stability.&lt;/p&gt;
-
-
-
-&lt;p&gt;This is also clearly indicated by the heavily increased number of &lt;a href=&quot;http://docs.openhab.org/features/bindings.html#compatible-1x-add-ons&quot;&gt;1.x add-ons that were successfully tested&lt;/a&gt; and thus included in the openHAB 2 distribution - we have reached 80 add-ons now, complementing about 40 add-ons that were built for openHAB 2 right from the start. We are therefore getting much closer to having the openHAB 2 runtime as a full replacement for the openHAB 1 runtime for all existing users. When using textual configuration, it is fairly similar to setup and use.&lt;/p&gt;
-
-&lt;p&gt;Two missing parts are being heavily worked on:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A &lt;a href=&quot;http://docs.openhab.org/&quot;&gt;new openHAB 2 Documentation website&lt;/a&gt; has been created with some initial content, which will grow heavily in the coming weeks to make it easier for newcomers to get into openHAB 2.&lt;/li&gt;
-  &lt;li&gt;The &lt;a href=&quot;https://github.com/openhab/openhab-distro/issues/66&quot;&gt;Debian packages&lt;/a&gt; are now produced by the build and it will soon be possible to install openHAB 2 through a simple “apt-get” on Linux.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Besides offering the comfort that people are used to in openHAB 1.x, there was of course also a lot of activity on the core framework (i.e. Eclipse SmartHome). This has specifically gained momentum since the end of last year, which can be nicely seen in the Github statistics.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img alt=&quot;Rule UI&quot; src=&quot;http://www.kaikreuzer.de/img/2016-05_esh-stats.png&quot; /&gt;
-&lt;small&gt;Commit activity on Eclipse SmartHome&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;This activity resulted in &lt;a href=&quot;https://github.com/eclipse/smarthome/issues?q=milestone%3A0.8.0.b5&quot;&gt;337 merged pull requests&lt;/a&gt; since the beta2 in January, which makes Eclipse SmartHome one of the most active projects in the &lt;a href=&quot;http://iot.eclipse.org/&quot;&gt;Eclipse IoT&lt;/a&gt; space.&lt;/p&gt;
-
-&lt;p&gt;Besides many small improvements and evolution of the binding APIs, a lot of work went into the Paper UI through which it is now possible to configure bindings and services as an alternative to the textual configuration files.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img alt=&quot;Rule UI&quot; src=&quot;http://www.kaikreuzer.de/img/2016-05_paperui.png&quot; /&gt;
-&lt;small&gt;System configuration through the Paper UI&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;Other features are a fully re-implemented &lt;a href=&quot;http://docs.openhab.org/features/bindings/lifx/readme.html&quot;&gt;LIFX binding&lt;/a&gt;, which now requires less system resources, an update Philips hue binding, which now also supports alarm and color cycle options as well as a greatly enhanced &lt;a href=&quot;http://docs.openhab.org/features/bindings/sonos/readme.html&quot;&gt;Sonos binding&lt;/a&gt;, which can now handle speaker groups, play notifications and many more things.&lt;/p&gt;
-
-&lt;p&gt;Two bindings that have by far the largest user base have been ported to openHAB 2 and now fully support discovery of devices, which is very useful in both cases, which are Z-Wave ad Homematic. Z-Wave supports a huge list of devices already and Chris is doing a phantastic job to maintain them in a dedicated &lt;a href=&quot;http://www.cd-jackson.com/index.php/zwave/zwave-device-database/zwave-device-list&quot;&gt;device database&lt;/a&gt;. For Homematic, this is not even necessary since the binding directly queries the Homematic CCU2 for the device meta-data and builds the openHAB-internal representation dynamically at runtime.&lt;/p&gt;
-
-&lt;p&gt;Last but not least, I would like to mention the &lt;a href=&quot;http://docs.openhab.org/features/bindings/digitalstrom/readme.html&quot;&gt;digitalSTROM binding&lt;/a&gt; - this has been developed by the &lt;a href=&quot;http://www.software-quality.fh-koeln.de/iemwiki/index.php/Hauptseite&quot;&gt;FH Köln&lt;/a&gt; and is by far the largest contribution in terms of lines of code and complexity of the integrated system.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img alt=&quot;Rule UI&quot; src=&quot;http://www.kaikreuzer.de/img/2016-05_ds.jpg&quot; /&gt;
-&lt;small&gt;digitalSTROM actuators&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;My favorite new additions are no bindings though - they are the native &lt;a href=&quot;http://docs.openhab.org/features/io/homekit/readme.html&quot;&gt;integration with HomeKit&lt;/a&gt; as well as with &lt;a href=&quot;http://docs.openhab.org/features/io/hueemulation/readme.html&quot;&gt;Amazon Echo by emulating a hue bridge&lt;/a&gt;. In the past people were using additional software like the ha-bridge or the openhab-homekit-bridge. Now this is fully integrated into openHAB and you can easily use Siri or Alexa for accessing anything that is connected to your openHAB installation.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img alt=&quot;Rule UI&quot; src=&quot;http://www.kaikreuzer.de/img/2016-05_echo.jpg&quot; /&gt;
-&lt;small&gt;Amazon Echo now works with openHAB&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;The last good news about the beta3 release is that it is included in the SD card image that I have prepared for the &lt;a href=&quot;http://www.pine64.com/&quot;&gt;PINE64&lt;/a&gt;. The PINE64 IoT package will be sent out to the backers starting later this week and it will directly ship with openHAB 2.0 pre-installed. For all other PINE64 users, who just ordered the board (most have already received it), the image will also be made available for download, so that you can flash yourself an SD card - it has never been easier to start with openHAB!&lt;/p&gt;</description>
-	<pubDate>Sun, 22 May 2016 22:00:00 +0000</pubDate>
-</item>
-<item>
-	<title>Kai Kreuzer: openHAB Foundation</title>
-	<guid isPermaLink="false">http://www.kaikreuzer.de/2016/05/21/openhab-foundation</guid>
-	<link>http://www.kaikreuzer.de/2016/05/21/openhab-foundation/</link>
-	<description>&lt;p&gt;After many months of preparation, it is finally done: We have started the &lt;a href=&quot;http://www.openhabfoundation.org&quot;&gt;openHAB Foundation&lt;/a&gt; on May 20 as a non-profit organisation for promoting Free software for smart home in general and openHAB in particular!
-In a good Silicon Valley style, we have chosen &lt;a href=&quot;https://twitter.com/openhabfdn/status/734467779697475584&quot;&gt;my (certainly automated) garage&lt;/a&gt; as the most suitable location.
-I am very grateful for having been unanimously elected as their president by the founding members.&lt;/p&gt;
-
-
-
-&lt;p&gt;The openHAB Foundation is meant as a successor of the &lt;a href=&quot;http://www.kaikreuzer.de/2014/06/16/openhab-20-and-eclipse-smarthome/#ug&quot;&gt;openHAB UG&lt;/a&gt;, which will be closed down in the course of this year.
-Being set up as a membership-based association, this will greatly boost the flexibility to get new people on board to better promote and support openHAB. Besides the regular members, it is also possible for companies to join the foundation. Another huge benefit is that the foundation is officially non-profit and thus sets the right frame for its activities.&lt;/p&gt;
-
-&lt;p&gt;Please note that creation of such an association is a process and we still have to do a few steps before we are fully operational and able to accept new members.
-So please check back regularly and best follow &lt;a href=&quot;https://twitter.com/openhabfdn&quot;&gt;the foundation on Twitter&lt;/a&gt; - we will keep you informed!&lt;/p&gt;</description>
-	<pubDate>Sat, 21 May 2016 22:00:00 +0000</pubDate>
-</item>
-<item>
-	<title>Fabio Zadrozny: LiClipse 3.0.3 (providing back to Open Source: multiple languages/TextMate bundles in Eclipse).</title>
-	<guid isPermaLink="false">tag:blogger.com,1999:blog-7855001383687474475.post-1033540073998265838</guid>
-	<link>http://liclipse.blogspot.com/2016/05/liclipse-303-providing-back-to-open.html</link>
-	<description>&lt;b&gt;LiClipse 3.0.3&lt;/b&gt; is now released... The main things on LiClipse itself is that the base platform was upgraded to Eclipse 4.6 RC1 and EGit was upgraded (it had a critical issue in the Git Staging View).&lt;br /&gt;&lt;br /&gt;Now, what I really wanted to talk about is that with this release, the LiClipse editor component was open sourced!&lt;br /&gt;&lt;br /&gt;The editor component in this case is the component which allows LiClipse to support multiple languages out of the box (either through its own language or through the TextMate grammar).&lt;br /&gt;&lt;br /&gt;So, the features which are now available as &lt;b&gt;Open Source (EPL)&lt;/b&gt; are:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Syntax Highlighting (LiClipse, TextMate or SublimeText based).&lt;/li&gt;&lt;li&gt;Code completion.&lt;/li&gt;&lt;li&gt;Outline view and Quick Outline.&lt;/li&gt;&lt;li&gt;Text-based mark occurrences.&lt;/li&gt;&lt;li&gt;LiClipse Languages view:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Enables exploring installed languages.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;LiClipse Partitions view:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Enables inspecting the partitioning of the editor.&lt;/li&gt;&lt;li&gt;Useful to debug how LiClipseText is parsing a language.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Use LiClipseText as a base for other editors:&lt;/li&gt;&lt;li&gt;Languages may be created and experimented with on-the-fly, without restarting Eclipse.&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;The home page with more details on the project is: &lt;a href=&quot;http://liclipse.com/text&quot;&gt;http://liclipse.com/text&lt;/a&gt;.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;So, what does this mean for LiClipse itself and its current users?&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;First, &lt;b&gt;LiClipse &lt;/b&gt;(the commercial counterpart) still exists and provides advanced features not in &lt;b&gt;LiClipseText&lt;/b&gt;:&lt;ul&gt;&lt;li&gt;Bundling of LiClipseText (along with PyDev, EGit, ColorTheme, AnyEdit and StartExplorer) as a standalone with native installers.&lt;/li&gt;&lt;li&gt;Enhancements to the theming (allowing theming of the IDE along with the editor and a nice dark theme).&lt;/li&gt;&lt;li&gt;Multiple cursors.&lt;/li&gt;&lt;li&gt;Linting for JavaScript, XML and HTML editors.&lt;/li&gt;&lt;li&gt;Code formatting for HTML, XML.&lt;/li&gt;&lt;li&gt;Vertical Indent Guides.&lt;/li&gt;&lt;li&gt;Improved text search capabilities (with Lucene index-based searching, support for external folders, open editors and additional filtering on results page).&lt;/li&gt;&lt;li&gt;HTML preview for the RST, Markdown and HTML editors.&lt;/li&gt;&lt;li&gt;Debugging of Django Templates in PyDev.&lt;/li&gt;&lt;li&gt;Launching of files opened with LiClipseText.&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;My hope is that users that can will still upgrade to it (to get the advanced features and to help in keeping the LiClipseText and PyDev development going on) or will donate to keep its development going forward...&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;And the main benefit here (both for existing users or new users) is that the LiClipse editor (LiClipseText) being EPL makes it hackable by anyone ;)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;/div&gt;</description>
-	<pubDate>Fri, 20 May 2016 12:19:15 +0000</pubDate>
-	<author>noreply@blogger.com (Fabio Zadrozny)</author>
-</item>
-<item>
-	<title>Eclipse Announcements: Download Eclipse Neon (4.6) RC1</title>
-	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/kD6M7-Lzxo4/index-developer.php</guid>
-	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/kD6M7-Lzxo4/index-developer.php</link>
-	<description>The latest Eclipse Neon release is now available. Download and test drive it this weekend!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/kD6M7-Lzxo4&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Fri, 20 May 2016 06:15:00 +0000</pubDate>
 </item>
 
 </channel>

@@ -1,89 +1,136 @@
 package cn.smartcore.dev.ui.wizards;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
 import java.net.URI;
 
-import org.eclipse.cdt.core.CCorePlugin;
-import org.eclipse.cdt.internal.ui.newui.Messages;
-import org.eclipse.cdt.ui.wizards.CProjectWizard;
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IProjectDescription;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.IWorkspaceRunnable;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IConfigurationElement;
 import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.Path;
+import org.eclipse.core.runtime.IStatus;
+import org.eclipse.core.runtime.OperationCanceledException;
+import org.eclipse.core.runtime.QualifiedName;
+import org.eclipse.core.runtime.Status;
 import org.eclipse.core.runtime.SubProgressMonitor;
+import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.jface.viewers.IStructuredSelection;
+import org.eclipse.ui.IWorkbench;
+import org.eclipse.ui.actions.WorkspaceModifyOperation;
+import org.eclipse.ui.dialogs.WizardNewProjectCreationPage;
+import org.eclipse.ui.wizards.newresource.BasicNewProjectResourceWizard;
+import org.eclipse.ui.wizards.newresource.BasicNewResourceWizard;
 
+import cn.smartcore.dev.ui.messages.Messages;
 import cn.smartcore.dev.ui.natures.ProjectNature;
 
-// New Smart-Core Module wizard. Its role is to specify and create necessary files in the Smart-Core Module Project.
-public class NewModuleWizard extends CProjectWizard {
+public class NewModuleWizard extends BasicNewResourceWizard {
 
-	private static final int SMARTSIMU_MODULE = 1;
+	private ModuleProjectMainWizardPage fMainPage;
+
+	private IConfigurationElement config;
+
+	private IWorkbench workbench;
+
+	private IStructuredSelection selection;
+
+	private IProject project;
 
 	public NewModuleWizard() {
-		super(SMARTSIMU_MODULE);
+		super();
+		setNeedsProgressMonitor(true);
 	}
 
 	@Override
-	public IProject createIProject(String name, URI location, IProgressMonitor monitor) throws CoreException {
-		monitor.beginTask(Messages.CDTCommonProjectWizard_creatingProject, 100);
+	public void addPages() {
+		fMainPage = new ModuleProjectMainWizardPage("New SmartSimu Module Project");
+		fMainPage.setDescription("Create a new SmartSimu Module Project.");
+		fMainPage.setTitle("New SmartSimu Module Project");
+		addPage(fMainPage);
+	}
 
-		if (newProject != null)
-			return newProject;
+	@Override
+	public void init(IWorkbench workbench, IStructuredSelection selection) {
+		this.selection = selection;
+		this.workbench = workbench;
+	}
 
+	@Override
+	public boolean performFinish() {
+		if (project != null) {
+			return true;
+		}
+
+		final IProject projectHandle = fMainPage.getProjectHandle();
+		URI projectURI = (!fMainPage.useDefaults()) ? fMainPage.getLocationURI() : null;
 		IWorkspace workspace = ResourcesPlugin.getWorkspace();
-		IWorkspaceRoot root = workspace.getRoot();
-		final IProject newProjectHandle = root.getProject(name);
-
-		if (!newProjectHandle.exists()) {
-			IProjectDescription description = workspace.newProjectDescription(newProjectHandle.getName());
-			// ֻ������������޸ģ�resourceChange����project���������д����ģ����֮�������nature��
-			// resourceChange�Ĵ�������в����и�nature�����ModuleContent.resourceChange
-			Util.addNature(description, ProjectNature.MODULE_PROJECT_ID);
-			if (location != null)
-				description.setLocationURI(location);
-			newProject = CCorePlugin.getDefault().createCDTProject(description, newProjectHandle,
-					new SubProgressMonitor(monitor, 25));
-		} else {
-			IWorkspaceRunnable runnable = new IWorkspaceRunnable() {
-				@Override
-				public void run(IProgressMonitor monitor) throws CoreException {
-					newProjectHandle.refreshLocal(IResource.DEPTH_INFINITE, monitor);
-				}
-			};
-			workspace.run(runnable, root, IWorkspace.AVOID_UPDATE, new SubProgressMonitor(monitor, 25));
-			newProject = newProjectHandle;
-		}
-
-		// Open the project if we have to
-		if (!newProject.isOpen()) {
-			newProject.open(new SubProgressMonitor(monitor, 25));
-		}
-
-		continueCreationMonitor = new SubProgressMonitor(monitor, 25);
-		IProject proj = continueCreation(newProject);
-
-		monitor.done();
-
-		// Add the conf file
-		InputStream resourceStream = new ByteArrayInputStream(("").getBytes());
-		Util.addFileToProject(newProject, new Path("module.conf"), resourceStream, monitor);
+		final IProjectDescription desc = workspace.newProjectDescription(projectHandle.getName());
+		desc.setLocationURI(projectURI);
 		try {
-			resourceStream.close();
-		} catch (IOException e) {
+			Util.addNature(desc, ProjectNature.MODULE_PROJECT_ID);
+		} catch (CoreException e) {
 			e.printStackTrace();
 		}
 
-		return proj;
+		WorkspaceModifyOperation op = new WorkspaceModifyOperation() {
+			protected void execute(IProgressMonitor monitor) throws CoreException {
+				createProject(desc, projectHandle, monitor);
+			}
+		};
+
+		/*
+		 * This isn't as robust as the code in the BasicNewProjectResourceWizard
+		 * class. Consider beefing this up to improve error handling. Note: The
+		 * first parameter should be false!!!
+		 */
+		try {
+			getContainer().run(false, true, op);
+		} catch (InterruptedException e) {
+			return false;
+		} catch (InvocationTargetException e) {
+			Throwable realException = e.getTargetException();
+			MessageDialog.openError(getShell(), "Error", realException.getMessage());
+			return false;
+		}
+
+		project = projectHandle;
+
+		if (project == null) {
+			return false;
+		}
+		
+		try {
+			project.setPersistentProperty(new QualifiedName(Messages.Qualifier, Messages.Property_1),
+					fMainPage.getModuleConfigPath());
+		} catch (CoreException e) {
+			e.printStackTrace();
+		}
+		
+		BasicNewProjectResourceWizard.updatePerspective(config);
+		BasicNewProjectResourceWizard.selectAndReveal(project, workbench.getActiveWorkbenchWindow());
+
+		return true;
+	}
+
+	// Create the project in the workspace.
+	void createProject(IProjectDescription description, IProject proj, IProgressMonitor monitor)
+			throws CoreException, OperationCanceledException {
+		try {
+			monitor.beginTask("", 2000);
+			proj.create(description, new SubProgressMonitor(monitor, 100));
+			if (monitor.isCanceled()) {
+				throw new OperationCanceledException();
+			}
+			proj.open(IResource.BACKGROUND_REFRESH, new SubProgressMonitor(monitor, 100));
+		} catch (Exception ioe) {
+			IStatus status = new Status(IStatus.ERROR, "NewFileWizard", IStatus.OK, ioe.getLocalizedMessage(), null);
+			throw new CoreException(status);
+		} finally {
+			monitor.done();
+		}
 	}
 
 }

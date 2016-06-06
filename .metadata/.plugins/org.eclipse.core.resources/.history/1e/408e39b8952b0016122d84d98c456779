@@ -1,0 +1,13 @@
+ErrorMsg_1=Project name cannot contain '\#' symbol
+ErrorMsg_2=A project with that name already exists in the workspace.
+ErrorMsg_3=Directory with specified name already exists and is read-only.
+ErrorMsg_4=Directory with specified name already exists.
+ErrorMsg_5=File with specified name already exists.
+ErrorMsg_6=No Module types available. Project cannot be created
+ErrorMsg_7=Select "one" module type
+
+MainWizardPage_0=Project type:
+
+Qualifier=cn.smartcore.dev.ui
+
+Property_1=module type

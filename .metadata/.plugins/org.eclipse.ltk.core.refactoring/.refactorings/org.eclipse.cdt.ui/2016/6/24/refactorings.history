@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Messages.properties&apos; to &apos;cn.smartcore.dev.ui/src/cn.smartcore.dev.ui.newui&apos;&#x0A;- Original project: &apos;org.eclipse.cdt.ui&apos;&#x0A;- Destination element: &apos;cn.smartcore.dev.ui/src/cn.smartcore.dev.ui.newui&apos;&#x0A;- Original element: &apos;Messages.properties&apos;" description="Copy file" destination="=cn.smartcore.dev.ui/src&lt;cn.smartcore.dev.ui.newui" element1="src/org/eclipse/cdt/internal/ui/newui/Messages.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1465178282083" units="0" version="1.0"/>
+</session>

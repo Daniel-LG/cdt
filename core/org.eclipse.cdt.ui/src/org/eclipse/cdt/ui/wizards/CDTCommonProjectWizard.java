@@ -61,8 +61,8 @@ public abstract class CDTCommonProjectWizard extends BasicNewResourceWizard
 	private static final String message = CUIPlugin.getResourceString(OP_ERROR + ".message"); //$NON-NLS-1$
 	private static final String[] EMPTY_ARR = new String[0];
 
-	protected IConfigurationElement fConfigElement;
-	protected CDTMainWizardPage fMainPage;
+	private IConfigurationElement fConfigElement;
+	private CDTMainWizardPage fMainPage;
 
 	protected IProject newProject;
 	private String wz_title;
@@ -73,7 +73,7 @@ public abstract class CDTCommonProjectWizard extends BasicNewResourceWizard
 	private URI lastProjectLocation = null;
 	private CWizardHandler savedHandler = null;
 	
-	// added by jwy
+	// added by jwy, the default value -1 means this is not a smartsimu project
 	private int smartSimuType = -1;
 
 	public CDTCommonProjectWizard() {

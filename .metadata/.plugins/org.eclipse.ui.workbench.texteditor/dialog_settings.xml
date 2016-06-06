@@ -2,28 +2,28 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="see" key="selection"/>
+		<item value="init" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="init"/>
+			<item value="addpa"/>
+			<item value="calcImage"/>
 			<item value="see"/>
 			<item value="src"/>
 			<item value="project"/>
 			<item value="BuildActiveConfiguration.tooltip"/>
 			<item value="build"/>
-			<item value="enablement"/>
-			<item value="all options"/>
-			<item value="ToolName.compiler.gnu.c"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="317" key="DIALOG_WIDTH"/>
+		<item value="337" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="514" key="DIALOG_HEIGHT"/>
+		<item value="534" key="DIALOG_HEIGHT"/>
 		<item value="1443" key="DIALOG_X_ORIGIN"/>
 		<item value="216" key="DIALOG_Y_ORIGIN"/>
 	</section>

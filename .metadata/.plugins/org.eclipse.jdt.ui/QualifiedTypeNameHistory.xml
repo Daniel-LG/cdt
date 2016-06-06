@@ -7,7 +7,6 @@
 <fullyQualifiedTypeName name="org.eclipse.core.commands.ExecutionException"/>
 <fullyQualifiedTypeName name="org.eclipse.core.runtime.Path"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.graphics.Color"/>
-<fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="cn.smartcore.handlers.ControlGDBServerHandler"/>
 <fullyQualifiedTypeName name="launch.LaunchSimulator"/>
 <fullyQualifiedTypeName name="org.eclipse.core.resources.IProject"/>
@@ -20,10 +19,8 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.net.URL"/>
 <fullyQualifiedTypeName name="org.osgi.framework.FrameworkUtil"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.util.Hashtable"/>
 <fullyQualifiedTypeName name="cn.smartcore.debug.core.launch.LaunchSimulator"/>
-<fullyQualifiedTypeName name="org.osgi.framework.BundleContext"/>
 <fullyQualifiedTypeName name="org.osgi.framework.ServiceReference"/>
 <fullyQualifiedTypeName name="cn.smartcore.debug.core.ILaunchSimulator"/>
 <fullyQualifiedTypeName name="org.apache.commons.exec.DefaultExecutor"/>
@@ -33,7 +30,20 @@
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="org.eclipse.core.resources.IResourceDelta"/>
 <fullyQualifiedTypeName name="org.eclipse.core.resources.IResourceDeltaVisitor"/>
+<fullyQualifiedTypeName name="org.eclipse.core.resources.IContainer"/>
+<fullyQualifiedTypeName name="org.osgi.framework.BundleContext"/>
+<fullyQualifiedTypeName name="cn.smartcore.dev.ui.Activator"/>
+<fullyQualifiedTypeName name="cn.smartcore.dev.ui.wizards.ModuleProjectMainWizardPage"/>
+<fullyQualifiedTypeName name="org.eclipse.ui.wizards.newresource.BasicNewResourceWizard"/>
 <fullyQualifiedTypeName name="cn.smartcore.dev.ui.wizards.Util"/>
 <fullyQualifiedTypeName name="cn.smartcore.dev.ui.natures.ProjectNature"/>
-<fullyQualifiedTypeName name="org.eclipse.core.resources.IContainer"/>
+<fullyQualifiedTypeName name="cn.smartcore.dev.ui.newui.Messages"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.TreeItem"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="org.eclipse.core.runtime.QualifiedName"/>
+<fullyQualifiedTypeName name="cn.smartcore.dev.ui.messages.Messages"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
 </qualifiedTypeNameHistroy>
