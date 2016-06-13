@@ -1,0 +1,7 @@
+#############################################################################
+# Name        : $(baseName).conf
+# Author      : $(author)
+# Version     : $(version)
+# Copyright   : $(copyright)
+# Description : Config file of the simulator project
+#############################################################################

@@ -1,7 +1,0 @@
-package cn.smartcore.dev.ui.wizards;
-
-import org.eclipse.cdt.ui.wizards.CProjectWizard;
-
-public class NewSimulatorWizard extends CProjectWizard {
-
-}

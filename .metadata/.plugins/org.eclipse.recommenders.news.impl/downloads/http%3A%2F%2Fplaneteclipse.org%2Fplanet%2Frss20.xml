@@ -8,6 +8,357 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>Ian Skerrett: OMA Survey Points to Importance of Open Standards and Open Source</title>
+	<guid isPermaLink="false">http://ianskerrett.wordpress.com/?p=3597</guid>
+	<link>http://feedproxy.google.com/~r/IanSkerrett/~3/zcblMvNdM2o/</link>
+	<description>&lt;p&gt;The &lt;a href=&quot;http://openmobilealliance.org/&quot;&gt;Open Mobile Alliance (OMA)&lt;/a&gt; recently published a survey about the trends of &lt;a href=&quot;http://openmobilealliance.hs-sites.com/ossurveyresults&quot;&gt;open source and open standards in the telecommunication industry&lt;/a&gt;. Like some other standards groups, OMA has noticed a trend in developer-led adoption of standards and the importance of open source to attract developers.  The &lt;a href=&quot;http://iot.eclipse.org/&quot;&gt;Eclipse IoT Working Group&lt;/a&gt; has been working closely with OMA on the Lightweight M2M (LWM2M) standard implementation in &lt;a href=&quot;https://www.eclipse.org/leshan/&quot;&gt;Eclipse Leshan &lt;/a&gt;and &lt;a href=&quot;https://projects.eclipse.org/projects/technology.wakaama&quot;&gt;Eclipse Wakaama&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The survey results are interesting since the OMA members and community is mostly in the telecommunication industry. Teleco’s aren’t typically participating in the Eclipse community so a survey of this industry is of interest.&lt;/p&gt;
+&lt;p&gt;The complete survey result is available from the &lt;a href=&quot;http://openmobilealliance.hs-sites.com/ossurveyresults&quot;&gt;OMA web site.&lt;/a&gt; Here are some highlights:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;An increasing participating rate in open source&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;52% of the respondents are already participating in open source projects and 57% think their participation will be increasing. The overall participation rate is what I would expect. Lots of organizations in the telecommunication industry really don’t participate in open source. However, it is great to see the participation rate is expected to increase.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Open standards + Open source is the future&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Over 80% of the respondents identified the trend ‘Open source implementations of open standard specifications’ as the dominant trend over the next several years. This confirms the mission of the Eclipse IoT community to be the source of key IoT specifications, like OMA LWM2M, OneM2M, MQTT, CoAP and others.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;TELECOM SERVICES TREND Copyright © 2016 Open Mobile Alliance Ltd. All rights reserved. 0% 10% 20% 30% 40% 50% 60% 70% 80% ...&quot; class=&quot;aligncenter&quot; height=&quot;343&quot; src=&quot;https://i0.wp.com/image.slidesharecdn.com/omaopensourcesurveyresults-160607161544/95/oma-open-source-industry-survey-results-23-638.jpg&quot; width=&quot;444&quot; /&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Closer partnership between open standards and open source communities&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I firmly believe open standards and open source implementations are required to encourage widespread adoption of technology. The survey respondents seem to agree, 70% agree the role of open standards is different than open source and 80% agree open standards can benefit from a closer relationships with open source communities.  The main reason given were: 1) early open source implementations of standards can provide feedback to improve the standard, and 2) open source implementations help with dissemination and proliferation of the standard.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;OPEN STANDARDS + OPEN SOURCE Copyright © 2016 Open Mobile Alliance Ltd. All rights reserved. Agree 80% Disagree 3% Neutral...&quot; class=&quot;aligncenter&quot; height=&quot;302&quot; src=&quot;https://i1.wp.com/image.slidesharecdn.com/omaopensourcesurveyresults-160607161544/95/oma-open-source-industry-survey-results-27-638.jpg&quot; width=&quot;391&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This is certainly our experience of providing open source implementations of standards like MQTT and LWM2M.  As&lt;a href=&quot;http://www.slideshare.net/kartben/on-making-standards-organizations-open-source-communities-work-hand-in-hand&quot;&gt; Benjamin Cabe recently presented&lt;/a&gt;, the Eclipse Foundation has a lot of success working with open standards groups. If IoT is going to be successful we need to develop these close relationships with some of the key standard groups like the OMA.&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Eclipse IoT is well positioned in the telecommunication industry&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The Eclipse Foundation was the #1 open source community with over 30% of the participants indicating they are participating in an open source community. My assumption is this is due to the work in Eclipse Leshan and Eclipse Wakkama on OMA LWM2M and Eclipse OM2M on OneM2M.&lt;/p&gt;
+&lt;p&gt;I look forward to working more closely with the OMA and the telecommunication partners. The future of IoT is definitely based on open standards and open source!&lt;img alt=&quot;OS PROJECT PARTICIPATION OMA Confidential | Copyright © 2015 Open Mobile Alliance Ltd. All rights reserved. 0.0% 5.0% 10.0...&quot; class=&quot;aligncenter&quot; height=&quot;360&quot; src=&quot;https://i0.wp.com/image.slidesharecdn.com/omaopensourcesurveyresults-160607161544/95/oma-open-source-industry-survey-results-14-638.jpg&quot; width=&quot;466&quot; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;&lt;br /&gt;  &lt;a href=&quot;http://feeds.wordpress.com/1.0/gocomments/ianskerrett.wordpress.com/3597/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/ianskerrett.wordpress.com/3597/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;https://pixel.wp.com/b.gif?host=ianskerrett.wordpress.com&amp;amp;blog=405862&amp;amp;post=3597&amp;amp;subd=ianskerrett&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/IanSkerrett/~4/zcblMvNdM2o&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Sun, 12 Jun 2016 21:45:26 +0000</pubDate>
+</item>
+<item>
+	<title>Wolfgang Geck: All good things …</title>
+	<guid isPermaLink="false">http://javahacks.wordpress.com/?p=458</guid>
+	<link>https://javahacks.wordpress.com/2016/06/11/all-good-things/</link>
+	<description>&lt;p&gt;This post has nothing to do with programming in general, but since my 40th birthday is coming closer and closer I think it’s a good time to conserve some work of my childhood here.&lt;/p&gt;
+&lt;p&gt;More than 25 years ago I read an interesting &lt;a href=&quot;https://images.booklooker.de/cover/local/xxl/00/fE/sI.jpg&quot;&gt;book&lt;/a&gt; containing a chapter with blueprints of wooden cube puzzles. After building multiple puzzles by means of the pictured blueprints, I decided to design my own. Unfortunately the original version made of wood got lost over time. Since I needed a playground project to start with &lt;a href=&quot;http://www.babylonjs.com/ target=&quot;&gt;babylon.js &lt;/a&gt; I created a digital version. Here is the result:&lt;/p&gt;
+
+&lt;p&gt;The live version is hosted on &lt;a href=&quot;http://webgl.orionhub.org:8000/index.html&quot; target=&quot;new&quot;&gt;Orionhub&lt;/a&gt;, source and Blender model can be found &lt;a href=&quot;http://webgl.orionhub.org:8000/&quot; target=&quot;new&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The cube is not perfectly symmetrical. Anyway I think it looks pretty cool. And of course I can definetly not quarantee whether this puzzle was not already designed by someone else:) Let me know if you have seen it before, thanks!&lt;/p&gt;&lt;br /&gt;  &lt;a href=&quot;http://feeds.wordpress.com/1.0/gocomments/javahacks.wordpress.com/458/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/javahacks.wordpress.com/458/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;https://pixel.wp.com/b.gif?host=javahacks.wordpress.com&amp;amp;blog=23751750&amp;amp;post=458&amp;amp;subd=javahacks&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Sat, 11 Jun 2016 09:40:21 +0000</pubDate>
+</item>
+<item>
+	<title>Melanie Bats: Sirius 4.0 Gotta Catch ‘Em All: SVenGers: Infinity war</title>
+	<guid isPermaLink="false">http://melb.enix.org/?p=288</guid>
+	<link>http://melb.enix.org/sirius/sirius-4-0-svengers-infinity-war/</link>
+	<description>&lt;p dir=&quot;ltr&quot;&gt;We continue our exploration of the &lt;a href=&quot;https://eclipse.org/sirius/&quot;&gt;Eclipse Sirius&lt;/a&gt; 4.0 new &lt;a href=&quot;http://melb.enix.org/sirius/sirius-4-0-border-song/&quot;&gt;features&lt;/a&gt;. Do you remember our previous post about the &lt;a href=&quot;http://melb.enix.org/sirius/svg/&quot;&gt;Scalable Girl&lt;/a&gt;? We further improved the SVG rendering to make her even more powerful.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Better SVG rendering&lt;/strong&gt;&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;a href=&quot;http://orig02.deviantart.net/c26b/f/2014/335/e/f/starmie_by_weaponix-d88e6i3.png&quot;&gt;&lt;img alt=&quot;starmie_by_weaponix-d88e6i3.png&quot; class=&quot;aligncenter&quot; height=&quot;217&quot; src=&quot;https://lh4.googleusercontent.com/MmgirudCF-bzDEPTdk3mvntqGn7nnJGa0_GwqZOskS2tuutPn5jDXVNgRldmq36iP5BpS9uqUHxttydr2s5yrHPikX9CabtXuV8BJf_XXj89WU8JG2NyEtbzbaHNNlwca2NtvPyH&quot; width=&quot;123&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;This is a significant improvement. With Sirius 4.0, on a diagram when the user uses the zoom, the rendering of a SVG file has a much higher quality.&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;img alt=&quot;svg-zoom.gif&quot; class=&quot;aligncenter&quot; height=&quot;237&quot; src=&quot;https://lh4.googleusercontent.com/CW1RT1zW1wmTbhBV6MRiNflfpFlFeDf1Ga_l-PhPuRvhH-lFnEzcgFveXbDfG_fI8UzDpq_ah9HnTIgxACrObrvEgVOKCLqkdLDKC7fOQN8ucRr_ojjdaX1NBlHhdJwsgubpZUUz&quot; width=&quot;387&quot; /&gt;&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;strong&gt;Contribute SVG shapes&lt;/strong&gt;&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;a href=&quot;http://orig08.deviantart.net/d80a/f/2014/365/1/f/mew_by_weaponix-d8bzqze.png&quot;&gt;&lt;img alt=&quot;mew_by_weaponix-d8bzqze.png&quot; class=&quot;aligncenter&quot; height=&quot;256&quot; src=&quot;https://lh6.googleusercontent.com/Use2uFSVXUQnI51CEN_ShmOtrHbsZ_Q1jmwG9Wu2py3C9m4aQbevcQaDaqLoaaThuY3FGGue0d4nDyScxLIzoKg7haIu1m3DWTDTPM1oHnyFLreUiQCOUu2kXVMynZEqBjR5GWFG&quot; width=&quot;144&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-weight: 300;&quot;&gt;Sirius provides a basic image style for node mappings, which offers a selection of five different shapes. The new bundledImageShape extension point allows specifiers to provide their own shapes defined in a SVG file like a stencil pack.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;img alt=&quot;stencilpack.gif&quot; class=&quot;aligncenter&quot; height=&quot;245&quot; src=&quot;https://lh6.googleusercontent.com/Ax-IzqEpj6LSogJhkY8c3AwIEwZ2QecC54AJToYOKuijI8Zhmi4W5UIliF6VpZ-Sgs8BaqDan3YT2kRQ3vMmlCR_AretcBCVBQTNbuqF65tyDcps8ATRx3cnwVyqMnSGuGsaG_Lj&quot; width=&quot;448&quot; /&gt;&lt;img alt=&quot;emotes - Gestionnaire de fichiers_101.png&quot; class=&quot;aligncenter&quot; height=&quot;166&quot; src=&quot;https://lh6.googleusercontent.com/HumNTEZUqsCZMZdr-2kCelZawZFfbAlhy0183oLwC_c1bmdsUTPQvHxjZUB5m_2bWYAkvuCvkUgD4jSJZuF1JEligfrVW0eVoOgMSJVOAGOV1DccFURAQHZKFxUe0iHjGObaS9LD&quot; width=&quot;295&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;To &lt;a href=&quot;https://en.wikipedia.org/wiki/Gotta_catch_%27em_all&quot;&gt;catch all&lt;/a&gt; the new features coming with Sirius 4.0 have a look at the slides of &lt;a href=&quot;https://www.eclipsecon.org/france2016/session/sirius-40-let-me-sirius-you&quot;&gt;our talk&lt;/a&gt; at EclipseCon France! Another chance for you to join the Sirius community, &lt;a href=&quot;http://www.siriuscon.org/&quot;&gt;SiriusCon&lt;/a&gt; will occur in Paris the 15th November 2016. Be sure to save the date!&lt;/p&gt;</description>
+	<pubDate>Fri, 10 Jun 2016 07:00:54 +0000</pubDate>
+</item>
+<item>
+	<title>InfoQ Eclipse feed: Presentation: Beam aboard the Eclipse User Storage Service</title>
+	<guid isPermaLink="true">http://www.infoq.com/presentations/eclipse-uss?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</guid>
+	<link>http://www.infoq.com/presentations/eclipse-uss?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</link>
+	<description>&lt;img src=&quot;http://www.infoq.com/resource/presentations/eclipse-uss/en/mediumimage/Doibig.JPG&quot; /&gt;&lt;p&gt;Christopher Guindon, Denis Roy introduce Eclipse USS and its SDK, discussing plans for its future and showing how to get started using this service.&lt;/p&gt; &lt;i&gt;By Christopher Guindon, Denis Roy&lt;/i&gt;</description>
+	<pubDate>Thu, 09 Jun 2016 23:15:00 +0000</pubDate>
+</item>
+<item>
+	<title>InfoQ Eclipse feed: Presentation: Adventures in 3D with Eclipse ICE and JavaFX</title>
+	<guid isPermaLink="true">http://www.infoq.com/presentations/3d-eclipse-ice-javafx?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</guid>
+	<link>http://www.infoq.com/presentations/3d-eclipse-ice-javafx?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</link>
+	<description>&lt;img src=&quot;http://www.infoq.com/resource/presentations/3d-eclipse-ice-javafx/en/mediumimage/Doibig.JPG&quot; /&gt;&lt;p&gt;Robert Smith, Tony McCrary discuss how the JavaFX 3D API works and lessons learned during the migration of an existing 3D tool to JavaFX 8's 3D API.&lt;/p&gt; &lt;i&gt;By Robert Smith, Tony McCrary&lt;/i&gt;</description>
+	<pubDate>Thu, 09 Jun 2016 20:52:00 +0000</pubDate>
+</item>
+<item>
+	<title>Andrey Loskutov: Quick setup for developing on pure SDK</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-342159971341432126.post-8505035916749778295</guid>
+	<link>http://javaclipse.blogspot.com/2016/06/quick-setup-for-developing-on-pure-sdk.html</link>
+	<description>&lt;div dir=&quot;ltr&quot; style=&quot;text-align: left;&quot;&gt;There is Oomph and other tools around, but they all add significant overhead in case you simply want use latest nightly Eclipse SDK build for hacking on Eclipse platform or EGit.&lt;br /&gt;&lt;br /&gt;I've merged three install files (from Platform UI, EGit and my own) to one, so all what I need after downloading a fresh nightly Eclipse SDK build is to go File -&amp;gt; Import -&amp;gt; Install Software Items from File -&amp;gt; select &lt;a href=&quot;http://andrei.gmxhome.de/ui_egit_tools.p2f&quot;&gt;ui_egit_tools.p2f&lt;/a&gt; file, check all boxes, and relax. On next restart the SDK is ready for hacking.&lt;/div&gt;</description>
+	<pubDate>Thu, 09 Jun 2016 18:34:15 +0000</pubDate>
+	<author>noreply@blogger.com (Andrey Loskutov)</author>
+</item>
+<item>
+	<title>Andrey Loskutov: FindBugs on Java 9</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-342159971341432126.post-733633832014858806</guid>
+	<link>http://javaclipse.blogspot.com/2016/06/findbugs-on-java-9.html</link>
+	<description>&lt;div dir=&quot;ltr&quot; style=&quot;text-align: left;&quot;&gt;We have summer in Germany and as usually in sommer time I had my yearly surgery visit with some parts of me broken in some unnatural ways. After those visits I usually enjoy nice days at home playing around with my preferred toys. So to continue this &lt;a href=&quot;http://www.jroller.com/andyl/entry/my_luna_release&quot;&gt;summer break&lt;/a&gt; tradition, I've released today a &lt;a href=&quot;https://github.com/findbugsproject/findbugs/releases/tag/3.1.0_preview1&quot;&gt;preview of FindBugs 3.1.0 with Java 9 support&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;This preview build includes standalone &lt;a href=&quot;http://findbugs.sourceforge.net/&quot;&gt;FindBugs&lt;/a&gt; binary and an offline (archived) update site with 3.1.0 &lt;a href=&quot;http://findbugs.sourceforge.net/&quot;&gt;FindBugs&lt;/a&gt; Eclipse plugin, both learned Java 9 now.&lt;br /&gt;&lt;br /&gt;See the &lt;a href=&quot;https://mailman.cs.umd.edu/pipermail/findbugs-discuss/2016-June/004286.html&quot;&gt;preview release notes&lt;/a&gt; with details.&lt;br /&gt;&lt;br /&gt;Please note, that this is a &lt;b&gt;preview&lt;/b&gt; build. I mean, Java 9 is still &quot;work in progress&quot;, each new Java build may break something (and does it on regular base, see for example &lt;a href=&quot;https://bugs.eclipse.org/bugs/show_bug.cgi?id=493761&quot;&gt;bug 493761&lt;/a&gt;). The two main bytecode libraries we use in FindBugs (&lt;a href=&quot;http://asm.ow2.org/&quot;&gt;ASM&lt;/a&gt; and &lt;a href=&quot;https://commons.apache.org/proper/commons-bcel/&quot;&gt;BCEL&lt;/a&gt;) are also still &quot;work in progress&quot; and have not yet officially released they Java 9 compatible builds, so everything is really &quot;in flow&quot;.&lt;br /&gt;&lt;br /&gt;But our JUnit tests pass, my smoke test passes too, and I've got confirmation from one user (&lt;a href=&quot;https://github.com/findbugsproject/findbugs/issues/105&quot;&gt;thanks, Vincent!&lt;/a&gt;) that his own tests were fine too. So this really sounds like a solide, well tested preview :-)&lt;br /&gt;&lt;br /&gt;I hope you will test the preview too because we need confidence that everything works as expected before releasing this &lt;strike&gt;crap&lt;/strike&gt; to the world. &lt;span style=&quot;font-size: large;&quot;&gt;So please go, &lt;a href=&quot;https://github.com/findbugsproject/findbugs/releases/tag/3.1.0_preview1&quot;&gt;download&lt;/a&gt; and test that damn bytes now, you!&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;i&gt;But how can I test Java 9, FindBugs and Eclipse? &lt;/i&gt;&lt;br /&gt;&lt;i&gt;There is no official Eclipse build supporting Java 9?&lt;/i&gt;&lt;br /&gt;&lt;br /&gt;That's easy if you follow steps below (please read them carefully!).&lt;br /&gt;&lt;ol style=&quot;text-align: left;&quot;&gt;&lt;li&gt;Download Java 9 SDK for your platform from &lt;a href=&quot;https://jdk9.java.net/download/&quot;&gt;https://jdk9.java.net/download/&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;Download Eclipse 4.6 RC4a SDK  for your platform from &lt;a href=&quot;http://download.eclipse.org/eclipse/downloads/drops4/S-4.6RC4a-201606061100/&quot;&gt;http://download.eclipse.org/eclipse/downloads/drops4/S-4.6RC4a-201606061100/&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;If you plan to use Java 9 as &lt;b&gt;runtime&lt;/b&gt; platform for Eclipse, you will hit &lt;a href=&quot;https://bugs.eclipse.org/bugs/show_bug.cgi?id=493761&quot;&gt;bug 493761&lt;/a&gt;, so to be able to run Eclipse on Java 9, after unzipping Eclipse, please modify eclipse.ini and add this 2 lines right after &quot;-vmargs&quot; line:&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;-vmargs&lt;br /&gt;-addmods&lt;br /&gt;java.se.ee&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt; This is how my own eclipse.ini looks like on Linux GTK2: &lt;br /&gt;&lt;br /&gt;&lt;pre&gt;-startup&lt;br /&gt;plugins/org.eclipse.equinox.launcher_1.3.200.v20160318-1642.jar&lt;br /&gt;--launcher.library&lt;br /&gt;plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.400.v20160518-1444&lt;br /&gt;-vm&lt;br /&gt;/opt/java/jdk-9/bin&lt;br /&gt;-showsplash&lt;br /&gt;org.eclipse.platform&lt;br /&gt;--launcher.defaultAction&lt;br /&gt;openFile&lt;br /&gt;--launcher.appendVmargs&lt;br /&gt;--launcher.GTK_version&lt;br /&gt;2&lt;br /&gt;-vmargs&lt;br /&gt;-addmods&lt;br /&gt;java.se.ee&lt;br /&gt;-Dosgi.requiredJavaVersion=1.8&lt;br /&gt;-Xms256m&lt;br /&gt;-Xmx4G&lt;br /&gt;&lt;/pre&gt;&lt;/li&gt;&lt;li&gt;In Eclipse, install &lt;a href=&quot;https://wiki.eclipse.org/Java9&quot;&gt;JDT Java 9 patch&lt;/a&gt; from this site (see instructions on the page how): &lt;a href=&quot;http://download.eclipse.org/eclipse/downloads/drops4/P20160609-0900/&quot;&gt;http://download.eclipse.org/eclipse/downloads/drops4/P20160609-0900/&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;Go to the &lt;a href=&quot;https://github.com/findbugsproject/findbugs/releases/tag/3.1.0_preview1&quot;&gt;https://github.com/findbugsproject/findbugs/releases/tag/3.1.0_preview1&lt;/a&gt; page and download &lt;a href=&quot;http://update_site_3.1.0.20160609-91ad577.zip/&quot;&gt;update_site_3.1.0.20160609-91ad577.zip&lt;/a&gt; to local folder. Now in Eclipse, go to &lt;i&gt;Help -&amp;gt; Install New Software -&amp;gt; Add... -&amp;gt; Archive...&lt;/i&gt; -&amp;gt; select this &lt;b&gt;update_site_3.1.0.20160609-91ad577.zip&lt;/b&gt; file, give the update site any name you like, click on OK and now you can update the &lt;a href=&quot;http://findbugs.sourceforge.net/&quot;&gt;FindBugs&lt;/a&gt; plugin to 3.1.0 version with Java 9 support.&lt;/li&gt;&lt;li&gt;&lt;strike&gt;Enjoy&lt;/strike&gt;. II mean, &lt;b&gt;test :-)&lt;/b&gt;. &lt;br /&gt;P.S.Bug tracker for issues: &lt;a href=&quot;https://github.com/findbugsproject/findbugs/issues&quot;&gt;https://github.com/findbugsproject/findbugs/issues&lt;/a&gt;.&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description>
+	<pubDate>Thu, 09 Jun 2016 16:34:05 +0000</pubDate>
+	<author>noreply@blogger.com (Andrey Loskutov)</author>
+</item>
+<item>
+	<title>Wayne Beaton: These Are the Daves I Know</title>
+	<guid isPermaLink="false">http://waynebeaton.wordpress.com/?p=3587</guid>
+	<link>https://waynebeaton.wordpress.com/2016/06/09/these-are-the-daves-i-know/</link>
+	<description>&lt;p&gt;Over the years, many people have contributed to Eclipse projects, including some thirty-nine software developers (39) named Dave or David. This list includes everybody who has ever made a least one contribution to one of the many projects that have opted to participate in the &lt;a href=&quot;https://projects.eclipse.org/releases/neon&quot;&gt;Neon Simultaneous Release&lt;/a&gt; since the beginning of time as recorded in our Git commit logs.&lt;/p&gt;
+&lt;p&gt;It’s important to note that prior to our adoption of Git, we didn’t record contributor names in commit records. So some Dave contributors from the early days may not be present in this list. Also, there are probably a Dave or two in the single SVN repository that we still maintain for the &lt;a href=&quot;https://projects.eclipse.org/projects/technology.subversive&quot;&gt;Subversive&lt;/a&gt; project.&lt;/p&gt;
+&lt;p&gt;So… without further adieu, here are the Daves I know (some of them are David, but most of them are Dave): David North, Davy Landman, Dave Lerner, David Akehurst, David Berger, David Meng, David Slater, David Nemeth, Dave D, David E. Narváez, David King, David Ostrovsky, David Pletcher, David Kaspar, David Sciamma, David Salinas, Dave Locke, David Dubrow, Dave Stevenson, David Soto Setzke, David Servat, David Lauzon, David Daoust, David Pursehouse, David Kelsey, David Wootton, David Borowitz, David Michonneau, David Springgay, Dave Orme, Dawid Pakula, David Dykstal, David Inglis, David Audel, David Green, David Carver, David Steinberg, David McKnight, and David Williams.&lt;/p&gt;
+&lt;p&gt;Thank you, Daves, for your contributions!&lt;/p&gt;
+&lt;p&gt;Bonus points if you can identify the Dave that I’ve known since my university days…&lt;/p&gt;
+&lt;p&gt;For those of you who don’t get the title reference, let me introduce you to some early 1990s Canadian humour…&lt;/p&gt;
+
+&lt;p&gt;If you’re keeping score, there’s only one Gunnar.&lt;/p&gt;&lt;br /&gt;  &lt;a href=&quot;http://feeds.wordpress.com/1.0/gocomments/waynebeaton.wordpress.com/3587/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/waynebeaton.wordpress.com/3587/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;https://pixel.wp.com/b.gif?host=waynebeaton.wordpress.com&amp;amp;blog=19425814&amp;amp;post=3587&amp;amp;subd=waynebeaton&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 09 Jun 2016 15:07:31 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Devoxx US | March 21-23, 2017</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/U4SAESkuRHM/20160606_devoxx.php</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/U4SAESkuRHM/20160606_devoxx.php</link>
+	<description>The first ever DevoxxUS to be produced by the Eclipse Foundation.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/U4SAESkuRHM&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Wed, 08 Jun 2016 08:40:00 +0000</pubDate>
+</item>
+<item>
+	<title>Melanie Bats: Sirius 4.0 Gotta Catch ‘Em All: Border song</title>
+	<guid isPermaLink="false">http://melb.enix.org/?p=285</guid>
+	<link>http://melb.enix.org/sirius/sirius-4-0-border-song/</link>
+	<description>&lt;p dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-weight: 300;&quot;&gt;If you enjoyed our &lt;/span&gt;&lt;a href=&quot;http://melb.enix.org/sirius/sirius-4-0-be-prepared-for-the-future/&quot; style=&quot;font-weight: 300;&quot;&gt;previous&lt;/a&gt;&lt;span style=&quot;font-weight: 300;&quot;&gt; post on &lt;a href=&quot;https://eclipse.org/sirius/&quot;&gt;Eclipse Sirius&lt;/a&gt; 4.0 new features, read on to hear the Sirius border song.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;strong&gt;Customizable border style&lt;/strong&gt;&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;a href=&quot;http://img07.deviantart.net/80dd/i/2015/010/5/4/charmeleon_by_weaponix-d77hbk6.png&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter&quot; height=&quot;245&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/charmeleon.png&quot; width=&quot;139&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;The border style of your diagram elements can have a semantic meaning defined by your graphical notation: you may want to express a different information whether the border shape is dashed or plain. Here and now, with Sirius 3.1, it is possible to define such styles for both the nodes and the containers (like it was already possible for edges).&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter&quot; height=&quot;141&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/border.png&quot; width=&quot;236&quot; /&gt;&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;strong&gt;Preferred side for border nodes&lt;/strong&gt;&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;a href=&quot;http://orig02.deviantart.net/2ffb/f/2014/264/a/2/magneton_by_weaponix-d800elu.png&quot;&gt;&lt;img alt=&quot;magneton_by_weaponix-d800elu.png&quot; class=&quot;aligncenter&quot; height=&quot;236&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/magneton.png&quot; width=&quot;134&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;By default, border nodes can be located on any side of its parent. It is now possible to restrict border nodes to specific sides only. Thus the end user will not have the possibility to create or to move a border node on a forbidden side. Authorized sides can be specified in the advanced tab of the border node style.&lt;/p&gt;
+&lt;p dir=&quot;ltr&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;alignnone&quot; height=&quot;286&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/bordernodeposition.png&quot; width=&quot;636&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;To &lt;a href=&quot;https://en.wikipedia.org/wiki/Gotta_catch_%27em_all&quot;&gt;catch all&lt;/a&gt; the new features coming with Sirius 4.0 have a look at the slides of &lt;a href=&quot;https://www.eclipsecon.org/france2016/session/sirius-40-let-me-sirius-you&quot;&gt;our talk&lt;/a&gt; at EclipseCon France! Another chance for you to join the Sirius community, &lt;a href=&quot;http://www.siriuscon.org/&quot;&gt;SiriusCon&lt;/a&gt; will occur in Paris the 15th November 2016. Be sure to save the date!&lt;/p&gt;</description>
+	<pubDate>Wed, 08 Jun 2016 07:00:50 +0000</pubDate>
+</item>
+<item>
+	<title>Neil Bartlett: Using Let's Encrypt Certificates with OSGi HTTP Service</title>
+	<guid isPermaLink="false">http://njbartlett.github.com/2016/06/07/letsencrypt-osgi</guid>
+	<link>http://njbartlett.name/2016/06/07/letsencrypt-osgi.html</link>
+	<description>&lt;p&gt;Rather than one of my usual polemics, this is a quickly-written practical post. I hope the information here is useful to somebody.&lt;/p&gt;
+
+&lt;p&gt;Currently I am setting up &lt;a href=&quot;https://effectiveosgi.com/&quot;&gt;effectiveosgi.com&lt;/a&gt;, the website for my upcoming book “Effective OSGi”. The site is a web app that will allow users to download preview PDFs, order print copies, and so on. Naturally I am developing it in Java and OSGi (in fact, many of the code samples in the book are based on the application that will be used to sell and deliver it).&lt;/p&gt;
+
+&lt;p&gt;Of course I want to follow best practices and use TLS (HTTPS), and this is much easier nowadays thanks to &lt;a href=&quot;https://letsencrypt.org&quot;&gt;Let’s Encrypt&lt;/a&gt;. However, it wasn’t exactly obvious how to import the certicate provided by Let’s Encrypt into a Java/OSGi application, so I’m documenting the steps that worked for me.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-one-get-the-certificate&quot;&gt;Step One: Get the Certificate&lt;/h3&gt;
+
+&lt;p&gt;This part I’m not going document in detail because it’s more than adequately documented on the &lt;a href=&quot;https://letsencrypt.org/getting-started/&quot;&gt;Let’s Encrypt - Getting Started&lt;/a&gt; page. I used the “standalone” method. The subsequent steps assume that you have successfully obtained your certificate files, which will be saved under the path &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/letsencrypt/live/[yourdomain]&lt;/code&gt;. The files you will find there are &lt;code class=&quot;highlighter-rouge&quot;&gt;cert.pem&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;chain.pem&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;fullchain.pem&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;privkey.pem&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-two-build-java-keystore&quot;&gt;Step Two: Build Java Keystore&lt;/h3&gt;
+
+&lt;p&gt;Note that this step is relevant for all Java developers, not just OSGi users.&lt;/p&gt;
+
+&lt;p&gt;Java applications cannot directly read PEM files; we need to generate a Java keystore file using the &lt;code class=&quot;highlighter-rouge&quot;&gt;keytool&lt;/code&gt; program included with the JDK. Unfortunately &lt;code class=&quot;highlighter-rouge&quot;&gt;keytool&lt;/code&gt; also can’t read PEM files directly, so we first have to use &lt;code class=&quot;highlighter-rouge&quot;&gt;openssl&lt;/code&gt; to convert them to PKCS12 format:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl pkcs12 -export -in fullchain.pem -inkey privkey.pem \
+        -out cert_and_key.pkcs12 -name MyDomain \
+        -CAfile chain.pem -caname root
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You will be prompted to enter an export password. This will only be used in the next step, so it’s fine to use just &lt;code class=&quot;highlighter-rouge&quot;&gt;password&lt;/code&gt;. Now we have a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;cert_and_key.pkcs12&lt;/code&gt; which combines both the full certificate chain with the private signing key. Import this into a new keystore file as follows:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;keytool -importkeystore \
+        -srckeystore cert_and_key.pkcs12 -srcstoretype PKCS12 -srcstorepass password \
+        -destkeystore letsencrypt.jks -deststorepass XXXXXX -destkeypass XXXXXXX
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You now have a keystore file named &lt;code class=&quot;highlighter-rouge&quot;&gt;letsencrypt.jks&lt;/code&gt;. Keep the store and key passwords safe and secret!&lt;/p&gt;
+
+&lt;h3 id=&quot;step-three-configure-http-service&quot;&gt;Step Three: Configure HTTP Service&lt;/h3&gt;
+
+&lt;p&gt;This step is relevant to OSGi developers. I’ll assume you are using the &lt;a href=&quot;https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html&quot;&gt;Apache Felix HTTP Service&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The HTTP Service is configured with the standard OSGi Configuration Admin. You need to create a configuration record with a PID of &lt;code class=&quot;highlighter-rouge&quot;&gt;org.apache.felix.http&lt;/code&gt; with the following settings:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;org.apache.felix.https.enable true
+org.osgi.service.http.port.secure: 8443
+org.apache.felix.https.keystore: path/to/letsencrypt.jks
+org.apache.felix.https.keystore.password: XXXXXX
+org.apache.felix.https.keystore.key.password: XXXXXXX
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This should be all you need to do get a green lock icon in your browser. Congratulations, you are now running a properly configured HTTPS server!&lt;/p&gt;
+
+&lt;p&gt;However… it’s not very secure yet. Once your site is running, I &lt;strong&gt;strongly&lt;/strong&gt; recommend testing your TLS implementation using &lt;a href=&quot;https://www.ssllabs.com/ssltest/&quot;&gt;SSL Labs from Qualys&lt;/a&gt;. If you do this now, you will get at best a B grade.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-four-getting-the-a-grade&quot;&gt;Step Four: Getting the A Grade&lt;/h3&gt;
+
+&lt;p&gt;One of the security warnings reported by SSL Labs is due to &lt;a href=&quot;https://weakdh.org&quot;&gt;weak Diffie-Hellman groups&lt;/a&gt;. I don’t pretend to understand everything on the linked page, but fortunately the fix is easy: you just need to make sure your Java VM uses 2048-bit Diffie-Hellman keys by setting a system property. This can be specified on the command line as follows:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java -Djdk.tls.ephemeralDHKeySize=2048 ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To achieve &lt;a href=&quot;https://blog.qualys.com/ssllabs/2013/06/25/ssl-labs-deploying-forward-secrecy&quot;&gt;forward secrecy&lt;/a&gt; you also need to restrict the cipher suites to use only elliptic-curve algorithms. It’s also a good idea to limit the server to 256-bit rather than 128-bit algos. This is done in the configuration admin record for the HTTP Service; just add the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;org.apache.felix.https.jetty.ciphersuites.included: \
+    TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, \
+    TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, \
+    TLS_RSA_WITH_AES_256_CBC_SHA256, \
+    TLS_RSA_WITH_AES_256_CBC_SHA
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;With these settings you should now be a grade A student:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://njbartlett.github.com/images/posts/ssl-grade-a.png&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally: you might be wondering how to get an elusive A+ grade on SSL Labs. Alas it doesn’t currently seem to be possible in a Java-based server (though I may be wrong – please let me know in the comments). The feature needed to unlock A+ is called &lt;a href=&quot;https://datatracker.ietf.org/doc/rfc7507/&quot;&gt;TLS_FALLBACK_SCSV&lt;/a&gt;, and it requires an &lt;a href=&quot;https://bugs.openjdk.java.net/browse/JDK-8061798&quot;&gt;API change&lt;/a&gt;. Hopefully it will be implemented in Java 9.&lt;/p&gt;</description>
+	<pubDate>Tue, 07 Jun 2016 12:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Eclipse Summit India | Call for Papers Deadline June 15</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/Xt2I_6wNaMY/eclipse-summit-2016</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/Xt2I_6wNaMY/eclipse-summit-2016</link>
+	<description>Only a few days left to submit your proposal for Eclipse Summit India!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/Xt2I_6wNaMY&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Mon, 06 Jun 2016 13:30:00 +0000</pubDate>
+</item>
+<item>
+	<title>Melanie Bats: Sirius 4.0 Gotta Catch ‘Em All : Be prepared for the future</title>
+	<guid isPermaLink="false">http://melb.enix.org/?p=252</guid>
+	<link>http://melb.enix.org/sirius/sirius-4-0-be-prepared-for-the-future/</link>
+	<description>&lt;p&gt;&lt;strong&gt;Properties View&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;http://orig08.deviantart.net/6875/f/2014/094/4/1/pikachu_by_weaponix-d7d2wlg.png&quot;&gt;&lt;img alt=&quot;Pikachu&quot; class=&quot;aligncenter&quot; height=&quot;216&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/pikachu.png&quot; width=&quot;122&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+My &lt;a href=&quot;http://melb.enix.org/sirius/let-me-sirius-that-for-you-properties-view/&quot;&gt;previous post&lt;/a&gt; illustrates &lt;a href=&quot;https://en.wikipedia.org/wiki/Pok%C3%A9mon:_The_Movie_2000&quot;&gt;The Power of One&lt;/a&gt; framework to define graphical designers and property views: &lt;a href=&quot;https://eclipse.org/sirius/&quot;&gt;Eclipse Sirius&lt;/a&gt; 4.0. It shows how to get property views for your designer as fast as a thunderbolt!&lt;br /&gt;
+&lt;img alt=&quot;properties_widgets.png&quot; class=&quot;aligncenter&quot; height=&quot;392&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/propertiesview.png&quot; width=&quot;644&quot; /&gt;&lt;br /&gt;
+During the last year, the Sirius team worked on two versions of Sirius the 3.1 and the 4.0. In the following days I will detail all the new features coming in Sirius, since the release of Eclipse Mars, that are included in Eclipse Neon.&lt;/p&gt;
+&lt;p&gt;The Sirius project is very active with 10 committers working full time during this past year. We did around 900 commits and fixed 84 bugs. Since the Mars release, more than 1100 posts were made in the Sirius forum: there is a vibrant community around Sirius.&lt;/p&gt;
+&lt;p&gt;In this new release we introduce a significant feature with the properties view description but we are also preparing the future with a small change.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; Metamodel warning&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://orig07.deviantart.net/648e/f/2014/066/b/5/metapod_by_weaponix-d79c984.png&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter&quot; height=&quot;246&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/metapod.png&quot; width=&quot;139&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Starting with Sirius 4.0, a warning appears if the specifier does not define explicitly its metamodel on a representation description. This is a first step and in the future, specifying the metamodel will become mandatory which will allow us to give more precise feedback to specifiers resulting in more robust modelers.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter&quot; height=&quot;329&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/warning.png&quot; style=&quot;font-weight: 300;&quot; width=&quot;406&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;To &lt;a href=&quot;https://en.wikipedia.org/wiki/Gotta_catch_%27em_all&quot;&gt;catch all&lt;/a&gt; the new features coming with Sirius 4.0 come to &lt;a href=&quot;https://www.eclipsecon.org/france2016/session/sirius-40-let-me-sirius-you&quot;&gt;our talk&lt;/a&gt; at EclipseCon France! Another chance for you to join the Sirius community, &lt;a href=&quot;http://www.siriuscon.org/&quot;&gt;SiriusCon&lt;/a&gt; will occur in Paris the 15th November 2016. Be sure to save the date!&lt;/p&gt;</description>
+	<pubDate>Mon, 06 Jun 2016 08:36:43 +0000</pubDate>
+</item>
+<item>
+	<title>Tom Schindl: e(fx)clipse 2.4.0 released</title>
+	<guid isPermaLink="false">http://tomsondev.bestsolution.at/?p=4815</guid>
+	<link>https://tomsondev.bestsolution.at/2016/06/06/efxclipse-2-4-0-released/</link>
+	<description>&lt;p&gt;we are happy to announce that e(fx)clipse 2.4.0 has been released last week. The main working area in this release has once more been the code editor framework.&lt;/p&gt;
+&lt;h2&gt;Code editor framework&lt;/h2&gt;
+&lt;p&gt;Starting with this release we are have replacement for all features one is used from your Eclipse IDE Code-Editing framework, like keyboard navigation, hover-information, … . &lt;/p&gt;
+&lt;p&gt;We’ve as always taken extra care that we are not introduce JavaFX dependencies but kept a clean split between core-services providing the plain data and visualization services presenting those plain data points (eg in JavaFX).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lexical-Code-Highlighting improvements:
+&lt;ul&gt;
+&lt;li&gt;Our custom rules have been adjusted to match the highlighting behavior known from the Eclipse Java-Editor.&lt;br /&gt;
+      &lt;strong&gt;Old&lt;/strong&gt;&lt;p&gt;&lt;/p&gt;
+&lt;div class=&quot;jetpack-video-wrapper&quot;&gt;&lt;/div&gt;
+&lt;p&gt;      &lt;strong&gt;New&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;jetpack-video-wrapper&quot;&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;New rules to eg support lua multi-line string and comments. I confess I’ve not seen a language before who has a similar concept for multi-line constructs. If you are not familiar with lua let me try to explain it. A multi-line comment starts with &lt;code&gt;--[&lt;/code&gt; followed by an optional number of &lt;code&gt;&quot;=&quot;&lt;/code&gt;-chars followed by another &lt;code&gt;&quot;[&quot;&lt;/code&gt; and then ends with &lt;code&gt;&quot;]&quot;&lt;/code&gt; the same amount of &lt;code&gt;&quot;=&quot;&lt;/code&gt;-chars than you used in the start section followed by another &lt;code&gt;&quot;]&quot;&lt;/code&gt;
+&lt;pre class=&quot;brush: plain; title: ; notranslate&quot;&gt;--[==[
+I'm a multi line
+comment
+]==]
+
+lua-code
+
+--[====[
+I'm a multi line
+comment
+]====]
+&lt;/pre&gt;
+&lt;p&gt;We have enhanced our highlighting format to support this kind of rules. For lua it looks like this:&lt;/p&gt;
+&lt;pre class=&quot;brush: java; title: ; notranslate&quot;&gt;// ...
+rule {
+  multi_line __lua_ml_comment   &quot;--[&quot; pattern '(=*)' '['   =&amp;gt; &quot;]{0}]&quot;
+  single_line __lua_sl_comment  &quot;--&quot;  =&amp;gt; ''
+  multi_line __lua_ml_string    &quot;[&quot;  pattern '(=*)' '['   =&amp;gt; &quot;]{0}]&quot;
+  single_line __lua_string      &quot;'&quot;   =&amp;gt; &quot;'&quot; escaped by &quot;\\&quot;
+  single_line __lua_string      '&quot;'   =&amp;gt; '&quot;' escaped by &quot;\\&quot;
+}
+// ...
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;While the ldef-language allows to specify rules very easy those rules have to be defined up-front which sometimes is not possible to the highlighting needs to adapt based on other conditions. We enhanced the system to contribute rules dynamically by registering a service of type &lt;code&gt;DynamicScannerRuleCalculator&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Autocomplete improvments: You can now configure the editor to invoke auto-complete system not only on &lt;code&gt;CTRL+Space&lt;/code&gt; but as well eg at the moment you type &lt;code&gt;&quot;.&quot;&lt;/code&gt;-character&lt;/li&gt;
+&lt;li&gt;Code navigation support: This release introduces code navigation like you know it from your Eclipse IDE (including low-level APIs to jump to positions inside your editor control)
+&lt;div class=&quot;jetpack-video-wrapper&quot;&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Support for block matching: We implemented exemplary code to show how one can implement block matching (eg matching braces)
+&lt;div class=&quot;jetpack-video-wrapper&quot;&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Code rearrangement with DnD: We now have support to rearrange code parts using DnD
+&lt;div class=&quot;jetpack-video-wrapper&quot;&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Support for undo/redo: We’ve now connected the editor to the undo/redo system available in eclipse.text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;e4 on JavaFX&lt;/h2&gt;
+&lt;h3&gt;Prebuilt Perspective Switchers&lt;/h3&gt;
+&lt;p&gt;The framework now provides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A perspective switcher control one can embed into the TrimBar (PerspectiveSwitcherComponent)&lt;/li&gt;
+&lt;li&gt;A heavy and a lightweight perspective switcher dialog and a handler to trigger the dialog the appropriate one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;New tag to center MWindow&lt;/h3&gt;
+&lt;p&gt;You can now add the tag &lt;code&gt;&quot;efx-center-on-screen&quot;&lt;/code&gt; to your Application.e4xmi and the window will be centered on screen.&lt;/p&gt;
+&lt;h3&gt;Tab-Context-Menu&lt;/h3&gt;
+&lt;p&gt;One can now register MPopupMenu on an MPart who is translated into a context-menu assigned to the Tab in a TabPane. Just taq the MPopupMenu with &lt;code&gt;&quot;tabmenu&quot;&lt;/code&gt; and e4 on JavaFX will take care for you to render the context menu.&lt;/p&gt;
+&lt;h2&gt;Other new runtime APIs&lt;/h2&gt;
+&lt;h3&gt;TextUtil#templateValuSubstitutor(String,Map)&lt;/h3&gt;
+&lt;p&gt;This new helper allows you to evaluate simple template expressions and applying formats on it.&lt;/p&gt;
+&lt;pre class=&quot;brush: java; title: ; notranslate&quot;&gt;class Person {
+   String name = &quot;Tom&quot;;
+   Date birthday = new Date(1,4,79);
+}
+
+Person p = new Person();
+TextUtil.templateValuSubstitutor( 
+  &quot;The birthday from ${p.name} is on ${p.birthday,date,short}&quot;, Collections.singletonMap(&quot;p&quot;,p) );
+
+&lt;/pre&gt;
+&lt;h3&gt;ImageProvider support HiDPI images&lt;/h3&gt;
+&lt;p&gt;JavaFX itself supports HiDPI images already since sometime but the internal abstraction who is used by e4 on JavaFX lacked such a support. This has been fixed with this release.&lt;/p&gt;
+&lt;h3&gt;Delayed observables&lt;/h3&gt;
+&lt;p&gt;To appropriately support undo/redo in form based UIs it is very important to collect changes in logical units. A good example is the that you probably would not require the user to undo each and every keystroke in a text-field. To address this use case Eclipse Databinding for SWT has the concept of so called delayed observables who wait for a certain amount of time before they inform others about their modification.&lt;/p&gt;
+&lt;p&gt;Eclipse Databinding for JavaFX controls now has the same concept.&lt;/p&gt;
+&lt;pre class=&quot;brush: java; title: ; notranslate&quot;&gt;TextField f = new TextField();
+IObservableValue textObs = JavaFXUIProperties.text2().observeDelayed(400, f);
+&lt;/pre&gt;
+&lt;h3&gt;Error-Decoration&lt;/h3&gt;
+&lt;p&gt;For form base UIs it is crucial to display validation information. We added new API to our control-library to who supports field decorations. The API is designed to work equally well in a basic scenario as well as when using MVVM (in the same vein we added new properties you can publish in your ViewModels)&lt;/p&gt;
+&lt;pre class=&quot;brush: java; title: ; notranslate&quot;&gt;static class VM {
+  private final ValidatedStringProperty firstname;
+  private final ValidatedStringProperty lastname;
+  private final StatusAggregator aggregator;
+
+  public VM(String firstname, String lastname) {
+    this.firstname = new ValidatedSimpleStringProperty(new SimpleStringProperty(this, &quot;firstname&quot;,firstname));
+    this.firstname.registerValidator(s -&amp;gt; s.isEmpty() ? Status.status(State.ERROR, -1, &quot;Vorname muß befüllt sein&quot;, null) : Status.ok());
+
+    this.lastname = new ValidatedSimpleStringProperty(new SimpleStringProperty(this, &quot;lastname&quot;, lastname));
+    this.lastname.registerValidator(s -&amp;gt; s.isEmpty() ? Status.status(State.ERROR, -1, &quot;Nachname muß befüllt sein&quot;, null) : Status.ok());
+
+    this.aggregator = new StatusAggregator(this.firstname,this.lastname);
+  }
+}
+
+VM vm = new VM(&quot;Tom&quot;, &quot;Schindl&quot;);
+
+{
+  Label l = new Label(&quot;Vorname&quot;);
+  p.getChildren().add(l);
+
+  TextField field = new TextField();
+  field.textProperty().bindBidirectional(vm.firstname.bindProperty());
+
+  NodeDecorator.apply(field, vm.firstname);
+  p.getChildren().add(field);
+}
+&lt;/pre&gt;&lt;br /&gt;  &lt;a href=&quot;http://feeds.wordpress.com/1.0/gocomments/tomsondev.wordpress.com/4815/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/tomsondev.wordpress.com/4815/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;https://pixel.wp.com/b.gif?host=tomsondev.bestsolution.at&amp;amp;blog=7995503&amp;amp;post=4815&amp;amp;subd=tomsondev&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Mon, 06 Jun 2016 08:09:34 +0000</pubDate>
+</item>
+<item>
 	<title>JBoss Tools Team: JBoss Fuse Tooling - Camel File Validation - Existing, Improved and New</title>
 	<guid isPermaLink="true">http://tools.jboss.org/blog/eclipse-fuse-tooling-new-validation.html</guid>
 	<link>http://tools.jboss.org/blog/eclipse-fuse-tooling-new-validation.html</link>
@@ -119,396 +470,6 @@
 	<link>https://mikael-barbero.tumblr.com/post/145308146515</link>
 	<description>&lt;p&gt;FEEP does sound like a bird call, but it stands for Friend of Eclipse Enhancement Program. Yes, it is a mouthful. You may wonder what it stand for… Well, let me tell you! &lt;/p&gt;&lt;p&gt;FEEP is a program launched by the Eclipse Foundation late last year to utilize all the donations made through the Friends of Eclipse program to make significant and meaningful improvements and enhancements to the Eclipse IDE/Platform. Prior to this launch, all donations were being reinvested into the general Eclipse community, but FEEP commits to investing all your donations into improving the Eclipse Platform. In other words, &lt;b&gt;100% of your donation will fund Eclipse Platform improvements&lt;/b&gt;!&lt;/p&gt;&lt;p&gt;Since the program was first launched in 2015, we’ve already made many concrete improvements and we are planning even more. We have been working closely with representatives from the Eclipse Architecture Council and Project Management Committee (PMC) to identify bugs and problems that are important to community members and that will improve your everyday coding life. Here is what we’ve done so far thanks to your donations:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Mac install experience&lt;/b&gt;: Eclipse is now packaged as a native OS X application, which means it’s now easier for Mac users to install Eclipse packages!&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;GTK3 support&lt;/b&gt;: GTK3 support has been improved, making the Linux user experience much better.&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Download and Updates&lt;/b&gt;: p2 metadata is now distributed with a new compression scheme (xz) to be downloaded faster. Processes relying on these downloads (like check for updates and dependency resolution) now requires less waiting time!&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Autosave of all workbench editors&lt;/b&gt;: As the title implies, all workbench editors are now automatically saved, which prevents the unfortunate loss of work.&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Dark theme for Windows&lt;/b&gt;: Updates were made to the Eclipse Dark theme to make it easier to work with and more appealing to the user’s eyes.&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Lower memory consumption&lt;/b&gt;: some memory leaks, especially in the toolbar handling, have been fixed. It means one thing: fewer OutOfMemoryError!&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;figure class=&quot;tmblr-full&quot;&gt;&lt;img alt=&quot;image&quot; src=&quot;https://67.media.tumblr.com/a0ca12bd27b31465b69d9022815171be/tumblr_inline_o85gh7cTLi1tnayhr_540.png&quot; /&gt;&lt;/figure&gt;&lt;p&gt;To experience these changes in your workspace you’ll want to install the latest version of Eclipse Neon. &lt;a href=&quot;https://www.eclipse.org/downloads&quot;&gt;Download Eclipse Neon&lt;/a&gt; (4.6) now (or use a &lt;a href=&quot;https://www.eclipse.org/downloads/index-developer.php&quot;&gt;developer build&lt;/a&gt; if you see this message before the release scheduled on June 22nd 2016). &lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;FEEP is an ongoing program and we’re continually planning new enhancements&lt;/b&gt;. Like any well laid out plan, the upcoming fixes are always subject to change, but as the plan stands today, here are the the next targeted fixes: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Even faster download of Eclipse updates&lt;br /&gt;&lt;/li&gt;&lt;li&gt;Identify and report non cancelable background tasks easily&lt;br /&gt;&lt;/li&gt;&lt;li&gt;More improvements to the Windows dark theme&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://projects.eclipse.org/development_effort/enable-refresh-using-native-hooks&quot;&gt;No more “resource is out of sync with the filesystem” error &lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;li&gt;Add the &lt;a href=&quot;https://projects.eclipse.org/development_effort/fix-poor-user-experience-jvm-selection-dialog&quot;&gt;ability to choose which Java runtime&lt;/a&gt; to be used to start Eclipse.&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://projects.eclipse.org/development_effort/wtp-xml-editor-technology-face-lift&quot;&gt;XML Editor improvements&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Obviously, &lt;b&gt;the development depends on the amount of donations received&lt;/b&gt;. The great news is, you can make a difference and help improve the Eclipse Platform! Don’t be shy, every dollar counts and the community will benefit from your support. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;We also offer benefits to donors joining our Friends and Best Friends program. Find out &lt;a href=&quot;http://www.eclipse.org/donate/benefits.php&quot;&gt;how to receive benefits&lt;/a&gt;. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Make a difference, please &lt;a href=&quot;http://www.eclipse.org/donate/&quot;&gt;donate today&lt;/a&gt;! &lt;/b&gt;&lt;br /&gt;&lt;/p&gt;</description>
 	<pubDate>Thu, 02 Jun 2016 15:03:27 +0000</pubDate>
-</item>
-<item>
-	<title>VIATRA: Eclipse Neon DemoCamp in Budapest</title>
-	<guid isPermaLink="false">5614faafe4b03f677dc3822b:56153118e4b022593e35e24b:574ff23f86db43b347aa73b4</guid>
-	<link>http://viatra.net/news/2016/6/eclipse-neon-democamp-in-budapest</link>
-	<description>&lt;img class=&quot;thumb-image&quot; src=&quot;http://static1.squarespace.com/static/5614faafe4b03f677dc3822b/t/574ff414c2ea513538c2a857/1464857626267/?format=1000w&quot; /&gt;
-				
-			
-
-			
-
-		
-	
-	
-
-&lt;p&gt;IncQuery Labs' mission is to revive and engage the &lt;a href=&quot;http://www.incquerylabs.com/news/2016/5/12/the-eclipse-enthusiast-budapest-group-has-been-just-launched&quot; target=&quot;_blank&quot;&gt;Hungarian Eclipse community &lt;/a&gt;therefore, we are launching the &lt;a href=&quot;http://www.meetup.com/Eclipse-Enthusiasts-Budapest/&quot;&gt;Eclipse Enthusiast Budapest Group&lt;/a&gt; and organizing an &lt;a href=&quot;https://wiki.eclipse.org/Eclipse_DemoCamp_Neon_2016/Budapest&quot;&gt;Eclipse DemoCamp&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;During the summer DemoCamp season, several events are dedicated to the current release of Eclipse Platform and related projects. Thus, Eclipse DemoCamp Budapest will focus on the release of Neon and will present recent developments in various platform components and projects such as VIATRA 1.3 release.  &lt;/p&gt;&lt;p&gt;Join us and learn about Eclipse Neon!&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Agenda&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;6.50 pm -- Registration&lt;br /&gt;7.00 pm -- Opening, István Ráth and Ákos Horváth, &lt;a href=&quot;http://www.incquerylabs.com/&quot; target=&quot;_blank&quot;&gt;IncQuery Labs&lt;/a&gt;,  &lt;br /&gt;7.05 pm -- VIATRA 1.3 release, Ábel Hegedüs, IncQuery Labs&lt;br /&gt;7.30 pm -- Diagrams in Neon Light - Brief introduction of GEF4, Krisztian Koncz, ClickAndLike&lt;br /&gt;7.55 pm -- Break&lt;br /&gt;8.05 pm -- Eclipse technologies in the automotive industry, &lt;a href=&quot;http://www.thyssenkrupp.hu/en&quot; target=&quot;_blank&quot;&gt;Thyssenkrupp Presta Hungary Ltd&lt;/a&gt;. &lt;br /&gt;8.30 pm -- Discussion on the Hungarian Eclipse Community, Networking &lt;/p&gt;&lt;p&gt;Language of the presentations: HU&lt;br /&gt;Date and venue: &lt;strong&gt;06 July, 2016&lt;/strong&gt;, Bartók Béla út 10-12. 1111 Budapest (&lt;a href=&quot;http://kek.org.hu/helyszin/&quot;&gt;KÉK&lt;/a&gt;)&lt;br /&gt;Registration: &lt;a href=&quot;https://wiki.eclipse.org/Eclipse_DemoCamp_Neon_2016/Budapest&quot;&gt;Eclipse wiki page&lt;/a&gt; (EN) or &lt;a href=&quot;http://www.meetup.com/Eclipse-Enthusiasts-Budapest/events/231040401/&quot;&gt;meetup.com&lt;/a&gt; (HU)&lt;/p&gt;&lt;p&gt;The DemoCamp is organized by IncQuery Labs and sponsored by Eclipse Foundation and IncQuery Labs. &lt;/p&gt;</description>
-	<pubDate>Thu, 02 Jun 2016 10:53:32 +0000</pubDate>
-</item>
-<item>
-	<title>Eclipse Scout: June 21st: Eclipse Democamp Zurich</title>
-	<guid isPermaLink="false">https://www.bsi-software.com/news-1614</guid>
-	<link>https://www.bsi-software.com/en/scout-blog/article/june-21st-eclipse-democamp-zurich.html</link>
-	<description>&lt;p class=&quot;lead&quot;&gt;Join us for the Eclipse Democamp in Zurich starting at 17:30 on June 21st. With close to 100 participants the Eclipse Democamp Zurich is amongst the larger democamps world wide.&lt;/p&gt;
-										
-										
-												
-												&lt;div style=&quot;margin: 0px 15px;&quot;&gt;
-												&lt;div class=&quot;csc-default-wrapper default &quot;&gt;
-				&lt;div class=&quot;row&quot;&gt;
-					&lt;div class=&quot;large-12 columns&quot;&gt;
-						&lt;div class=&quot;csc-default content-type-textpic clearfix&quot; id=&quot;c10814&quot;&gt;&lt;div class=&quot;csc-textpic csc-textpic-center csc-textpic-below&quot;&gt;&lt;div class=&quot;csc-textpic-text&quot;&gt;&lt;div class=&quot;csc-text csc-text-c10814&quot;&gt;&lt;p&gt;At the democamp participants have the opportunity to learn about the cool technology offered by the Eclipse projects that showcase the latest features shipping with the Eclipse release train in June. 
-&lt;/p&gt;
-&lt;p&gt;The event includes drinks, beer and buffet and is open and free to attend. Head over to the &lt;a class=&quot;external-link-new-window&quot; href=&quot;https://wiki.eclipse.org/Eclipse_DemoCamps_Neon_2016/Zurich&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;Wiki&lt;/a&gt; for the details and to &lt;a class=&quot;external-link-new-window&quot; href=&quot;https://www.eventbrite.com/e/eclipse-democamp-zurich-tickets-25376690364&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;Eventbrite&lt;/a&gt; to register.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;csc-textpic-imagewrap&quot;&gt;&lt;div class=&quot;csc-textpic-center-outer&quot;&gt;&lt;div class=&quot;csc-textpic-center-inner&quot;&gt;&lt;figure class=&quot;csc-textpic-image csc-textpic-last&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;435&quot; src=&quot;https://www.bsi-software.com/fileadmin/daten/_processed_/csm_Eclipse_Democamp_Zurich_5578c63d2e.png&quot; width=&quot;740&quot; /&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-						&lt;span class=&quot;clearfix&quot;&gt;&lt;/span&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;&lt;div class=&quot;csc-default-wrapper default &quot;&gt;
-				&lt;div class=&quot;row&quot;&gt;
-					&lt;div class=&quot;large-12 columns&quot;&gt;
-						&lt;div class=&quot;csc-default content-type-text clearfix&quot; id=&quot;c10815&quot;&gt;&lt;div class=&quot;csc-text csc-text-c10815&quot;&gt;&lt;h3&gt;Optional Eclipse Scout Tutorial&lt;/h3&gt;
-&lt;p&gt;Prior to the Eclipse Democamp a free Eclipse Scout tutorial is offered to anyone interested. The Scout tutorial takes place at the same location and begins at 15:00. 
-&lt;/p&gt;
-&lt;p&gt; In the tutorial we talk about important topics of the new Java/HTML5 platform that are not covererd in the Democamp session and also provide a &quot;hands-on&quot; opportunity for the participants.&lt;/p&gt;&lt;ul class=&quot;arrow-list&quot;&gt;&lt;li&gt;Why Eclipse Scout?&lt;/li&gt;&lt;li&gt;Maven project structure, Logging and Testing&lt;/li&gt;&lt;li&gt;Styling Scout application with CSS3&lt;/li&gt;&lt;li&gt;The &quot;Contacts&quot; and Scout widget demo applications&lt;/li&gt;&lt;li&gt;Hands-on: Building your first Scout application&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Participants interested in the Scout tutorial are asked to &lt;a class=&quot;external-link-new-window&quot; href=&quot;https://www.eventbrite.com/e/eclipse-scout-tutorial-tickets-25773244468&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;register separately&lt;/a&gt; and to bring their own laptop (please download and install the package&lt;a class=&quot;external-link-new-window&quot; href=&quot;https://www.eclipse.org/downloads/index-developer.php&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt; Eclipse for Scout Developers&lt;/a&gt; prior to the tutorial session)
-&lt;/p&gt;
-&lt;h3&gt;Democamp Outline&lt;/h3&gt;
-&lt;p&gt;We are very happy to have a great line-up of projects, speakers and topics for this upcoming democamp. This includes the Eclipse Che, Xtext, AsciiDoc, Docker, Eclipse Scout, The Things Network and a closing session that presents a mash-up of IoT with the 1840s industrial revolution. 
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;“Eclipse Che: The Next-Gen Eclipse IDE. Create Cloud IDEs with Eclipse Che”&lt;/strong&gt; by Stévan Le Meur, Codenvy 
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;“Xtext in the Web”&lt;/strong&gt; by Holger Schill, itemis 
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;“AsciiDoc Editor in Eclipse”&lt;/strong&gt; by Max Rydahl Andersen, Red Hat 
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;“Docker and other container Tooling in Eclipse Neon”&lt;/strong&gt; by Max Rydahl Andersen, Red Hat 
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;“Eclipse Scout: Going Java and HTML5”&lt;/strong&gt; by Matthias Zimmermann, BSI Business Systems Integration AG 
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;“The Things Network: Building an open, free and community-owned IoT network”&lt;/strong&gt; by Gonzalo Casas 
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;“1840s Industrial Revolution meets IoT” &lt;/strong&gt;by Florian Pirchner and Klemens Edler, Lunifera GmbH 
-&lt;/p&gt;
-&lt;h3&gt;Registration, Location and Time&lt;/h3&gt;
-&lt;p&gt;Please register via &lt;a class=&quot;external-link-new-window&quot; href=&quot;https://www.eventbrite.com/e/eclipse-democamp-zurich-tickets-25376690364&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;Eventbrite&lt;/a&gt; for the Eclipse Democamp Zurich. Participants interested in the Eclipse Scout Tutorial are asked to &lt;a class=&quot;external-link-new-window&quot; href=&quot;https://www.eventbrite.com/e/eclipse-scout-tutorial-tickets-25773244468&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;register separately&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;Both the Eclipse Democamp and the Scout tutorial take place on June 21st at the main building of the ETH in Zurich in the lecture room HG D7.1 at &lt;a class=&quot;external-link-new-window&quot; href=&quot;https://www.openstreetmap.org/way/192151232#map=17/47.37691/8.54486&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;Rämistrasse 101, 8092 Zürich&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;p&gt;Starting times: &lt;/p&gt;&lt;ul class=&quot;arrow-list&quot;&gt;&lt;li&gt;15:00 Scout Tutorial&lt;/li&gt;&lt;li&gt;17:30 Eclipse Democamp&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;For additional details, Check the Eclipse Democamp &lt;a class=&quot;external-link-new-window&quot; href=&quot;https://wiki.eclipse.org/Eclipse_DemoCamps_Neon_2016/Zurich&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;Wiki page&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;p&gt; We are looking forward to meet you in Zurich on June 21st. 
-&lt;/p&gt;
-&lt;p&gt;Feedback? Please use this &lt;a class=&quot;external-link-new-window&quot; href=&quot;https://www.eclipse.org/forums/index.php/t/1078033/&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;forum thread&lt;/a&gt;
-&lt;/p&gt;
-&lt;h3&gt;Scout Links &lt;/h3&gt;
-&lt;p&gt;&lt;a class=&quot;external-link-new-window&quot; href=&quot;http://eclipse.org/scout&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;Project Home&lt;/a&gt; | &lt;a class=&quot;external-link-new-window&quot; href=&quot;http://www.eclipse.org/forums/eclipse.scout&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;Forum&lt;/a&gt; | &lt;a class=&quot;external-link-new-window&quot; href=&quot;http://wiki.eclipse.org/Scout&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;Wiki&lt;/a&gt; | &lt;a class=&quot;external-link-new-window&quot; href=&quot;https://twitter.com/EclipseScout&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;Twitter&lt;/a&gt; | &lt;a class=&quot;external-link-new-window&quot; href=&quot;https://plus.google.com/+eclipsescout&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;Google+&lt;/a&gt; | &lt;a class=&quot;external-link-new-window&quot; href=&quot;https://www.bsi-software.com/en/technology/eclipse-scout/professional-support.html&quot; target=&quot;_blank&quot; title=&quot;Opens external link in new window&quot;&gt;Professional Support&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-						&lt;span class=&quot;clearfix&quot;&gt;&lt;/span&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-												&lt;/div&gt;</description>
-	<pubDate>Thu, 02 Jun 2016 08:07:17 +0000</pubDate>
-</item>
-<item>
-	<title>Scott Lewis: Polyglot Remote Services</title>
-	<guid isPermaLink="false">tag:blogger.com,1999:blog-20358640.post-6094093570706416133</guid>
-	<link>http://eclipseecf.blogspot.com/2016/06/polyglot-remote-services.html</link>
-	<description>ECF has a growing number of &lt;a href=&quot;https://wiki.eclipse.org/Distribution_Providers&quot; target=&quot;_blank&quot;&gt;distribution providers&lt;/a&gt; that implement the OSGi Remote Service Admin (RSA) specification.   Recently, a provider based upon &lt;a href=&quot;http://eclipseecf.blogspot.com/2016/05/ecf-remote-services-using-google-rpc.html&quot; target=&quot;_blank&quot;&gt;Google RPC was introduced&lt;/a&gt;, and &lt;a href=&quot;https://wiki.eclipse.org/Distribution_Providers#XML-RPC_Provider&quot; target=&quot;_blank&quot;&gt;now a provider&lt;/a&gt; based upon &lt;a href=&quot;http://xmlrpc.com/&quot; target=&quot;_blank&quot;&gt;XML-RPC&lt;/a&gt; is available.   It's also now &lt;a href=&quot;https://wiki.eclipse.org/Tutorial:_Creating_Custom_Distribution_Providers&quot; target=&quot;_blank&quot;&gt;much easier to create custom distribution providers&lt;/a&gt; using any desired transport.   All ECF distribution providers fully and automatically implement the OSGi RSA specification. &lt;br /&gt;&lt;br /&gt;Several of these new distribution providers also support non-OSGi and even non-Java servers and/or clients...i.e. written in JavaScript, Python, C++ and other languages.   This has a number of use cases allowing cross-language interoperability and backward compatibility.  Some examples:&lt;br /&gt;&lt;br /&gt;It's possible to take an existing/deployed service (written in any language) and easily create an RSA client for it.   This allows RSA/OSGi to be used for discovery, deal with &lt;a href=&quot;http://eclipseecf.blogspot.com/2016/04/remote-services-over-unreliable-networks.html&quot; target=&quot;_blank&quot;&gt;remote service dynamics&lt;/a&gt;, use of DS or Spring, and service versioning on the consumer/client.&lt;br /&gt;&lt;br /&gt;It's possible to export an OSGi Remote Service and use any/all clients (written in any language  supported by the exporting distribution provider). &lt;br /&gt;&lt;br /&gt;It's possible to take an existing web server implementation, and move/refactor it to OSGi RSA without breaking backward compatibility for existing clients (written in any language).&lt;br /&gt;&lt;br /&gt;</description>
-	<pubDate>Wed, 01 Jun 2016 17:43:11 +0000</pubDate>
-	<author>noreply@blogger.com (Scott Lewis)</author>
-</item>
-<item>
-	<title>InfoQ Eclipse feed: Presentation: Eclipse Orion: Fast, Functional and at Your Fingertips</title>
-	<guid isPermaLink="true">http://www.infoq.com/presentations/eclipse-orion?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</guid>
-	<link>http://www.infoq.com/presentations/eclipse-orion?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</link>
-	<description>&lt;img src=&quot;http://www.infoq.com/resource/presentations/eclipse-orion/en/mediumimage/Stebig.JPG&quot; /&gt;&lt;p&gt;Steve Northover presents tips, tricks and new features that make JavaScript development more productive and fun with Eclipse Orion, including quick fixes, content assist and refactoring support.&lt;/p&gt; &lt;i&gt;By Steve Northover&lt;/i&gt;</description>
-	<pubDate>Tue, 31 May 2016 19:51:00 +0000</pubDate>
-</item>
-<item>
-	<title>InfoQ Eclipse feed: Presentation: Your Agile Project at Eclipse with Tuleap</title>
-	<guid isPermaLink="true">http://www.infoq.com/presentations/tuleap?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</guid>
-	<link>http://www.infoq.com/presentations/tuleap?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</link>
-	<description>&lt;img src=&quot;http://www.infoq.com/resource/presentations/tuleap/en/mediumimage/Doibig.JPG&quot; /&gt;&lt;p&gt;Manuel Vacelet and Pascal Rapicault introduce Tuleap - Scrum, Kanban, and generic bug tracking –, explaining how to integrate it with the Eclipse toolset and Bugzilla.&lt;/p&gt; &lt;i&gt;By Manuel Vacelet, Pascal Rapicault&lt;/i&gt;</description>
-	<pubDate>Tue, 31 May 2016 15:46:00 +0000</pubDate>
-</item>
-<item>
-	<title>Jonas Helming: Call for paper – EclipseCon Europe 2016</title>
-	<guid isPermaLink="false">http://eclipsesource.com/blogs/?p=26667</guid>
-	<link>http://eclipsesource.com/blogs/2016/05/31/call-for-paper-eclipsecon-europe-2016/</link>
-	<description>&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;I am happy to announce that the &lt;/span&gt;&lt;a href=&quot;https://www.eclipsecon.org/europe2016/cfp&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Call for Paper&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;s is out and submissions are open for &lt;/span&gt;&lt;a href=&quot;https://www.eclipsecon.org/europe2016/&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;EclipseCon Europe 2016&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (October 25th – 27th). I invite the community, including all users and adopters to submit talks to contribute to a great program!&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://eclipsesource.com/blogs/wp-content/uploads/2016/05/ECE.png&quot;&gt;&lt;img alt=&quot;ECE&quot; class=&quot;aligncenter size-full wp-image-26673&quot; height=&quot;90&quot; src=&quot;http://eclipsesource.com/blogs/wp-content/uploads/2016/05/ECE.png&quot; width=&quot;728&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;This EclipseCon is special to me, as I was given the great honor of chairing the program committee. It is our responsibility to select the best among great submissions – not an easy task. As a first step, we were formulating the &lt;/span&gt;&lt;a href=&quot;https://www.eclipsecon.org/europe2016/cfp&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;call for paper&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;s, through which we describe the kind of content we would like to see submitted. I would like to share some insights and thoughts about the tracks we finally agreed upon.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;First of all, as the new Java version is going to be released at the end of this year, we added a “&lt;/span&gt;&lt;b&gt;Java 9&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;” track. We previously had a track for Java 8 and it was impressive how much interesting content the community produced. The Eclipse ecosystem consists of leading Java experts and developers who even built compilers and tooling for the new language. Therefore, we expect EclipseCon to be a great place to learn about Java 9 and encourage you to submit.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Second, we have split the existing category “Eclipse Technology”. Last year, this category contained a lot of topics – from the IDE including tools such as EGit and Mylyn, to runtime technologies such as the Platform, Equinox and RAP. Addressing the great diversity of the Eclipse ecosystem, and based on a user survey, we have split the category into two: “&lt;/span&gt;&lt;b&gt;Tools, IDE &amp;amp; DevOps&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;” and “&lt;/span&gt;&lt;b&gt;Eclipse Technology&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;”. The first track is now explicitly about development tools and related topics, the second track will focus on runtime technologies including RCP and the Eclipse 4 Application Platform itself. Of course, there is always some overlap, but we thought it was time to reflect that Eclipse is much more than an IDE in the conference tracks.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Finally, we have extended the “Web and Cloud Development” track with “Operations”, reflecting this essential aspect of any cloud-based project.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;If you submit before June 30, you have a chance to be an early selection and receive early, additional promotion for your talk and your technology story. So be sure to &lt;/span&gt;&lt;a href=&quot;https://www.eclipsecon.org/europe2016/cfp&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;submit early&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.  I am already looking forward to reading your submissions! &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block;&quot;&gt;&lt;a href=&quot;https://twitter.com/intent/tweet?source=webclient&amp;amp;text=Call+for+paper+%26%238211%3B+EclipseCon+Europe+2016&amp;amp;via=eclipsesource&amp;amp;url=http://eclipsesource.com/blogs/2016/05/31/call-for-paper-eclipsecon-europe-2016/&quot; style=&quot;margin-right: 5px;&quot; target=&quot;_blank&quot; title=&quot;Share on Twitter&quot;&gt;&lt;img alt=&quot;Twitter&quot; src=&quot;http://eclipsesource.com/blogs/wp-content/plugins/custom-about-author/images/social_media/twitter.png&quot; title=&quot;Twitter&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;https://plus.google.com/share?url=http://eclipsesource.com/blogs/2016/05/31/call-for-paper-eclipsecon-europe-2016/&quot; style=&quot;margin-right: 5px;&quot; target=&quot;_blank&quot; title=&quot;+1&quot;&gt;&lt;img alt=&quot;Google+&quot; src=&quot;http://eclipsesource.com/blogs/wp-content/plugins/custom-about-author/images/social_media/google_plus.png&quot; title=&quot;Google+&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.linkedin.com/cws/share?url=http://eclipsesource.com/blogs/2016/05/31/call-for-paper-eclipsecon-europe-2016/&quot; style=&quot;margin-right: 5px;&quot; target=&quot;_blank&quot; title=&quot;Share on LinkedIn&quot;&gt;&lt;img alt=&quot;LinkedIn&quot; src=&quot;http://eclipsesource.com/blogs/wp-content/plugins/custom-about-author/images/social_media/linkedin.png&quot; title=&quot;LinkedIn&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;https://www.facebook.com/sharer/sharer.php?u=http://eclipsesource.com/blogs/2016/05/31/call-for-paper-eclipsecon-europe-2016/&amp;amp;t=Call+for+paper+%26%238211%3B+EclipseCon+Europe+2016&quot; style=&quot;margin-right: 5px;&quot; target=&quot;_blank&quot; title=&quot;Facebook&quot;&gt;&lt;img alt=&quot;Facebook&quot; src=&quot;http://eclipsesource.com/blogs/wp-content/plugins/custom-about-author/images/social_media/facebook.png&quot; title=&quot;Facebook&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;a href=&quot;http://eclipsesource.com/blogs/2016/05/31/call-for-paper-eclipsecon-europe-2016/#respond&quot;&gt;Leave a Comment&lt;/a&gt;. Tagged with &lt;a href=&quot;http://eclipsesource.com/blogs/tag/eclipse/&quot; title=&quot;eclipse Tag&quot;&gt;eclipse&lt;/a&gt;, &lt;a href=&quot;http://eclipsesource.com/blogs/tag/eclipsecon/&quot; title=&quot;eclipsecon Tag&quot;&gt;eclipsecon&lt;/a&gt;, &lt;a href=&quot;http://eclipsesource.com/blogs/tag/eclipse/&quot; title=&quot;eclipse Tag&quot;&gt;eclipse&lt;/a&gt;, &lt;a href=&quot;http://eclipsesource.com/blogs/tag/eclipsecon/&quot; title=&quot;eclipsecon Tag&quot;&gt;eclipsecon&lt;/a&gt;&lt;p&gt;&lt;/p&gt;</description>
-	<pubDate>Tue, 31 May 2016 15:12:40 +0000</pubDate>
-</item>
-<item>
-	<title>Geniutec: Using Custom Actions in Sapphire</title>
-	<guid isPermaLink="false">https://www.genuitec.com/?p=484031</guid>
-	<link>https://www.genuitec.com/using-custom-actions-in-sapphire/</link>
-	<description>&lt;p&gt;In previous articles, I’ve discussed how to create custom XML bindings and custom editing UI for an editor based on the great Eclipse Sapphire framework. Now let’s take a look at another aspect of editor UI creation, customizing standard actions like Add or Browse, or creating completely custom actions for your Sapphire-based editor.PrerequisitesAs in previous […]&lt;/p&gt;
-&lt;p&gt;The post &lt;a href=&quot;https://www.genuitec.com/using-custom-actions-in-sapphire/&quot; rel=&quot;nofollow&quot;&gt;Using Custom Actions in Sapphire&lt;/a&gt; appeared first on &lt;a href=&quot;https://www.genuitec.com&quot; rel=&quot;nofollow&quot;&gt;Genuitec&lt;/a&gt;.&lt;/p&gt;</description>
-	<pubDate>Mon, 30 May 2016 13:43:53 +0000</pubDate>
-</item>
-<item>
-	<title>Scott Lewis: Microservices Granularity for the Internet of Things</title>
-	<guid isPermaLink="false">tag:blogger.com,1999:blog-20358640.post-6586022882721175645</guid>
-	<link>http://eclipseecf.blogspot.com/2016/05/microservices-granularity-for-internet.html</link>
-	<description>&lt;br /&gt;In a 2014 blog posting, Martin Fowler discussed issues around creating networked services in &lt;a href=&quot;http://martinfowler.com/articles/distributed-objects-microservices.html&quot; target=&quot;_blank&quot;&gt;Microservices and the First Law of Distributed Objects&lt;/a&gt;.   One of his points is that networked services should generally be more coarse-grained than local (in-process) services. The reason for this is that distribution always has costs (bandwidth, performance), and these costs easily can become large with fine-grained remote calls.&lt;br /&gt;&lt;br /&gt;But as Fowler points out, there are good reasons (e.g. complexity) to make a networked API as fine-grained as possible.   How granular/coarse should IoT microservices be?  In his blog posting, Fowler suggested that granularity was an open question, and that experience with different systems with different levels of microservices granularity would provide eventual insight.&lt;br /&gt;&lt;br /&gt;I agree with Fowler's view that experience is necessary to decide on 'appropriate' granularity.   I think it's particularly true for the Internet of Things, where multiple people and organizations are attempting attempting to create consistent abstractions for the relatively-limited input and output capabilities exposed by newly networked devices...aka 'things'.&lt;br /&gt;&lt;br /&gt;But when actually defining remote services, often the first thing done is to bind the service to a particular transport+protocol+impl framework (e.g. https+json+jersey).   Once bound to a transport, the service API may become very difficult to refactor and version.  This is especially true once a service has been deployed, but frequently deployment is the only way to get enough real experience to be more (or less) granular!&lt;br /&gt;&lt;br /&gt;One way to provide flexibility...and allow future change to a service is to remain as transport-independent as possible.   &lt;a href=&quot;https://dzone.com/articles/transport-independent-remote-services&quot; target=&quot;_blank&quot;&gt;As described by this article&lt;/a&gt;, new standards such as OSGi Remote Services/RSA and ECF's modular implementation makes it possible to design and refactor services independent of the transport.  Such independence will make it easier to update the granularity of a microservice when necessary.</description>
-	<pubDate>Mon, 30 May 2016 06:25:54 +0000</pubDate>
-	<author>noreply@blogger.com (Scott Lewis)</author>
-</item>
-<item>
-	<title>InfoQ Eclipse feed: Presentation: Scientific Simulation with Eclipse - from Zero Code to Running on Lots of Cores in 10 Minutes</title>
-	<guid isPermaLink="true">http://www.infoq.com/presentations/moose?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</guid>
-	<link>http://www.infoq.com/presentations/moose?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</link>
-	<description>&lt;img src=&quot;http://www.infoq.com/resource/presentations/moose/en/mediumimage/Alexbig.JPG&quot; /&gt;&lt;p&gt;Alex McCaskey describes recent plugins implemented for the Eclipse ICE to streamline and improve the MOOSE development workflow, from application development to execution on a remote HPC resource.&lt;/p&gt; &lt;i&gt;By Alex McCaskey&lt;/i&gt;</description>
-	<pubDate>Sat, 28 May 2016 01:23:00 +0000</pubDate>
-</item>
-<item>
-	<title>Jeremie Bresson: Eclipse debugging: truncated String values</title>
-	<guid isPermaLink="true">http://jmini.github.io/blog/2016/2016-05-27_eclipse_debugging_truncated_string_value.html</guid>
-	<link>http://jmini.github.io/blog/2016/2016-05-27_eclipse_debugging_truncated_string_value.html</link>
-	<description>&lt;div class=&quot;paragraph&quot;&gt; 
- &lt;p&gt;Being able to inspect variable values during debugging is probably one of the mostly used feature in Eclipse.&lt;/p&gt; 
-&lt;/div&gt; 
-&lt;div class=&quot;paragraph&quot;&gt; 
- &lt;p&gt;With String variables, the default Eclipse configuration is to truncate big Strings after 10000 characters. This can be a problem with long text documents loaded in a String.&lt;/p&gt; 
-&lt;/div&gt; 
-&lt;div class=&quot;paragraph&quot;&gt; 
- &lt;div class=&quot;title&quot;&gt;
-  Inspect a big String variable in Eclipse IDE
- &lt;/div&gt; 
- &lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img alt=&quot;2016-05-27_inspect_variable&quot; src=&quot;http://jmini.github.io/blog/2016/2016-05-27_inspect_variable.png&quot; /&gt;&lt;/span&gt;&lt;/p&gt; 
-&lt;/div&gt; 
-&lt;div class=&quot;paragraph&quot;&gt; 
- &lt;p&gt;As always with Eclipse, there is a possibility to change this configuration. Just open the &quot;Max Length…​&quot; entry in the context menu of the detail pane (Variables view). In the next dialog set the value &quot;Maximum characters to display in details pane&quot;.&lt;/p&gt; 
-&lt;/div&gt; 
-&lt;div class=&quot;paragraph&quot;&gt; 
- &lt;div class=&quot;title&quot;&gt;
-  Open the 'Max Length…​' entry in the context menu
- &lt;/div&gt; 
- &lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img alt=&quot;2016-05-27_max_length_menu&quot; src=&quot;http://jmini.github.io/blog/2016/2016-05-27_max_length_menu.png&quot; /&gt;&lt;/span&gt;&lt;/p&gt; 
-&lt;/div&gt; 
-&lt;div class=&quot;paragraph&quot;&gt; 
- &lt;p&gt;The new limit will also be considered in the yellow overlay window.&lt;/p&gt; 
-&lt;/div&gt;</description>
-	<pubDate>Thu, 26 May 2016 22:00:00 +0000</pubDate>
-</item>
-<item>
-	<title>Melanie Bats: Let me Sirius that for you: Properties view</title>
-	<guid isPermaLink="false">http://melb.enix.org/?p=220</guid>
-	<link>http://melb.enix.org/sirius/let-me-sirius-that-for-you-properties-view/</link>
-	<description>&lt;p&gt;It’s been a while since my last &lt;a href=&quot;http://melb.enix.org/sirius/sirius-3-0/&quot;&gt;Eclipse Sirius post&lt;/a&gt; but this year we &lt;a href=&quot;https://youtu.be/oPQ3o14ksaM?t=11&quot;&gt;&lt;em&gt;Get Busy&lt;/em&gt;&lt;/a&gt; at Obeo with the preparation of the new Sirius release. It is a really important release for me as I am contributing&lt;em&gt; &lt;a href=&quot;https://youtu.be/zHW5RVvg2v4?t=68&quot;&gt;For the very first time&lt;/a&gt;&lt;/em&gt; as an &lt;a href=&quot;https://projects.eclipse.org/content/melanie-bats-committer-extended-editing-framework-eef&quot;&gt;Eclipse commiter&lt;/a&gt; &lt;img alt=&quot;:)&quot; class=&quot;wp-smiley&quot; src=&quot;http://melb.enix.org/wp-includes/images/smilies/icon_smile.gif&quot; /&gt; &lt;/p&gt;
-&lt;p&gt;I am really proud to be part of the Eclipse community and excited to meet her again at EclipseCon France. &lt;em&gt; &lt;a href=&quot;https://youtu.be/yRhq-yO1KN8?t=107&quot;&gt;I hope you’ll join us&lt;/a&gt;&lt;/em&gt; to attend our talk &lt;a href=&quot;https://www.eclipsecon.org/france2016/session/sirius-40-let-me-sirius-you&quot;&gt;Sirius 4.0: Let me Sirius that for you!&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;You already know that Sirius allows you to create &lt;em&gt;&lt;a href=&quot;https://youtu.be/Y7OCgi7rANc?t=63&quot;&gt;So powerful&lt;/a&gt;&lt;/em&gt;&lt;span style=&quot;font-weight: 300;&quot;&gt; graphical designers. With minimal efforts you can create a great modeler with a ready-to-use graphical editor providing a model explorer, a palette, a toolbar and contextual menus dedicated to your own DSL.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;But when you create a dedicated designer after specifying the viewpoints, the mappings and the tools, the next step is most of the time to contribute dedicated properties views in order to ease data edition.&lt;/p&gt;
-&lt;p&gt;Thanks to the Eclipse modeling ecosystem, there are already several solutions to contribute form-based views to Eclipse applications: &lt;a href=&quot;https://eclipse.org/eef/&quot;&gt;EEF&lt;/a&gt;, &lt;a href=&quot;http://www.eclipse.org/ecp/emfforms/&quot;&gt;EMF Forms&lt;/a&gt;, &lt;a href=&quot;https://www.eclipse.org/emf-parsley/documentation.html&quot;&gt;EMF Parsley&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;All these solutions can work with Sirius based modelers through an extension point and it will remain so. But what we have seen is that for many people the gap in between the “Sirius way” and the “Other frameworks” way is large and they are often groping for the constructions they are used to in Sirius. At that point you feel like, &lt;em&gt;&lt;a href=&quot;https://youtu.be/vzoYgasvKdo&quot;&gt;This is the way you left me&lt;/a&gt;&lt;/em&gt;… Very transversal things like colors or editing behavior are defined in a Viewpoint Specification Model and the users needs to refer to those things for their property views. A property views definition which is perceived as more complex than the graphical modeler defeats the whole approach.&lt;/p&gt;
-&lt;p&gt;At the end of last year, we decided to do something for you to improve the situation. You guys &lt;em&gt;&lt;a href=&quot;https://youtu.be/h5EofwRzit0&quot;&gt;Get lucky&lt;/a&gt;&lt;/em&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/Get_Lucky.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;I am very pleased to announce that from here on out &lt;strong&gt;Sirius provides&lt;/strong&gt; an &lt;strong&gt;integrated way to define your properties views&lt;/strong&gt; in the same way as you are used to define the other parts of your designer: no need for code, it is dynamic and query based.&lt;/p&gt;
-&lt;div&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/properties-view-vsm.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;With Sirius 4.0, you are able to specify exactly how your properties view should be represented. If you already know Sirius, it is fairly&lt;em&gt; &lt;a href=&quot;https://youtu.be/ST7btkkoaNU?t=33&quot;&gt;Easy&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 300;&quot;&gt;As you are used to do with other kind of representation in Sirius, you can specify mappings between graphical properties view elements and semantic elements.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Once you installed the right plugins, in the VSM (the configuration file which defines your modelers in Sirius) you can create a new kind of extension under which you can specify Pages, Groups and Widgets. A page represents a tab of your properties view and a group represents a section. Several widgets are available to represent you semantic elements: text, text area, checkbox, select… and it is very easy to add your own if needed.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;316&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/structure.png&quot; width=&quot;602&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;For each kind of widgets, you can define specific styles based on the semantic model. Exactly like it is already possible for diagrams, conditional styles can be applied based on evolving values of your semantic model.&lt;/p&gt;
-&lt;p&gt;It is also possible for each widget to define a specific behavior. You can specify the behaviour associated to: the text widget edition, the onclick event of an hyperlink/a table, a pushed button, etc. For example, to define the behavior of the text when a change occurs, you simply specify the behavior associated to the edition inside the &lt;em&gt;Begin&lt;/em&gt; element using all the usual &lt;a href=&quot;https://www.eclipse.org/sirius/doc/specifier/general/Model_Operations.html&quot;&gt;model operations&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a&gt;&lt;img alt=&quot;&quot; height=&quot;365&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/edition.png&quot; width=&quot;602&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;One of the main advantage of Sirius is that the graphical representations are independent from the metamodel’s structure. The same principle was kept for developping the properties views feature. This means that you can choose &lt;strong&gt;not&lt;/strong&gt; to respect the containment hierarchy of your model when you display it graphically. This is possible because Sirius is based on &lt;a href=&quot;http://www.eclipse.org/sirius/doc/specifier/general/Writing_Queries.html&quot;&gt;queries&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For example, we can represent the same attribute with different widgets. Below, you can see that the &lt;em&gt;Location&lt;/em&gt; can be represented thanks to a &lt;em&gt;Select&lt;/em&gt; or a &lt;em&gt;Radio&lt;/em&gt; widget.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;187&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/queries1.png&quot; width=&quot;602&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;We just specify two different widgets in the properties view description, one for the &lt;em&gt;Select&lt;/em&gt; :&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;152&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/queries2.png&quot; width=&quot;602&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;And one for the &lt;em&gt;Radio&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;177&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/queries3.png&quot; width=&quot;602&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;In each case, the &lt;em&gt;Candidate Expression&lt;/em&gt; and &lt;em&gt;Value Expression&lt;/em&gt; are used to query the model and get the expected semantic elements.&lt;/p&gt;
-&lt;p&gt;One last thing, with the Sirius 4.0 version, when you create a modeler, by default you can get &lt;strong&gt;for free&lt;/strong&gt; beautiful default &lt;strong&gt;properties views&lt;/strong&gt; without defining anything special in your VSM.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;365&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/default.png&quot; width=&quot;602&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;How does it work? &lt;em&gt;&lt;a href=&quot;https://youtu.be/0p_1QSUsbsM?t=11&quot;&gt;It’s a kind of magic… &lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;We do the work for you by providing default rules based on the type of the elements defined in your metamodel. For example, if you have defined a string attribute in your metamodel, it will be automatically represented with a text widget, a boolean will be represented  with a checkbox, etc.&lt;/p&gt;
-&lt;p&gt;If the default properties view does not fit what you need, no problem specify your own properties view as explained above.&lt;/p&gt;
-&lt;p&gt;There are plenty of other awesome features, such as context based properties views, dynamic mappings, validation, quick-fixes and more. If you want to learn more, join us at EclipseCon France:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;on thursday afternoon june 7th, &lt;a href=&quot;https://www.eclipsecon.org/france2016/session/sirius-workshop-lets-create-graphical-modeling-editor-robot&quot;&gt;Sirius workshop&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;on wednesday afternoon june 8th, &lt;a href=&quot;https://www.eclipsecon.org/france2016/session/sirius-40-let-me-sirius-you&quot;&gt;Sirius 4.0 talk&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;all day long visit the &lt;a href=&quot;https://www.eclipsecon.org/france2016/sponsor/obeo&quot;&gt;Obeo booth&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;What you think is &lt;em&gt;&lt;a href=&quot;https://youtu.be/AltMeuPkWRs?t=74&quot;&gt;Give it to me baby!&lt;/a&gt;&lt;/em&gt; This feature will be delivered as &lt;em&gt;experimental&lt;/em&gt; with Sirius 4.0 which comes with Neon, and be available officially in Sirius 4.1 expected after Neon.1. Even if it is tagged as experimental, it is ready to use. And do not be afraid, try it, we will take care of the migration for you as we usually do for other parts of Sirius, it will be completely transparent for you to upgrade from 4.0 to 4.1 when it becomes available.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/bart.png&quot; width=&quot;602&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Come on and &lt;em&gt;&lt;a href=&quot;https://youtu.be/aA9mmz508Ro?t=58&quot;&gt;try it on your own&lt;/a&gt;&lt;/em&gt;!&lt;/p&gt;
-&lt;/div&gt;</description>
-	<pubDate>Thu, 26 May 2016 09:53:47 +0000</pubDate>
-</item>
-<item>
-	<title>JBoss Tools Team: JBoss Tools Alpha2 for Eclipse Neon</title>
-	<guid isPermaLink="true">http://tools.jboss.org/blog/alpha-for-neon.html</guid>
-	<link>http://tools.jboss.org/blog/alpha-for-neon.html</link>
-	<description>&lt;div&gt;&lt;div id=&quot;preamble&quot;&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Happy to announce Alpha2 build for Eclipse Neon M7.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Downloads available at &lt;a href=&quot;http://tools.jboss.org/downloads/jbosstools/neon/4.4.0.Alpha2.html&quot;&gt;JBoss Tools 4.4.0.Alpha2&lt;/a&gt;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#installation&quot;&gt;&lt;/a&gt;Installation&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;This version of JBoss Tools targets Eclipse Neon 4.6 (M7).&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;We recommend using the
-      &lt;a href=&quot;http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/neonm7&quot;&gt;Eclipse
-      4.6 JEE Bundle&lt;/a&gt; since then you get most of the dependencies
-      preinstalled.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Once you have installed Eclipse, you use our update site directly:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;literalblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre&gt;http://download.jboss.org/jbosstools/neon/development/updates/core/&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Note: Marketplace entry and Integration Stack tooling will become available from JBoss Central at a later date.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;what-is-new&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-is-new&quot;&gt;&lt;/a&gt;What is new ?&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;As always there is more than can be covered in a single blog but here are some highlights. You can see everything in the &lt;a href=&quot;http://tools.jboss.org/documentation/whatsnew/jbosstools/4.4.0.Alpha2.html&quot;&gt;What’s New section for this release&lt;/a&gt;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;dockerfile-editor&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#dockerfile-editor&quot;&gt;&lt;/a&gt;Dockerfile Editor&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;A new Dockerfile editor provides users with content assist on the commands (ADD, COPY, RUN, etc.) as well
-      as a customizable syntax highlighting.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;Docker Editor&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/docker/images/docker_neon_m7/docker_editor.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;improved-openshift-3-support&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#improved-openshift-3-support&quot;&gt;&lt;/a&gt;Improved OpenShift 3 support&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;new-support-for-builder-images&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#new-support-for-builder-images&quot;&gt;&lt;/a&gt;New support for builder images&lt;/h3&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The New OpenShift Application wizard now supports builder images, on top of the existing template support:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;builder support&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/openshift/images/builder-support.png&quot; width=&quot;600&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;create-new-resources&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#create-new-resources&quot;&gt;&lt;/a&gt;Create new resources&lt;/h3&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The OpenShift Explorer now provides a &lt;code&gt;New &amp;gt; Resource&lt;/code&gt; menu, that lets you create new OpenShift resources from an existing file, similar to the &lt;code&gt;oc create -f some_resource.json&lt;/code&gt; command.
-      Resource files can be local (from File System or Workspace), or remote, by providing a URL.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;create resources wizard&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/openshift/images/create-resources-wizard.png&quot; width=&quot;600&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;scaling-pods&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#scaling-pods&quot;&gt;&lt;/a&gt;Scaling pods&lt;/h3&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;It is now possible to scale pods up and down, from the Service context menu in the OpenShift Explorer, or the Deployments and Deployment Configuration context menus in the Properties view.
-      &lt;code&gt;Scale &amp;gt; Up&lt;/code&gt; will spin up one more pod, &lt;code&gt;Scale &amp;gt; Down&lt;/code&gt; will remove one pod. &lt;code&gt;Scale &amp;gt; To…​&lt;/code&gt; will open a pop-up dialog to let you set the amount of pods you want your OpenShift to spin up.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;scale up down&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/openshift/images/scale-up-down.gif&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;updated-javascript-tools&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#updated-javascript-tools&quot;&gt;&lt;/a&gt;Updated JavaScript Tools&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Our team worked hard for last month on rebooting the JavaScript Development Tools (JSDT) project which is part of Eclipse Web Tools. You can install updated JavaScript tooling directly from eclipse.org or using JBoss Tools Target Platform.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;JavaScript Tools now support EcmaScript 2015. No false positive validation errors any more. Performance has been improved dramatically.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;ES6 features on Editor&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/javascript/images/4.4.0.Alpha2/ES6Editor.gif&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Node.js support now allows you to run and debug Node.js applications. Note: Node.js debugger is currently not available in JBoss Tools Target Platform and has to be installed directly from eclipse.org. It will be available in the next JBoss Tools version and will work OOTB in Developer Studio.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;Node.js Debug&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/javascript/images/4.4.0.Alpha2/node_debug.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Here is a short &lt;a href=&quot;https://vimeo.com/167812779&quot;&gt;video&lt;/a&gt; which demonstrates new features and enhancements of &lt;code&gt;JSDT 2.0&lt;/code&gt; release:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;videoblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;next-steps&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#next-steps&quot;&gt;&lt;/a&gt;Next steps&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;While we wait for feedback on Alpha2, we are already working on the next JBoss Tools release for Eclipse Neon.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Enjoy!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Alexey Kazakov&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;&lt;/div&gt;</description>
-	<pubDate>Wed, 25 May 2016 23:15:16 +0000</pubDate>
-</item>
-<item>
-	<title>Benjamin Cabe: On making standards organizations and open source communities work hand in hand</title>
-	<guid isPermaLink="false">https://blog.benjamin-cabe.com/?p=2640</guid>
-	<link>http://feedproxy.google.com/~r/benjamin-cabe-planet-eclipse/~3/gOh7Cf2GWw4/on-making-standards-organizations-and-open-source-communities-work-hand-in-hand</link>
-	<description>&lt;p&gt;&lt;a href=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2016/05/eclipse-and-standards.png&quot;&gt;&lt;img alt=&quot;eclipse-and-standards&quot; class=&quot;size-medium wp-image-2643 alignright&quot; height=&quot;225&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2016/05/eclipse-and-standards-300x225.png&quot; width=&quot;300&quot; /&gt;&lt;/a&gt;Did you know that the Eclipse Foundation is home to many open source implementations of industry standards?&lt;/p&gt;
-&lt;p&gt;From IETF to ISO to oneM2M or OASIS, we have many open source projects that provide industrial-grade implementations that anyone can use to evaluate a given standard, or to effectively use it in their commercial solution.&lt;/p&gt;
-&lt;p&gt;We do believe that open source is key to the adoption of standards, and in a presentation I gave last week at an Open Source Think Tank organized by IEEE, I shared some thoughts on &lt;strong&gt;what makes a standard successful&lt;/strong&gt;, as well as &lt;strong&gt;how Eclipse has proved&lt;/strong&gt; with recent success stories&lt;strong&gt; that open source and open communities are a key factor&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;The two examples I used in my presentation (see the slides at the end of this post) originate from the Eclipse IoT community.&lt;/p&gt;
-&lt;p&gt;OMA (Open Mobile Alliance) &lt;strong&gt;LWM2M&lt;/strong&gt; is a standard for doing device management of IoT devices (i.e remotely monitor the device’s health, upgrade its firmware over-the-air, etc.). The first drafts of the standard have been published less than 4 years ago and today, LWM2M is already used in commercial products, and has a thriving community of developers and contributors gathered around two Eclipse open source projects: &lt;a href=&quot;https://www.eclipse.org/wakaama/&quot; target=&quot;_blank&quot;&gt;Eclipse Wakaama&lt;/a&gt;, and &lt;a href=&quot;https://www.eclipse.org/leshan/&quot; target=&quot;_blank&quot;&gt;Eclipse Leshan&lt;/a&gt;. I think you will agree that this is the kind of timeline you would like to see for all standards!&lt;/p&gt;
-&lt;p&gt;The other example is &lt;strong&gt;MQTT&lt;/strong&gt;, a very popular IoT protocol that I’m sure you’ve heard about! &lt;img alt=&quot;:)&quot; class=&quot;wp-smiley&quot; src=&quot;https://blog.benjamin-cabe.com/wp-includes/images/smilies/icon_smile.gif&quot; style=&quot;height: 1em;&quot; /&gt; In just a few years, it went from a de-facto standard to an actual OASIS and ISO/IEC standard. Having a rich ecosystem of open source MQTT implementations (including &lt;a href=&quot;https://www.eclipse.org/paho/&quot; target=&quot;_blank&quot;&gt;Eclipse Paho&lt;/a&gt; clients, and the &lt;a href=&quot;https://www.eclipse.org/mosquitto/&quot; target=&quot;_blank&quot;&gt;Eclipse Mosquitto&lt;/a&gt; server) certainly helped the standards organizations to pin down the issues that need to be fixed in the spec much faster. What’s more, open source projects will also fuel the future of the MQTT specification, as they allow for new ideas to be explored (see e.g &lt;a href=&quot;https://github.com/eclipse/paho.mqtt-sn.embedded-c/pull/10&quot; target=&quot;_blank&quot;&gt;this recent work on MQTT-SN&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;My hope is that Standards Developing Organizations will start embracing open source initiatives more and more. Open source communities are a great place for innovation, and can host standard implementations that sometimes actually become reference implementation. They also complement very well the role of the SDOs, which are here to enforce some needed processes when it comes to evolving a standard, anticipating incompatibilities or corner cases, etc.&lt;/p&gt;
-&lt;p&gt;As mentioned above, here are the slides I used during my presentation. I am looking forward to hearing your comments and feedback.&lt;/p&gt;
-&lt;p&gt; 
-&lt;/p&gt;&lt;div style=&quot;margin-bottom: 5px;&quot;&gt; &lt;strong&gt; &lt;a href=&quot;https://www.slideshare.net/kartben/on-making-standards-organizations-open-source-communities-work-hand-in-hand&quot; target=&quot;_blank&quot; title=&quot;On making standards organizations &amp;amp; open source communities work hand in hand&quot;&gt;On making standards organizations &amp;amp; open source communities work hand in hand&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;http://www.slideshare.net/kartben&quot; target=&quot;_blank&quot;&gt;Benjamin Cabé&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
-&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/benjamin-cabe-planet-eclipse/~4/gOh7Cf2GWw4&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Wed, 25 May 2016 15:08:19 +0000</pubDate>
-</item>
-<item>
-	<title>Geniutec: JavaScript Linters, even in your IDE!</title>
-	<guid isPermaLink="false">https://www.genuitec.com/?p=483710</guid>
-	<link>https://www.genuitec.com/javascript-linters-even-in-your-ide/</link>
-	<description>&lt;p&gt;What is a Linter?Linters are Code Quality Inspectors, which work by basically parsing your code. They check JavaScript code for common mistakes and discrepancies without running the application.You can plug linters into your code editor or copy and paste your code into any standard online linting tool. Linting your code is a great thing to […]&lt;/p&gt;
-&lt;p&gt;The post &lt;a href=&quot;https://www.genuitec.com/javascript-linters-even-in-your-ide/&quot; rel=&quot;nofollow&quot;&gt;JavaScript Linters, even in your IDE!&lt;/a&gt; appeared first on &lt;a href=&quot;https://www.genuitec.com&quot; rel=&quot;nofollow&quot;&gt;Genuitec&lt;/a&gt;.&lt;/p&gt;</description>
-	<pubDate>Mon, 23 May 2016 17:34:30 +0000</pubDate>
 </item>
 
 </channel>

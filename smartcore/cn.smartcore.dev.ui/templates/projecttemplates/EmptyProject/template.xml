@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<template type="ProjTempl" version="1.0" supplier="Eclipse.org" revision="1.0" author="SmartSimu"
+		copyright=""
+		id="EmptyProject" label="%EmptyProject.template.label" description="%EmptyProject.template.description"
+		 help="help.html">
+
+</template>
+

@@ -11,6 +11,6 @@
 	<section name="RefactoringStatusDialog">
 		<item value="800" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="487" key="DIALOG_HEIGHT"/>
+		<item value="515" key="DIALOG_HEIGHT"/>
 	</section>
 </section>

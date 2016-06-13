@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="org.eclipse.jface.internal.InternalPolicy"/>
 <fullyQualifiedTypeName name="org.eclipse.core.commands.ExecutionException"/>
-<fullyQualifiedTypeName name="org.eclipse.core.runtime.Path"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.graphics.Color"/>
 <fullyQualifiedTypeName name="cn.smartcore.handlers.ControlGDBServerHandler"/>
 <fullyQualifiedTypeName name="launch.LaunchSimulator"/>
@@ -16,7 +15,6 @@
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Display"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="org.eclipse.ui.PlatformUI"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.net.URL"/>
 <fullyQualifiedTypeName name="org.osgi.framework.FrameworkUtil"/>
 <fullyQualifiedTypeName name="java.util.Hashtable"/>
@@ -39,11 +37,26 @@
 <fullyQualifiedTypeName name="cn.smartcore.dev.ui.natures.ProjectNature"/>
 <fullyQualifiedTypeName name="cn.smartcore.dev.ui.newui.Messages"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.TreeItem"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="org.eclipse.core.runtime.QualifiedName"/>
 <fullyQualifiedTypeName name="cn.smartcore.dev.ui.messages.Messages"/>
-<fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="org.eclipse.core.resources.IFile"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.eclipse.core.runtime.Path"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+<fullyQualifiedTypeName name="org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.Module"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.Tuple"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.ByteArrayInputStream"/>
+<fullyQualifiedTypeName name="org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.Tuple2"/>
+<fullyQualifiedTypeName name="org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.Tuple3"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

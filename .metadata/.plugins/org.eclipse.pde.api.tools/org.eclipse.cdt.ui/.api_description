@@ -88,7 +88,7 @@
         <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CDTProjectWizard.java[CDTProjectWizard" modificationStamp="12871" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{NewCCProjectWizard.java[NewCCProjectWizard" modificationStamp="12880" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{ProjectTypePage.java[ProjectTypePage" modificationStamp="12891" restrictions="0" visibility="0"/>
-        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CDTMainWizardPage.java[CDTMainWizardPage" modificationStamp="14023" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CDTMainWizardPage.java[CDTMainWizardPage" modificationStamp="14259" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{ICPathContainerPage.java[ICPathContainerPage" modificationStamp="12876" restrictions="3" visibility="0"/>
         <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CCProjectWizard.java[CCProjectWizard" modificationStamp="12868" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.cdt.ui/src&lt;org.eclipse.cdt.ui.wizards{CProjectWizard.java[CProjectWizard" modificationStamp="12955" restrictions="0" visibility="0"/>

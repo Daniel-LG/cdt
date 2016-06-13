@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="init" key="selection"/>
+		<item value="org.eclipse.cdt.managedbuilder.gnu.templates.SimpleMakefileGenerator" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="org.eclipse.cdt.managedbuilder.gnu.templates.SimpleMakefileGenerator"/>
+			<item value="projectName"/>
+			<item value="SimpleGNUMakefileGenerator"/>
+			<item value="temp"/>
 			<item value="init"/>
 			<item value="addpa"/>
 			<item value="calcImage"/>
 			<item value="see"/>
-			<item value="src"/>
-			<item value="project"/>
-			<item value="BuildActiveConfiguration.tooltip"/>
-			<item value="build"/>
 		</list>
 		<list key="replacehistory">
 		</list>
@@ -24,7 +24,7 @@
 		<item value="337" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="534" key="DIALOG_HEIGHT"/>
-		<item value="1443" key="DIALOG_X_ORIGIN"/>
-		<item value="216" key="DIALOG_Y_ORIGIN"/>
+		<item value="1152" key="DIALOG_X_ORIGIN"/>
+		<item value="72" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
