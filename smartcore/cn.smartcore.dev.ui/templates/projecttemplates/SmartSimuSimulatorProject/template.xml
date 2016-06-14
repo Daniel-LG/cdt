@@ -70,6 +70,11 @@
 				<simple name="target" value="resources/main_debug_info"/>
 				<simple name="replaceable" value="true"/>
 			</element>
+			<element>
+				<simple name="source" value="src/memory_space/memory_space.so"/>
+				<simple name="target" value="resources/memory_space/memory_space.so"/>
+				<simple name="replaceable" value="true"/>
+			</element>
 		</complex-array>
 	</process>
 

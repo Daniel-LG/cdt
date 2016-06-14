@@ -38,15 +38,17 @@ import org.eclipse.ui.services.IEvaluationService;
 
 import cn.smartcore.debug.core.Activator;
 import cn.smartcore.debug.core.ILaunchSimulator;
+import cn.smartcore.debug.core.ui.ControlGDBServerHandler;
+import cn.smartcore.dev.ui.SmartSimuDevPlugin;
 
 public class LaunchSimulator implements ILaunchSimulator {
 
-	private IWorkbenchWindow window;
+	private IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
 
 	private static final String CONSOLE_NAME = "Smart Core Debug Info";
 
 	private final MessageConsole smartsimuConsole = findConsole(CONSOLE_NAME);
-	
+
 	private DefaultExecutor executor;
 
 	private IProject project;
@@ -56,40 +58,42 @@ public class LaunchSimulator implements ILaunchSimulator {
 	@Override
 	public void launch(String binFilePath, String simulatorProjectName, String port, String coreConfigPath) {
 		String line = null;
+		String simulatorPath = null;
+		String confPath = null;
 
 		if (simulatorProjectName.equals("Default Simulator")) {
-			// String homePath = System.getProperty("user.home");
-			// simulatorPath = homePath + File.separator + "simu";
 			// get the resource form the bundle, and further transfer to path
-			String simulatorPath = null;
 			URL simulatorURL = Activator.getBundleContext().getBundle().getResource("simu");
 			try {
 				simulatorPath = FileLocator.toFileURL(simulatorURL).getPath();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-
-			if (simulatorPath.endsWith(File.separator)) {
-				simulatorPath = simulatorPath.substring(0, simulatorPath.length() - 1);
-			}
-
-			try {
-				copy(binFilePath, simulatorPath + File.separator + "ram" + File.separator + "a.bin");
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-
-			String mainFilePath = simulatorPath + File.separator + "main";
-			File mainFile = new File(mainFilePath);
-			if (!mainFile.canExecute()) {
-				mainFile.setExecutable(true);
-			}
-
-			line = mainFilePath + " " + port + " " + coreConfigPath + " start " + simulatorPath + File.separator
-					+ "conf" + File.separator + "conf.so";
+			confPath = simulatorPath + File.separator + "conf" + File.separator + "conf.so";
 		} else {
-
+			IProject project = SmartSimuDevPlugin.getSimulatorProject(simulatorProjectName);
+			simulatorPath = project.getFile("resources").getLocation().toOSString();
+			confPath = simulatorPath + File.separator + "conf.so";
 		}
+
+		if (simulatorPath.endsWith(File.separator)) {
+			simulatorPath = simulatorPath.substring(0, simulatorPath.length() - 1);
+		}
+
+		try {
+			copy(binFilePath, simulatorPath + File.separator + "a.bin");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		String mainFilePath = simulatorPath + File.separator + "main";
+		File mainFile = new File(mainFilePath);
+		if (!mainFile.canExecute()) {
+			mainFile.setExecutable(true);
+		}
+
+		line = mainFilePath + " " + port + " " + coreConfigPath + " start " + confPath;
+		// System.out.println(line);
 
 		CommandLine cmdLine = CommandLine.parse(line);
 		executor = new DefaultExecutor();
@@ -159,14 +163,14 @@ public class LaunchSimulator implements ILaunchSimulator {
 			}
 		}
 
-		if (window == null) {
-			Display.getDefault().syncExec(new Runnable() {
-				@Override
-				public void run() {
-					window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
-				}
-			});
-		}
+		// if (window == null) {
+		// Display.getDefault().syncExec(new Runnable() {
+		// @Override
+		// public void run() {
+		// window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+		// }
+		// });
+		// }
 
 		ICommandService commandService = window.getWorkbench().getService(ICommandService.class);
 		Command radioCommand = commandService.getCommand("selectCommand");
@@ -197,13 +201,13 @@ public class LaunchSimulator implements ILaunchSimulator {
 		ConsolePlugin plugin = ConsolePlugin.getDefault();
 		IConsoleManager conMan = plugin.getConsoleManager();
 		IConsole[] existing = conMan.getConsoles();
-		
+
 		for (int i = 0; i < existing.length; i++) {
 			if (name.equals(existing[i].getName())) {
 				return (MessageConsole) existing[i];
 			}
 		}
-		
+
 		// no console found, create a new one
 		MessageConsole myConsole = new MessageConsole(name, null);
 		conMan.addConsoles(new IConsole[] { myConsole });
@@ -213,7 +217,7 @@ public class LaunchSimulator implements ILaunchSimulator {
 	public static void copy(String oldPath, String newPath) throws IOException {
 		InputStream is = null;
 		FileOutputStream fos = null;
-		
+
 		try {
 			is = new FileInputStream(oldPath);
 			fos = new FileOutputStream(newPath);
@@ -234,7 +238,7 @@ public class LaunchSimulator implements ILaunchSimulator {
 	public static void copy(File oldfile, String newPath) throws IOException {
 		InputStream is = null;
 		FileOutputStream fos = null;
-		
+
 		try {
 			is = new FileInputStream(oldfile);
 			fos = new FileOutputStream(newPath);
@@ -300,5 +304,5 @@ public class LaunchSimulator implements ILaunchSimulator {
 	public void setProject(IProject project) {
 		this.project = project;
 	}
-	
+
 }

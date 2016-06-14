@@ -88,7 +88,7 @@ import org.eclipse.core.runtime.SubProgressMonitor;
 import org.eclipse.core.runtime.jobs.ISchedulingRule;
 import org.eclipse.core.runtime.jobs.Job;
 
-import cn.smartcore.dev.ui.SmartCoreDevPlugin;
+import cn.smartcore.dev.ui.SmartSimuDevPlugin;
 
 public class CommonBuilder extends ACBuilder {
 
@@ -457,8 +457,6 @@ public class CommonBuilder extends ACBuilder {
 			// TODO: how to generate the C file?
 			// InputStream resourceStream = new ByteArrayInputStream(
 			// ("#include<stdio.h>\nint main(){\n\tprintf(\"aaa\");\n}").getBytes());
-			String projectPath = project.getLocation().toString();
-			System.out.println(projectPath);
 			cleanSoFiles(project.getFile(new Path("resources")).getLocation().toString()); //$NON-NLS-1$
 			InputStream resourceStream = null;
 			try {
@@ -574,7 +572,7 @@ public class CommonBuilder extends ACBuilder {
 				int pos;
 				if ((pos = tmp.indexOf('{')) != -1) {
 					String projName = tmp.substring(0, pos).trim();
-					Module module = new Module(SmartCoreDevPlugin.getModuleType(projName));
+					Module module = new Module(SmartSimuDevPlugin.getModuleType(projName));
 					while (true) {
 						tmp = br.readLine();
 						if (isBlankOrComment(tmp)) {
@@ -596,8 +594,8 @@ public class CommonBuilder extends ACBuilder {
 								moduleAttrsList.add(new Tuple3<String, String, Integer>(module.type,
 										module.name, attrsCount));
 							}
-							copySoFile(project.getFile(new Path("resources")).getLocation().toString(),
-									module.type, SmartCoreDevPlugin.getModuleSoPath(projName));
+							copySoFile(project.getFile(new Path("resources")).getLocation().toString(), //$NON-NLS-1$
+									module.type, SmartSimuDevPlugin.getModuleSoPath(projName));
 							break;
 						}
 
@@ -743,14 +741,14 @@ public class CommonBuilder extends ACBuilder {
 		appendWithLineFeed(cFileContent, "object_conf_t objects[] = {"); //$NON-NLS-1$
 		for (Tuple3<String, String, Integer> item : moduleNameList) {
 			appendWithLineFeed(cFileContent,
-					"\t{ \"." + File.separator + item.x + ".so\", \"" + item.y + "\", " //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+					"\t{ \"resources" + File.separator + item.x + ".so\", \"" + item.y + "\", " //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 							+ item.z + ", " + item.y + "_attribute_confs },"); //$NON-NLS-1$ //$NON-NLS-2$
 		}
-		if (moduleNameList.size() > 0) {
-			// remove the last ","
-			cFileContent.replace(cFileContent.length() - System.lineSeparator().length() - 1,
-					cFileContent.length() - System.lineSeparator().length(), ""); //$NON-NLS-1$
-		}
+		// append the confs of address space
+		appendWithLineFeed(cFileContent,
+				"\t{ \"resources" + File.separator + "memory_space" + File.separator //$NON-NLS-1$ //$NON-NLS-2$
+						+ "memory_space.so\", \"memory_space\", "
+						+ 3 + ", memory_space_attribute_confs }"); //$NON-NLS-1$
 		appendWithLineFeed(cFileContent, "};"); //$NON-NLS-1$
 
 		appendWithLineFeed(cFileContent, "u64 nr_objects = sizeof(objects) / sizeof(objects[0]);"); //$NON-NLS-1$

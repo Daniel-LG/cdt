@@ -280,7 +280,7 @@ public class SmartSimuApplicationMainTab extends CMainTab2 {
 			}
 		}
 
-		// add the default simulator
+		// add a project to represent the default simulator
 		list.add(0, new IProject() {
 			
 			@Override

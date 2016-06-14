@@ -13,3 +13,13 @@
 1465801099910	Delete elements
 1465864022707	Move compilation unit
 1465864043893	Rename type 'SimulatorLabelProvider'
+1465867047424	Delete element
+1465868951288	Rename method 'getModuleProjects'
+1465869310292	Rename type 'SmartCoreDevPlugin'
+1465869812514	Delete element
+1465869820271	Rename resource 'core0.conf'
+1465869868059	Rename resource 'timer.conf'
+1465869874694	Delete element
+1465869894235	Copy file
+1465870859131	Copy file
+1465871269267	Delete element

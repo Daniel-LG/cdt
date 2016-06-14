@@ -32,7 +32,7 @@ import cn.smartcore.debug.core.launch.LaunchSimulator;
 
 public class ControlGDBServerHandler extends AbstractHandler {
 
-	private static IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+	public static IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
 
 	private ILaunchSimulator launchSimulator;
 
