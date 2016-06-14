@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;src&apos;&#x0A;- Original project: &apos;cn.smartcore.debug.core&apos;&#x0A;- Destination element: &apos;src&apos;&#x0A;- Original elements:&#x0A;     main_debug_info&#x0A;     main" description="Copy files" element1="simu/main_debug_info" element2="simu/main" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1465807685266" target="/cn.smartcore.dev.ui/templates/projecttemplates/SmartSimuSimulatorProject/src" units="0" version="1.0"/>
+</session>

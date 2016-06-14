@@ -1,15 +1,11 @@
 package cn.smartcore.dev.ui.views;
 
-import org.eclipse.cdt.ui.CDTSharedImages;
-import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.jface.viewers.ITableLabelProvider;
 import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.ui.model.WorkbenchLabelProvider;
-
-import cn.smartcore.dev.ui.ProjectDecorator;
 
 // get idea from MakeLabelProvider
 public class ModuleLabelProvider extends LabelProvider implements ITableLabelProvider {
@@ -21,12 +17,15 @@ public class ModuleLabelProvider extends LabelProvider implements ITableLabelPro
 		if (element instanceof IProject) {
 			return ImageDescriptor.createFromFile(ModuleLabelProvider.class, "/icons/view/module.gif").createImage();
 		} else if (element instanceof String) {
-			if (((String) element).indexOf("simict_attribute_interface") != -1) {
-				return ImageDescriptor.createFromFile(ModuleLabelProvider.class, "/icons/view/attribute_interface.gif").createImage();
-			} else if (((String) element).indexOf("simict_attribute") != -1) {
-				return ImageDescriptor.createFromFile(ModuleLabelProvider.class, "/icons/view/attribute.gif").createImage();
+			if (((String) element).contains("attribute_INTERFACE")) {
+				return ImageDescriptor.createFromFile(ModuleLabelProvider.class, "/icons/view/attribute_interface.gif")
+						.createImage();
+			} else if (((String) element).contains("attribute")) {
+				return ImageDescriptor.createFromFile(ModuleLabelProvider.class, "/icons/view/attribute.gif")
+						.createImage();
 			} else {
-				return ImageDescriptor.createFromFile(ModuleLabelProvider.class, "/icons/view/interface.gif").createImage();
+				return ImageDescriptor.createFromFile(ModuleLabelProvider.class, "/icons/view/interface.gif")
+						.createImage();
 			}
 		} else {
 			return fLableProvider.getImage(element);

@@ -8,7 +8,7 @@
         <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{CMainTab.java[CMainTab" modificationStamp="19094" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{CLaunchConfigurationTab.java[CLaunchConfigurationTab" modificationStamp="19091" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{ICDTLaunchHelpContextIds.java[ICDTLaunchHelpContextIds" modificationStamp="19099" restrictions="0" visibility="0"/>
-        <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{SmartSimuApplicationMainTab.java[SmartSimuApplicationMainTab" modificationStamp="19100" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{SmartSimuApplicationMainTab.java[SmartSimuApplicationMainTab" modificationStamp="19108" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{CAbstractMainTab.java[CAbstractMainTab" modificationStamp="19087" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{AttachCDebuggerTab.java[AttachCDebuggerTab" modificationStamp="19086" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{CDebuggerTab.java[CDebuggerTab" modificationStamp="19089" restrictions="0" visibility="0"/>
@@ -18,7 +18,7 @@
         <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{CoreFileDebuggerTab.java[CoreFileDebuggerTab" modificationStamp="19098" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{ApplicationCDebuggerTab.java[ApplicationCDebuggerTab" modificationStamp="19085" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{CommonTabLite.java[CommonTabLite" modificationStamp="19097" restrictions="2" visibility="0"/>
-        <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{SmartSimuModuleMainTab.java[SmartSimuModuleMainTab" modificationStamp="19101" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch.ui{SmartSimuModuleMainTab.java[SmartSimuModuleMainTab" modificationStamp="19108" restrictions="0" visibility="0"/>
     </package>
     <package visibility="1">
         <fragment handle="=org.eclipse.cdt.launch/src&lt;org.eclipse.cdt.launch"/>

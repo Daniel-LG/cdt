@@ -1,0 +1,141 @@
+package cn.smartcore.dev.ui;
+
+import java.util.ArrayList;
+
+import org.eclipse.core.resources.IProject;
+import org.eclipse.core.resources.ResourcesPlugin;
+import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.QualifiedName;
+import org.eclipse.jface.resource.ImageDescriptor;
+import org.eclipse.ui.plugin.AbstractUIPlugin;
+import org.osgi.framework.BundleContext;
+
+import cn.smartcore.dev.ui.messages.Messages;
+import cn.smartcore.dev.ui.natures.ProjectNature;
+
+/**
+ * The activator class controls the plug-in life cycle
+ */
+public class SmartCoreDevPlugin extends AbstractUIPlugin {
+
+	// The plug-in ID
+	public static final String PLUGIN_ID = "cn.smartcore.dev.wizard"; //$NON-NLS-1$
+
+	// The shared instance
+	private static SmartCoreDevPlugin plugin;
+
+	private static BundleContext context;
+
+	/**
+	 * The constructor
+	 */
+	public SmartCoreDevPlugin() {
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.eclipse.ui.plugin.AbstractUIPlugin#start(org.osgi.framework.
+	 * BundleContext)
+	 */
+	public void start(BundleContext context) throws Exception {
+		super.start(context);
+		plugin = this;
+		this.context = context;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.eclipse.ui.plugin.AbstractUIPlugin#stop(org.osgi.framework.
+	 * BundleContext)
+	 */
+	public void stop(BundleContext context) throws Exception {
+		plugin = null;
+		super.stop(context);
+	}
+
+	/**
+	 * Returns the shared instance
+	 *
+	 * @return the shared instance
+	 */
+	public static SmartCoreDevPlugin getDefault() {
+		return plugin;
+	}
+
+	/**
+	 * Returns an image descriptor for the image file at the given plug-in
+	 * relative path
+	 *
+	 * @param path
+	 *            the path
+	 * @return the image descriptor
+	 */
+	public static ImageDescriptor getImageDescriptor(String path) {
+		return imageDescriptorFromPlugin(PLUGIN_ID, path);
+	}
+
+	public static BundleContext getBundleContext() {
+		return context;
+	}
+
+	public static IProject[] getModuleProjects() {
+		ArrayList<IProject> result = new ArrayList<>();
+		IProject[] projects = ResourcesPlugin.getWorkspace().getRoot().getProjects();
+		for (IProject project : projects) {
+			try {
+				if (project.hasNature(ProjectNature.MODULE_PROJECT_ID)) {
+					result.add(project);
+				}
+			} catch (CoreException e) {
+				e.printStackTrace();
+			}
+		}
+		return result.toArray(new IProject[result.size()]);
+	}
+
+	public static IProject getModuleProject(String projName) {
+		IProject[] projects = getModuleProjects();
+		for (IProject project : projects) {
+			if (project.getName().equals(projName)) {
+				return project;
+			}
+		}
+		return null;
+	}
+
+	public static String getModuleConfPath(String projName) {
+		IProject project = getModuleProject(projName);
+		String confPath = null;
+		try {
+			confPath = project.getPersistentProperty(new QualifiedName(Messages.Qualifier, Messages.Property_1));
+		} catch (CoreException e) {
+			e.printStackTrace();
+		}
+		return confPath;
+	}
+
+	public static String getModuleSoPath(String projName) {
+		IProject project = getModuleProject(projName);
+		String soPath = null;
+		try {
+			soPath = project.getPersistentProperty(new QualifiedName(Messages.Qualifier, Messages.Property_2));
+		} catch (CoreException e) {
+			e.printStackTrace();
+		}
+		return soPath;
+	}
+
+	public static String getModuleType(String projName) {
+		IProject project = getModuleProject(projName);
+		String confPath = null;
+		try {
+			confPath = project.getPersistentProperty(new QualifiedName(Messages.Qualifier, Messages.Property_3));
+		} catch (CoreException e) {
+			e.printStackTrace();
+		}
+		return confPath;
+	}
+
+}

@@ -1,0 +1,15 @@
+1465778589717	Delete element
+1465780456359	Delete elements
+1465780496434	Delete element
+1465780540544	Move compilation unit
+1465780681721	Rename type 'Activator'
+1465781044996	Rename method 'getModuleConfigPath'
+1465785727214	Rename local variable 'confPath'
+1465800727400	Rename resource 'a.conf'
+1465800736936	Rename resource 'a2.conf'
+1465800754083	Copy file
+1465800802940	Copy files
+1465800884044	Rename resource 'core.so'
+1465801099910	Delete elements
+1465864022707	Move compilation unit
+1465864043893	Rename type 'SimulatorLabelProvider'

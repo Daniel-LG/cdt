@@ -49,8 +49,8 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.dialogs.ElementListSelectionDialog;
 
+import cn.smartcore.dev.ui.SmartSimuLabelProvider;
 import cn.smartcore.dev.ui.natures.ProjectNature;
-import cn.smartcore.dev.ui.views.SimulatorLabelProvider;
 
 /**
  * A launch configuration tab that displays and edits project and main type name
@@ -124,7 +124,7 @@ public class SmartSimuApplicationMainTab extends CMainTab2 {
 
 	private IProject chooseAPPProject() {
 		IProject[] projects = getAPPProjects();
-		ILabelProvider labelProvider = new SimulatorLabelProvider();
+		ILabelProvider labelProvider = new SmartSimuLabelProvider();
 		ElementListSelectionDialog dialog = new ElementListSelectionDialog(getShell(), labelProvider);
 		dialog.setTitle(LaunchMessages.CMainTab_Project_Selection);
 		dialog.setMessage(LaunchMessages.CMainTab_Choose_project_to_constrain_search_for_program);
@@ -197,7 +197,7 @@ public class SmartSimuApplicationMainTab extends CMainTab2 {
 			public void modifyText(ModifyEvent evt) {
 				// if project changes, invalidate program name cache
 				// fPreviouslyCheckedProgram = null;
-				// TODO by jwy: ÅªÇåÆäÖÐÔ­Àí£¬±ØÐëÓÐÏÂÃæÕâÁ½¸ö·½·¨²ÅÄÜ´¥·¢ÅäÖÃ¸Ä±äÊÂ¼þ£¬ÎªºÎ?
+				// TODO by jwy: Åªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸Ä±ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Îªï¿½ï¿½?
 				// updateBuildConfigCombo(EMPTY_STRING);
 				updateLaunchConfigurationDialog();
 			}
@@ -234,7 +234,7 @@ public class SmartSimuApplicationMainTab extends CMainTab2 {
 	// get idea from chooseCProject()
 	protected IProject chooseSimuProject() {
 		IProject[] projects = getSimuProjects();
-		ILabelProvider labelProvider = new SimulatorLabelProvider();
+		ILabelProvider labelProvider = new SmartSimuLabelProvider();
 		ElementListSelectionDialog dialog = new ElementListSelectionDialog(getShell(), labelProvider);
 		dialog.setTitle(LaunchMessages.CMainTab_Simulator_Selection);
 		dialog.setMessage(LaunchMessages.CMainTab_Choose_simulator_to_constrain_search_for_program);

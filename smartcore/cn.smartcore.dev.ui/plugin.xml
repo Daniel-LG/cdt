@@ -22,7 +22,7 @@
 	
 	<extension point="org.eclipse.ui.decorators">
 		<decorator id="cn.smartcore.dev.ui.ProjectDecorator" label="Smart Core Decorator"
-			state="true" class= "cn.smartcore.dev.ui.ProjectDecorator" adaptable="true" lightweight="false">
+			state="true" class= "cn.smartcore.dev.ui.decorator.ProjectDecorator" adaptable="true" lightweight="false">
 			<enablement>
 				<objectClass name="org.eclipse.core.resources.IProject"/>
 			</enablement>
@@ -139,18 +139,7 @@
 			class="cn.smartcore.dev.ui.views.ModuleView" id="cn.smartcore.dev.ui.views.ModuleView">
 		</view>
 	</extension>
-	
-	<extension 
-         id="cn.smartcore.dev.ui.SimulatorBuilder"
-         name="SimulatorBuilder" 
-         point="org.eclipse.core.resources.builders">
-      	<builder hasNature="false">
-         	<run class="cn.smartcore.dev.ui.builders.SimulatorBuilder">
-            	<!--<parameter name="optimize" value="true"/>
-            	<parameter name="comment" value="escript Builder"/>-->
-         	</run>
-      	</builder>
-	</extension>
+
  <extension
        point="org.eclipse.cdt.core.templates">
     <template

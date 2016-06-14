@@ -117,11 +117,13 @@ public class ModuleContentProvider implements ITreeContentProvider, IResourceCha
 			String tmpstr;
 			try {
 				while ((tmpstr = br.readLine()) != null) {
-					if (tmpstr.contains("simict_attribute_interface")) {
+					tmpstr = tmpstr.trim();
+					if (tmpstr.contains("attribute_INTERFACE")) {
 						simictAttributeInterface.add(tmpstr);
-					} else if (tmpstr.contains("simict_attribute")) {
+					} else if (tmpstr.contains("attribute_U64") || tmpstr.contains("attribute_STRING")
+							|| tmpstr.contains("attribute_ARRAY")) {
 						simictAttribute.add(tmpstr);
-					} else if (tmpstr.contains("simict_interface")) {
+					} else if (tmpstr.contains("interface")) {
 						simictInterface.add(tmpstr);
 					}
 				}

@@ -1,5 +1,6 @@
 package cn.smartcore.dev.ui.wizards;
 
+import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 import java.net.URI;
 
@@ -101,14 +102,18 @@ public class NewModuleWizard extends BasicNewResourceWizard {
 		if (project == null) {
 			return false;
 		}
-		
+
+		String moduleConfPath = fMainPage.getModuleConfPath();
 		try {
-			project.setPersistentProperty(new QualifiedName(Messages.Qualifier, Messages.Property_1),
-					fMainPage.getModuleConfigPath());
+			project.setPersistentProperty(new QualifiedName(Messages.Qualifier, Messages.Property_1), moduleConfPath);
+			project.setPersistentProperty(new QualifiedName(Messages.Qualifier, Messages.Property_2),
+					moduleConfPath.replace(".conf", ".so"));
+			project.setPersistentProperty(new QualifiedName(Messages.Qualifier, Messages.Property_3), moduleConfPath
+					.substring(moduleConfPath.lastIndexOf(File.separator) + 1, moduleConfPath.lastIndexOf('.')));
 		} catch (CoreException e) {
 			e.printStackTrace();
 		}
-		
+
 		BasicNewProjectResourceWizard.updatePerspective(config);
 		BasicNewProjectResourceWizard.selectAndReveal(project, workbench.getActiveWorkbenchWindow());
 

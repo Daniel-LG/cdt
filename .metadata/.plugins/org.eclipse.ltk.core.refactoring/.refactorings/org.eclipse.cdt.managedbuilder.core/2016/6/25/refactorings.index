@@ -2,3 +2,6 @@
 1465714853145	Rename local variable 'pattern'
 1465730957962	Rename type 'Tuple'
 1465731199129	Rename local variable 'item'
+1465790061730	Rename local variable 'path'
+1465799049207	Rename local variable 'moduleNameList'
+1465799056875	Rename local variable 'moduleattrsList'

@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Wizard
 Bundle-SymbolicName: cn.smartcore.dev.ui;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: cn.smartcore.dev.ui.Activator
+Bundle-Activator: cn.smartcore.dev.ui.SmartCoreDevPlugin
 Bundle-Vendor: cn.smartcore
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
@@ -16,5 +16,5 @@ Require-Bundle: org.eclipse.ui,
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Eclipse-BundleShape: dir
-Export-Package: cn.smartcore.dev.ui.natures,
- cn.smartcore.dev.ui.views
+Export-Package: cn.smartcore.dev.ui,
+ cn.smartcore.dev.ui.natures

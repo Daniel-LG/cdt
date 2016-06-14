@@ -32,7 +32,7 @@ import org.eclipse.swt.widgets.Tree;
 import org.eclipse.swt.widgets.TreeItem;
 import org.eclipse.ui.dialogs.WizardNewProjectCreationPage;
 
-import cn.smartcore.dev.ui.Activator;
+import cn.smartcore.dev.ui.SmartCoreDevPlugin;
 import cn.smartcore.dev.ui.messages.Messages;
 
 public class ModuleProjectMainWizardPage extends WizardNewProjectCreationPage {
@@ -197,7 +197,7 @@ public class ModuleProjectMainWizardPage extends WizardNewProjectCreationPage {
 	public static CWizardHandler updateData(Tree tree) {
 		tree.removeAll();
 
-		URL simulatorURL = Activator.getBundleContext().getBundle().getResource("modules");
+		URL simulatorURL = SmartCoreDevPlugin.getBundleContext().getBundle().getResource("modules");
 		String modulesPath = null;
 		try {
 			modulesPath = FileLocator.toFileURL(simulatorURL).getPath();
@@ -263,7 +263,7 @@ public class ModuleProjectMainWizardPage extends WizardNewProjectCreationPage {
 		return CDTSharedImages.getImage(CDTSharedImages.IMG_OBJS_VARIABLE);
 	}
 
-	public String getModuleConfigPath() {
+	public String getModuleConfPath() {
 		return moduleConfigPath;
 	}
 

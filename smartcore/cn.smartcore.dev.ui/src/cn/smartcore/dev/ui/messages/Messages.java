@@ -17,6 +17,8 @@ public class Messages extends NLS {
 	public static String Qualifier;
 	
 	public static String Property_1;
+	public static String Property_2;
+	public static String Property_3;
 	
 	static {
 		// Initialize resource bundle.

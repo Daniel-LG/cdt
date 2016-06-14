@@ -21,7 +21,7 @@ public class Activator extends AbstractUIPlugin {
 	private static Activator plugin;
 
 	private ILaunchSimulator launchSimulator = new LaunchSimulator();
-	
+
 	private static BundleContext context;
 
 	/**
@@ -39,7 +39,7 @@ public class Activator extends AbstractUIPlugin {
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
 		plugin = this;
-		this.context=context;
+		this.context = context;
 		Dictionary<String, String> props = new Hashtable<String, String>();
 		props.put("ServiceName", "LaunchSimulator");
 		context.registerService(ILaunchSimulator.class, launchSimulator, props);
@@ -83,5 +83,5 @@ public class Activator extends AbstractUIPlugin {
 	public static BundleContext getBundleContext() {
 		return context;
 	}
-	
+
 }

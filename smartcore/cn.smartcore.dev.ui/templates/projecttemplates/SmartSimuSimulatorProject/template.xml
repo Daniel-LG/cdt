@@ -60,6 +60,16 @@
 				<simple name="target" value="address.conf"/>
 				<simple name="replaceable" value="true"/>
 			</element>
+			<element>
+				<simple name="source" value="src/main"/>
+				<simple name="target" value="resources/main"/>
+				<simple name="replaceable" value="true"/>
+			</element>
+			<element>
+				<simple name="source" value="src/main_debug_info"/>
+				<simple name="target" value="resources/main_debug_info"/>
+				<simple name="replaceable" value="true"/>
+			</element>
 		</complex-array>
 	</process>
 

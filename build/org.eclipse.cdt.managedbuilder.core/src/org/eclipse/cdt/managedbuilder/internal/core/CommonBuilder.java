@@ -17,6 +17,8 @@ package org.eclipse.cdt.managedbuilder.internal.core;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -62,7 +64,6 @@ import org.eclipse.cdt.managedbuilder.macros.IBuildMacroProvider;
 import org.eclipse.cdt.managedbuilder.makegen.IManagedBuilderMakefileGenerator;
 import org.eclipse.cdt.managedbuilder.makegen.IManagedBuilderMakefileGenerator2;
 import org.eclipse.cdt.newmake.core.IMakeBuilderInfo;
-import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IProject;
@@ -87,6 +88,8 @@ import org.eclipse.core.runtime.SubProgressMonitor;
 import org.eclipse.core.runtime.jobs.ISchedulingRule;
 import org.eclipse.core.runtime.jobs.Job;
 
+import cn.smartcore.dev.ui.SmartCoreDevPlugin;
+
 public class CommonBuilder extends ACBuilder {
 
 	public final static String BUILDER_ID = ManagedBuilderCorePlugin.getUniqueIdentifier()
@@ -108,7 +111,7 @@ public class CommonBuilder extends ACBuilder {
 	private boolean fBuildErrOccured;
 
 	// added by jwy
-	private String SMARTSIMU_SIMULATOR_NATURE = "cn.smartcore.dev.ui.SimulatorProject";
+	private String SMARTSIMU_SIMULATOR_NATURE = "cn.smartcore.dev.ui.SimulatorProject"; //$NON-NLS-1$
 
 	public CommonBuilder() {
 	}
@@ -454,14 +457,17 @@ public class CommonBuilder extends ACBuilder {
 			// TODO: how to generate the C file?
 			// InputStream resourceStream = new ByteArrayInputStream(
 			// ("#include<stdio.h>\nint main(){\n\tprintf(\"aaa\");\n}").getBytes());
+			String projectPath = project.getLocation().toString();
+			System.out.println(projectPath);
+			cleanSoFiles(project.getFile(new Path("resources")).getLocation().toString()); //$NON-NLS-1$
 			InputStream resourceStream = null;
 			try {
-				resourceStream = generateCFile(project, new Path("resources/conf.h"),
-						new Path("address.conf"), new Path(project.getName() + ".conf"));
+				resourceStream = generateCFile(project, new Path("resources/conf.h"), //$NON-NLS-1$
+						new Path("address.conf"), new Path(project.getName() + ".conf")); //$NON-NLS-1$ //$NON-NLS-2$
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}
-			addFileToProject(project, new Path("resources/main.c"), resourceStream, monitor);
+			addFileToProject(project, new Path("resources/conf.c"), resourceStream, monitor); //$NON-NLS-1$
 			try {
 				resourceStream.close();
 			} catch (IOException e) {
@@ -497,13 +503,23 @@ public class CommonBuilder extends ACBuilder {
 		return projects;
 	}
 
+	private void cleanSoFiles(String directoryPath) {
+		File directory = new File(directoryPath);
+		File[] files = directory.listFiles();
+		for (File file : files) {
+			if (file.isFile() && file.getName().endsWith(".so")) { //$NON-NLS-1$
+				file.delete();
+			}
+		}
+	}
+
 	// Added by jwy. Generate the conf.c file
 	private InputStream generateCFile(IProject project, Path confH, Path addressConf, Path simuConf)
 			throws CoreException, IOException {
 		StringBuffer cFileContent = new StringBuffer();
 		String tmp;
 
-		appendWithLineFeed(cFileContent, "// Part I");
+		appendWithLineFeed(cFileContent, "// Part I"); //$NON-NLS-1$
 		final IFile confHFile = project.getFile(confH);
 		BufferedReader br = new BufferedReader(new InputStreamReader(confHFile.getContents()));
 		try {
@@ -516,7 +532,7 @@ public class CommonBuilder extends ACBuilder {
 			br.close();
 		}
 
-		appendWithLineFeed(cFileContent, "// Part II");
+		appendWithLineFeed(cFileContent, "// Part II"); //$NON-NLS-1$
 		int count = 1;
 		ArrayList<String> itemList = new ArrayList<>();
 		final IFile addressConfFile = project.getFile(addressConf);
@@ -528,7 +544,7 @@ public class CommonBuilder extends ACBuilder {
 				}
 
 				tmp = tmp.trim();
-				String[] parameters = tmp.split("\\s+");
+				String[] parameters = tmp.split("\\s+"); //$NON-NLS-1$
 				String item = parameters[0];
 				String startAddr = parameters[1];
 				String endAddr = parameters[2];
@@ -544,8 +560,9 @@ public class CommonBuilder extends ACBuilder {
 		}
 		appendOverallAddressAttrs(cFileContent, itemList);
 
-		appendWithLineFeed(cFileContent, "// Part III");
-		ArrayList<Tuple3<String, String, Integer>> moduleNameList = new ArrayList<>();
+		appendWithLineFeed(cFileContent, "// Part III"); //$NON-NLS-1$
+		// record type, name and number of total attrs of each module
+		ArrayList<Tuple3<String, String, Integer>> moduleAttrsList = new ArrayList<>();
 		final IFile simuConfFile = project.getFile(simuConf);
 		br = new BufferedReader(new InputStreamReader(simuConfFile.getContents()));
 		try {
@@ -556,7 +573,8 @@ public class CommonBuilder extends ACBuilder {
 
 				int pos;
 				if ((pos = tmp.indexOf('{')) != -1) {
-					Module module = new Module(tmp.substring(0, pos).trim());
+					String projName = tmp.substring(0, pos).trim();
+					Module module = new Module(SmartCoreDevPlugin.getModuleType(projName));
 					while (true) {
 						tmp = br.readLine();
 						if (isBlankOrComment(tmp)) {
@@ -565,29 +583,39 @@ public class CommonBuilder extends ACBuilder {
 
 						tmp = tmp.trim();
 						// the end of this module
-						if (tmp.equals("}")) {
+						if (tmp.equals("}")) { //$NON-NLS-1$
 							addModuleAttrs(cFileContent, module);
-							moduleNameList.add(new Tuple3<String, String, Integer>(module.type, module.name,
-									module.STRINGAttrs.size() + module.U64Attrs.size()
-											+ module.INTERFACEAttrs.size() + module.ARRAYAttrs.size()));
+							int attrsCount = module.STRINGAttrs.size() + module.U64Attrs.size()
+									+ module.INTERFACEAttrs.size() + module.ARRAYAttrs.size();
+							if (module.type.startsWith("core")) { //$NON-NLS-1$
+								// the core module needs a default reference interface to the "access" of the
+								// memory_space
+								moduleAttrsList.add(new Tuple3<String, String, Integer>(module.type,
+										module.name, attrsCount + 1));
+							} else {
+								moduleAttrsList.add(new Tuple3<String, String, Integer>(module.type,
+										module.name, attrsCount));
+							}
+							copySoFile(project.getFile(new Path("resources")).getLocation().toString(),
+									module.type, SmartCoreDevPlugin.getModuleSoPath(projName));
 							break;
 						}
 
 						// add attrs to module
-						String[] parameters = tmp.split("\\s+");
-						if (parameters[0].equals("STRING")) {
-							if (parameters[1].equals("name")) {
+						String[] parameters = tmp.split("\\s+"); //$NON-NLS-1$
+						if (parameters[0].equals("STRING")) { //$NON-NLS-1$
+							if (parameters[1].equals("name")) { //$NON-NLS-1$
 								module.name = parameters[2];
 							}
 							module.addSTRINGAttr(parameters[1], parameters[2]);
-						} else if (parameters[0].equals("U64")) {
+						} else if (parameters[0].equals("U64")) { //$NON-NLS-1$
 							module.addU64Attr(parameters[1], parameters[2]);
-						} else if (parameters[0].equals("INTERFACE")) {
+						} else if (parameters[0].equals("INTERFACE")) { //$NON-NLS-1$
 							module.addINTERFACEAttr(parameters[1], parameters[2]);
-						} else if (parameters[0].equals("ARRAY")) {
+						} else if (parameters[0].equals("ARRAY")) { //$NON-NLS-1$
 							module.addARRAYAttr(parameters[1], parameters[2]);
 						} else {
-							System.out.println("error line:" + tmp);
+							System.out.println("error line:" + tmp); //$NON-NLS-1$
 						}
 
 					}
@@ -599,8 +627,8 @@ public class CommonBuilder extends ACBuilder {
 			br.close();
 		}
 
-		appendWithLineFeed(cFileContent, "// Part IV");
-		addOverallModuleAttrs(cFileContent, moduleNameList);
+		appendWithLineFeed(cFileContent, "// Part IV"); //$NON-NLS-1$
+		addOverallModuleAttrs(cFileContent, moduleAttrsList);
 
 		return new ByteArrayInputStream(cFileContent.toString().getBytes());
 	}
@@ -611,56 +639,56 @@ public class CommonBuilder extends ACBuilder {
 
 	private void appendAddressAttrs(StringBuffer cFileContent, String item, String startAddr, String endAddr,
 			String offset, int count) {
-		appendWithLineFeed(cFileContent, "static attribute_value_interface_t memory_space_to_" + count + "_"
-				+ item + "_interface = {");
-		appendWithLineFeed(cFileContent, "\t\"" + item + "\", \"access\", NULL, NULL");
-		appendWithLineFeed(cFileContent, "};");
+		appendWithLineFeed(cFileContent, "static attribute_value_interface_t memory_space_to_" + count + "_" //$NON-NLS-1$ //$NON-NLS-2$
+				+ item + "_interface = {"); //$NON-NLS-1$
+		appendWithLineFeed(cFileContent, "\t\"" + item + "\", \"access\", NULL, NULL"); //$NON-NLS-1$ //$NON-NLS-2$
+		appendWithLineFeed(cFileContent, "};"); //$NON-NLS-1$
 
 		appendWithLineFeed(cFileContent,
-				"static attribute_value_t memory_space_to_" + count + "_" + item + "_data[] = {");
-		appendWithLineFeed(cFileContent, "\t{ U64, (void *)" + startAddr + " },");
-		appendWithLineFeed(cFileContent, "\t{ U64, (void *)" + endAddr + " },");
+				"static attribute_value_t memory_space_to_" + count + "_" + item + "_data[] = {"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+		appendWithLineFeed(cFileContent, "\t{ U64, (void *)" + startAddr + " },"); //$NON-NLS-1$ //$NON-NLS-2$
+		appendWithLineFeed(cFileContent, "\t{ U64, (void *)" + endAddr + " },"); //$NON-NLS-1$ //$NON-NLS-2$
 		appendWithLineFeed(cFileContent,
-				"\t{ INTERFACE, &memory_space_to_" + count + "_" + item + "_interface },");
-		appendWithLineFeed(cFileContent, "\t{ U64, (void *)" + offset + " }");
-		appendWithLineFeed(cFileContent, "};");
+				"\t{ INTERFACE, &memory_space_to_" + count + "_" + item + "_interface },"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+		appendWithLineFeed(cFileContent, "\t{ U64, (void *)" + offset + " }"); //$NON-NLS-1$ //$NON-NLS-2$
+		appendWithLineFeed(cFileContent, "};"); //$NON-NLS-1$
 
 		appendWithLineFeed(cFileContent,
-				"static attribute_value_array_t memory_space_to_" + count + "_" + item + " = {");
-		appendWithLineFeed(cFileContent, "\t4, memory_space_to_" + count + "_" + item + "_data");
-		appendWithLineFeed(cFileContent, "};");
+				"static attribute_value_array_t memory_space_to_" + count + "_" + item + " = {"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+		appendWithLineFeed(cFileContent, "\t4, memory_space_to_" + count + "_" + item + "_data"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+		appendWithLineFeed(cFileContent, "};"); //$NON-NLS-1$
 	}
 
 	private void appendOverallAddressAttrs(StringBuffer cFileContent, ArrayList<String> itemList) {
-		appendWithLineFeed(cFileContent, "static attribute_value_t memory_space_address_entry[] = {");
+		appendWithLineFeed(cFileContent, "static attribute_value_t memory_space_address_entry[] = {"); //$NON-NLS-1$
 		for (int i = 0; i < itemList.size(); i++) {
 			appendWithLineFeed(cFileContent,
-					"\t{ ARRAY, &memory_space_to_" + (i + 1) + "_" + itemList.get(i) + " },");
+					"\t{ ARRAY, &memory_space_to_" + (i + 1) + "_" + itemList.get(i) + " },"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 		}
 		if (itemList.size() > 0) {
 			// remove the last ","
 			cFileContent.replace(cFileContent.length() - System.lineSeparator().length() - 1,
-					cFileContent.length() - System.lineSeparator().length(), "");
+					cFileContent.length() - System.lineSeparator().length(), ""); //$NON-NLS-1$
 		}
 		// appendWithLineFeed(cFileContent, "\t{ ARRAY, &memory_space_to_" + itemList.size() + "_"
 		// + itemList.get(itemList.size() - 1) + " }");
-		appendWithLineFeed(cFileContent, "};");
+		appendWithLineFeed(cFileContent, "};"); //$NON-NLS-1$
 
-		appendWithLineFeed(cFileContent, "static attribute_value_array_t memory_space_address_map = {");
-		appendWithLineFeed(cFileContent, "\t" + itemList.size() + ", memory_space_address_entry");
-		appendWithLineFeed(cFileContent, "};");
+		appendWithLineFeed(cFileContent, "static attribute_value_array_t memory_space_address_map = {"); //$NON-NLS-1$
+		appendWithLineFeed(cFileContent, "\t" + itemList.size() + ", memory_space_address_entry"); //$NON-NLS-1$ //$NON-NLS-2$
+		appendWithLineFeed(cFileContent, "};"); //$NON-NLS-1$
 
-		appendWithLineFeed(cFileContent, "static attribute_t memory_space_attribute_confs[] = {");
-		appendWithLineFeed(cFileContent, "\t{ \"name\", { STRING, \"memory_space\" }},");
-		appendWithLineFeed(cFileContent, "\t{ \"size\", { U64, (void *)128 }},");
-		appendWithLineFeed(cFileContent, "\t{ \"address_map\", { ARRAY, &memory_space_address_map }}");
-		appendWithLineFeed(cFileContent, "};");
+		appendWithLineFeed(cFileContent, "static attribute_t memory_space_attribute_confs[] = {"); //$NON-NLS-1$
+		appendWithLineFeed(cFileContent, "\t{ \"name\", { STRING, \"memory_space\" }},"); //$NON-NLS-1$
+		appendWithLineFeed(cFileContent, "\t{ \"size\", { U64, (void *)128 }},"); //$NON-NLS-1$
+		appendWithLineFeed(cFileContent, "\t{ \"address_map\", { ARRAY, &memory_space_address_map }}"); //$NON-NLS-1$
+		appendWithLineFeed(cFileContent, "};"); //$NON-NLS-1$
 	}
 
 	private boolean isBlankOrComment(String line) {
-		String blankLine = "^\\s*$";
+		String blankLine = "^\\s*$"; //$NON-NLS-1$
 		Pattern blank = Pattern.compile(blankLine);
-		String commentLine = "^\\s*#";
+		String commentLine = "^\\s*#"; //$NON-NLS-1$
 		Pattern comment = Pattern.compile(commentLine);
 
 		Matcher m1 = blank.matcher(line);
@@ -678,53 +706,54 @@ public class CommonBuilder extends ACBuilder {
 	private void addModuleAttrs(StringBuffer cFileContent, Module module) {
 		// add the default memory_space reference
 		appendWithLineFeed(cFileContent,
-				"static attribute_value_interface_t " + module.name + "_memory_space_ref = {");
-		appendWithLineFeed(cFileContent, "\t\"memory_space\", \"access\", NULL, NULL");
-		appendWithLineFeed(cFileContent, "};");
+				"static attribute_value_interface_t " + module.name + "_memory_space_ref = {"); //$NON-NLS-1$ //$NON-NLS-2$
+		appendWithLineFeed(cFileContent, "\t\"memory_space\", \"access\", NULL, NULL"); //$NON-NLS-1$
+		appendWithLineFeed(cFileContent, "};"); //$NON-NLS-1$
 
 		// add reference interface statement
 		for (Tuple2<String, String> item : module.INTERFACEAttrs) {
 			appendWithLineFeed(cFileContent,
-					"static attribute_value_interface_t " + module.name + "_" + item.x + " = {");
-			String[] parameters = item.y.split("\\s*:\\s*");
+					"static attribute_value_interface_t " + module.name + "_" + item.x + " = {"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+			String[] parameters = item.y.split("\\s*:\\s*"); //$NON-NLS-1$
 			appendWithLineFeed(cFileContent,
-					"\t\"" + parameters[0] + "\", \"" + parameters[1] + "\", NULL, NULL");
-			appendWithLineFeed(cFileContent, "};");
+					"\t\"" + parameters[0] + "\", \"" + parameters[1] + "\", NULL, NULL"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+			appendWithLineFeed(cFileContent, "};"); //$NON-NLS-1$
 		}
 
 		// add attrs
-		appendWithLineFeed(cFileContent, "static attribute_t " + module.name + "_attribute_confs[] = {");
+		appendWithLineFeed(cFileContent, "static attribute_t " + module.name + "_attribute_confs[] = {"); //$NON-NLS-1$ //$NON-NLS-2$
 		for (Tuple2<String, String> item : module.STRINGAttrs) {
-			appendWithLineFeed(cFileContent, "\t{ \"" + item.x + "\", { STRING, \"" + item.y + "\" }},");
+			appendWithLineFeed(cFileContent, "\t{ \"" + item.x + "\", { STRING, \"" + item.y + "\" }},"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 		}
 		for (Tuple2<String, String> item : module.U64Attrs) {
-			appendWithLineFeed(cFileContent, "\t{ \"" + item.x + "\", { U64, " + item.y + " }},");
+			appendWithLineFeed(cFileContent, "\t{ \"" + item.x + "\", { U64, " + item.y + " }},"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 		}
 		for (Tuple2<String, String> item : module.INTERFACEAttrs) {
 			appendWithLineFeed(cFileContent,
-					"\t{ \"" + item.x + "\", { INTERFACE, &" + module.name + "_" + item.x + " }},");
+					"\t{ \"" + item.x + "\", { INTERFACE, &" + module.name + "_" + item.x + " }},"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
 		}
 		// add the default memory_space reference
 		appendWithLineFeed(cFileContent,
-				"\t{ \"memory_space_ref\", { INTERFACE, &" + module.name + "_memory_space_ref }}");
-		appendWithLineFeed(cFileContent, "};");
+				"\t{ \"memory_space_ref\", { INTERFACE, &" + module.name + "_memory_space_ref }}"); //$NON-NLS-1$ //$NON-NLS-2$
+		appendWithLineFeed(cFileContent, "};"); //$NON-NLS-1$
 	}
 
 	private void addOverallModuleAttrs(StringBuffer cFileContent,
 			ArrayList<Tuple3<String, String, Integer>> moduleNameList) {
-		appendWithLineFeed(cFileContent, "object_conf_t objects[] = {");
+		appendWithLineFeed(cFileContent, "object_conf_t objects[] = {"); //$NON-NLS-1$
 		for (Tuple3<String, String, Integer> item : moduleNameList) {
-			appendWithLineFeed(cFileContent, "\t{ \"./resources/" + item.x + ".so\", \"" + item.y + "\", "
-					+ item.z + ", " + item.y + "_attribute_confs },");
+			appendWithLineFeed(cFileContent,
+					"\t{ \"." + File.separator + item.x + ".so\", \"" + item.y + "\", " //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+							+ item.z + ", " + item.y + "_attribute_confs },"); //$NON-NLS-1$ //$NON-NLS-2$
 		}
 		if (moduleNameList.size() > 0) {
 			// remove the last ","
 			cFileContent.replace(cFileContent.length() - System.lineSeparator().length() - 1,
-					cFileContent.length() - System.lineSeparator().length(), "");
+					cFileContent.length() - System.lineSeparator().length(), ""); //$NON-NLS-1$
 		}
-		appendWithLineFeed(cFileContent, "};");
+		appendWithLineFeed(cFileContent, "};"); //$NON-NLS-1$
 
-		appendWithLineFeed(cFileContent, "u64 nr_objects = sizeof(objects) / sizeof(objects[0]);");
+		appendWithLineFeed(cFileContent, "u64 nr_objects = sizeof(objects) / sizeof(objects[0]);"); //$NON-NLS-1$
 	}
 
 	class Module {
@@ -776,6 +805,42 @@ public class CommonBuilder extends ACBuilder {
 			this.x = x;
 			this.y = y;
 			this.z = z;
+		}
+	}
+
+	private void copySoFile(String targetDirectory, String moduleType, String moduleSoPath) {
+		File directory = new File(targetDirectory);
+		for (File file : directory.listFiles()) {
+			if (file.isFile() && file.getName().equals(moduleType + ".so")) { //$NON-NLS-1$
+				return;
+			}
+		}
+
+		try {
+			copy(moduleSoPath, targetDirectory + File.separator + moduleType + ".so"); //$NON-NLS-1$
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void copy(String oldPath, String newPath) throws IOException {
+		InputStream is = null;
+		FileOutputStream fos = null;
+
+		try {
+			is = new FileInputStream(oldPath);
+			fos = new FileOutputStream(newPath);
+			byte[] buffer = new byte[1024];
+			int byteread = 0;
+			while ((byteread = is.read(buffer)) != -1) {
+				fos.write(buffer, 0, byteread);
+			}
+		} catch (IOException e) {
+			System.out.println("error copy"); //$NON-NLS-1$
+			e.printStackTrace();
+		} finally {
+			is.close();
+			fos.close();
 		}
 	}
 

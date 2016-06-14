@@ -11,8 +11,8 @@ import org.eclipse.jface.viewers.ILabelProvider;
 import org.eclipse.jface.window.Window;
 import org.eclipse.ui.dialogs.ElementListSelectionDialog;
 
+import cn.smartcore.dev.ui.SmartSimuLabelProvider;
 import cn.smartcore.dev.ui.natures.ProjectNature;
-import cn.smartcore.dev.ui.views.SimulatorLabelProvider;
 
 // added by jwy, to replace the default tab in "run" module, 
 // add a filter to browse project button to make sure that only module projects are visible
@@ -47,7 +47,7 @@ public class SmartSimuModuleMainTab extends CMainTab2 {
 
 	private IProject chooseModuleProject() {
 		IProject[] projects = getModuleProjects();
-		ILabelProvider labelProvider = new SimulatorLabelProvider();
+		ILabelProvider labelProvider = new SmartSimuLabelProvider();
 		ElementListSelectionDialog dialog = new ElementListSelectionDialog(getShell(), labelProvider);
 		dialog.setTitle(LaunchMessages.CMainTab_Project_Selection);
 		dialog.setMessage(LaunchMessages.CMainTab_Choose_project_to_constrain_search_for_program);
