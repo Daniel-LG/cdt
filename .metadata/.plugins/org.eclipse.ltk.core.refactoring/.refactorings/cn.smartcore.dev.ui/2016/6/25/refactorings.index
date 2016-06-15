@@ -23,3 +23,13 @@
 1465869894235	Copy file
 1465870859131	Copy file
 1465871269267	Delete element
+1465955941967	Delete element
+1465958111318	Rename resource 'main'
+1465958121174	Rename resource 'main_debug_info'
+1465961677817	Move 2 resources to 'templates'
+1465961683154	Move 'memory_space' to 'templates'
+1465961858864	Rename local variable 'simulatorURL'
+1465961874078	Rename local variable 'modulesPath'
+1465961975260	Rename resource 'main.simu'
+1465961983283	Rename resource 'main_debug_info.simu'
+1465971894638	Rename local variable 'moduleProject'

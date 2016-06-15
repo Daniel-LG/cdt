@@ -20,6 +20,8 @@ public class Messages extends NLS {
 	public static String Property_2;
 	public static String Property_3;
 	
+	public static String CDTCommonProjectWizard_creatingProject;
+	
 	static {
 		// Initialize resource bundle.
 		NLS.initializeMessages(Messages.class.getName(), Messages.class);

@@ -1,0 +1,308 @@
+package cn.smartcore.debug.core.launch;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+
+import org.apache.commons.exec.CommandLine;
+import org.apache.commons.exec.DefaultExecutor;
+import org.apache.commons.exec.ExecuteException;
+import org.apache.commons.exec.ExecuteWatchdog;
+import org.apache.commons.exec.PumpStreamHandler;
+import org.eclipse.core.commands.Command;
+import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.core.resources.IProject;
+import org.eclipse.core.runtime.FileLocator;
+import org.eclipse.swt.graphics.Color;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.ui.IWorkbenchPage;
+import org.eclipse.ui.IWorkbenchWindow;
+import org.eclipse.ui.PartInitException;
+import org.eclipse.ui.PlatformUI;
+import org.eclipse.ui.commands.ICommandService;
+import org.eclipse.ui.console.ConsolePlugin;
+import org.eclipse.ui.console.IConsole;
+import org.eclipse.ui.console.IConsoleConstants;
+import org.eclipse.ui.console.IConsoleManager;
+import org.eclipse.ui.console.IConsoleView;
+import org.eclipse.ui.console.MessageConsole;
+import org.eclipse.ui.console.MessageConsoleStream;
+import org.eclipse.ui.handlers.HandlerUtil;
+import org.eclipse.ui.services.IEvaluationService;
+
+import cn.smartcore.debug.core.Activator;
+import cn.smartcore.debug.core.ILaunchSimulator;
+import cn.smartcore.debug.core.ui.ControlGDBServerHandler;
+import cn.smartcore.dev.ui.SmartSimuDevPlugin;
+
+public class LaunchSimulator implements ILaunchSimulator {
+
+	private IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+
+	private static final String CONSOLE_NAME = "Smart Core Debug Info";
+
+	private final MessageConsole smartsimuConsole = findConsole(CONSOLE_NAME);
+
+	private DefaultExecutor executor;
+
+	private IProject project;
+
+	private boolean isFirstStart = true;
+
+	@Override
+	public void launch(String binFilePath, String simulatorProjectName, String port, String coreConfigPath) {
+		String line = null;
+		String simulatorPath = null;
+		String confPath = null;
+
+		if (simulatorProjectName.equals("Default Simulator")) {
+			// get the resource form the bundle, and further transfer to path
+			URL simulatorURL = Activator.getBundleContext().getBundle().getResource("simu");
+			try {
+				simulatorPath = FileLocator.toFileURL(simulatorURL).getPath();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			confPath = simulatorPath + File.separator + "conf" + File.separator + "conf.so";
+		} else {
+			IProject project = SmartSimuDevPlugin.getSimulatorProject(simulatorProjectName);
+			simulatorPath = project.getFile("resources").getLocation().toOSString();
+			confPath = simulatorPath + File.separator + "conf.so";
+		}
+
+		if (simulatorPath.endsWith(File.separator)) {
+			simulatorPath = simulatorPath.substring(0, simulatorPath.length() - 1);
+		}
+
+		try {
+			copy(binFilePath, simulatorPath + File.separator + "a.bin");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		String mainFilePath = simulatorPath + File.separator + "main";
+		File mainFile = new File(mainFilePath);
+		if (!mainFile.canExecute()) {
+			mainFile.setExecutable(true);
+		}
+
+		line = mainFilePath + " " + port + " " + coreConfigPath + " start " + confPath;
+		// System.out.println(line);
+
+		CommandLine cmdLine = CommandLine.parse(line);
+		executor = new DefaultExecutor();
+		ExecuteWatchdog watchdog = new ExecuteWatchdog(ExecuteWatchdog.INFINITE_TIMEOUT);
+		executor.setWatchdog(watchdog);
+		smartsimuConsole.clearConsole();
+		MessageConsoleStream outputStream = smartsimuConsole.newMessageStream();
+		MessageConsoleStream errorStream = smartsimuConsole.newMessageStream();
+		outputStream.setActivateOnWrite(true);
+		errorStream.setActivateOnWrite(true);
+		Display.getDefault().syncExec(new Runnable() {
+			@Override
+			public void run() {
+				errorStream.setColor(new Color(null, 255, 0, 0));
+			}
+		});
+		PumpStreamHandler streamHandler = new PumpStreamHandler(outputStream, errorStream);
+		executor.setStreamHandler(streamHandler);
+		MyExecuteResultHandler resultHandler = new MyExecuteResultHandler(this, outputStream, errorStream);
+
+		try {
+			executor.execute(cmdLine, resultHandler);
+		} catch (ExecuteException e1) {
+			e1.printStackTrace();
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
+
+		try {
+			resultHandler.waitFor(500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			ExecuteException e = resultHandler.getException();
+			String exceptionInfo = e.getMessage();
+			errorStream.println(exceptionInfo);
+			return;
+		} catch (IllegalStateException e) {
+			outputStream.println("simu has been started");
+		}
+
+		// Read debug-config.txt and update the state of the radio command
+		File file = new File(coreConfigPath);
+		String initialState = "";
+
+		if (file.exists()) {
+			BufferedReader bReader = null;
+			try {
+				bReader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+				try {
+					initialState = bReader.readLine();
+					if (initialState == null)
+						initialState = "";
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} finally {
+				try {
+					bReader.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+
+		// if (window == null) {
+		// Display.getDefault().syncExec(new Runnable() {
+		// @Override
+		// public void run() {
+		// window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+		// }
+		// });
+		// }
+
+		ICommandService commandService = window.getWorkbench().getService(ICommandService.class);
+		Command radioCommand = commandService.getCommand("selectCommand");
+
+		try {
+			HandlerUtil.updateRadioState(radioCommand, initialState);
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+		}
+
+		IWorkbenchPage page = window.getActivePage();
+		Display.getDefault().syncExec(new Runnable() {
+			@Override
+			public void run() {
+				String id = IConsoleConstants.ID_CONSOLE_VIEW;
+				IConsoleView view = null;
+				try {
+					view = (IConsoleView) page.showView(id);
+				} catch (PartInitException e) {
+					e.printStackTrace();
+				}
+				view.display(smartsimuConsole);
+			}
+		});
+	}
+
+	private static MessageConsole findConsole(String name) {
+		ConsolePlugin plugin = ConsolePlugin.getDefault();
+		IConsoleManager conMan = plugin.getConsoleManager();
+		IConsole[] existing = conMan.getConsoles();
+
+		for (int i = 0; i < existing.length; i++) {
+			if (name.equals(existing[i].getName())) {
+				return (MessageConsole) existing[i];
+			}
+		}
+
+		// no console found, create a new one
+		MessageConsole myConsole = new MessageConsole(name, null);
+		conMan.addConsoles(new IConsole[] { myConsole });
+		return myConsole;
+	}
+
+	public static void copy(String oldPath, String newPath) throws IOException {
+		InputStream is = null;
+		FileOutputStream fos = null;
+
+		try {
+			is = new FileInputStream(oldPath);
+			fos = new FileOutputStream(newPath);
+			byte[] buffer = new byte[1024];
+			int byteread = 0;
+			while ((byteread = is.read(buffer)) != -1) {
+				fos.write(buffer, 0, byteread);
+			}
+		} catch (IOException e) {
+			System.out.println("error copy");
+			e.printStackTrace();
+		} finally {
+			is.close();
+			fos.close();
+		}
+	}
+
+	public static void copy(File oldfile, String newPath) throws IOException {
+		InputStream is = null;
+		FileOutputStream fos = null;
+
+		try {
+			is = new FileInputStream(oldfile);
+			fos = new FileOutputStream(newPath);
+			byte[] buffer = new byte[1024];
+			int byteread = 0;
+			while ((byteread = is.read(buffer)) != -1) {
+				fos.write(buffer, 0, byteread);
+			}
+		} catch (Exception e) {
+			System.out.println("error copy");
+			e.printStackTrace();
+		} finally {
+			is.close();
+			fos.close();
+		}
+	}
+
+	// change the state of the controlGDBServerCommand, and further update the
+	// state of the selectCommand
+	@Override
+	public void updateControlGDBServerCommandState() {
+		ICommandService commandService = window.getWorkbench().getService(ICommandService.class);
+		Command command = commandService.getCommand("controlGDBServerCommand");
+
+		try {
+			HandlerUtil.toggleCommandState(command);
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+		}
+
+		// used to refresh the state of the selectCommand
+		IEvaluationService evaluationService = window.getService(IEvaluationService.class);
+		if (evaluationService != null)
+			evaluationService.requestEvaluation("org.eclipse.ui.commands.toggleState");
+	}
+
+	@Override
+	public boolean isFirstStart() {
+		return isFirstStart;
+	}
+
+	@Override
+	public void setFirstStart(boolean isFirstStart) {
+		this.isFirstStart = isFirstStart;
+	}
+
+	@Override
+	public DefaultExecutor getExecutor() {
+		return executor;
+	}
+
+	@Override
+	public void setExecutor(DefaultExecutor executor) {
+		this.executor = executor;
+	}
+
+	@Override
+	public IProject getProject() {
+		return project;
+	}
+
+	@Override
+	public void setProject(IProject project) {
+		this.project = project;
+	}
+
+}

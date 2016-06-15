@@ -225,9 +225,10 @@ public class ModuleProjectMainWizardPage extends WizardNewProjectCreationPage {
 		}
 
 		for (File file : files) {
-			if (file.isFile()) {
+			if (file.isFile() && file.getName().endsWith(".conf")) {
 				TreeItem treeItem = new TreeItem(tree, SWT.NONE);
-				treeItem.setText(file.getName());
+				// remove the ".conf"
+				treeItem.setText(file.getName().substring(0, file.getName().length() - ".conf".length()));
 				treeItem.setData("file", file);
 				treeItem.setImage(calcImage(file));
 			}
@@ -248,9 +249,10 @@ public class ModuleProjectMainWizardPage extends WizardNewProjectCreationPage {
 		}
 
 		for (File file : files) {
-			if (file.isFile()) {
+			if (file.isFile() && file.getName().endsWith(".conf")) {
 				TreeItem treeItem = new TreeItem(tree, SWT.NONE);
-				treeItem.setText(file.getName());
+				// remove the ".conf"
+				treeItem.setText(file.getName().substring(0, file.getName().length() - ".conf".length()));
 				treeItem.setData("file", file);
 				treeItem.setImage(calcImage(file));
 			}

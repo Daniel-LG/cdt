@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<component id="org.eclipse.cdt.managedbuilder.gnu.ui" modificationStamp="1738" version="1.2">
+<component id="org.eclipse.cdt.managedbuilder.gnu.ui" modificationStamp="1740" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.templates"/>
+        <type handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.templates{SimpleMakefileGenerator.java[SimpleMakefileGenerator" modificationStamp="17094" restrictions="6" visibility="0"/>
+    </package>
     <package visibility="1">
         <fragment handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.cygwin"/>
         <type handle="=org.eclipse.cdt.managedbuilder.gnu.ui/src&lt;org.eclipse.cdt.managedbuilder.gnu.cygwin{IsGnuCygwinToolChainSupported.java[IsGnuCygwinToolChainSupported" modificationStamp="17091" restrictions="2" visibility="0"/>

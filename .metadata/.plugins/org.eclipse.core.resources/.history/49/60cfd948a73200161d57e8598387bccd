@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<template type="ProjTempl" version="1.0" supplier="Eclipse.org" revision="1.0" author="SmartSimu"
+		copyright=""
+		id="SmartSimuSimulatorProject" label="%Simutemplate.label" description="%Simutemplate.description"
+		 help="help.html">
+
+	<property-group id="basics" label="%HelloWorld.basics.label" description="%HelloWorld.basics.description" type="PAGES-ONLY" help="help.html">
+		<property id="author"
+			label="%Simutemplate.author.label"
+			description="%Simutemplate.author.description"
+			type="input"
+			pattern=".*"
+			default=""
+			hidden="false"
+			persist="true"/>
+		<property id="version"
+			label="%Simutemplate.version.label"
+			description="%Simutemplate.version.description"
+			type="input"
+			pattern=".*"
+			default=""
+			hidden="false"
+			persist="true"/>
+		<property id="copyright"
+			label="%Simutemplate.copyright.label"
+			description="%Simutemplate.copyright.description"
+			type="input"
+			pattern=".*"
+			default="%Simutemplate.copyright.default"
+			hidden="false"
+			persist="true"/>
+	</property-group>
+
+	<process type="org.eclipse.cdt.managedbuilder.core.NewManagedProject">
+		<simple name="name" value="$(projectName)" /> 
+		<simple name="artifactExtension" value="exe" /> 
+		<simple name="isCProject" value="true" /> 
+	</process>
+
+	<process type="org.eclipse.cdt.core.CreateSourceFolder">
+		<simple name="projectName" value="$(projectName)"/>
+		<simple name="path" value="resources"/>
+	</process>
+
+	<process type="org.eclipse.cdt.core.AddFiles">
+		<simple name="projectName" value="$(projectName)"/>
+		<complex-array name="files">
+			<element>
+				<simple name="source" value="src/conf.h"/>
+				<simple name="target" value="resources/conf.h"/>
+				<simple name="replaceable" value="true"/>
+			</element>
+			<element>
+				<simple name="source" value="src/Base.conf"/>
+				<simple name="target" value="$(projectName).conf"/>
+				<simple name="replaceable" value="true"/>
+			</element>
+			<element>
+				<simple name="source" value="src/BaseAddr.conf"/>
+				<simple name="target" value="address.conf"/>
+				<simple name="replaceable" value="true"/>
+			</element>
+			<element>
+				<simple name="source" value="src/main.simu"/>
+				<simple name="target" value="resources/main.simu"/>
+				<simple name="replaceable" value="true"/>
+			</element>
+			<element>
+				<simple name="source" value="src/main_debug_info.simu"/>
+				<simple name="target" value="resources/main_debug_info.simu"/>
+				<simple name="replaceable" value="true"/>
+			</element>
+			<element>
+				<simple name="source" value="src/memory_space/memory_space.so"/>
+				<simple name="target" value="resources/memory_space/memory_space.so"/>
+				<simple name="replaceable" value="true"/>
+			</element>
+		</complex-array>
+	</process>
+
+	<process type="org.eclipse.cdt.ui.OpenFiles">
+		<simple name="projectName" value="$(projectName)"/>
+		<complex-array name="files">
+			<element>
+				<simple name="target" value="$(projectName).conf"/>
+			</element>
+		</complex-array>
+	</process>
+
+</template>
+

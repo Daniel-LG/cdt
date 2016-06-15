@@ -8,6 +8,33 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>Lars Vogel: Helping WindowBuilder</title>
+	<guid isPermaLink="false">http://blog.vogella.com/?p=7387</guid>
+	<link>http://blog.vogella.com/2016/06/14/helping-windowbuilder/</link>
+	<description>&lt;p&gt;The WindowBuilder project had resource issues. I’m happy to announce that WB has now a working Tycho build. Simply clone the WB repo and use ‘mvn clean verify’ command to build WB.&lt;/p&gt;
+&lt;p&gt;The result is afterwards located in org.eclipse.windowbuilder/org.eclipse.wb.releng.updatesite/target/repository&lt;/p&gt;
+&lt;p&gt;WindowBuilder seems to need more of help. My Tycho and cleanup work made me the primary commmitter of the project, and that is of course bad for an open source project. See &lt;a href=&quot;https://projects.eclipse.org/projects/tools.windowbuilder/who&quot;&gt;WindowBuilder project page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.vogella.com/wp-content/uploads/2016/06/wb_builder_contributions.png&quot;&gt;&lt;img alt=&quot;wb_builder_contributions&quot; class=&quot;aligncenter size-full wp-image-7388&quot; height=&quot;480&quot; src=&quot;http://blog.vogella.com/wp-content/uploads/2016/06/wb_builder_contributions.png&quot; width=&quot;528&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In case you are interested in helping WB please provide Gerrit reviews or ask on the &lt;a href=&quot;https://dev.eclipse.org/mailman/listinfo/wb-dev&quot;&gt;WB mailing list&lt;/a&gt; for areas where you can help.&lt;/p&gt;</description>
+	<pubDate>Tue, 14 Jun 2016 15:32:41 +0000</pubDate>
+</item>
+<item>
+	<title>Melanie Bats: Sirius 4.0 Gotta Catch ‘Em All: Improve user experience</title>
+	<guid isPermaLink="false">http://melb.enix.org/?p=291</guid>
+	<link>http://melb.enix.org/sirius/sirius-4-0-improve-user-experience/</link>
+	<description>&lt;p&gt;To continue with the Sirius 4.0 new features &lt;a href=&quot;http://melb.enix.org/sirius/sirius-4-0-border-song/&quot;&gt;serie&lt;/a&gt;, today we will show how we improved the user experience.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bi-directional link with editor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://orig03.deviantart.net/ca6f/f/2014/290/3/7/doduo_by_weaponix-d8380qe.png&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter&quot; height=&quot;256&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/doduo.png&quot; width=&quot;144&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+When exploring a complex model, users frequently need to switch from the tree representation (provided by the Model Explorer) to the current diagram and vice-versa. Before Sirius 3.1, the “link with editor” option was uni-directional: selecting a model element in the Model Browser was selecting the same element in the diagram, but not the opposite. Now, this option is bi-directional: selecting a diagram element automatically selects the corresponding model element in the Model browser.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter&quot; height=&quot;180&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/linktoeditor.gif&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Selection after tool execution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://orig03.deviantart.net/3ee8/f/2014/309/8/9/exeggutor_by_weaponix-d85fbsd.png&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter&quot; height=&quot;249&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/exeggutor.png&quot; width=&quot;141&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For users who need to rapidly create new models and efficient representations, reducing the number of clicks is very important to improve their productivity. With Sirius 3.1, we have added the possibility to specify which elements to automatically select after a tool execution. For each kind of tool (creation, edition, navigation, etc), we have added two new options “Element To Select” and “Inverse Selection Order” that can be used to specify which model elements to select after the execution of the tool.&lt;br /&gt;
+&lt;img alt=&quot;post-execution_options.png&quot; class=&quot;aligncenter&quot; height=&quot;160&quot; src=&quot;https://lh4.googleusercontent.com/mxHFA_WNbyw6384Q8ARWnM2i8a3QCvr1_ZPw5wuufD7oi8RBoSf46H4r5LqH2NX5awJzmRcDjws2LkHSOKXl0hynqlzZ1HYOgZKIJ3-X8Z30pJ-IwF_Awq35-fOvyzmRIwfvw1Fr&quot; width=&quot;283&quot; /&gt;&lt;br /&gt;
+To catch all the new features coming with Sirius 4.0 have a look at the slides of &lt;a href=&quot;https://www.eclipsecon.org/france2016/session/sirius-40-let-me-sirius-you&quot;&gt;our talk&lt;/a&gt; at EclipseCon France! Another chance for you to join the Sirius community, &lt;a href=&quot;http://www.siriuscon.org/&quot;&gt;SiriusCon&lt;/a&gt; will occur in Paris the 15th November 2016. Be sure to save the date!&lt;/p&gt;</description>
+	<pubDate>Tue, 14 Jun 2016 07:00:16 +0000</pubDate>
+</item>
+<item>
 	<title>Ian Skerrett: UUID Removal from Neon</title>
 	<guid isPermaLink="false">http://ianskerrett.wordpress.com/?p=3601</guid>
 	<link>http://feedproxy.google.com/~r/IanSkerrett/~3/sPQpY-AAKOc/</link>
@@ -237,24 +264,6 @@ org.apache.felix.https.keystore.key.password: XXXXXXX
 	<pubDate>Mon, 06 Jun 2016 13:30:00 +0000</pubDate>
 </item>
 <item>
-	<title>Melanie Bats: Sirius 4.0 Gotta Catch ‘Em All : Be prepared for the future</title>
-	<guid isPermaLink="false">http://melb.enix.org/?p=252</guid>
-	<link>http://melb.enix.org/sirius/sirius-4-0-be-prepared-for-the-future/</link>
-	<description>&lt;p&gt;&lt;strong&gt;Properties View&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;http://orig08.deviantart.net/6875/f/2014/094/4/1/pikachu_by_weaponix-d7d2wlg.png&quot;&gt;&lt;img alt=&quot;Pikachu&quot; class=&quot;aligncenter&quot; height=&quot;216&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/pikachu.png&quot; width=&quot;122&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-My &lt;a href=&quot;http://melb.enix.org/sirius/let-me-sirius-that-for-you-properties-view/&quot;&gt;previous post&lt;/a&gt; illustrates &lt;a href=&quot;https://en.wikipedia.org/wiki/Pok%C3%A9mon:_The_Movie_2000&quot;&gt;The Power of One&lt;/a&gt; framework to define graphical designers and property views: &lt;a href=&quot;https://eclipse.org/sirius/&quot;&gt;Eclipse Sirius&lt;/a&gt; 4.0. It shows how to get property views for your designer as fast as a thunderbolt!&lt;br /&gt;
-&lt;img alt=&quot;properties_widgets.png&quot; class=&quot;aligncenter&quot; height=&quot;392&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/propertiesview.png&quot; width=&quot;644&quot; /&gt;&lt;br /&gt;
-During the last year, the Sirius team worked on two versions of Sirius the 3.1 and the 4.0. In the following days I will detail all the new features coming in Sirius, since the release of Eclipse Mars, that are included in Eclipse Neon.&lt;/p&gt;
-&lt;p&gt;The Sirius project is very active with 10 committers working full time during this past year. We did around 900 commits and fixed 84 bugs. Since the Mars release, more than 1100 posts were made in the Sirius forum: there is a vibrant community around Sirius.&lt;/p&gt;
-&lt;p&gt;In this new release we introduce a significant feature with the properties view description but we are also preparing the future with a small change.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt; Metamodel warning&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://orig07.deviantart.net/648e/f/2014/066/b/5/metapod_by_weaponix-d79c984.png&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter&quot; height=&quot;246&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/metapod.png&quot; width=&quot;139&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Starting with Sirius 4.0, a warning appears if the specifier does not define explicitly its metamodel on a representation description. This is a first step and in the future, specifying the metamodel will become mandatory which will allow us to give more precise feedback to specifiers resulting in more robust modelers.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter&quot; height=&quot;329&quot; src=&quot;https://raw.githubusercontent.com/mbats/sirius-blog/master/sirius4/blog/images/warning.png&quot; style=&quot;font-weight: 300;&quot; width=&quot;406&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;To &lt;a href=&quot;https://en.wikipedia.org/wiki/Gotta_catch_%27em_all&quot;&gt;catch all&lt;/a&gt; the new features coming with Sirius 4.0 come to &lt;a href=&quot;https://www.eclipsecon.org/france2016/session/sirius-40-let-me-sirius-you&quot;&gt;our talk&lt;/a&gt; at EclipseCon France! Another chance for you to join the Sirius community, &lt;a href=&quot;http://www.siriuscon.org/&quot;&gt;SiriusCon&lt;/a&gt; will occur in Paris the 15th November 2016. Be sure to save the date!&lt;/p&gt;</description>
-	<pubDate>Mon, 06 Jun 2016 08:36:43 +0000</pubDate>
-</item>
-<item>
 	<title>Tom Schindl: e(fx)clipse 2.4.0 released</title>
 	<guid isPermaLink="false">http://tomsondev.bestsolution.at/?p=4815</guid>
 	<link>https://tomsondev.bestsolution.at/2016/06/06/efxclipse-2-4-0-released/</link>
@@ -467,13 +476,6 @@ VM vm = new VM(&quot;Tom&quot;, &quot;Schindl&quot;);
 	<description>&lt;div dir=&quot;ltr&quot; style=&quot;text-align: left;&quot;&gt;Guys Back is the release season in the Eclipse World, bringing back the opportunity to network thru its democamp. this time its Eclipse Neon Demo Camp 2016 on 22nd June 2016 @ Infosys.&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://1.bp.blogspot.com/-oItjYG2TvtY/V0ZtMBDxq9I/AAAAAAAAJFs/7QRxBGVIbvsvgTafO0_ZkrTy3l8XFXlqQCLcB/s1600/banner.png&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;171&quot; src=&quot;https://1.bp.blogspot.com/-oItjYG2TvtY/V0ZtMBDxq9I/AAAAAAAAJFs/7QRxBGVIbvsvgTafO0_ZkrTy3l8XFXlqQCLcB/s640/banner.png&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Registrations are open for talks and participation: &lt;a href=&quot;https://docs.google.com/forms/d/1n4LFY7zLKofAmVKJ5whB1BFXzInJ0Nh32b5uPbXaSZE/&quot; target=&quot;_blank&quot;&gt;Click Here&lt;/a&gt;.&lt;br /&gt;Looking forward to meet many of you out there. :)&lt;/div&gt;</description>
 	<pubDate>Sat, 04 Jun 2016 03:42:55 +0000</pubDate>
 	<author>noreply@blogger.com (Its_Me_Malai)</author>
-</item>
-<item>
-	<title>VIATRA: VIATRA 1.2.1 Released</title>
-	<guid isPermaLink="false">5614faafe4b03f677dc3822b:56153118e4b022593e35e24b:574bdccef8baf34bebd9189b</guid>
-	<link>http://viatra.net/news/2016/6/viatra-121-released</link>
-	<description>&lt;p&gt;The &lt;a href=&quot;http://eclipse.org/viatra&quot; target=&quot;_blank&quot;&gt;VIATRA project&lt;/a&gt; is happy to report that the service release 1.2.1 is now available, with some &lt;a href=&quot;https://projects.eclipse.org/projects/modeling.viatra/releases/1.2.1/bugs&quot; target=&quot;_blank&quot;&gt;hotfixes&lt;/a&gt; for our 1.2.0 version. The most important of these are fixing an exception in the local search based query evaluation algorithm and correcting our Maven artifacts. Read our &lt;a href=&quot;http://viatra.net/news/2016/5/viatra-1-2-0-released&quot; target=&quot;_blank&quot;&gt;previous post&lt;/a&gt; for the most important highlights of the 1.2.x VIATRA release cycle.&lt;/p&gt;&lt;p&gt;All downloads are available now from the &lt;a href=&quot;https://www.eclipse.org/viatra/downloads.php&quot; target=&quot;_blank&quot;&gt;downloads area&lt;/a&gt; or the &lt;a href=&quot;http://marketplace.eclipse.org/content/viatra&quot; target=&quot;_blank&quot;&gt;marketplace&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Feel free to reach out on the Eclipse Forums of VIATRA or the developer mailing list if you have questions or request &lt;a href=&quot;http://incquerylabs.com/&quot; target=&quot;_blank&quot;&gt;industrial support&lt;/a&gt; for more advanced issues.&lt;/p&gt;</description>
-	<pubDate>Fri, 03 Jun 2016 08:13:02 +0000</pubDate>
 </item>
 
 </channel>

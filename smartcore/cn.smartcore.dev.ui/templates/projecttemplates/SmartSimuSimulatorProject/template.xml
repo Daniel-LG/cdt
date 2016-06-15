@@ -37,10 +37,10 @@
 		<simple name="isCProject" value="true" /> 
 	</process>
 
-	<process type="org.eclipse.cdt.core.CreateSourceFolder">
+	<!--<process type="org.eclipse.cdt.core.CreateSourceFolder">
 		<simple name="projectName" value="$(projectName)"/>
 		<simple name="path" value="resources"/>
-	</process>
+	</process>-->
 
 	<process type="org.eclipse.cdt.core.AddFiles">
 		<simple name="projectName" value="$(projectName)"/>
@@ -60,21 +60,21 @@
 				<simple name="target" value="address.conf"/>
 				<simple name="replaceable" value="true"/>
 			</element>
-			<element>
-				<simple name="source" value="src/main"/>
-				<simple name="target" value="resources/main"/>
+			<!--<element>
+				<simple name="source" value="src/main.simu"/>
+				<simple name="target" value="resources/main.simu"/>
 				<simple name="replaceable" value="true"/>
 			</element>
 			<element>
-				<simple name="source" value="src/main_debug_info"/>
-				<simple name="target" value="resources/main_debug_info"/>
+				<simple name="source" value="src/main_debug_info.simu"/>
+				<simple name="target" value="resources/main_debug_info.simu"/>
 				<simple name="replaceable" value="true"/>
 			</element>
 			<element>
 				<simple name="source" value="src/memory_space/memory_space.so"/>
 				<simple name="target" value="resources/memory_space/memory_space.so"/>
 				<simple name="replaceable" value="true"/>
-			</element>
+			</element>-->
 		</complex-array>
 	</process>
 
@@ -83,6 +83,9 @@
 		<complex-array name="files">
 			<element>
 				<simple name="target" value="$(projectName).conf"/>
+			</element>
+			<element>
+				<simple name="target" value="address.conf"/>
 			</element>
 		</complex-array>
 	</process>
