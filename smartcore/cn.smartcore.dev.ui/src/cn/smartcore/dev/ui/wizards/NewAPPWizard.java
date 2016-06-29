@@ -1,11 +1,15 @@
 package cn.smartcore.dev.ui.wizards;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.URI;
 
 import org.eclipse.cdt.core.CCorePlugin;
 import org.eclipse.cdt.core.templateengine.SharedDefaults;
 import org.eclipse.cdt.internal.ui.newui.Messages;
 import org.eclipse.cdt.ui.wizards.CProjectWizard;
+import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IProjectDescription;
 import org.eclipse.core.resources.IResource;
@@ -15,6 +19,7 @@ import org.eclipse.core.resources.IWorkspaceRunnable;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
+import org.eclipse.core.runtime.Path;
 import org.eclipse.core.runtime.SubProgressMonitor;
 
 import cn.smartcore.dev.ui.natures.ProjectNature;
@@ -73,7 +78,27 @@ public class NewAPPWizard extends CProjectWizard {
 		if (!newProject.isOpen()) {
 			newProject.open(new SubProgressMonitor(monitor, 25));
 		}
-
+		
+		//add by lxy add debug-config.txt ans src/ to app project
+		IFolder src = newProject.getFolder(new Path("src"));
+		if (!src.exists()) {
+			try {
+				src.create(true, true, null);
+			} catch (CoreException e) {
+				System.out.println("create src folder error");
+				System.out.println(e.getMessage());
+			}
+		}
+		
+		InputStream resourceStream = new ByteArrayInputStream(("core0").getBytes());
+		Util.addFileToProject(newProject, new Path("debug-config.txt"), resourceStream, monitor);
+		try{
+			resourceStream.close();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+		
+		
 		continueCreationMonitor = new SubProgressMonitor(monitor, 25);
 		IProject proj = continueCreation(newProject);
 
