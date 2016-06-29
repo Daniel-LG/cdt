@@ -114,7 +114,7 @@ public class NewSimulatorWizard extends CProjectWizard {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		String mainPath = templatePath + File.separator + "main";
+		String mainPath = templatePath + File.separator + "main.exe";
 		String mainDebugPath = templatePath + File.separator + "main_debug_info";
 		String memorySpacePath = templatePath + File.separator + "memory_space" + File.separator + "memory_space.so";
 
@@ -138,7 +138,7 @@ public class NewSimulatorWizard extends CProjectWizard {
 
 		String projectResourcesPath = resources.getLocation().toOSString();
 		try {
-			copy(mainPath, projectResourcesPath + File.separator + "main");
+			copy(mainPath, projectResourcesPath + File.separator + "main.exe");
 		} catch (IOException e) {
 			System.out.println("copy main file error");
 			System.out.println(e.getMessage());

@@ -68,11 +68,14 @@ public class LaunchSimulator implements ILaunchSimulator {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			confPath = simulatorPath + File.separator + "conf" + File.separator + "conf.so";
+			//confPath = simulatorPath + File.separator + "conf" + File.separator + "conf.so";
+			confPath = simulatorPath + "/" + "conf" + "/" + "conf.so";
 		} else {
 			IProject project = SmartSimuDevPlugin.getSimulatorProject(simulatorProjectName);
 			simulatorPath = project.getFile("resources").getLocation().toOSString();
-			confPath = simulatorPath + File.separator + "conf.so";
+			//confPath = simulatorPath + File.separator + "conf.so";
+			//simulatorPath = simulatorPath.substring(0, simulatorPath.lastIndexOf("\"))
+			confPath = simulatorPath + "/" + "conf" + "/" + "conf.so";
 		}
 
 		if (simulatorPath.endsWith(File.separator)) {
@@ -85,14 +88,14 @@ public class LaunchSimulator implements ILaunchSimulator {
 			e.printStackTrace();
 		}
 
-		String mainFilePath = simulatorPath + File.separator + "main";
+		String mainFilePath = simulatorPath + File.separator + "main.exe";
 		File mainFile = new File(mainFilePath);
 		if (!mainFile.canExecute()) {
 			mainFile.setExecutable(true);
 		}
 
 		line = mainFilePath + " " + port + " " + coreConfigPath + " start " + confPath;
-		// System.out.println(line);
+		System.out.println(line);
 
 		CommandLine cmdLine = CommandLine.parse(line);
 		executor = new DefaultExecutor();

@@ -9,6 +9,7 @@ typedef struct {
 
 struct _object_t;
 typedef struct _object_t object_t;
+typedef struct state state_t;
 
 typedef enum {
 	U64,
@@ -40,7 +41,7 @@ typedef struct {
 } attribute_value_array_t;
 
 typedef void (*callback_f)(object_t *o, void *usr_data);
-typedef void* (*create_f)(object_t *o);
+typedef void* (*create_f)(object_t *o, state_t *s);
 
 typedef struct {
 	const char *module_name;

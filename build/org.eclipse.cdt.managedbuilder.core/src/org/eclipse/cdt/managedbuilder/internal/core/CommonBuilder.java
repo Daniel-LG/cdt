@@ -724,7 +724,7 @@ public class CommonBuilder extends ACBuilder {
 			appendWithLineFeed(cFileContent, "\t{ \"" + item.x + "\", { STRING, \"" + item.y + "\" }},"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 		}
 		for (Tuple2<String, String> item : module.U64Attrs) {
-			appendWithLineFeed(cFileContent, "\t{ \"" + item.x + "\", { U64, " + item.y + " }},"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+			appendWithLineFeed(cFileContent, "\t{ \"" + item.x + "\", { U64, (void *)" + item.y + " }},"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 		}
 		for (Tuple2<String, String> item : module.INTERFACEAttrs) {
 			appendWithLineFeed(cFileContent,
@@ -741,12 +741,12 @@ public class CommonBuilder extends ACBuilder {
 		appendWithLineFeed(cFileContent, "object_conf_t objects[] = {"); //$NON-NLS-1$
 		for (Tuple3<String, String, Integer> item : moduleNameList) {
 			appendWithLineFeed(cFileContent,
-					"\t{ \"resources" + File.separator + item.x + ".so\", \"" + item.y + "\", " //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+					"\t{ \"" + item.x + ".so\", \"" + item.y + "\", " //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 							+ item.z + ", " + item.y + "_attribute_confs },"); //$NON-NLS-1$ //$NON-NLS-2$
 		}
 		// append the confs of address space
 		appendWithLineFeed(cFileContent,
-				"\t{ \"resources" + File.separator + "memory_space" + File.separator //$NON-NLS-1$ //$NON-NLS-2$
+				"\t{ \"" + "memory_space" + "/" //$NON-NLS-1$ //$NON-NLS-2$
 						+ "memory_space.so\", \"memory_space\", "
 						+ 3 + ", memory_space_attribute_confs }"); //$NON-NLS-1$
 		appendWithLineFeed(cFileContent, "};"); //$NON-NLS-1$
